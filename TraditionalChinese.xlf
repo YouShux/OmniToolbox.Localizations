@@ -14394,6 +14394,22 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>LB后摇移除</source>
         <target>LB后搖移除</target>
       </trans-unit>
+      <trans-unit id="Localization.ChangeFailed" xml:space="preserve">
+        <source>语言切换失败：{0}。</source>
+        <target>語言切換失敗：{0}。</target>
+      </trans-unit>
+      <trans-unit id="Localization.LanguageIncomplete" xml:space="preserve">
+        <source>该语言的本体翻译尚未完成。</source>
+        <target>該語言的本體翻譯尚未完成。</target>
+      </trans-unit>
+      <trans-unit id="Localization.ModuleUnavailable" xml:space="preserve">
+        <source>此模块尚未提供当前语言的完整翻译。</source>
+        <target>此模塊尚未提供當前語言的完整翻譯。</target>
+      </trans-unit>
+      <trans-unit id="Localization.Untranslated" xml:space="preserve">
+        <source>尚未翻译</source>
+        <target>尚未翻譯</target>
+      </trans-unit>
       <trans-unit id="LockedDutyPreviewDescription" xml:space="preserve">
         <source>在任务搜索器左侧显示未解锁和未完成副本列表，支持排除副本、Wiki跳转、点击复制副本名！</source>
         <target>在任務搜索器左側顯示未解鎖和未完成副本列表，支持排除副本、Wiki跳轉、點擊復制副本名！</target>
@@ -14433,6 +14449,18 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="MitigationMonitorTitle" xml:space="preserve">
         <source>减伤监控</source>
         <target>減傷監控</target>
+      </trans-unit>
+      <trans-unit id="Module.Contract.NewerApi" xml:space="preserve">
+        <source>模块「{0}」需要接口版本 {1}，请升级 Omni。</source>
+        <target>模塊「{0}」需要接口版本 {1}，請升級 Omni。</target>
+      </trans-unit>
+      <trans-unit id="Module.Contract.OnlineModuleShape" xml:space="preserve">
+        <source>在线模块必须包含唯一的 OmniModuleBase 实现，且类型名与清单 InternalName 一致。</source>
+        <target>在線模塊必須包含唯一的 OmniModuleBase 實現，且類型名與清單 InternalName 一致。</target>
+      </trans-unit>
+      <trans-unit id="Module.Contract.UpgradeReason" xml:space="preserve">
+        <source>模块「{0}」使用旧版或无效写法，已拒绝加载。请作者升级并迁移至 OmniModuleBase、新生命周期入口和必填 Localization，重新编译并更新清单。原因：{1}</source>
+        <target>模塊「{0}」使用舊版或無效寫法，已拒絕加載。請作者升級并遷移至 OmniModuleBase、新生命周期入口和必填 Localization，重新編譯并更新清單。原因：{1}</target>
       </trans-unit>
       <trans-unit id="Monitor.Add" xml:space="preserve">
         <source>添加</source>
@@ -15230,6 +15258,18 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>正在获取在线模块…</source>
         <target>正在獲取在線模塊…</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.DefaultBranchMissing" xml:space="preserve">
+        <source>GitHub 未返回仓库默认分支。</source>
+        <target>GitHub 未返回倉庫默認分支。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.DownloadFailed" xml:space="preserve">
+        <source>模块下载或校验失败，请检查网络或仓库文件。</source>
+        <target>模塊下載或校驗失敗，請檢查網絡或倉庫文件。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.DownloadTooLarge" xml:space="preserve">
+        <source>下载文件超过大小限制。</source>
+        <target>下載文件超過大小限制。</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.Empty" xml:space="preserve">
         <source>尚未添加在线仓库。</source>
         <target>尚未添加在線倉庫。</target>
@@ -15237,6 +15277,18 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="OnlineModules.Error" xml:space="preserve">
         <source>在线模块操作失败</source>
         <target>在線模塊操作失敗</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.FileTypeChanged" xml:space="preserve">
+        <source>模块文件类型发生变化，请卸载后重新安装。</source>
+        <target>模塊文件類型發生變化，請卸載后重新安裝。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.FileTypeUnsupported" xml:space="preserve">
+        <source>在线模块文件只支持 .cs 和 .dll。</source>
+        <target>在線模塊文件只支持 .cs 和 .dll。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.HashMismatch" xml:space="preserve">
+        <source>模块 SHA256 校验失败。</source>
+        <target>模塊 SHA256 校驗失敗。</target>
       </trans-unit>
       <trans-unit id="OnlineModules.Install" xml:space="preserve">
         <source>安装模块</source>
@@ -15246,13 +15298,49 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>已安装：{0}</source>
         <target>已安裝：{0}</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.InstalledHashMismatch" xml:space="preserve">
+        <source>已安装模块完整性校验失败，请卸载后重新安装。</source>
+        <target>已安裝模塊完整性校驗失敗，請卸載后重新安裝。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.InvalidAddress" xml:space="preserve">
+        <source>请输入 HTTPS GitHub 仓库或 JSON 文件地址。</source>
+        <target>請輸入 HTTPS GitHub 倉庫或 JSON 文件地址。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.InvalidDescriptor" xml:space="preserve">
+        <source>模块清单缺少有效的名称、版本、最低 Omni 版本、文件或 SHA256。</source>
+        <target>模塊清單缺少有效的名稱、版本、最低 Omni 版本、文件或 SHA256。</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.Latest" xml:space="preserve">
         <source>仓库版本：{0}</source>
         <target>倉庫版本：{0}</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.LocalizationKeysInvalid" xml:space="preserve">
+        <source>在线模块介绍只允许 Title 和 Description 词条。</source>
+        <target>在線模塊介紹只允許 Title 和 Description 詞條。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.LocalizationRequired" xml:space="preserve">
+        <source>模块清单必须提供 Localization.Source，包含非空的 Title 和 Description。</source>
+        <target>模塊清單必須提供 Localization.Source，包含非空的 Title 和 Description。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.ManifestEmpty" xml:space="preserve">
+        <source>仓库清单为空。</source>
+        <target>倉庫清單為空。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.ManifestLoadFailed" xml:space="preserve">
+        <source>在线仓库清单加载失败，请检查网络或仓库地址。</source>
+        <target>在線倉庫清單加載失敗，請檢查網絡或倉庫地址。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.MinimumVersion" xml:space="preserve">
+        <source>此模块需要 Omni {0} 或更高版本。</source>
+        <target>此模塊需要 Omni {0} 或更高版本。</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.Pending" xml:space="preserve">
         <source>待更新：{0}，下次启动 Omni 时应用</source>
         <target>待更新：{0}，下次啟動 Omni 時應用</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RawAddressRequired" xml:space="preserve">
+        <source>清单和模块文件必须使用 GitHub raw HTTPS 地址。</source>
+        <target>清單和模塊文件必須使用 GitHub raw HTTPS 地址。</target>
       </trans-unit>
       <trans-unit id="OnlineModules.Refresh" xml:space="preserve">
         <source>刷新仓库</source>
@@ -15262,6 +15350,14 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>移除仓库（须先卸载该仓库模块）</source>
         <target>移除倉庫（須先卸載該倉庫模塊）</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryExists" xml:space="preserve">
+        <source>该仓库清单已添加。</source>
+        <target>該倉庫清單已添加。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.SchemaUnsupported" xml:space="preserve">
+        <source>在线模块清单必须使用 SchemaVersion 1。</source>
+        <target>在線模塊清單必須使用 SchemaVersion 1。</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.Settings" xml:space="preserve">
         <source>在线模块</source>
         <target>在線模塊</target>
@@ -15269,6 +15365,22 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="OnlineModules.Source" xml:space="preserve">
         <source>模块来源</source>
         <target>模塊來源</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.StateEmpty" xml:space="preserve">
+        <source>在线仓库配置为空。</source>
+        <target>在線倉庫配置為空。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.StateReadFailed" xml:space="preserve">
+        <source>在线仓库配置读取失败，原文件已保留，请按新清单格式重新建立仓库记录：{0}</source>
+        <target>在線倉庫配置讀取失敗，原文件已保留，請按新清單格式重新建立倉庫記錄：{0}</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.TextTooLong" xml:space="preserve">
+        <source>模块清单文本超过长度限制。</source>
+        <target>模塊清單文本超過長度限制。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.TooManyModules" xml:space="preserve">
+        <source>仓库清单最多允许 500 个模块。</source>
+        <target>倉庫清單最多允許 500 個模塊。</target>
       </trans-unit>
       <trans-unit id="OnlineModules.TrustHelp" xml:space="preserve">
         <source>我信任此仓库及其后续更新，模块代码拥有与Omni相同的运行权限。仅安装可信来源；SHA256 校验不代表代码安全。</source>
@@ -15278,9 +15390,17 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>卸载模块（保留用户配置）</source>
         <target>卸載模塊（保留用戶配置）</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.UninstallFirst" xml:space="preserve">
+        <source>请先卸载该仓库的已安装模块，用户配置会保留。</source>
+        <target>請先卸載該倉庫的已安裝模塊，用戶配置會保留。</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.Update" xml:space="preserve">
         <source>下载更新</source>
         <target>下載更新</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.UpdateFailed" xml:space="preserve">
+        <source>在线模块更新失败，保留原版本：{0}</source>
+        <target>在線模塊更新失敗，保留原版本：{0}</target>
       </trans-unit>
       <trans-unit id="OnlineModules.UpdateHelp" xml:space="preserve">
         <source>启动及每六小时检查版本，自动下载已安装模块的新版本，下次启动 Omni 时应用。</source>
@@ -15787,6 +15907,22 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="Settings.Ui.Language" xml:space="preserve">
         <source>显示语言</source>
         <target>顯示語言</target>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.Language.English" xml:space="preserve">
+        <source>英语</source>
+        <target>英語</target>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.Language.French" xml:space="preserve">
+        <source>法语</source>
+        <target>法語</target>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.Language.German" xml:space="preserve">
+        <source>德语</source>
+        <target>德語</target>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.Language.Japanese" xml:space="preserve">
+        <source>日语</source>
+        <target>日語</target>
       </trans-unit>
       <trans-unit id="Settings.Ui.Language.Simplified" xml:space="preserve">
         <source>简体中文</source>
