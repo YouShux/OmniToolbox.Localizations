@@ -575,8 +575,10 @@
         <target>獲取途徑</target>
       </trans-unit>
       <trans-unit id="Collection.Filter.Source.Help" xml:space="preserve">
-        <source>左键单选途径，右键可以多选途径！</source>
-        <target>左鍵單選途徑，右鍵可以多選途徑！</target>
+        <source>左键：单选途径；右键：多选途径；
+Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
+        <target>左鍵：單選途徑；右鍵：多選途徑；
+Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       </trans-unit>
       <trans-unit id="Collection.Filter.Tradable" xml:space="preserve">
         <source>可交易</source>
@@ -1460,6 +1462,30 @@
         <source>成就</source>
         <target>成就</target>
       </trans-unit>
+      <trans-unit id="Collection.Source.Barding.Attacker" xml:space="preserve">
+        <source>搭档的进攻技能达到 10 级后自动解锁。</source>
+        <target>搭檔的進攻技能達到 10 級后自動解鎖。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Barding.CompanyUnlock" xml:space="preserve">
+        <source>加入对应大国防联军后自动解锁。</source>
+        <target>加入對應大國防聯軍后自動解鎖。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Barding.Defender" xml:space="preserve">
+        <source>搭档的防护技能达到 10 级后自动解锁。</source>
+        <target>搭檔的防護技能達到 10 級后自動解鎖。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Barding.Healer" xml:space="preserve">
+        <source>搭档的治疗技能达到 10 级后自动解锁。</source>
+        <target>搭檔的治療技能達到 10 級后自動解鎖。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Barding.JoinCompany" xml:space="preserve">
+        <source>加入{0}</source>
+        <target>加入{0}</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Barding.Training" xml:space="preserve">
+        <source>搭档陆行鸟技能训练</source>
+        <target>搭檔陸行鳥技能訓練</target>
+      </trans-unit>
       <trans-unit id="Collection.Source.BeastTribes" xml:space="preserve">
         <source>蛮族</source>
         <target>蠻族</target>
@@ -1471,6 +1497,22 @@
       <trans-unit id="Collection.Source.Container" xml:space="preserve">
         <source>鉴定</source>
         <target>鑒定</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.CosmicTool.Data" xml:space="preserve">
+        <source>所需研究数据：{0}</source>
+        <target>所需研究數據：{0}</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.CosmicTool.Replica" xml:space="preserve">
+        <source>宇宙工具复制品（免费领取）</source>
+        <target>宇宙工具復制品（免費領取）</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.CosmicTool.Research" xml:space="preserve">
+        <source>宇宙工具研究：{0}</source>
+        <target>宇宙工具研究：{0}</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.CosmicTool.Unlock" xml:space="preserve">
+        <source>解锁条件：{0}</source>
+        <target>解鎖條件：{0}</target>
       </trans-unit>
       <trans-unit id="Collection.Source.Crafting" xml:space="preserve">
         <source>制作</source>
@@ -1487,6 +1529,38 @@
       <trans-unit id="Collection.Source.Duty" xml:space="preserve">
         <source>副本</source>
         <target>副本</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Equipment.Disguise" xml:space="preserve">
+        <source>任务中领取并装备的伪装服装。</source>
+        <target>任務中領取并裝備的偽裝服裝。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Equipment.EternalBondWristlet" xml:space="preserve">
+        <source>先在道具商城领取或购买{0}；双方以 50 级以上职业装备誓约手镯并组成 2 人小队，在黑衣森林东部林区（X:17.5 Y:18.2）与{1}对话接取“{2}”，手镯转为此不可交易版本。</source>
+        <target>先在道具商城領取或購買{0}；雙方以 50 級以上職業裝備誓約手鐲并組成 2 人小隊，在黑衣森林東部林區（X:17.5 Y:18.2）與{1}對話接取“{2}”，手鐲轉為此不可交易版本。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Equipment.HistoricalDuty" xml:space="preserve">
+        <source>历史副本掉落记录；当前是否仍掉落未核实。</source>
+        <target>歷史副本掉落記錄；當前是否仍掉落未核實。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Equipment.LegacyGatheringShop" xml:space="preserve">
+        <source>1.x 历史商店</source>
+        <target>1.x 歷史商店</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Equipment.LegacyGatheringShopDetail" xml:space="preserve">
+        <source>1.19 旧版商人销售记录：Syneyhil／利姆萨·罗敏萨 Fieldcraft Ward (1,1)；Grillairmais／格里达尼亚 Fieldcraft Den (1,1)；Tetetoka／乌尔达哈 Fieldcraft Row (2,1)。现版商店已不再出售，以上为 1.x 旧地图坐标。国际服的可交易遗留物仍可能由玩家转让，国服没有 1.x 继承物品。</source>
+        <target>1.19 舊版商人銷售記錄：Syneyhil／利姆薩·羅敏薩 Fieldcraft Ward (1,1)；Grillairmais／格里達尼亞 Fieldcraft Den (1,1)；Tetetoka／烏爾達哈 Fieldcraft Row (2,1)。現版商店已不再出售，以上為 1.x 舊地圖坐標。國際服的可交易遺留物仍可能由玩家轉讓，國服沒有 1.x 繼承物品。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Equipment.RetiredArdent" xml:space="preserve">
+        <source>历史神典石兑换记录；5.3 起已停售，目前无法重新获得。</source>
+        <target>歷史神典石兌換記錄；5.3 起已停售，目前無法重新獲得。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Equipment.UnfinishedRelic" xml:space="preserve">
+        <source>任务进行中获得的半成品装备。</source>
+        <target>任務進行中獲得的半成品裝備。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Equipment.UnfinishedRelicReclaim" xml:space="preserve">
+        <source>仅在任务“{0}”进行中且半成品遗失时补领。</source>
+        <target>僅在任務“{0}”進行中且半成品遺失時補領。</target>
       </trans-unit>
       <trans-unit id="Collection.Source.Event" xml:space="preserve">
         <source>活动</source>
@@ -1536,6 +1610,18 @@
         <source>{0} +{1}</source>
         <target>{0} +{1}</target>
       </trans-unit>
+      <trans-unit id="Collection.Source.NoSource" xml:space="preserve">
+        <source>无来源</source>
+        <target>無來源</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Orchestrion.MusicBonus" xml:space="preserve">
+        <source>《{0}》商品特典</source>
+        <target>《{0}》商品特典</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Orchestrion.MusicBonusDetail" xml:space="preserve">
+        <source>仅指定实体音乐商品的特典批次附赠乐谱兑换码。兑换码是否仍有效及适用区服以商品说明为准；国际服商品特典不代表国服商城已上架，数字版音乐不代表包含兑换码。</source>
+        <target>僅指定實體音樂商品的特典批次附贈樂譜兌換碼。兌換碼是否仍有效及適用區服以商品說明為準；國際服商品特典不代表國服商城已上架，數字版音樂不代表包含兌換碼。</target>
+      </trans-unit>
       <trans-unit id="Collection.Source.Other" xml:space="preserve">
         <source>其他</source>
         <target>其他</target>
@@ -1544,9 +1630,49 @@
         <source>PvP</source>
         <target>PvP</target>
       </trans-unit>
+      <trans-unit id="Collection.Source.PvP.Season21Bronze" xml:space="preserve">
+        <source>水晶冲突第 21 赛季青铜段位奖励；赛季内至少参加 1 次段位赛并达到青铜，赛季结束后向{0}领取。仅可在下个赛季领取，超过领取期限将无法领取，季前赛也计作 1 个赛季。</source>
+        <target>水晶沖突第 21 賽季青銅段位獎勵；賽季內至少參加 1 次段位賽并達到青銅，賽季結束后向{0}領取。僅可在下個賽季領取，超過領取期限將無法領取，季前賽也計作 1 個賽季。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.PvP.Season21Rank" xml:space="preserve">
+        <source>水晶冲突第 21 赛季排名奖励；取得对应名次后，凭发放的奖励道具向{0}领取。排名规则和发放时间以国服该赛季公告为准。</source>
+        <target>水晶沖突第 21 賽季排名獎勵；取得對應名次后，憑發放的獎勵道具向{0}領取。排名規則和發放時間以國服該賽季公告為準。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.PvP.Season21Tier" xml:space="preserve">
+        <source>水晶冲突第 21 赛季段位奖励；赛季内至少参加 1 次段位赛并达到教材对应段位，赛季结束后向{0}领取。仅可在下个赛季领取，超过领取期限将无法领取，季前赛也计作 1 个赛季。</source>
+        <target>水晶沖突第 21 賽季段位獎勵；賽季內至少參加 1 次段位賽并達到教材對應段位，賽季結束后向{0}領取。僅可在下個賽季領取，超過領取期限將無法領取，季前賽也計作 1 個賽季。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.PvP.SeriesReward" xml:space="preserve">
+        <source>对战系列 {0} 的系列等级 {1} 奖励。参加对战积累系列经验后，在对战资料的系列奖励中领取；当前开放系列和历史奖励的领取期限以游戏内为准。</source>
+        <target>對戰系列 {0} 的系列等級 {1} 獎勵。參加對戰積累系列經驗后，在對戰資料的系列獎勵中領取；當前開放系列和歷史獎勵的領取期限以游戲內為準。</target>
+      </trans-unit>
       <trans-unit id="Collection.Source.Quest" xml:space="preserve">
         <source>任务</source>
         <target>任務</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Relic.Animus" xml:space="preserve">
+        <source>完成{1}对应的全部黄道文书后，向{0}强化。</source>
+        <target>完成{1}對應的全部黃道文書后，向{0}強化。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Relic.Atma" xml:space="preserve">
+        <source>向{0}交付{1}与对应魂晶进行强化；魂晶需装备天极武器完成指定地区的危命任务获取。</source>
+        <target>向{0}交付{1}與對應魂晶進行強化；魂晶需裝備天極武器完成指定地區的危命任務獲取。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Relic.Nexus" xml:space="preserve">
+        <source>将{1}绝灵化，装备后通过副本、危命任务等积累灵魂能量，达到要求后向{0}强化。</source>
+        <target>將{1}絕靈化，裝備后通過副本、危命任務等積累靈魂能量，達到要求后向{0}強化。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Relic.Novus" xml:space="preserve">
+        <source>使用星光变石和魔晶石完成对应天球书卷的附魔后，将书卷与{1}一并交给{0}强化。</source>
+        <target>使用星光變石和魔晶石完成對應天球書卷的附魔后，將書卷與{1}一并交給{0}強化。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Relic.Zeta" xml:space="preserve">
+        <source>向{0}依次兑换圣魂并完成充能，推进{1}的本我强化。</source>
+        <target>向{0}依次兌換圣魂并完成充能，推進{1}的本我強化。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Relic.Zodiac" xml:space="preserve">
+        <source>完成四项黄道材料任务及“大器晚成”后，携带{1}向{0}选择再铸黄道武器。</source>
+        <target>完成四項黃道材料任務及“大器晚成”后，攜帶{1}向{0}選擇再鑄黃道武器。</target>
       </trans-unit>
       <trans-unit id="Collection.Source.RequiredQuests" xml:space="preserve">
         <source>（前置任务：{0}）</source>
@@ -1587,6 +1713,46 @@
       <trans-unit id="Collection.Source.TreasureHunts" xml:space="preserve">
         <source>藏宝图</source>
         <target>藏寶圖</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.Alrsvid" xml:space="preserve">
+        <source>国际服 Twitch 订阅活动</source>
+        <target>國際服 Twitch 訂閱活動</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.AlrsvidDetail" xml:space="preserve">
+        <source>历史活动：2026-07-28 至 2026-08-25。该活动兑换码不适用于国服和韩服账号。</source>
+        <target>歷史活動：2026-07-28 至 2026-08-25。該活動兌換碼不適用于國服和韓服賬號。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.EternalBond" xml:space="preserve">
+        <source>推进永结同心纪念任务解锁，标准方案亦可获得。</source>
+        <target>推進永結同心紀念任務解鎖，標準方案亦可獲得。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.LaudedFramersKit" xml:space="preserve">
+        <source>2026 北美 Fan Festival 艺术比赛优胜奖励</source>
+        <target>2026 北美 Fan Festival 藝術比賽優勝獎勵</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.LaudedFramersKitDetail" xml:space="preserve">
+        <source>国际服历史活动奖励，按主办方公布的获奖名单发放，绑定获奖角色且不可转让；尚未核实国服发放方式。</source>
+        <target>國際服歷史活動獎勵，按主辦方公布的獲獎名單發放，綁定獲獎角色且不可轉讓；尚未核實國服發放方式。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.LollyCat" xml:space="preserve">
+        <source>The Art of Succession – Relics of Eternity 画集特典</source>
+        <target>The Art of Succession – Relics of Eternity 畫集特典</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.LollyCatDetail" xml:space="preserve">
+        <source>官方公布英文画集于 2026-12-15 发售，附赠宠物兑换码；尚未核实国服兑换方式。</source>
+        <target>官方公布英文畫集于 2026-12-15 發售，附贈寵物兌換碼；尚未核實國服兌換方式。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.MusicalPaca" xml:space="preserve">
+        <source>TRAIL TO THE HEAVENS 原声集 Blu-ray 特典</source>
+        <target>TRAIL TO THE HEAVENS 原聲集 Blu-ray 特典</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.MusicalPacaDetail" xml:space="preserve">
+        <source>实体音乐光盘附赠兑换码，数字版不包含该宠物；尚未核实国服兑换方式。</source>
+        <target>實體音樂光盤附贈兌換碼，數字版不包含該寵物；尚未核實國服兌換方式。</target>
+      </trans-unit>
+      <trans-unit id="Collection.Source.Unlock.NotVerified" xml:space="preserve">
+        <source>客户端已有数据，当前尚未查到已开放的获取途径。</source>
+        <target>客戶端已有數據，當前尚未查到已開放的獲取途徑。</target>
       </trans-unit>
       <trans-unit id="Collection.Unfavorite" xml:space="preserve">
         <source>取消收藏</source>
