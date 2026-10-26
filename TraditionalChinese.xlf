@@ -6469,16 +6469,16 @@ DOT/HOT 效果平均每 {0:F1} 點提高 0.1%。</target>
         <target>正在導入投影模板，請稍候。</target>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.PlateImport.Completed" xml:space="preserve">
-        <source>已填入投影模板 {0}；缺失装备 {1} 件已设为“无”，已忽略 {2} 个不支持的染色区域。请在原生界面保存。</source>
-        <target>已填入投影模板 {0}；缺失裝備 {1} 件已設為“無”，已忽略 {2} 個不支持的染色區域。請在原生界面保存。</target>
+        <source>已填入投影模板 {0}，请保存。</source>
+        <target>已填入投影模板 {0}，請保存。</target>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.PlateImport.Failed" xml:space="preserve">
         <source>导入已中止，请检查当前投影模板：{0}</source>
         <target>導入已中止，請檢查當前投影模板：{0}</target>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.PlateImport.Help" xml:space="preserve">
-        <source>将所选方案的装备和染色填入当前投影模板。缺失装备设为原生“无”，不对此栏位施加幻化；染剂不足时不会修改模板。仅导入装备及支持的染色区域，发型、发色和面部配饰不属于投影模板。填入后请在原生界面保存，保存可能消耗染剂。</source>
-        <target>將所選方案的裝備和染色填入當前投影模板。缺失裝備設為原生“無”，不對此欄位施加幻化；染劑不足時不會修改模板。僅導入裝備及支持的染色區域，發型、發色和面部配飾不屬于投影模板。填入后請在原生界面保存，保存可能消耗染劑。</target>
+        <source>将方案装备和染色填入当前投影模板，导入后请保存。</source>
+        <target>將方案裝備和染色填入當前投影模板，導入后請保存。</target>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.PlateImport.Interrupted" xml:space="preserve">
         <source>投影台界面、角色或选中的模板已变更。</source>
@@ -15416,6 +15416,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>添加仓库</source>
         <target>添加倉庫</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.AuthorRequired" xml:space="preserve">
+        <source>在线模块清单必须填写非空的作者名 Author。</source>
+        <target>在線模塊清單必須填寫非空的作者名 Author。</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.AutoUpdate" xml:space="preserve">
         <source>自动更新</source>
         <target>自動更新</target>
@@ -15519,6 +15523,22 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="OnlineModules.RepositoryExists" xml:space="preserve">
         <source>该仓库清单已添加。</source>
         <target>該倉庫清單已添加。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryMismatch" xml:space="preserve">
+        <source>RepositoryURL 必须与清单及模块文件实际所属的 GitHub 仓库一致。</source>
+        <target>RepositoryURL 必須與清單及模塊文件實際所屬的 GitHub 倉庫一致。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryNotPublic" xml:space="preserve">
+        <source>在线模块的 GitHub 仓库必须存在且公开。</source>
+        <target>在線模塊的 GitHub 倉庫必須存在且公開。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryRequired" xml:space="preserve">
+        <source>在线模块清单必须填写完整的 RepositoryURL，格式为 https://github.com/owner/repository。</source>
+        <target>在線模塊清單必須填寫完整的 RepositoryURL，格式為 https://github.com/owner/repository。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryUnavailable" xml:space="preserve">
+        <source>无法确认 GitHub 仓库的公开状态，已阻止加载。请检查网络及 GitHub 访问情况后重试。</source>
+        <target>無法確認 GitHub 倉庫的公開狀態，已阻止加載。請檢查網絡及 GitHub 訪問情況后重試。</target>
       </trans-unit>
       <trans-unit id="OnlineModules.SchemaUnsupported" xml:space="preserve">
         <source>在线模块清单必须使用 SchemaVersion 1。</source>
@@ -16137,6 +16157,18 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="Settings.Ui.LocalModules.Remove" xml:space="preserve">
         <source>移除本地模块</source>
         <target>移除本地模塊</target>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.MultiMonitor" xml:space="preserve">
+        <source>多屏模式</source>
+        <target>多屏模式</target>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.MultiMonitor.EnableFailed" xml:space="preserve">
+        <source>无法开启卫月多屏模式，Omni 多屏模式未启用，请检查日志。</source>
+        <target>無法開啟衛月多屏模式，Omni 多屏模式未啟用，請檢查日志。</target>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.MultiMonitor.Help" xml:space="preserve">
+        <source>这将允许你将插件窗口移动到其他显示器，只在无边框窗口或窗口模式下有效。</source>
+        <target>這將允許你將插件窗口移動到其他顯示器，只在無邊框窗口或窗口模式下有效。</target>
       </trans-unit>
       <trans-unit id="Settings.Ui.NumberDisplayMode" xml:space="preserve">
         <source>数字显示模式</source>

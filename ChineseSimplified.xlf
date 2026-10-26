@@ -4738,13 +4738,13 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
         <source>正在导入投影模板，请稍候。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.PlateImport.Completed" xml:space="preserve">
-        <source>已填入投影模板 {0}；缺失装备 {1} 件已设为“无”，已忽略 {2} 个不支持的染色区域。请在原生界面保存。</source>
+        <source>已填入投影模板 {0}，请保存。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.PlateImport.Failed" xml:space="preserve">
         <source>导入已中止，请检查当前投影模板：{0}</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.PlateImport.Help" xml:space="preserve">
-        <source>将所选方案的装备和染色填入当前投影模板。缺失装备设为原生“无”，不对此栏位施加幻化；染剂不足时不会修改模板。仅导入装备及支持的染色区域，发型、发色和面部配饰不属于投影模板。填入后请在原生界面保存，保存可能消耗染剂。</source>
+        <source>将方案装备和染色填入当前投影模板，导入后请保存。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.PlateImport.Interrupted" xml:space="preserve">
         <source>投影台界面、角色或选中的模板已变更。</source>
@@ -11388,6 +11388,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="OnlineModules.AutoUpdate" xml:space="preserve">
         <source>自动更新</source>
       </trans-unit>
+      <trans-unit id="OnlineModules.AuthorRequired" xml:space="preserve">
+        <source>在线模块清单必须填写非空的作者名 Author。</source>
+      </trans-unit>
       <trans-unit id="OnlineModules.Busy" xml:space="preserve">
         <source>正在获取在线模块…</source>
       </trans-unit>
@@ -11462,6 +11465,18 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.RepositoryExists" xml:space="preserve">
         <source>该仓库清单已添加。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryMismatch" xml:space="preserve">
+        <source>RepositoryURL 必须与清单及模块文件实际所属的 GitHub 仓库一致。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryNotPublic" xml:space="preserve">
+        <source>在线模块的 GitHub 仓库必须存在且公开。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryRequired" xml:space="preserve">
+        <source>在线模块清单必须填写完整的 RepositoryURL，格式为 https://github.com/owner/repository。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryUnavailable" xml:space="preserve">
+        <source>无法确认 GitHub 仓库的公开状态，已阻止加载。请检查网络及 GitHub 访问情况后重试。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.SchemaUnsupported" xml:space="preserve">
         <source>在线模块清单必须使用 SchemaVersion 1。</source>
@@ -11826,6 +11841,15 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Settings.Ui.AutoPath.Help" xml:space="preserve">
         <source>需要开启vnavmesh（自动寻路）！所有寻路功能的前置条件，否则部分功能失效！</source>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.MultiMonitor" xml:space="preserve">
+        <source>多屏模式</source>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.MultiMonitor.Help" xml:space="preserve">
+        <source>这将允许你将插件窗口移动到其他显示器，只在无边框窗口或窗口模式下有效。</source>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.MultiMonitor.EnableFailed" xml:space="preserve">
+        <source>无法开启卫月多屏模式，Omni 多屏模式未启用，请检查日志。</source>
       </trans-unit>
       <trans-unit id="Settings.Ui.CommandDisplayMode" xml:space="preserve">
         <source>命令显示模式</source>
