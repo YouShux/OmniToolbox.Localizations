@@ -1842,7 +1842,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>生产／采集／钓鱼无后摇</source>
       </trans-unit>
       <trans-unit id="DalamudDirectoryCleanupDescription" xml:space="preserve">
-        <source>清理卫月目录中的过期日志、历史备份及已卸载插件的配置，完成后显示清理结果。也可先预览并选择清理项。</source>
+        <source>清理卫月目录中的过期日志、历史备份及已卸载插件的配置。</source>
       </trans-unit>
       <trans-unit id="DalamudDirectoryCleanupTitle" xml:space="preserve">
         <source>清理卫月目录</source>
@@ -3061,7 +3061,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoIslandSanctuary.RollingRestDaysHelp" xml:space="preserve">
         <source>自动顺延下周日为休息日，再次点击取消顺延。
-周期更新或重新进入自己的无人岛时，自动设置休息日。</source>
+打开工房排班后自动设置休息日，并随周期更新。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoIslandSanctuary.SchedulesCleared" xml:space="preserve">
         <source>已清空未开始的排班。</source>
@@ -3113,6 +3113,21 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.NoWords" xml:space="preserve">
         <source>未能读取魔光键影词库，无法启用自动输入。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.QueueCount" xml:space="preserve">
+        <source>排本次数</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.QueueStart" xml:space="preserve">
+        <source>开始</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.QueueStop" xml:space="preserve">
+        <source>停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelay" xml:space="preserve">
+        <source>随机发送间隔</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelayHelp" xml:space="preserve">
+        <source>在 0.5 秒至设定上限之间随机等待。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoLogin.Add" xml:space="preserve">
         <source>添加</source>
@@ -3771,7 +3786,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>请先进入金碟游乐场砍树所在地图（Territory 388）</source>
       </trans-unit>
       <trans-unit id="Feature.AutoUseUncollectedItems.BlindBoxHint" xml:space="preserve">
-        <source>盲盒按收录页的奖励池判断，未收齐时持续开启，收齐或背包已满时停止，可能获得重复奖励。</source>
+        <source>盲盒按收录页的奖励池判断；存在未收录奖励时会持续开启，普通奖励可能重复获得，背包已满时停止。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoUseUncollectedItems.FolkloreTomes" xml:space="preserve">
         <source>传承录</source>
@@ -4586,9 +4601,6 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.HairColors.Current" xml:space="preserve">
         <source>当前色</source>
-      </trans-unit>
-      <trans-unit id="Feature.BetterGlamourManagement.HairColors.EnableHighlights" xml:space="preserve">
-        <source>启用挑染</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.HairColors.Original" xml:space="preserve">
         <source>原有色</source>
@@ -7494,7 +7506,13 @@ Mount（坐骑）、Retainer（雇员）等。</source>
         <source>左键名称</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.LinkGlamour" xml:space="preserve">
-        <source>关联幻化模板</source>
+        <source>投影模板</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ChangeGlamourPlateLink" xml:space="preserve">
+        <source>变更与投影模板的关联</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.LinkGlamourPlate" xml:space="preserve">
+        <source>与投影模板关联</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.LocationInteractionHelp" xml:space="preserve">
         <source>左键：打开地图；
@@ -7890,7 +7908,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>跟踪</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.UnlinkGlamour" xml:space="preserve">
-        <source>解除幻化模板关联</source>
+        <source>解除与投影模板的关联</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.UnloadedSuffix" xml:space="preserve">
         <source>（未启动）</source>
@@ -9967,53 +9985,17 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.VoidMarketBoard.Sort.Quantity" xml:space="preserve">
         <source>数量</source>
       </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.AlreadyOpen" xml:space="preserve">
-        <source>合成魔晶石界面已打开。</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.BatchFailed" xml:space="preserve">
-        <source>批量合成已停止，请检查材料与背包空间。</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.BatchFinished" xml:space="preserve">
-        <source>可合成的魔晶石不足 5 个，批量合成已停止。</source>
-      </trans-unit>
       <trans-unit id="Feature.VoidMateriaTransmutation.BatchStart" xml:space="preserve">
         <source>批量合成</source>
       </trans-unit>
       <trans-unit id="Feature.VoidMateriaTransmutation.BatchStop" xml:space="preserve">
         <source>停止合成</source>
       </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.BatchTimedOut" xml:space="preserve">
-        <source>未确认合成结果，批量合成已停止。</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.Busy" xml:space="preserve">
-        <source>当前角色状态无法打开界面。</source>
-      </trans-unit>
       <trans-unit id="Feature.VoidMateriaTransmutation.Command" xml:space="preserve">
         <source>传送到 NPC 所在地图后，虚空交互合成魔晶石</source>
       </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.NotLoggedIn" xml:space="preserve">
-        <source>请登录角色后使用。</source>
-      </trans-unit>
       <trans-unit id="Feature.VoidMateriaTransmutation.Open" xml:space="preserve">
         <source>一键合成魔晶石</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.OpenFailed" xml:space="preserve">
-        <source>未能打开合成魔晶石界面，请查看插件日志。</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.OpenTimedOut" xml:space="preserve">
-        <source>操作超时，未能打开合成魔晶石界面。</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.Opening" xml:space="preserve">
-        <source>正在传送或打开合成魔晶石界面。</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.QuestRequired" xml:space="preserve">
-        <source>请先完成任务「{0}」。</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.TeleportFailed" xml:space="preserve">
-        <source>未能到达合成地图，请确认已开放黑尘驿站且当前可以传送。</source>
-      </trans-unit>
-      <trans-unit id="Feature.VoidMateriaTransmutation.Unavailable" xml:space="preserve">
-        <source>合成魔晶石界面尚未就绪。</source>
       </trans-unit>
       <trans-unit id="Feature.VoidMoogleMail.CommandDescription" xml:space="preserve">
         <source>虚空打开莫古邮件</source>
@@ -12452,24 +12434,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="WidescreenCutsceneTitle" xml:space="preserve">
         <source>宽屏过场</source>
       </trans-unit>
-      <trans-unit id="WondrousTailsProbabilityDisplayTitle" xml:space="preserve">
-        <source>天书概率助手</source>
-      </trans-unit>
-      <trans-unit id="WondrousTailsProbabilityDisplayDescription" xml:space="preserve">
-        <source>在天书界面显示至少 1 / 2 / 3 线的概率和重排平均参考。</source>
-      </trans-unit>
-      <trans-unit id="Feature.WondrousTailsProbabilityDisplay.ProbabilityPrefix" xml:space="preserve">
-        <source>连线概率：</source>
-      </trans-unit>
-      <trans-unit id="Feature.WondrousTailsProbabilityDisplay.AveragePrefix" xml:space="preserve">
-        <source>重排平均：</source>
-      </trans-unit>
-      <trans-unit id="Feature.WondrousTailsProbabilityDisplay.ReadFailed" xml:space="preserve">
-        <source>读取失败</source>
-      </trans-unit>
-      <trans-unit id="Feature.WondrousTailsProbabilityDisplay.ProbabilityValue" xml:space="preserve">
-        <source>{0}线 {1:F2}%</source>
-      </trans-unit>
       <trans-unit id="Collection.Source.Unlock.EternalBond" xml:space="preserve">
         <source>推进永结同心纪念任务解锁，标准方案亦可获得。</source>
       </trans-unit>
@@ -12562,6 +12526,168 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoLogin.DataCenterUnavailable" xml:space="preserve">
         <source>DCTravelerX 登录接口未就绪，已停止自动登录。</source>
+      </trans-unit>
+      <trans-unit id="Feature.NearbyPlayerGuard.Range" xml:space="preserve">
+        <source>玩家检测范围</source>
+      </trans-unit>
+      <trans-unit id="BetterWondrousTailsTitle" xml:space="preserve">
+        <source>更好的天书奇谈</source>
+      </trans-unit>
+      <trans-unit id="BetterWondrousTailsDescription" xml:space="preserve">
+        <source>在天书界面显示连线和重排概率，点击任务可快捷打开副本。</source>
+      </trans-unit>
+      <trans-unit id="Feature.BetterWondrousTails.LineProbability" xml:space="preserve">
+        <source>连线概率</source>
+      </trans-unit>
+      <trans-unit id="Feature.BetterWondrousTails.ShuffleProbability" xml:space="preserve">
+        <source>重排概率</source>
+      </trans-unit>
+      <trans-unit id="Feature.BetterWondrousTails.OpenDuty" xml:space="preserve">
+        <source>快捷打开副本</source>
+      </trans-unit>
+      <trans-unit id="Feature.BetterWondrousTails.OpenDuty.Help" xml:space="preserve">
+        <source>优化右键打开目标任务这个多余操作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DeepDungeonMode.Title" xml:space="preserve">
+        <source>深宫无敌模式</source>
+      </trans-unit>
+      <trans-unit id="Feature.DeepDungeonMode.Description" xml:space="preserve">
+        <source>调整角色在死者宫殿、天之御柱、正统优雷卡、朝圣交错路中的高度偏移，以达到无敌的效果。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DeepDungeonMode.HeightOffset" xml:space="preserve">
+        <source>高度偏移</source>
+      </trans-unit>
+      <trans-unit id="Feature.DeepDungeonMode.Help" xml:space="preserve">
+        <source>仅在深层迷宫的普通楼层生效，首领楼层和第 99 层都会自动暂停。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DeepDungeonMode.OnlySolo" xml:space="preserve">
+        <source>仅单人状态时生效</source>
+      </trans-unit>
+      <trans-unit id="Feature.InstantTeleport.Title" xml:space="preserve">
+        <source>即刻传送</source>
+      </trans-unit>
+      <trans-unit id="Feature.InstantTeleport.Description" xml:space="preserve">
+        <source>跳过传送咏唱，快速前往目标地点。</source>
+      </trans-unit>
+      <trans-unit id="Feature.InvulnerableMode.Title" xml:space="preserve">
+        <source>无敌模式</source>
+      </trans-unit>
+      <trans-unit id="Feature.InvulnerableMode.Description" xml:space="preserve">
+        <source>使用指令切换无敌模式，期间无法使用技能和传送。</source>
+      </trans-unit>
+      <trans-unit id="Feature.InvulnerableMode.ToggleCommand" xml:space="preserve">
+        <source>切换进入或退出无敌模式</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreFlightRestriction.Title" xml:space="preserve">
+        <source>无视飞行限制</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreFlightRestriction.Description" xml:space="preserve">
+        <source>允许在受限区域起飞。</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreMountRestriction.Title" xml:space="preserve">
+        <source>无视骑乘限制</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreMountRestriction.Description" xml:space="preserve">
+        <source>解除区域附加的“无法骑乘坐骑”限制。</source>
+      </trans-unit>
+      <trans-unit id="Feature.TellInDuty.Title" xml:space="preserve">
+        <source>副本内悄悄话</source>
+      </trans-unit>
+      <trans-unit id="Feature.TellInDuty.Description" xml:space="preserve">
+        <source>解除副本内悄悄话的客户端限制，并补充右键私聊入口。</source>
+      </trans-unit>
+      <trans-unit id="Feature.ProhibitSwimming.Title" xml:space="preserve">
+        <source>禁止游泳</source>
+      </trans-unit>
+      <trans-unit id="Feature.ProhibitSwimming.Description" xml:space="preserve">
+        <source>禁止角色进入游泳状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.InstantTeleport.DisableWhenPlayersAround" xml:space="preserve">
+        <source>周围有玩家时禁用</source>
+      </trans-unit>
+      <trans-unit id="Feature.InstantTeleport.PlayerDetectionRange" xml:space="preserve">
+        <source>玩家检测范围</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreFlightRestriction.DisableWhenPlayersAround" xml:space="preserve">
+        <source>周围有玩家时禁用</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreFlightRestriction.PlayerDetectionRange" xml:space="preserve">
+        <source>玩家检测范围</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreMountRestriction.DisableWhenPlayersAround" xml:space="preserve">
+        <source>周围有玩家时禁用</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreMountRestriction.PlayerDetectionRange" xml:space="preserve">
+        <source>玩家检测范围</source>
+      </trans-unit>
+      <trans-unit id="Command.invulnerable.Description" xml:space="preserve">
+        <source>切换进入或退出无敌模式</source>
+      </trans-unit>
+      <trans-unit id="Command.invulnerable.Name" xml:space="preserve">
+        <source>无敌模式</source>
+      </trans-unit>
+      <trans-unit id="Command.invulnerable.Usage" xml:space="preserve">
+        <source>用法：/omni invulnerable</source>
+      </trans-unit>
+      <trans-unit id="Feature.FriendListInDuty.Title" xml:space="preserve">
+        <source>副本内好友名单</source>
+      </trans-unit>
+      <trans-unit id="Feature.FriendListInDuty.Description" xml:space="preserve">
+        <source>解除副本内好友名单限制，防止游戏清空已加载数据，并支持刷新好友状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.FriendListInDuty.CommandOpen" xml:space="preserve">
+        <source>在副本内打开好友名单</source>
+      </trans-unit>
+      <trans-unit id="Feature.FriendListInDuty.CommandRefresh" xml:space="preserve">
+        <source>在副本内刷新已有好友状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.FriendListInDuty.Open" xml:space="preserve">
+        <source>打开好友名单</source>
+      </trans-unit>
+      <trans-unit id="Feature.FriendListInDuty.Refresh" xml:space="preserve">
+        <source>刷新好友状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.FriendListInDuty.Help" xml:space="preserve">
+        <source>需先在副本外加载名单；副本内刷新已有好友状态，名单增删需出本同步。</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.Title" xml:space="preserve">
+        <source>更好的队员招募</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.Description" xml:space="preserve">
+        <source>解除副本内无法查看队员招募的限制，并在原生界面预览国服所有大区的公开招募。</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.Source" xml:space="preserve">
+        <source>人数 {0}/{1} · 平均品级 {2} · {3} 秒前更新</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.ReadOnly" xml:space="preserve">
+        <source>共享条目仅供预览，不能加入</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.Details" xml:space="preserve">
+        <source>共享招募详情</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.Remaining" xml:space="preserve">
+        <source>招募剩余 {0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.OpenSlots" xml:space="preserve">
+        <source>空缺 {0}/{1}</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.Parties" xml:space="preserve">
+        <source>小队 {0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.Composition" xml:space="preserve">
+        <source>职业需求</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.PresentJobs" xml:space="preserve">
+        <source>已有职业：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.NoJobRestriction" xml:space="preserve">
+        <source>未限制职业</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.None" xml:space="preserve">
+        <source>无</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.Close" xml:space="preserve">
+        <source>关闭</source>
       </trans-unit>
     </body>
   </file>
