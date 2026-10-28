@@ -24,8 +24,8 @@
 在 Omni 主仓库根目录运行：
 
 ```powershell
-dotnet run --project tests/OmniToolbox.Test -c Release -- --generate-traditional OmniToolbox.Localizations
-dotnet run --project tests/OmniToolbox.Test -c Release -- --validate-localizations OmniToolbox.Localizations
+dotnet run --project tools/OmniToolbox.LocalizationTool -c Release -- --generate-traditional OmniToolbox.Localizations
+dotnet run --project tools/OmniToolbox.LocalizationTool -c Release -- --validate-localizations OmniToolbox.Localizations
 ```
 
 校验检查资源名称、语言角色、重复 ID、简繁完整性、其他语言的源键归属、非法字符和已填写译文的占位符。失败返回非零退出码。

@@ -75,7 +75,7 @@
         <source>自动无人岛</source>
       </trans-unit>
       <trans-unit id="AutoKeyboundBrawlerDescription" xml:space="preserve">
-        <source>自动完成魔光键影活动。</source>
+        <source>自动完成魔光键影，结算后自动退本，并按设定次数重复排本。</source>
       </trans-unit>
       <trans-unit id="AutoKeyboundBrawlerTitle" xml:space="preserve">
         <source>自动魔光键影</source>
@@ -3114,6 +3114,12 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       <trans-unit id="Feature.AutoKeyboundBrawler.NoWords" xml:space="preserve">
         <source>未能读取魔光键影词库，无法启用自动输入。</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.PartyMode" xml:space="preserve">
+        <source>组队模式</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.PartyModeHelp" xml:space="preserve">
+        <source>队伍不满 4 人时，禁止自动排本。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.QueueCount" xml:space="preserve">
         <source>排本次数</source>
       </trans-unit>
@@ -3127,7 +3133,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>随机发送间隔</source>
       </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelayHelp" xml:space="preserve">
-        <source>在 0.5 秒至设定上限之间随机等待。</source>
+        <source>在 0.2 秒至设定上限之间随机等待，网速不好建议稳妥 0.5 秒。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoLogin.Add" xml:space="preserve">
         <source>添加</source>
