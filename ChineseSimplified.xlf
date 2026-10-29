@@ -11986,6 +11986,26 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Settings.Ui.PluginConfig.Open" xml:space="preserve">
         <source>打开文件夹</source>
       </trans-unit>
+      <trans-unit id="Settings.Ui.RecommendedFeatures" xml:space="preserve">
+        <source>推荐功能</source>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.RecommendedFeatures.DisableConfirm" xml:space="preserve">
+        <source>确认关闭Omni默认推荐的功能吗？可能会导致部分功能无法正常运行，请勿在对功能不了解时盲目关闭！！！</source>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.RecommendedFeatures.Help" xml:space="preserve">
+        <source>物品价格查询：显示市场价格、请求报价；
+物品查询：显示持有数量、存放位置等信息；
+物品预览：补充物品信息、图片及目标外观预览；
+虚空市场板：在允许的地图打开市场板、购买物品；
+虚空 NPC 商店：寻路并完成 NPC 商店购买；
+虚空投影台/收藏柜：使用收藏柜、在旅馆打开投影台；
+虚空部队箱：当前地图有部队箱时，寻路并交互打开；
+快捷跨界传送：快捷选择服务器、跨界传送；
+更好的传送管理：水晶交互、地图水晶点击传送等；
+自动跳过对话：自动点击普通对话窗口；
+自动跳过过场动画：自动跳过动画；
+更快的搜索结果：加速市场板、制作笔记和部队箱搜索。</source>
+      </trans-unit>
       <trans-unit id="Settings.Ui.ResetSize" xml:space="preserve">
         <source>默认设置</source>
       </trans-unit>
