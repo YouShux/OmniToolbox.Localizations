@@ -1930,6 +1930,18 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>用法：/omni chatlogreplay</source>
         <target>用法：/omni chatlogreplay</target>
       </trans-unit>
+      <trans-unit id="Command.cleartryon.Description" xml:space="preserve">
+        <source>清理试穿残留</source>
+        <target>清理試穿殘留</target>
+      </trans-unit>
+      <trans-unit id="Command.cleartryon.Name" xml:space="preserve">
+        <source>清理试穿</source>
+        <target>清理試穿</target>
+      </trans-unit>
+      <trans-unit id="Command.cleartryon.Usage" xml:space="preserve">
+        <source>用法：/omni cleartryon</source>
+        <target>用法：/omni cleartryon</target>
+      </trans-unit>
       <trans-unit id="Command.fcaction.Description" xml:space="preserve">
         <source>购买指定编号的部队特效</source>
         <target>購買指定編號的部隊特效</target>
@@ -6660,6 +6672,14 @@ DOT/HOT 效果平均每 {0:F1} 點提高 0.1%。</target>
         <source>在任意位置均可交互水晶传送，点击地图水晶图标直接传送，特殊场景水晶使用寻路，未共鸣水晶使用虚空共鸣</source>
         <target>在任意位置均可交互水晶傳送，點擊地圖水晶圖標直接傳送，特殊場景水晶使用尋路，未共鳴水晶使用虛空共鳴</target>
       </trans-unit>
+      <trans-unit id="Feature.BetterTeleportManagement.EnableNativeMapTravel" xml:space="preserve">
+        <source>展开地图传送寻路</source>
+        <target>展開地圖傳送尋路</target>
+      </trans-unit>
+      <trans-unit id="Feature.BetterTeleportManagement.EnableNativeMapTravelHint" xml:space="preserve">
+        <source>在游戏展开地图中悬停图标时高亮，点击后先传送至附近水晶，再寻路前往目标。</source>
+        <target>在游戲展開地圖中懸停圖標時高亮，點擊后先傳送至附近水晶，再尋路前往目標。</target>
+      </trans-unit>
       <trans-unit id="Feature.BetterTeleportManagement.ShowCastDestination" xml:space="preserve">
         <source>咏唱显示具体目的地</source>
         <target>詠唱顯示具體目的地</target>
@@ -8328,6 +8348,14 @@ Mount（坐騎）、Retainer（雇員）等。</target>
         <source>副本内好友名单</source>
         <target>副本內好友名單</target>
       </trans-unit>
+      <trans-unit id="Feature.HideMinimapIcons.AetherytesOnTop" xml:space="preserve">
+        <source>以太水晶置顶</source>
+        <target>以太水晶置頂</target>
+      </trans-unit>
+      <trans-unit id="Feature.HideMinimapIcons.AetherytesOnTopHint" xml:space="preserve">
+        <source>将小地图和展开地图上的以太之光、都市传送网图标显示在其他地图图标上方。</source>
+        <target>將小地圖和展開地圖上的以太之光、都市傳送網圖標顯示在其他地圖圖標上方。</target>
+      </trans-unit>
       <trans-unit id="Feature.HideMinimapIcons.HideOnAreaMap" xml:space="preserve">
         <source>展开地图隐藏</source>
         <target>展開地圖隱藏</target>
@@ -8343,6 +8371,14 @@ Mount（坐騎）、Retainer（雇員）等。</target>
       <trans-unit id="Feature.HideMinimapIcons.IconTooltip" xml:space="preserve">
         <source>图标 ID：{0}</source>
         <target>圖標 ID：{0}</target>
+      </trans-unit>
+      <trans-unit id="Feature.HideMinimapIcons.KeepTextWhenHidden" xml:space="preserve">
+        <source>隐藏图标保留文本</source>
+        <target>隱藏圖標保留文本</target>
+      </trans-unit>
+      <trans-unit id="Feature.HideMinimapIcons.KeepTextWhenHiddenHint" xml:space="preserve">
+        <source>隐藏所选图标时保留对应的地图文字。展开地图需开启左侧“T”按钮的文字显示。</source>
+        <target>隱藏所選圖標時保留對應的地圖文字。展開地圖需開啟左側「T」按鈕的文字顯示。</target>
       </trans-unit>
       <trans-unit id="Feature.HotbarAdjustments.BackgroundOpacity" xml:space="preserve">
         <source>背景不透明度</source>
@@ -13835,8 +13871,8 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>同步顯示裝備幻化名</target>
       </trans-unit>
       <trans-unit id="HideMinimapIconsDescription" xml:space="preserve">
-        <source>调整小地图/展开地图的图标。</source>
-        <target>調整小地圖/展開地圖的圖標。</target>
+        <source>隐藏或缩放小地图和展开地图的图标，支持以太水晶图标置顶。</source>
+        <target>隱藏或縮放小地圖和展開地圖的圖標，支持以太水晶圖標置頂。</target>
       </trans-unit>
       <trans-unit id="HideMinimapIconsTitle" xml:space="preserve">
         <source>调整地图图标</source>
@@ -15668,6 +15704,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>仓库版本：{0}</source>
         <target>倉庫版本：{0}</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.LinkCopied" xml:space="preserve">
+        <source>已复制在线模块链接</source>
+        <target>已復制在線模塊鏈接</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.LocalizationKeysInvalid" xml:space="preserve">
         <source>在线模块介绍只允许 Title 和 Description 词条。</source>
         <target>在線模塊介紹只允許 Title 和 Description 詞條。</target>
@@ -15719,6 +15759,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="OnlineModules.RepositoryRequired" xml:space="preserve">
         <source>在线模块清单必须填写完整的 RepositoryURL，格式为 https://github.com/owner/repository。</source>
         <target>在線模塊清單必須填寫完整的 RepositoryURL，格式為 https://github.com/owner/repository。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RepositoryRateLimited" xml:space="preserve">
+        <source>GitHub 请求已限流，已暂停仓库检查。请在 {0} 秒后重试。</source>
+        <target>GitHub 請求已限流，已暫停倉庫檢查。請在 {0} 秒后重試。</target>
       </trans-unit>
       <trans-unit id="OnlineModules.RepositoryUnavailable" xml:space="preserve">
         <source>无法确认 GitHub 仓库的公开状态，已阻止加载。请检查网络及 GitHub 访问情况后重试。</source>
@@ -16329,6 +16373,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="Settings.Ui.LocalModules.Loaded" xml:space="preserve">
         <source>已加载 {0} 个功能</source>
         <target>已加載 {0} 個功能</target>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.LocalModules.PathCopied" xml:space="preserve">
+        <source>已复制本地模块路径</source>
+        <target>已復制本地模塊路徑</target>
       </trans-unit>
       <trans-unit id="Settings.Ui.LocalModules.PathHint" xml:space="preserve">
         <source>本地 .dll 或 .cs 文件路径...</source>
