@@ -3120,6 +3120,14 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       <trans-unit id="Feature.AutoKeyboundBrawler.CNOnly" xml:space="preserve">
         <source>该功能仅支持国服客户端。</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.IncorrectInputChance" xml:space="preserve">         <source>打错概率</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.IncorrectInputChanceHelp" xml:space="preserve">         <source>0% 全对，100% 全错。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.InsertIncorrectInput" xml:space="preserve">         <source>随机打错</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.InsertIncorrectInputHelp" xml:space="preserve">         <source>按设定概率打错，会中断连击并影响得分。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.NoWords" xml:space="preserve">
         <source>未能读取魔光键影词库，无法启用自动输入。</source>
       </trans-unit>
@@ -3139,10 +3147,16 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>停止</source>
       </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelay" xml:space="preserve">
-        <source>随机发送间隔</source>
+        <source>打字间隔</source>
       </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelayHelp" xml:space="preserve">
-        <source>在 0.2 秒至设定上限之间随机等待，网速不好建议稳妥 0.5 秒。</source>
+        <source>在设定的最小与最大间隔之间随机发送，可设置 0.1 至 5 秒。间隔过短仍会受游戏动作冷却和网络延迟影响。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelayMaximum" xml:space="preserve">
+        <source>最大间隔</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelayMinimum" xml:space="preserve">
+        <source>最小间隔</source>
       </trans-unit>
       <trans-unit id="Feature.AutoLogin.Add" xml:space="preserve">
         <source>添加</source>
@@ -8178,17 +8192,29 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.NpcShopPurchase.Status.Confirming" xml:space="preserve">
         <source>正在确认购买</source>
       </trans-unit>
+      <trans-unit id="Feature.NpcShopPurchase.Status.ExchangeChanged" xml:space="preserve">
+        <source>兑换来源或成本已变化，请重新选择。</source>
+      </trans-unit>
+      <trans-unit id="Feature.NpcShopPurchase.Status.ExchangeQuantity" xml:space="preserve">
+        <source>剩余目标不足一份兑换数量，请调整目标。</source>
+      </trans-unit>
       <trans-unit id="Feature.NpcShopPurchase.Status.ExchangeUnavailable" xml:space="preserve">
         <source>当前军团、军阶或军票数量不满足兑换条件</source>
       </trans-unit>
       <trans-unit id="Feature.NpcShopPurchase.Status.Failed" xml:space="preserve">
         <source>虚空NPC购买失败</source>
       </trans-unit>
+      <trans-unit id="Feature.NpcShopPurchase.Status.InsufficientCurrency" xml:space="preserve">
+        <source>货币不足，等待再次达到兑换阈值。</source>
+      </trans-unit>
       <trans-unit id="Feature.NpcShopPurchase.Status.Interacted" xml:space="preserve">
         <source>已交互 NPC</source>
       </trans-unit>
       <trans-unit id="Feature.NpcShopPurchase.Status.InvalidRequest" xml:space="preserve">
         <source>物品 ID 或数量无效</source>
+      </trans-unit>
+      <trans-unit id="Feature.NpcShopPurchase.Status.InventoryFull" xml:space="preserve">
+        <source>背包空间不足，兑换已暂停。</source>
       </trans-unit>
       <trans-unit id="Feature.NpcShopPurchase.Status.ItemUnavailable" xml:space="preserve">
         <source>当前商店没有该物品</source>
@@ -9730,16 +9756,16 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>不选中他人宝箱怪</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.CollectMoneyBags" xml:space="preserve">
-        <source>TP 钱袋</source>
+        <source>TP 钱袋、魔法阵</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.CollectMoneyBags.Tooltip" xml:space="preserve">
-        <source>仅在 G18 藏宝洞洞内（区域 ID 1279）自动拾取钱袋，其它地图不扫描、不执行。</source>
+        <source>在藏宝副本中优先传送并收取钱袋，再传送至可交互的魔法阵并自动确认。</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.CommandDescription" xml:space="preserve">
-        <source>一键买三张宝图并存入鞍囊后解读（例: /omni treasuremap 12345 50000）</source>
+        <source>一键买三张宝图并存入鞍囊后解读</source>
       </trans-unit>
-      <trans-unit id="Feature.TreasureMap.ItemId" xml:space="preserve">
-        <source>藏宝图ID</source>
+      <trans-unit id="Feature.TreasureMap.Map" xml:space="preserve">
+        <source>藏宝图</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.LocationPrefix" xml:space="preserve">
         <source>藏宝图位置 → </source>
@@ -9748,7 +9774,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>一键买图解读</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.OneClick.Tooltip" xml:space="preserve">
-        <source>自动购买三个藏宝图，玩家版本、鸟包、解读！</source>
+        <source>按所选藏宝图补齐三张，分别保留在背包、鞍囊和已解读状态。仅能购买可在市场交易的藏宝图。</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.OpenMap" xml:space="preserve">
         <source>解读后标记位置</source>
@@ -10829,6 +10855,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Monitor.Add.Title" xml:space="preserve">
         <source>添加物品:</source>
       </trans-unit>
+      <trans-unit id="Monitor.AddButton" xml:space="preserve">
+        <source>添加物品</source>
+      </trans-unit>
       <trans-unit id="Monitor.AutoRestock" xml:space="preserve">
         <source>启用</source>
       </trans-unit>
@@ -10836,15 +10865,16 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>{0} x{1} 购买完成</source>
       </trans-unit>
       <trans-unit id="Monitor.AutoRestock.Help" xml:space="preserve">
-        <source>自动补货：需开启树树妙妙屋的 虚空购买{0}；
-固定市场板：只从市场板进行补货；
-固定NPC商店：只从NPC商店进行补货；
-优先市场板：优先从市场板进行补货，无法补货到指定数量时执行NPC商店补货；
-优先NPC商店：优先从NPC商店进行补货，无法补货到指定数量时执行市场板补货；
-特别说明：自动补货会将物品补充至数量阈值，市场板补货需填写价格限制，
-{1}，市场板补货自动购买最优惠的指定数量物品！NPC商店补货仅支
-持普通品质物品，并且需要开启自动寻路。理论上所有物品都可以添加数量阈值
-提醒，物品ID可从物品查询或显示ID信息功能获取。</source>
+        <source>根据设置的来源自动购买或兑换物品。
+固定市场板：仅通过市场板补货；
+固定 NPC 商店：仅通过 NPC 商店补货；
+优先市场板／NPC 商店：优先使用指定来源，数量不足时尝试另一来源。
+常规补货：将持有数量补至目标数量。市场板限价为单价上限，0 表示不限价。
+货币兑换：余额达到开始阈值后，按同组优先级依次兑换；前项累计目标完成后，再处理下一项。
+使用前需启用对应功能并完成所需验证；涉及寻路时需启用自动寻路。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.AutoRestock.HelpTitle" xml:space="preserve">
+        <source>物品自动获取</source>
       </trans-unit>
       <trans-unit id="Monitor.AutoRestock.PriceUnlimited" xml:space="preserve">
         <source>0表示不限制价格</source>
@@ -11310,14 +11340,137 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Monitor.MaxUnitPrice" xml:space="preserve">
         <source>最高单价</source>
       </trans-unit>
+      <trans-unit id="Monitor.NoMatches" xml:space="preserve">
+        <source>没有匹配的监控物品</source>
+      </trans-unit>
       <trans-unit id="Monitor.Preview" xml:space="preserve">
         <source>预览</source>
       </trans-unit>
       <trans-unit id="Monitor.ResetItems" xml:space="preserve">
         <source>重置</source>
       </trans-unit>
+      <trans-unit id="Monitor.Restock.AcquisitionMode" xml:space="preserve">
+        <source>获取方式</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.ConfirmedQuantity" xml:space="preserve">
+        <source>本角色累计已兑换：{0}</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.CumulativeHelp" xml:space="preserve">
+        <source>仅累计本规则自动兑换成功的数量，使用物品不减少进度。达到目标后才处理下一项。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.CumulativeProgress" xml:space="preserve">
+        <source>累计兑换</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.CumulativeTarget" xml:space="preserve">
+        <source>累计兑换目标</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.CurrencyBalance" xml:space="preserve">
+        <source>当前 {0} / {1}</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.CurrencyEnabled" xml:space="preserve">
+        <source>启用本组</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.CurrentBalance" xml:space="preserve">
+        <source>当前 {0}</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Empty" xml:space="preserve">
+        <source>在预警页为物品勾选补货后，可在此设置获取方式。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.ExchangeSource" xml:space="preserve">
+        <source>兑换来源</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Help" xml:space="preserve">
+        <source>勾选补货后，可选择库存补货或按货币阈值累计兑换。每种货币按顺序执行，余额不足时等待再次达到阈值；失败暂停后可点击重试/继续。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.InventoryTarget" xml:space="preserve">
+        <source>库存补至</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.InventoryWarning" xml:space="preserve">
+        <source>库存预警</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.ItemEnabled" xml:space="preserve">
+        <source>启用此监控</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.MarketAutoBuy" xml:space="preserve">
+        <source>市场低价自动购买</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.MarketAutoBuyAll" xml:space="preserve">
+        <source>低价购买全部符合条件的数量</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.MarketAutoBuyOnlyHQ" xml:space="preserve">
+        <source>低价购买仅限 HQ</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.MarketSettings" xml:space="preserve">
+        <source>市场购买设置</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Mode.Exchange" xml:space="preserve">
+        <source>货币兑换</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Mode.Inventory" xml:space="preserve">
+        <source>库存补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.NoExchangeSource" xml:space="preserve">
+        <source>此物品没有可自动兑换的 NPC 来源。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.PaymentCurrency" xml:space="preserve">
+        <source>触发货币</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.PendingConfiguration" xml:space="preserve">
+        <source>待配置兑换</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.PriceWarning" xml:space="preserve">
+        <source>市场价格预警</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Regular" xml:space="preserve">
+        <source>常规补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Resume" xml:space="preserve">
+        <source>重试/继续</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.SelectSource" xml:space="preserve">
+        <source>请选择 NPC 与兑换项</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Settings" xml:space="preserve">
+        <source>补货设置</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.SourceDescription" xml:space="preserve">
+        <source>{0} · {1} / {2} 个</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Status" xml:space="preserve">
+        <source>状态</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Status.Completed" xml:space="preserve">
+        <source>已完成</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Status.Paused" xml:space="preserve">
+        <source>已暂停</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Status.Ready" xml:space="preserve">
+        <source>等待执行</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Status.Running" xml:space="preserve">
+        <source>正在兑换</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Status.WaitingPriority" xml:space="preserve">
+        <source>等待前项完成</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Status.WaitingThreshold" xml:space="preserve">
+        <source>等待达到触发阈值</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.TriggerThreshold" xml:space="preserve">
+        <source>开始阈值</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Search" xml:space="preserve">
+        <source>搜索物品名称或 ID</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Settings" xml:space="preserve">
+        <source>提醒设置</source>
+      </trans-unit>
       <trans-unit id="Monitor.Tab.Ledger" xml:space="preserve">
         <source>收支</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Tab.Restock" xml:space="preserve">
+        <source>补货</source>
       </trans-unit>
       <trans-unit id="Monitor.Tab.Warnings" xml:space="preserve">
         <source>预警</source>
@@ -12750,6 +12903,201 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.PartyFinderInDuty.Close" xml:space="preserve">
         <source>关闭</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Group.Currencies" xml:space="preserve">
+        <source>货币与军票</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Group.Tomestones" xml:space="preserve">
+        <source>神典石</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Group.Items" xml:space="preserve">
+        <source>普通物品</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Group.Count" xml:space="preserve">
+        <source>{0}（{1} 项）</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Pause" xml:space="preserve">
+        <source>暂停</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Continue" xml:space="preserve">
+        <source>继续</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.ThresholdHelp" xml:space="preserve">
+        <source>余额达到阈值后开始一轮兑换。本轮余额降到阈值以下时仍继续，直到目标完成或余额不足。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Target" xml:space="preserve">
+        <source>累计目标</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Quantity" xml:space="preserve">
+        <source>已换 {0}</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.InventoryCurrent" xml:space="preserve">
+        <source>当前 {0}</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.InventoryReady" xml:space="preserve">
+        <source>库存充足</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.WaitingRestock" xml:space="preserve">
+        <source>等待补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.DragPriority" xml:space="preserve">
+        <source>按住并拖动，调整同一货币组内的兑换顺序。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Source" xml:space="preserve">
+        <source>来源</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.RegularSourceHelp" xml:space="preserve">
+        <source>按本行选择的市场板或 NPC 商店来源，将库存补至目标数量。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Remove" xml:space="preserve">
+        <source>移出补货队列，保留监控设置和累计兑换进度。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.RegularSource" xml:space="preserve">
+        <source>常规来源</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.EditTarget" xml:space="preserve">
+        <source>修改目标</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.InventoryTargetValue" xml:space="preserve">
+        <source>补至 {0}</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.ConfiguredSourceUnavailable" xml:space="preserve">
+        <source>已绑定来源暂不可用</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Action.Title" xml:space="preserve">
+        <source>处理方式</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Action.Disabled" xml:space="preserve">
+        <source>停用</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Action.Reminder" xml:space="preserve">
+        <source>提醒</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Action.Restock" xml:space="preserve">
+        <source>补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Action.ReminderAndRestock" xml:space="preserve">
+        <source>提醒＋补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.Select" xml:space="preserve">
+        <source>选择</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.Selected" xml:space="preserve">
+        <source>已选 {0} 项</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.Reminder" xml:space="preserve">
+        <source>仅提醒</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.Restock" xml:space="preserve">
+        <source>仅补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.ReminderAndRestock" xml:space="preserve">
+        <source>提醒并补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.Disabled" xml:space="preserve">
+        <source>停用</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.SelectAll" xml:space="preserve">
+        <source>全选当前列表</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.Clear" xml:space="preserve">
+        <source>清除选择</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Batch.Help" xml:space="preserve">
+        <source>勾选仅用于批量设置，不改变运行状态。包含货币或神典石时不能批量设为补货。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Run.Active" xml:space="preserve">
+        <source>监控运行中 · {0} 项提醒 · {1} 项补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Run.Paused" xml:space="preserve">
+        <source>监控已暂停 · {0} 项提醒 · {1} 项补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Run.PauseAll" xml:space="preserve">
+        <source>暂停全部</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Run.ResumeAll" xml:space="preserve">
+        <source>继续全部</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Run.Help" xml:space="preserve">
+        <source>暂停全部提醒和自动购买，保留每项处理方式及兑换进度。恢复后继续按原配置运行。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.TestReminder" xml:space="preserve">
+        <source>测试提醒</source>
+      </trans-unit>
+      <trans-unit id="Monitor.EditConditions" xml:space="preserve">
+        <source>预警条件</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Condition.Quantity" xml:space="preserve">
+        <source>数量预警</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Condition.Price" xml:space="preserve">
+        <source>市场价格预警</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Condition.QuantityAndPrice" xml:space="preserve">
+        <source>数量及市场价格预警</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Condition.CurrencyExchange" xml:space="preserve">
+        <source>按货币余额兑换</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.QuantityColumn" xml:space="preserve">
+        <source>当前／累计</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.GoalColumn" xml:space="preserve">
+        <source>目标</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.SourceAndPrice" xml:space="preserve">
+        <source>来源与限价</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.OrderColumn" xml:space="preserve">
+        <source>优先级</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Disabled" xml:space="preserve">
+        <source>未启用</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.PriorityHelp" xml:space="preserve">
+        <source>优先级 {0}，拖动调整同货币组顺序。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.PriorityColumnHelp" xml:space="preserve">
+        <source>拖动物品左侧的把手调整同货币组内的兑换优先级，按从上到下的顺序执行。前项达到累计目标后才继续下一项；不同货币互不阻挡，常规补货不参与兑换排序。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.UnitPrice" xml:space="preserve">
+        <source>限价</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.TriggerCurrency" xml:space="preserve">
+        <source>触发货币</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.MarketPurchaseMode" xml:space="preserve">
+        <source>市场低价购买</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.MixedMarketPurchase" xml:space="preserve">
+        <source>＋低价购买</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.MarketQuantityAll" xml:space="preserve">
+        <source>全部低价数量</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.MarketQuantityOne" xml:space="preserve">
+        <source>最低价一组</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.WaitingLowPrice" xml:space="preserve">
+        <source>等待低价</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.AddTitle" xml:space="preserve">
+        <source>添加补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.AddDisabled" xml:space="preserve">
+        <source>加入后默认关闭，请在补货列表中勾选启用。</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Group.Currency" xml:space="preserve">
+        <source>货币</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Join" xml:space="preserve">
+        <source>加入补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Joined" xml:space="preserve">
+        <source>已加入补货</source>
+      </trans-unit>
+      <trans-unit id="Monitor.ToggleCategory.Help" xml:space="preserve">
+        <source>勾选启用本类全部预警，取消关闭本类全部预警。筛选未显示的项目也会一并设置。</source>
       </trans-unit>
     </body>
   </file>
