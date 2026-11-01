@@ -20,6 +20,12 @@
       <trans-unit id="AntiCensorshipTitle" xml:space="preserve">
         <source>解除屏蔽词限制</source>
       </trans-unit>
+      <trans-unit id="App.DailyActive" xml:space="preserve">
+        <source>日活跃：{0}</source>
+      </trans-unit>
+      <trans-unit id="App.DailyActive.Help" xml:space="preserve">
+        <source>最近 24 小时内活跃的角色数，同一角色跨设备不重复计算。</source>
+      </trans-unit>
       <trans-unit id="App.Name" xml:space="preserve">
         <source>Omni Toolbox</source>
       </trans-unit>
@@ -39,7 +45,7 @@
         <source>自动接受复活</source>
       </trans-unit>
       <trans-unit id="AutoCutsceneSkipDescription" xml:space="preserve">
-        <source>自动跳过过场动画，包括但不限于主随，海钓，水晶冲突等。</source>
+        <source>自动跳过过场动画，包括主线副本、出海垂钓、水晶冲突及片尾字幕等。</source>
       </trans-unit>
       <trans-unit id="AutoCutsceneSkipTitle" xml:space="preserve">
         <source>自动跳过过场动画</source>
@@ -645,7 +651,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>读取成就</source>
       </trans-unit>
       <trans-unit id="Collection.Relic.ReadAchievements.Help" xml:space="preserve">
-        <source>读取已完成成就；成就完成时，对应特殊武器即使当前未读取到物品，也按已收录显示。</source>
+        <source>读取已完成成就，补全特殊武器收录状态。首次读取在副本外、非战斗且未切换区域时进行。</source>
       </trans-unit>
       <trans-unit id="Collection.Relic.Series.AdvancedAnimal" xml:space="preserve">
         <source>高级动物</source>
@@ -2124,6 +2130,12 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>黑名单：除表格勾选地图外，其他地图均启用自动接受复活。
 白名单：仅在表格勾选地图中启用自动接受复活。</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoCommenceDuty.Description" xml:space="preserve">
+        <source>参加任务确认窗口出现后，自动确认出发。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoCommenceDuty.Title" xml:space="preserve">
+        <source>自动确认参加任务</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoCutsceneSkip.Blacklist" xml:space="preserve">
         <source>黑名单</source>
       </trans-unit>
@@ -2135,7 +2147,8 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoCutsceneSkip.WorkMode.Help" xml:space="preserve">
         <source>黑名单：除表格勾选地图外，其他地图均启用自动跳过。
-白名单：仅在表格勾选地图中启用自动跳过。</source>
+白名单：仅在表格勾选地图中启用自动跳过。
+西萨纳兰默认通过点击对话推进剧情。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoGCSeal.Add" xml:space="preserve">
         <source>添加</source>
@@ -3122,11 +3135,14 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.IncorrectInputChance" xml:space="preserve">         <source>打错概率</source>
       </trans-unit>
-      <trans-unit id="Feature.AutoKeyboundBrawler.IncorrectInputChanceHelp" xml:space="preserve">         <source>0% 全对，100% 全错。</source>
+      <trans-unit id="Feature.AutoKeyboundBrawler.IncorrectInputChanceHelp" xml:space="preserve">
+        <source>0% 不打错，100% 全部打错；打错会中断连击并影响得分。</source>
       </trans-unit>
-      <trans-unit id="Feature.AutoKeyboundBrawler.InsertIncorrectInput" xml:space="preserve">         <source>随机打错</source>
+      <trans-unit id="Feature.AutoKeyboundBrawler.InputsPerRound" xml:space="preserve">
+        <source>每轮处理数量</source>
       </trans-unit>
-      <trans-unit id="Feature.AutoKeyboundBrawler.InsertIncorrectInputHelp" xml:space="preserve">         <source>按设定概率打错，会中断连击并影响得分。</source>
+      <trans-unit id="Feature.AutoKeyboundBrawler.InputsPerRoundHelp" xml:space="preserve">
+        <source>仅组队模式生效，每轮同时处理的目标数。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.NoWords" xml:space="preserve">
         <source>未能读取魔光键影词库，无法启用自动输入。</source>
@@ -3150,7 +3166,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>打字间隔</source>
       </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelayHelp" xml:space="preserve">
-        <source>在设定的最小与最大间隔之间随机发送，可设置 0.1 至 5 秒。间隔过短仍会受游戏动作冷却和网络延迟影响。</source>
+        <source>两轮处理的间隔在设定范围内随机选取，默认 0.5 至 3 秒，可设置 0.2 至 5 秒。间隔过短仍会受游戏动作冷却和网络延迟影响。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoKeyboundBrawler.RandomTypingDelayMaximum" xml:space="preserve">
         <source>最大间隔</source>
@@ -4175,7 +4191,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
 
 副本预设始终使用副本等级；自定义装等默认按当前最高支持等级计算，启用“等级同步”后按同步装等所属等级档计算。目前仅支持 50、60、70、80、90、100级属性公式。
 
-计算结果将自动缓存；游戏数据或计算规则更新后，旧缓存将在下次计算时自动更新；计算过程大概 1s~5min，耗时：坦克＞输出＞治疗</source>
+计算结果将自动缓存；游戏数据或计算规则更新后，旧缓存将在下次计算时自动更新；计算过程大概 {0}~5min，耗时：坦克＞输出＞治疗</source>
       </trans-unit>
       <trans-unit id="Feature.BestInSlotGear.SearchTooLarge" xml:space="preserve">
         <source>候选状态超出精确计算预算，已停止计算，未生成启发式结果。</source>
@@ -4485,11 +4501,11 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.Tooltip.Speed.Alternate" xml:space="preserve">
         <source>
-{0} 当前 {1:F2}s，下一档还需 {2} 点。</source>
+{0} 当前 {1}，下一档还需 {2} 点。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.Tooltip.Speed.Body" xml:space="preserve">
         <source>会缩短 GCD，并提高持续伤害或持续恢复效果。
-当前 {0:F2}s GCD{1}，上一档 {2}，下一档还需 {3} 点，平均每 {4:F1} 点快 0.01 秒。</source>
+当前 {0} GCD{1}，上一档 {2}，下一档还需 {3} 点，平均每 {4:F1} 点快 {5}。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.Tooltip.Speed.DotHot" xml:space="preserve">
         <source>
@@ -4525,9 +4541,6 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.Tooltip.Vitality" xml:space="preserve">
         <source>体力会提高最大生命值。</source>
-      </trans-unit>
-      <trans-unit id="Feature.BetterCharacterPanel.Value.Seconds" xml:space="preserve">
-        <source>{0:F2}s</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.Apply" xml:space="preserve">
         <source>试穿方案</source>
@@ -4893,7 +4906,7 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
         <source>展开地图传送寻路</source>
       </trans-unit>
       <trans-unit id="Feature.BetterTeleportManagement.EnableNativeMapTravelHint" xml:space="preserve">
-        <source>在游戏展开地图中悬停图标时高亮，点击后先传送至附近水晶，再寻路前往目标。</source>
+        <source>在游戏展开地图中悬停图标时高亮并放大。点击后，同区域内当前位置到目标的地图距离不超过附近水晶到目标的距离时直接寻路，否则先传送再寻路。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterTeleportManagement.ShowCastDestination" xml:space="preserve">
         <source>咏唱显示具体目的地</source>
@@ -5346,7 +5359,7 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
         <source>动画锁</source>
       </trans-unit>
       <trans-unit id="Feature.CombatAnimationLockRemoval.AnimationLockMilliseconds.Help" xml:space="preserve">
-        <source>默认300ms，设为0时完全移除动画锁。双插建议550ms，三插建议300ms。
+        <source>默认{0}，设为0时完全移除动画锁。双插建议{1}，三插建议{0}。
 使用该功能可能导致logs红红的，部分自动循环也可能因为动画锁修改影响逻辑！</source>
       </trans-unit>
       <trans-unit id="Feature.CoordinateNearestAetheryte.Column.Id" xml:space="preserve">
@@ -5743,7 +5756,7 @@ Mount（坐骑）、Retainer（雇员）等。</source>
         <source>形状: {0}</source>
       </trans-unit>
       <trans-unit id="Feature.FloatingInfoOverlay.Line.CastTime" xml:space="preserve">
-        <source>咏唱时间: {0:F1}s / {1:F1}s ({2:P0})</source>
+        <source>咏唱时间: {0} / {1} ({2:P0})</source>
       </trans-unit>
       <trans-unit id="Feature.FloatingInfoOverlay.Line.Casting" xml:space="preserve">
         <source>正在咏唱</source>
@@ -5782,7 +5795,7 @@ Mount（坐骑）、Retainer（雇员）等。</source>
         <source>旋转: {0:F3} ({1:F2} 度)</source>
       </trans-unit>
       <trans-unit id="Feature.FloatingInfoOverlay.Line.Status" xml:space="preserve">
-        <source>  {0} ({1}): {2:F1}s</source>
+        <source>  {0} ({1}): {2}</source>
       </trans-unit>
       <trans-unit id="Feature.FloatingInfoOverlay.Line.StatusCount" xml:space="preserve">
         <source>状态效果 ({0}):</source>
@@ -5791,7 +5804,7 @@ Mount（坐骑）、Retainer（雇员）等。</source>
         <source> [{0}]</source>
       </trans-unit>
       <trans-unit id="Feature.FloatingInfoOverlay.Line.StatusWithoutName" xml:space="preserve">
-        <source>  {0}: {1:F1}s</source>
+        <source>  {0}: {1}</source>
       </trans-unit>
       <trans-unit id="Feature.FloatingInfoOverlay.Line.Type" xml:space="preserve">
         <source>类型: {0}</source>
@@ -6397,8 +6410,29 @@ Mount（坐骑）、Retainer（雇员）等。</source>
       <trans-unit id="Feature.InstantRevive.DisableWhenPlayersAround" xml:space="preserve">
         <source>周围有玩家时禁用</source>
       </trans-unit>
+      <trans-unit id="Feature.ItemManagement.AlreadyExists" xml:space="preserve">
+        <source>已存在</source>
+      </trans-unit>
       <trans-unit id="Feature.ItemManagement.CommandDescription" xml:space="preserve">
         <source>自动执行一次丢弃售卖操作</source>
+      </trans-unit>
+      <trans-unit id="Feature.ItemManagement.Export" xml:space="preserve">
+        <source>导出配置</source>
+      </trans-unit>
+      <trans-unit id="Feature.ItemManagement.ExportSuccess" xml:space="preserve">
+        <source>配置已复制到剪贴板。</source>
+      </trans-unit>
+      <trans-unit id="Feature.ItemManagement.Import" xml:space="preserve">
+        <source>导入配置</source>
+      </trans-unit>
+      <trans-unit id="Feature.ItemManagement.ImportFailed" xml:space="preserve">
+        <source>无法读取配置，请确认剪贴板中的内容是受支持的物品管理配置。</source>
+      </trans-unit>
+      <trans-unit id="Feature.ItemManagement.ImportSuccess" xml:space="preserve">
+        <source>已添加 {0} 项物品，跳过 {1} 项重复物品。</source>
+      </trans-unit>
+      <trans-unit id="Feature.ItemManagement.ImportSummary" xml:space="preserve">
+        <source>待导入 {0} 项，已跳过 {1} 项已有物品、{2} 项无效物品。</source>
       </trans-unit>
       <trans-unit id="Feature.ItemManagement.InvalidItemID" xml:space="preserve">
         <source>请输入有效的物品 ID。</source>
@@ -9044,9 +9078,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.SkillMonitor.WeaponSheathed" xml:space="preserve">
         <source>武器收起</source>
       </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.AutoEnter" xml:space="preserve">
-        <source>自动进入战线</source>
-      </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.AutoRotateInstances" xml:space="preserve">
         <source>自动轮换副本</source>
       </trans-unit>
@@ -9123,25 +9154,19 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>当前活动</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.DeathReturnDelaySeconds" xml:space="preserve">
-        <source>死亡返回延迟（秒）</source>
+        <source>死亡返回</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.DebugLogging" xml:space="preserve">
         <source>Debug 日志</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.EnableCriticalEngagements" xml:space="preserve">
-        <source>自动参与 CE</source>
+        <source>参与 CE</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.EnableDuelSpectating" xml:space="preserve">
-        <source>观战单挑获取增益</source>
+        <source>观战单挑</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.EnableFates" xml:space="preserve">
-        <source>自动参与 FATE</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.EntryDelaySeconds" xml:space="preserve">
-        <source>进图延迟（秒）</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.EventSelection" xml:space="preserve">
-        <source>参与活动</source>
+        <source>参与 FATE</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Expand" xml:space="preserve">
         <source>展开</source>
@@ -9156,10 +9181,8 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>等待当前区域切换或副本操作完成</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.AssassinationSource" xml:space="preserve">
-        <source>战线3层星怪；暗杀碎晶鉴定</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.Flow.AutoEntryDisabled" xml:space="preserve">
-        <source>自动进入已关闭，请前往{0}后重试</source>
+        <source>暗杀碎晶鉴定
+战线三层星怪</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.AutoPathDisabled" xml:space="preserve">
         <source>Omni 自动寻路未启用</source>
@@ -9186,13 +9209,16 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>等待当前 CE 场地内可攻击的敌人</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.CommonBlessingSource" xml:space="preserve">
-        <source>全职业通用；战线3层生物怪；祝福碎晶鉴定</source>
+        <source>祝福碎晶鉴定
+战线 / 高原三层 5 级生物怪</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.CommonCompassionSource" xml:space="preserve">
-        <source>全职业通用；战线3层元精/高原3层元精；献身碎晶鉴定</source>
+        <source>献身碎晶鉴定
+战线 / 高原三层元精（随天气出现）</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.CommonVigilanceSource" xml:space="preserve">
-        <source>全职业通用；战线3层CE（决意碎晶）</source>
+        <source>决意碎晶鉴定
+战线三层 CE（魔导劳工除外）</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.DeathReturnCountdown" xml:space="preserve">
         <source>角色已死亡，{0} 秒后尝试返回</source>
@@ -9255,7 +9281,8 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>正在观战单挑，等待挑战结果</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.EleganceSource" xml:space="preserve">
-        <source>高原2层元精/星怪；华丽碎晶鉴定</source>
+        <source>华丽碎晶鉴定
+高原二层元精（随天气出现） / 星怪</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.EnableModule" xml:space="preserve">
         <source>请先在树树妙妙屋启用模块</source>
@@ -9285,7 +9312,8 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>等待当前活动状态同步，暂不开始下一次寻路</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.FaithSource" xml:space="preserve">
-        <source>攻城人质1箱/旗舰宝箱；信仰碎晶鉴定</source>
+        <source>信仰碎晶鉴定
+攻城人质第 1 箱 / 旗舰宝箱</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.FateAlmostFinished" xml:space="preserve">
         <source>FATE 完成度超过 90%，跳过本次活动</source>
@@ -9336,10 +9364,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>等待可攻击的 FATE 怪物</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.FerocitySource" xml:space="preserve">
-        <source>高原1层部分生物怪；狰狞碎晶鉴定</source>
+        <source>狰狞碎晶鉴定
+高原一层部分生物怪</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.FortificationSource" xml:space="preserve">
-        <source>战线1层生物怪；强化碎晶鉴定</source>
+        <source>强化碎晶鉴定
+战线一层生物怪</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.GangosApproachRequired" xml:space="preserve">
         <source>请靠近甘戈斯的进图 NPC 后重试{0}</source>
@@ -9420,10 +9450,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>副本人数低于 {0}，正在轮换副本</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.PrayerSource" xml:space="preserve">
-        <source>古殿/零式古殿宝箱；祈祷碎晶鉴定</source>
+        <source>祈祷碎晶鉴定
+古殿小 BOSS 宝箱（含零式） / 1 博兹雅晶簇兑换</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.PrecisionSource" xml:space="preserve">
-        <source>古殿/零式古殿宝箱；射技碎晶鉴定</source>
+        <source>射技碎晶鉴定
+古殿小 BOSS 宝箱（含零式） / 1 博兹雅晶簇兑换</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.PromotionCompleted" xml:space="preserve">
         <source>义军等级已提升，继续探索</source>
@@ -9501,13 +9533,16 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>正在选择进入{0}</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.SleepSource" xml:space="preserve">
-        <source>战线2层生物怪；催眠碎晶鉴定</source>
+        <source>催眠碎晶鉴定
+战线二层生物怪</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.SwordplaySource" xml:space="preserve">
-        <source>古殿/零式古殿宝箱；剑豪碎晶鉴定</source>
+        <source>剑豪碎晶鉴定
+古殿小 BOSS 宝箱（含零式） / 1 博兹雅晶簇兑换</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.TacticsSource" xml:space="preserve">
-        <source>攻城人质3箱/旗舰宝箱；战术碎晶鉴定</source>
+        <source>战术碎晶鉴定
+攻城人质第 3 箱 / 旗舰宝箱</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.TankProfile" xml:space="preserve">
         <source>防护职业</source>
@@ -9570,10 +9605,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>暂无可参与的活动，正在原地等待</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.WisdomSource" xml:space="preserve">
-        <source>古殿/零式古殿宝箱；睿智碎晶鉴定</source>
+        <source>睿智碎晶鉴定
+古殿小 BOSS 宝箱（含零式） / 1 博兹雅晶簇兑换</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.WrathSource" xml:space="preserve">
-        <source>高原1层部分生物怪；怒涛碎晶鉴定</source>
+        <source>怒涛碎晶鉴定
+高原一层部分生物怪</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.YanxiaArrivalFailed" xml:space="preserve">
         <source>无法到达延夏交通 NPC</source>
@@ -9618,7 +9655,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>未进入游戏区域</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.InstanceStayMinutes" xml:space="preserve">
-        <source>副本停留时间（分钟）</source>
+        <source>副本停留</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.InvalidZone" xml:space="preserve">
         <source>未选择有效的特殊场景区域。</source>
@@ -9633,6 +9670,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>请先在树树妙妙屋启用自动特殊场景探索模块。</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.MountAfterTeleport" xml:space="preserve">
+        <source>自动上坐骑</source>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.MountAfterTeleport.Help" xml:space="preserve">
         <source>传送、进图或升级对话后自动上坐骑</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.OpenWindow" xml:space="preserve">
@@ -9645,7 +9685,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>参与人数</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.PreferCriticalEngagement" xml:space="preserve">
-        <source>优先参与 CE</source>
+        <source>优先 CE</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Progress" xml:space="preserve">
         <source>活动进度</source>
@@ -9654,25 +9694,25 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>需要在线验证后使用</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.RecommendationCount" xml:space="preserve">
-        <source>建议数量</source>
+        <source>数量</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.RecommendationCountNote" xml:space="preserve">
-        <source>文档未指定持有数量，建议数量按 1 个技能槽或 1 份消耗品显示。括号中的等级为义军解锁等级。</source>
+        <source>数量按 1 个技能槽或 1 份消耗品推荐；等级为义军解锁等级。</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.RecommendationItem" xml:space="preserve">
-        <source>技能/物品</source>
+        <source>技能 / 物品</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.RecommendationJob" xml:space="preserve">
         <source>职业</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.RecommendationRank" xml:space="preserve">
-        <source>解锁等级</source>
+        <source>等级</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.RecommendationSource" xml:space="preserve">
-        <source>获取来源</source>
+        <source>来源</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Recommendations" xml:space="preserve">
-        <source>岛内技能携带推荐</source>
+        <source>技能推荐</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.RecoveryComplete" xml:space="preserve">
         <source>角色已恢复，继续选择活动。</source>
@@ -9682,12 +9722,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.ResolvingAggro" xml:space="preserve">
         <source>正在反击追击角色的敌人，脱战后继续观战或活动流程。</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.ReturnToBase" xml:space="preserve">
-        <source>活动完成后返回基地</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.ReturnToBaseRequested" xml:space="preserve">
-        <source>活动已结束，正在返回基地并等待确认</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.RotateWhenPopulationLow" xml:space="preserve">
         <source>人数过低时轮换</source>
@@ -9705,7 +9739,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>全不选</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.ShowOrdinaryAggroZones" xml:space="preserve">
-        <source>显示普通怪物仇恨范围</source>
+        <source>仇恨范围</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Start" xml:space="preserve">
         <source>启动</source>
@@ -9719,8 +9753,27 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.SpecialScenarioExplorer.Stop" xml:space="preserve">
         <source>关闭</source>
       </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.MinutesFormat" xml:space="preserve">
+        <source>%d 分钟</source>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.PopulationFormat" xml:space="preserve">
+        <source>%d 人</source>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.SecondsFormat" xml:space="preserve">
+        <source>%d 秒</source>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.StatusFailed" xml:space="preserve">
+        <source>执行失败</source>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.StatusIdle" xml:space="preserve">
+        <source>待机</source>
+      </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.TargetZone" xml:space="preserve">
-        <source>目标区域</source>
+        <source>区域</source>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.TestingNotice" xml:space="preserve">
+        <source>目前只支持 AE/PR 的自动循环，并且本人只测试过白魔，其余非奶妈职业一概不知！
+该功能处于测试阶段，目前可能存在很多问题，反馈时请带上 debug 日志。</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.ThirdLayer" xml:space="preserve">
         <source>三层</source>
@@ -9746,11 +9799,29 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.TimelineConverter.Path.Help" xml:space="preserve">
         <source>目标路径是**\AEAssist\Triggerlines</source>
       </trans-unit>
+      <trans-unit id="Feature.TreasureMapAssist.Description" xml:space="preserve">
+        <source>提供藏宝图定位与传送辅助，避免误选他人的宝箱怪。</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMapAssist.Title" xml:space="preserve">
+        <source>挖宝辅助</source>
+      </trans-unit>
       <trans-unit id="Feature.TreasureMap.AutoTeleport" xml:space="preserve">
         <source>自动传送</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.AutoTeleport.Tooltip" xml:space="preserve">
-        <source>解读藏宝图后自动传送至藏宝图最近的水晶处（无需开启「解读后标记位置」）。</source>
+        <source>解读藏宝图后自动传送至藏宝图最近的水晶处。</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Automation.Grade" xml:space="preserve">
+        <source>全自动·G{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Automation.MapCount" xml:space="preserve">
+        <source>本轮张数</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Automation.Start" xml:space="preserve">
+        <source>自动挖宝</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Automation.Tooltip" xml:space="preserve">
+        <source>标有「全自动」的藏宝图可单人完成买图、解图、赶路、挖掘及宝物库；其他藏宝图仅自动备图。全自动按本轮张数运行，缺图时按价格限制补购，需要启用自动寻路并安装 vnavmesh 和 BossMod。</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.BlockOthers" xml:space="preserve">
         <source>不选中他人宝箱怪</source>
@@ -9788,6 +9859,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.TreasureMap.Start" xml:space="preserve">
         <source>开始</source>
       </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.AutomationCompleted" xml:space="preserve">
+        <source>本轮自动挖宝已完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.AutomationTimeout" xml:space="preserve">
+        <source>当前步骤超时，挖宝已停止</source>
+      </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Busy" xml:space="preserve">
         <source>挖宝流程正在运行</source>
       </trans-unit>
@@ -9796,6 +9873,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Cancelled" xml:space="preserve">
         <source>挖宝流程已停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.CombatUnavailable" xml:space="preserve">
+        <source>无法启动自动战斗，请检查 BossMod 配置</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Completed" xml:space="preserve">
         <source>三张藏宝图已准备完成</source>
@@ -9809,8 +9889,44 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.TreasureMap.Status.Deciphering" xml:space="preserve">
         <source>正在使用解读技能</source>
       </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.DependenciesMissing" xml:space="preserve">
+        <source>请启用自动寻路，并确认 vnavmesh 和 BossMod 已加载</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.Digging" xml:space="preserve">
+        <source>正在挖掘宝箱</source>
+      </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Disabled" xml:space="preserve">
         <source>自动挖宝功能未启用</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.Dungeon" xml:space="preserve">
+        <source>正在攻略宝物库</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.DungeonAdvance" xml:space="preserve">
+        <source>正在前往下一层</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.DungeonBags" xml:space="preserve">
+        <source>正在收集钱袋</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.DungeonFailed" xml:space="preserve">
+        <source>宝物库流程未完成，挖宝已停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.DungeonLoot" xml:space="preserve">
+        <source>正在领取宝物</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.EnteringPortal" xml:space="preserve">
+        <source>正在进入宝物库</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.Fighting" xml:space="preserve">
+        <source>战斗中</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.FinishingMap" xml:space="preserve">
+        <source>正在等待本张寻宝结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.HeldMapMismatch" xml:space="preserve">
+        <source>请先处理当前已解读的其他藏宝图</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.HuntFailed" xml:space="preserve">
+        <source>寻宝被游戏拒绝或已超时，流程已停止</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.InvalidMap" xml:space="preserve">
         <source>该物品不是可解读的藏宝图</source>
@@ -9818,11 +9934,23 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.TreasureMap.Status.InvalidRequest" xml:space="preserve">
         <source>藏宝图物品 ID 或价格限制无效</source>
       </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.Looting" xml:space="preserve">
+        <source>正在领取战利品</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.MapPrepared" xml:space="preserve">
+        <source>藏宝图已解读</source>
+      </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.MarketUnavailable" xml:space="preserve">
         <source>市场购买未启用或当前区域没有市场板</source>
       </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.NavigationFailed" xml:space="preserve">
+        <source>无法到达目标，挖宝已停止</source>
+      </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.OneClickDisabled" xml:space="preserve">
         <source>一键买图解读未启用</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.Opening" xml:space="preserve">
+        <source>正在开启宝箱</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Preparing" xml:space="preserve">
         <source>正在检查藏宝图数量与位置</source>
@@ -9833,8 +9961,14 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.TreasureMap.Status.Ready" xml:space="preserve">
         <source>等待挖宝请求</source>
       </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.Retrieving" xml:space="preserve">
+        <source>正在从陆行鸟鞍囊取图</source>
+      </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Selecting" xml:space="preserve">
         <source>正在选择要解读的藏宝图</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.SoloRequired" xml:space="preserve">
+        <source>全自动挖宝仅支持单人，请先退出小队</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.StoreFailed" xml:space="preserve">
         <source>藏宝图存入陆行鸟鞍囊失败</source>
@@ -9845,8 +9979,14 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.TreasureMap.Status.Storing" xml:space="preserve">
         <source>正在把藏宝图存入陆行鸟鞍囊</source>
       </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.Travelling" xml:space="preserve">
+        <source>正在前往藏宝地点</source>
+      </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Unavailable" xml:space="preserve">
         <source>当前验证状态或角色状态不可用</source>
+      </trans-unit>
+      <trans-unit id="Feature.TreasureMap.Status.UnsupportedMap" xml:space="preserve">
+        <source>请选择 G17 或 G18 普通藏宝图</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.WaitingDecipher" xml:space="preserve">
         <source>正在等待藏宝图解读完成</source>
@@ -12290,7 +12430,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>展开/收起窗口</source>
       </trans-unit>
       <trans-unit id="TreasureMapDescription" xml:space="preserve">
-        <source>自动购买、收纳并解读藏宝图，可在解读后标记位置或传送至最近水晶。</source>
+        <source>自动购买、收纳并解读藏宝图，部分藏宝图已支持全自动挖宝。</source>
       </trans-unit>
       <trans-unit id="TreasureMapTitle" xml:space="preserve">
         <source>自动挖宝</source>
@@ -12328,14 +12468,35 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="TreeHouse.Category.Local" xml:space="preserve">
         <source>本地</source>
       </trans-unit>
+      <trans-unit id="TreeHouse.Category.New" xml:space="preserve">
+        <source>新增功能</source>
+      </trans-unit>
       <trans-unit id="TreeHouse.Category.Online" xml:space="preserve">
         <source>在线</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.Category.Popular" xml:space="preserve">
+        <source>最受欢迎</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Commands.Copy" xml:space="preserve">
         <source>复制</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Commands.Title" xml:space="preserve">
         <source>命令：</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.Discovery.EmptyNew" xml:space="preserve">
+        <source>最近三个发布版本暂无新增功能。</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.Discovery.EmptyPopular" xml:space="preserve">
+        <source>本周暂无收藏数据。</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.Discovery.FavoritesHelp" xml:space="preserve">
+        <source>本周收藏该模块的角色数，同一角色在多个收藏分组中仅计一次。数据每日更新，每周一重新统计。</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.Discovery.IntroducedHelp" xml:space="preserve">
+        <source>该模块首次加入的插件发布版本。</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.Discovery.Unavailable" xml:space="preserve">
+        <source>模块数据暂不可用，请稍后重试。</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Empty" xml:space="preserve">
         <source>暂无...</source>
@@ -12369,6 +12530,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Favorite.SelectGroup" xml:space="preserve">
         <source>选择收藏分组</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.ModuleCount.Help" xml:space="preserve">
+        <source>已启动模块数 / 已加载模块总数。</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Recommend" xml:space="preserve">
         <source>推荐功能</source>
@@ -13098,6 +13262,498 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Monitor.ToggleCategory.Help" xml:space="preserve">
         <source>勾选启用本类全部预警，取消关闭本类全部预警。筛选未显示的项目也会一并设置。</source>
+      </trans-unit>
+      <trans-unit id="AutoDeleteDeepDungeonSaveTitle" xml:space="preserve">
+        <source>深层迷宫存档快捷删除</source>
+      </trans-unit>
+      <trans-unit id="AutoDeleteDeepDungeonSaveDescription" xml:space="preserve">
+        <source>手动选择“重置攻略进度”后，自动删除表格中勾选层数范围内的存档。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeleteDeepDungeonSave.FloorRange" xml:space="preserve">
+        <source>{0}–{1} 层</source>
+      </trans-unit>
+      <trans-unit id="AutoMountTitle" xml:space="preserve">
+        <source>自动上下坐骑</source>
+      </trans-unit>
+      <trans-unit id="AutoMountDescription" xml:space="preserve">
+        <source>在指定时机自动召唤坐骑，支持自动起飞及使用技能时下坐骑。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.Triggers" xml:space="preserve">
+        <source>自动召唤：</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.RidingBehavior" xml:space="preserve">
+        <source>骑乘行为：</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.SummonSettings" xml:space="preserve">
+        <source>召唤设置：</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.Mount.Help" xml:space="preserve">
+        <source>未勾选任意坐骑时使用随机坐骑，仅显示已解锁坐骑，可多选，会在选择范围内随机召唤。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.Roulette" xml:space="preserve">
+        <source>随机坐骑</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.SelectedCount" xml:space="preserve">
+        <source>已选 {0} 个坐骑</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.SelectedOnly" xml:space="preserve">
+        <source>仅显示已选</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.NoMatches" xml:space="preserve">
+        <source>没有符合条件的已解锁坐骑</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.ZoneChange" xml:space="preserve">
+        <source>切换区域</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.CraftEnd" xml:space="preserve">
+        <source>生产结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.GatherEnd" xml:space="preserve">
+        <source>采集结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.CombatEnd" xml:space="preserve">
+        <source>战斗结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.Delay" xml:space="preserve">
+        <source>召唤延迟</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.JumpAfterMount" xml:space="preserve">
+        <source>自动起飞</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.JumpAfterMount.Help" xml:space="preserve">
+        <source>仅在当前区域已解锁飞行时生效。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.AutoDismount" xml:space="preserve">
+        <source>使用技能时下坐骑</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.AutoDismount.Help" xml:space="preserve">
+        <source>在地面骑乘时，尝试使用技能会自动下坐骑并重新使用该技能。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.WorkMode" xml:space="preserve">
+        <source>生效区域：</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.Blacklist" xml:space="preserve">
+        <source>黑名单</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.Whitelist" xml:space="preserve">
+        <source>白名单</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.WorkMode.Help" xml:space="preserve">
+        <source>黑名单内的区域不自动上坐骑；白名单模式仅在勾选区域自动上坐骑。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Title" xml:space="preserve">
+        <source>自动深层迷宫</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Description" xml:space="preserve">
+        <source>自动进入深层迷宫，探索楼层、战斗、收集宝箱并循环挑战。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.CommandOpen" xml:space="preserve">
+        <source>打开自动深层迷宫面板</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.CommandStart" xml:space="preserve">
+        <source>开始挑战死者宫殿</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.CommandStop" xml:space="preserve">
+        <source>停止自动深层迷宫</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Open" xml:space="preserve">
+        <source>打开控制面板</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Start" xml:space="preserve">
+        <source>开始挑战</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Stop" xml:space="preserve">
+        <source>停止挑战</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Dungeon" xml:space="preserve">
+        <source>深层迷宫</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Slot" xml:space="preserve">
+        <source>存档槽位</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Target" xml:space="preserve">
+        <source>目标楼层</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Cycles" xml:space="preserve">
+        <source>完成次数</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.CyclesHelp" xml:space="preserve">
+        <source>从第 1 层推进至目标楼层后计为完成一次；填 0 持续循环。失败后从第 1 层重试，仅清理本流程创建的存档。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Gold" xml:space="preserve">
+        <source>收集金宝箱</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Silver" xml:space="preserve">
+        <source>收集银宝箱</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Bronze" xml:space="preserve">
+        <source>收集铜宝箱</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Potion" xml:space="preserve">
+        <source>自动使用恢复药剂</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Threshold" xml:space="preserve">
+        <source>恢复阈值（生命百分比）</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Hybrid" xml:space="preserve">
+        <source>短距移动优化</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.HybridHelp" xml:space="preserve">
+        <source>在普通楼层尝试短距移动；危险区交由 BossMod 处理。首领战使用战斗插件。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Reserves" xml:space="preserve">
+        <source>魔陶器保留数量（0–3）</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Status" xml:space="preserve">
+        <source>当前阶段：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Progress" xml:space="preserve">
+        <source>当前楼层：{0}/{1}　完成：{2} 次　失败：{3} 次</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Supplies" xml:space="preserve">
+        <source>职业：{0}　武器：{1}（耐久 {2}%）
+恢复药剂：{3} × {4}
+魔器武器／防具：{5}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Prerequisites" xml:space="preserve">
+        <source>请在副本外单人开始，并为所选槽位保留空存档。需要 vnavmesh、PromeRotation 或 AEAssist，以及提供危险区与位移检查接口的 BossMod。请准备适用职业、装备与恢复药剂。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error" xml:space="preserve">
+        <source>{0}
+错误码：{1}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Stopped" xml:space="preserve">
+        <source>已停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.ApproachingEntry" xml:space="preserve">
+        <source>前往入口</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Entering" xml:space="preserve">
+        <source>进入迷宫</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Exploring" xml:space="preserve">
+        <source>探索楼层</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Settling" xml:space="preserve">
+        <source>结算楼层</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Leaving" xml:space="preserve">
+        <source>退出迷宫</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Deleting" xml:space="preserve">
+        <source>重置本次存档</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Failed" xml:space="preserve">
+        <source>已中止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Completed" xml:space="preserve">
+        <source>已完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Inspecting" xml:space="preserve">
+        <source>核对存档</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.ReservesHelp" xml:space="preserve">
+        <source>死宫高层准备会保留关键道具。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.MagicStoneReserves" xml:space="preserve">
+        <source>魔石保留数量（0–3）</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.DemicloneReserves" xml:space="preserve">
+        <source>亚灵复制体保留数量（0–3）</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.IncenseReserves" xml:space="preserve">
+        <source>杜松香保留数量（0–3）</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.ErrorContext" xml:space="preserve">
+        <source>出错阶段：{0}　区域：{1}　楼层：{2}　坐标：{3}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.UnknownError" xml:space="preserve">
+        <source>发生未识别的阻塞，请保留错误码以便排查。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.UnknownPosition" xml:space="preserve">
+        <source>位置不可用</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.busy" xml:space="preserve">
+        <source>已有深层迷宫流程正在运行。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.combat_control_failed" xml:space="preserve">
+        <source>无法接管或恢复 BossMod 的移动控制。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.combat_unavailable" xml:space="preserve">
+        <source>未检测到可用战斗循环或所需 BossMod 接口。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.CreatedSaveUnverified" xml:space="preserve">
+        <source>未能确认新存档属于本次流程，已停止操作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.death_unconfirmed" xml:space="preserve">
+        <source>角色已倒地，但尚未收到挑战失败确认。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.dependency_lost" xml:space="preserve">
+        <source>导航或战斗插件不可用，流程已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.dungeon_locked" xml:space="preserve">
+        <source>目标深层迷宫尚未解锁。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.DutyMismatch" xml:space="preserve">
+        <source>实际进入的迷宫与所选目标不一致。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.entry_travel_failed" xml:space="preserve">
+        <source>无法前往深层迷宫入口。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.floor_no_progress" xml:space="preserve">
+        <source>当前楼层长时间没有推进。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.FlowChanged" xml:space="preserve">
+        <source>入场或存档操作状态与预期不一致。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.identity_changed" xml:space="preserve">
+        <source>角色、职业或队伍状态发生变化。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.invalid_dungeon" xml:space="preserve">
+        <source>未识别所选深层迷宫。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.InvalidFloor" xml:space="preserve">
+        <source>所选起始楼层无效。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.InvalidSlot" xml:space="preserve">
+        <source>所选存档槽位无效。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.item_use_unconfirmed" xml:space="preserve">
+        <source>未能确认魔陶器使用成功。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.layout_unavailable" xml:space="preserve">
+        <source>未能读取当前楼层布局。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.mechanic_state_unavailable" xml:space="preserve">
+        <source>无法读取 BossMod 危险区状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.module_unavailable" xml:space="preserve">
+        <source>功能尚未启用、权限不可用或正在停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.native_error" xml:space="preserve">
+        <source>游戏接口调用失败，流程已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.navigation_busy" xml:space="preserve">
+        <source>导航正在被其他任务使用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.navigation_not_ready" xml:space="preserve">
+        <source>导航网格尚未准备完成。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.navigation_taken_over" xml:space="preserve">
+        <source>导航已被其他任务接管。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.navigation_unavailable" xml:space="preserve">
+        <source>导航未启用、插件不可用或正在执行其他任务。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.OwnerChanged" xml:space="preserve">
+        <source>存档操作期间角色发生变化。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.path_failed" xml:space="preserve">
+        <source>多次寻路失败，无法到达目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.save_busy" xml:space="preserve">
+        <source>其他任务正在处理深层迷宫存档。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.save_identity_missing" xml:space="preserve">
+        <source>未取得本次存档的身份信息。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.save_ownership_missing" xml:space="preserve">
+        <source>无法确认当前存档属于本次流程。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.SaveMismatch" xml:space="preserve">
+        <source>当前存档与预期记录不一致。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.SaveNotEmpty" xml:space="preserve">
+        <source>所选槽位已有存档，请选择空槽位。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.SaveOwnershipMissing" xml:space="preserve">
+        <source>未确认存档归属，无法继续操作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.solo_outside_required" xml:space="preserve">
+        <source>请在副本外以单人状态开始。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.stage_timeout" xml:space="preserve">
+        <source>当前操作等待超时。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.stone_use_unconfirmed" xml:space="preserve">
+        <source>未能确认魔石使用成功。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.UIFlowTimeout" xml:space="preserve">
+        <source>入场或存档界面等待超时。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.unexpected_confirmation" xml:space="preserve">
+        <source>出现非预期确认框，已停止操作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.unexpected_exit" xml:space="preserve">
+        <source>尚未确认挑战结束，角色已离开迷宫。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.UnexpectedPrompt" xml:space="preserve">
+        <source>出现非预期游戏对话，已停止操作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.UnsupportedDungeon" xml:space="preserve">
+        <source>未找到该迷宫的有效入场流程。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.wrong_dungeon" xml:space="preserve">
+        <source>当前迷宫与本次挑战目标不一致。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Underground" xml:space="preserve">
+        <source>普通楼层高度偏移</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.UndergroundHelp" xml:space="preserve">
+        <source>仅在普通楼层调整上报高度。高度偏移生效时跳过烛台和短距瞬移。首领楼层、第 99 层和整十层暂停生效，首领战交由外部战斗插件处理。部分伤害仍会命中，不能保证无伤。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.height_control_unavailable" xml:space="preserve">
+        <source>无法启用本次流程的普通楼层高度偏移。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.potion_use_unconfirmed" xml:space="preserve">
+        <source>未能确认恢复药剂使用成功。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.settlement_unconfirmed" xml:space="preserve">
+        <source>未能确认楼层结算完成。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.terminal_reward_missing" xml:space="preserve">
+        <source>未找到顶层结算目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.terminal_reward_unconfirmed" xml:space="preserve">
+        <source>未能确认顶层奖励领取或出口处理完成。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.transformation_control_failed" xml:space="preserve">
+        <source>无法切换或恢复变身战斗控制。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.transformation_unconfirmed" xml:space="preserve">
+        <source>使用道具后未能确认变身状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.final_transfer_unconfirmed" xml:space="preserve">
+        <source>未能确认第 99 层最终传送，已停止并保留存档。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.candle_use_unconfirmed" xml:space="preserve">
+        <source>未能确认烛台交互，已停止并保留存档。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.combat_job_required" xml:space="preserve">
+        <source>当前职业须为战斗职业。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.job_level_low" xml:space="preserve">
+        <source>当前职业等级不足以进入所选迷宫。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.potion_supply_empty" xml:space="preserve">
+        <source>所选迷宫的恢复药不足，请补充或关闭自动使用恢复药。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.EntryCancellationRace" xml:space="preserve">
+        <source>入场请求已发送，停止无法保证撤回；请检查当前入场状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.SaveDeletionAlreadySent" xml:space="preserve">
+        <source>删除请求已确认发送，停止无法撤回；请检查绑定槽位。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Collapse" xml:space="preserve">
+        <source>收起</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.DebugLogging" xml:space="preserve">
+        <source>Debug 日志</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.DebugLoggingHelp" xml:space="preserve">
+        <source>记录入场、过层、失败重开、循环及祭坛判定，写入 Dalamud 日志；关闭后仍记录错误。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Expand" xml:space="preserve">
+        <source>展开</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationAddersgall" xml:space="preserve">
+        <source>体力不足且有蛇胆时为自身恢复</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationAetherflow" xml:space="preserve">
+        <source>体力不足且有以太超流时为自身恢复</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationCarbuncle" xml:space="preserve">
+        <source>宝石兽同行且预计承受伤害时使用</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationCondition" xml:space="preserve">
+        <source>数量 / 条件</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationEnemyDamage" xml:space="preserve">
+        <source>敌人造成较高伤害前使用，注意作用距离</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationExchange" xml:space="preserve">
+        <source>用 {0} × {1} 兑换 {2} 瓶</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationJob" xml:space="preserve">
+        <source>参考职业</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationJobSource" xml:space="preserve">
+        <source>职业技能</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationKnockback" xml:space="preserve">
+        <source>可防御的击退或吸引前使用；特定机制不受免疫影响</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationLevel" xml:space="preserve">
+        <source>等级</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationLevelNote" xml:space="preserve">
+        <source>{0} 的迷宫内等级上限为 {1}；技能以迷宫内等级与实际解锁状态为准。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationLowHP" xml:space="preserve">
+        <source>自身体力不足时补充恢复</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationMP" xml:space="preserve">
+        <source>魔力不足且需要持续施法时使用</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationMPHeal" xml:space="preserve">
+        <source>体力不足且魔力充足时为自身恢复</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationMPShield" xml:space="preserve">
+        <source>魔力充足且预计承受伤害时为自身施加护盾</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationName" xml:space="preserve">
+        <source>技能 / 物品</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationNotice" xml:space="preserve">
+        <source>仅供准备和技能配置参考；选择职业不会更换当前职业，也不会启用技能自动使用。战斗执行取决于外部 ACR／BossMod 的支持和设置。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationPhysicalHeal" xml:space="preserve">
+        <source>持续进行物理攻击时用于吸血恢复</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationPotionCount" xml:space="preserve">
+        <source>持有 {0} 瓶；按目标楼层和循环次数准备</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationReduceDamage" xml:space="preserve">
+        <source>预计承受较高伤害前使用，分配减伤覆盖</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRoleSource" xml:space="preserve">
+        <source>职能技能</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleBoss" xml:space="preserve">
+        <source>首领与特殊机制依赖外部战斗模块；确认其支持所选职业与迷宫。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleFloors" xml:space="preserve">
+        <source>普通层按通行、补给与陷阱条件推进；首领清场后保存退出，再接续下一组。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleReserve" xml:space="preserve">
+        <source>保留数量约束常规消耗；危急或首领场景可能使用保留道具。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRules" xml:space="preserve">
+        <source>流程与准备要点</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleSave" xml:space="preserve">
+        <source>仅管理本轮创建的指定存档；失败后从第 1 层重新建立进度，已有个人存档不会自动删除。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleSupply" xml:space="preserve">
+        <source>入场前备齐对应恢复药并确认聚魔装备；药品会消耗，循环不会自动补货。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Recommendations" xml:space="preserve">
+        <source>建议</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationShield" xml:space="preserve">
+        <source>预计承受伤害前为自身施加护盾</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationSource" xml:space="preserve">
+        <source>来源</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RecommendationUnknownSource" xml:space="preserve">
+        <source>来源待核实</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.RunSummary" xml:space="preserve">
+        <source>{0}　楼层：{1}/{2}　完成：{3} 次　失败：{4} 次</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.SuppliesTitle" xml:space="preserve">
+        <source>准备与补给</source>
       </trans-unit>
     </body>
   </file>
