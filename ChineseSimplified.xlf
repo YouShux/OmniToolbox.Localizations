@@ -1169,6 +1169,9 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       <trans-unit id="Collection.Source.More" xml:space="preserve">
         <source>{0} +{1}</source>
       </trans-unit>
+      <trans-unit id="Collection.Source.NPCBattle" xml:space="preserve">
+        <source>NPC对战</source>
+      </trans-unit>
       <trans-unit id="Collection.Source.NoSource" xml:space="preserve">
         <source>无来源</source>
       </trans-unit>
@@ -1526,6 +1529,15 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       <trans-unit id="Command.leaveduty.Usage" xml:space="preserve">
         <source>用法：/omni leaveduty</source>
       </trans-unit>
+      <trans-unit id="Command.lootrollhistory.Description" xml:space="preserve">
+        <source>切换显示战利品记录窗口</source>
+      </trans-unit>
+      <trans-unit id="Command.lootrollhistory.Name" xml:space="preserve">
+        <source>战利品记录</source>
+      </trans-unit>
+      <trans-unit id="Command.lootrollhistory.Usage" xml:space="preserve">
+        <source>用法：/omni lootrollhistory</source>
+      </trans-unit>
       <trans-unit id="Command.macroicon.Description" xml:space="preserve">
         <source>设置当前选中宏的图标</source>
       </trans-unit>
@@ -1561,6 +1573,15 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="Command.materiatransmute.Usage" xml:space="preserve">
         <source>用法：/omni materiatransmute</source>
+      </trans-unit>
+      <trans-unit id="Command.mitigationmonitor.Description" xml:space="preserve">
+        <source>切换显示减伤监控窗口</source>
+      </trans-unit>
+      <trans-unit id="Command.mitigationmonitor.Name" xml:space="preserve">
+        <source>减伤监控</source>
+      </trans-unit>
+      <trans-unit id="Command.mitigationmonitor.Usage" xml:space="preserve">
+        <source>用法：/omni mitigationmonitor</source>
       </trans-unit>
       <trans-unit id="Command.mooglemail.Description" xml:space="preserve">
         <source>打开莫古邮件</source>
@@ -6119,6 +6140,12 @@ Mount（坐骑）、Retainer（雇员）等。</source>
       <trans-unit id="Feature.HideMinimapIcons.KeepTextWhenHiddenHint" xml:space="preserve">
         <source>隐藏所选图标时保留对应的地图文字。展开地图需开启左侧“T”按钮的文字显示。</source>
       </trans-unit>
+      <trans-unit id="Feature.HideMinimapIcons.RevealKey" xml:space="preserve">
+        <source>显示图标按键：</source>
+      </trans-unit>
+      <trans-unit id="Feature.HideMinimapIcons.RevealKeyHint" xml:space="preserve">
+        <source>按住所选按键可临时显示被隐藏的地图图标及对应文本，松开后恢复隐藏。</source>
+      </trans-unit>
       <trans-unit id="Feature.HotbarAdjustments.BackgroundOpacity" xml:space="preserve">
         <source>背景不透明度</source>
       </trans-unit>
@@ -6515,6 +6542,205 @@ Mount（坐骑）、Retainer（雇员）等。</source>
       <trans-unit id="Feature.LockedDutyPreview.Wiki" xml:space="preserve">
         <source>Wiki</source>
       </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.AllAreas" xml:space="preserve">
+        <source>全部记录</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.AllPassed" xml:space="preserve">
+        <source>全员放弃</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Awarded" xml:space="preserve">
+        <source>已获得</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Back" xml:space="preserve">
+        <source>返回列表</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Busy" xml:space="preserve">
+        <source>正在处理记录…</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Capturing" xml:space="preserve">
+        <source>请按下按键</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Choice" xml:space="preserve">
+        <source>选择</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.ClearKey" xml:space="preserve">
+        <source>清除</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.ClearRecords" xml:space="preserve">
+        <source>清空记录</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Close" xml:space="preserve">
+        <source>关闭</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Collapse" xml:space="preserve">
+        <source>收起</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Empty" xml:space="preserve">
+        <source>暂无记录</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Ended" xml:space="preserve">
+        <source>未确认归属</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Expand" xml:space="preserve">
+        <source>展开</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Export" xml:space="preserve">
+        <source>导出</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Exported" xml:space="preserve">
+        <source>{0:yyyy-MM-dd HH:mm:ss} {1} 已导出至剪贴板</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Greed" xml:space="preserve">
+        <source>贪婪</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.HideKey" xml:space="preserve">
+        <source>隐藏按键</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.History" xml:space="preserve">
+        <source>回放</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Import" xml:space="preserve">
+        <source>导入</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Imported" xml:space="preserve">
+        <source>{0:yyyy-MM-dd HH:mm:ss} {1} 已从剪贴板导入</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Interrupted" xml:space="preserve">
+        <source>记录中断</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Item" xml:space="preserve">
+        <source>物品</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Loading" xml:space="preserve">
+        <source>正在读取…</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Lock" xml:space="preserve">
+        <source>固定</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Login" xml:space="preserve">
+        <source>请先登录角色</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Loot" xml:space="preserve">
+        <source>战利品</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Maximum" xml:space="preserve">
+        <source>最大值</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Modifier" xml:space="preserve">
+        <source>组合键</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Modifier.Alt" xml:space="preserve">
+        <source>Alt</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Modifier.Control" xml:space="preserve">
+        <source>Ctrl</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Modifier.None" xml:space="preserve">
+        <source>无</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Modifier.Shift" xml:space="preserve">
+        <source>Shift</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Need" xml:space="preserve">
+        <source>需求</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.NoNewRecords" xml:space="preserve">
+        <source>没有可新增的记录，内容可能已存在或超出保留范围。</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.NoPending" xml:space="preserve">
+        <source>无</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Obtained" xml:space="preserve">
+        <source>已获得</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Opacity" xml:space="preserve">
+        <source>背景透明度</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Open" xml:space="preserve">
+        <source>打开记录</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Pass" xml:space="preserve">
+        <source>放弃</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Pending" xml:space="preserve">
+        <source>未 Roll</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.PendingHint" xml:space="preserve">
+        <source>未记录到选择消息</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Player" xml:space="preserve">
+        <source>玩家</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Random" xml:space="preserve">
+        <source>掷骰</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.RandomHelp" xml:space="preserve">
+        <source>显示 /random 的roll点</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.ReadFailed" xml:space="preserve">
+        <source>读取失败，当前记录未保存。</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.RecordInfo" xml:space="preserve">
+        <source>物品：{0}
+区域：{1}
+时间：{2}
+未 Roll：
+          {3}</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.ReplaySaveCount" xml:space="preserve">
+        <source>回放保存数</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.RowActions" xml:space="preserve">
+        <source>左键：打开详细信息窗口；右键：复制信息。</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.SaveFailed" xml:space="preserve">
+        <source>保存失败</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Scale" xml:space="preserve">
+        <source>全局缩放</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Selected" xml:space="preserve">
+        <source>已选择</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Settings" xml:space="preserve">
+        <source>设置</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.State" xml:space="preserve">
+        <source>状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Time" xml:space="preserve">
+        <source>时间</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.TransferFailed" xml:space="preserve">
+        <source>记录导入或导出失败</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Unassigned" xml:space="preserve">
+        <source>选择与获得记录</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Unbound" xml:space="preserve">
+        <source>未设置</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Unknown" xml:space="preserve">
+        <source>未记录</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.UnknownArea" xml:space="preserve">
+        <source>未分类</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Unlock" xml:space="preserve">
+        <source>解锁</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Unsupported" xml:space="preserve">
+        <source>当前客户端版本暂不支持战利品记录</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Value" xml:space="preserve">
+        <source>运气</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Waiting" xml:space="preserve">
+        <source>分配中</source>
+      </trans-unit>
+      <trans-unit id="Feature.LootRollHistory.Winner" xml:space="preserve">
+        <source>获得者</source>
+      </trans-unit>
       <trans-unit id="Feature.MarketPurchase.AutoConfirm" xml:space="preserve">
         <source>自动确认购买</source>
       </trans-unit>
@@ -6823,7 +7049,7 @@ Mount（坐骑）、Retainer（雇员）等。</source>
         <source>特殊</source>
       </trans-unit>
       <trans-unit id="Feature.MitigationMonitor.Expand" xml:space="preserve">
-        <source>展开减伤监控</source>
+        <source>展开</source>
       </trans-unit>
       <trans-unit id="Feature.MitigationMonitor.GlobalScale" xml:space="preserve">
         <source>全局缩放</source>
@@ -6890,7 +7116,7 @@ Mount（坐骑）、Retainer（雇员）等。</source>
         <source>锁定</source>
       </trans-unit>
       <trans-unit id="Feature.MitigationMonitor.NoData" xml:space="preserve">
-        <source>无数据</source>
+        <source>暂无记录</source>
       </trans-unit>
       <trans-unit id="Feature.MitigationMonitor.Opacity" xml:space="preserve">
         <source>背景透明度</source>
@@ -7232,6 +7458,33 @@ Mount（坐骑）、Retainer（雇员）等。</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.ButtonPadding" xml:space="preserve">
         <source>按钮边距</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockEorzea" xml:space="preserve">
+        <source>艾欧泽亚时间</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockLabels" xml:space="preserve">
+        <source>时间标识</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockLabelsChinese" xml:space="preserve">
+        <source>中文（艾／本／服）</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockLabelsEnglish" xml:space="preserve">
+        <source>英文（ET／LT／ST）</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockLocal" xml:space="preserve">
+        <source>本地时间</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockServer" xml:space="preserve">
+        <source>服务器时间</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockSource" xml:space="preserve">
+        <source>时间类型</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockStack" xml:space="preserve">
+        <source>显示时间</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.ClockStackHint" xml:space="preserve">
+        <source>勾选要显示的时间，使用上下箭头调整堆叠顺序，至少保留一项。</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.CollectionCopyFailed" xml:space="preserve">
         <source>复制合集失败，请查看日志。</source>
@@ -9277,6 +9530,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.DuelParticipantPending" xml:space="preserve">
         <source>等待观战导航服务就绪</source>
       </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.Flow.DuelRewardPending" xml:space="preserve">
+        <source>单挑已结束，等待获得士气高涨，最多等待 10 秒</source>
+      </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Flow.DuelSpectating" xml:space="preserve">
         <source>正在观战单挑，等待挑战结果</source>
       </trans-unit>
@@ -10953,6 +11209,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="LockedPortraitPreviewTitle" xml:space="preserve">
         <source>肖像内容预览</source>
       </trans-unit>
+      <trans-unit id="LootRollHistoryDescription" xml:space="preserve">
+        <source>记录战利品获得者、队员选择及点数，同时记录 /random 掷骰结果，支持按副本或区域查看和导入导出。</source>
+      </trans-unit>
+      <trans-unit id="LootRollHistoryTitle" xml:space="preserve">
+        <source>战利品记录</source>
+      </trans-unit>
       <trans-unit id="MaxGrandCompanyRankDescription" xml:space="preserve">
         <source>将客户端军衔查询结果设为 17 级，仅影响本地显示与条件判断。</source>
       </trans-unit>
@@ -12490,7 +12752,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>本周暂无收藏数据。</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Discovery.FavoritesHelp" xml:space="preserve">
-        <source>本周收藏该模块的角色数，同一角色在多个收藏分组中仅计一次。数据每日更新，每周一重新统计。</source>
+        <source>每周一更新收藏该模块的玩家数量。</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Discovery.IntroducedHelp" xml:space="preserve">
         <source>该模块首次加入的插件发布版本。</source>
