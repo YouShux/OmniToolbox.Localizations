@@ -351,8 +351,8 @@
         <target>更新日志加載失敗，請重試或查看網頁版。</target>
       </trans-unit>
       <trans-unit id="Changelog.FeedbackQuote" xml:space="preserve">
-        <source>在没有错误日志的情况下诊断任何问题无异于闭眼开车。 ——YouShu</source>
-        <target>在沒有錯誤日志的情況下診斷任何問題無異于閉眼開車。 ——YouShu</target>
+        <source>在没有错误日志的情况下诊断任何问题无异于闭眼开车。 — YouShu</source>
+        <target>在沒有錯誤日志的情況下診斷任何問題無異于閉眼開車。 — YouShu</target>
       </trans-unit>
       <trans-unit id="Changelog.Image.Loading" xml:space="preserve">
         <source>正在加载图片……</source>
@@ -1822,6 +1822,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>事件类型无效</source>
         <target>事件類型無效</target>
       </trans-unit>
+      <trans-unit id="Command.Failed" xml:space="preserve">
+        <source>命令执行失败，请查看插件日志。</source>
+        <target>命令執行失敗，請查看插件日志。</target>
+      </trans-unit>
       <trans-unit id="Command.GameEvent.Failed" xml:space="preserve">
         <source>游戏事件发送失败</source>
         <target>游戲事件發送失敗</target>
@@ -1845,6 +1849,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Command.Module.Disabled" xml:space="preserve">
         <source>模块 {0} 尚未开启，请先使用 /omni on &lt;模块名称&gt; 开启。</source>
         <target>模塊 {0} 尚未開啟，請先使用 /omni on &lt;模塊名稱&gt; 開啟。</target>
+      </trans-unit>
+      <trans-unit id="Command.Module.NameParameter" xml:space="preserve">
+        <source>&lt;模块名称&gt;</source>
+        <target>&lt;模塊名稱&gt;</target>
       </trans-unit>
       <trans-unit id="Command.Module.NotFound" xml:space="preserve">
         <source>未找到树树妙妙屋模块：{0}</source>
@@ -16092,6 +16100,26 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>模块「{0}」使用旧版或无效写法，已拒绝加载。请作者升级并迁移至 OmniModuleBase、新生命周期入口和必填 Localization，重新编译并更新清单。原因：{1}</source>
         <target>模塊「{0}」使用舊版或無效寫法，已拒絕加載。請作者升級并遷移至 OmniModuleBase、新生命周期入口和必填 Localization，重新編譯并更新清單。原因：{1}</target>
       </trans-unit>
+      <trans-unit id="Module.Operation.Busy" xml:space="preserve">
+        <source>模块操作队列已满，请等待当前操作完成后重试。</source>
+        <target>模塊操作隊列已滿，請等待當前操作完成后重試。</target>
+      </trans-unit>
+      <trans-unit id="Module.Operation.Cancelled" xml:space="preserve">
+        <source>模块操作已取消。</source>
+        <target>模塊操作已取消。</target>
+      </trans-unit>
+      <trans-unit id="Module.Operation.Failed" xml:space="preserve">
+        <source>模块操作失败，请查看插件日志。</source>
+        <target>模塊操作失敗，請查看插件日志。</target>
+      </trans-unit>
+      <trans-unit id="Module.Operation.Reentrant" xml:space="preserve">
+        <source>模块操作尚未结束，无法在当前操作中重复执行。</source>
+        <target>模塊操作尚未結束，無法在當前操作中重復執行。</target>
+      </trans-unit>
+      <trans-unit id="Module.Operation.Unavailable" xml:space="preserve">
+        <source>模块已移除或替换，请重新选择模块。</source>
+        <target>模塊已移除或替換，請重新選擇模塊。</target>
+      </trans-unit>
       <trans-unit id="Monitor.Action.Disabled" xml:space="preserve">
         <source>停用</source>
         <target>停用</target>
@@ -17400,6 +17428,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>此模块需要 Omni {0} 或更高版本。</source>
         <target>此模塊需要 Omni {0} 或更高版本。</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.ModuleFileExists" xml:space="preserve">
+        <source>模块目录中已有未登记的文件，已保留原文件。请先恢复仓库安装记录。</source>
+        <target>模塊目錄中已有未登記的文件，已保留原文件。請先恢復倉庫安裝記錄。</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.Pending" xml:space="preserve">
         <source>待更新：{0}，下次启动 Omni 时应用</source>
         <target>待更新：{0}，下次啟動 Omni 時應用</target>
@@ -17452,13 +17484,21 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>模块来源</source>
         <target>模塊來源</target>
       </trans-unit>
+      <trans-unit id="OnlineModules.StateBusy" xml:space="preserve">
+        <source>在线仓库配置正在被其他实例保存，请稍后重试。</source>
+        <target>在線倉庫配置正在被其他實例保存，請稍后重試。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.StateChanged" xml:space="preserve">
+        <source>在线仓库配置已被其他实例或外部程序修改，已停止保存以保留最新记录。请重新加载 Omni。</source>
+        <target>在線倉庫配置已被其他實例或外部程序修改，已停止保存以保留最新記錄。請重新加載 Omni。</target>
+      </trans-unit>
       <trans-unit id="OnlineModules.StateEmpty" xml:space="preserve">
         <source>在线仓库配置为空。</source>
         <target>在線倉庫配置為空。</target>
       </trans-unit>
       <trans-unit id="OnlineModules.StateReadFailed" xml:space="preserve">
-        <source>在线仓库配置读取失败，原文件已保留，请按新清单格式重新建立仓库记录：{0}</source>
-        <target>在線倉庫配置讀取失敗，原文件已保留，請按新清單格式重新建立倉庫記錄：{0}</target>
+        <source>在线仓库配置读取失败，记录和文件已保留：{0}</source>
+        <target>在線倉庫配置讀取失敗，記錄和文件已保留：{0}</target>
       </trans-unit>
       <trans-unit id="OnlineModules.TextTooLong" xml:space="preserve">
         <source>模块清单文本超过长度限制。</source>

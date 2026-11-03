@@ -246,7 +246,7 @@
         <source>更新日志加载失败，请重试或查看网页版。</source>
       </trans-unit>
       <trans-unit id="Changelog.FeedbackQuote" xml:space="preserve">
-        <source>在没有错误日志的情况下诊断任何问题无异于闭眼开车。 ——YouShu</source>
+        <source>在没有错误日志的情况下诊断任何问题无异于闭眼开车。 — YouShu</source>
       </trans-unit>
       <trans-unit id="Changelog.Image.Loading" xml:space="preserve">
         <source>正在加载图片……</source>
@@ -1256,6 +1256,9 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       <trans-unit id="Command.AgentEvent.InvalidEvent" xml:space="preserve">
         <source>事件类型无效</source>
       </trans-unit>
+      <trans-unit id="Command.Failed" xml:space="preserve">
+        <source>命令执行失败，请查看插件日志。</source>
+      </trans-unit>
       <trans-unit id="Command.GameEvent.Failed" xml:space="preserve">
         <source>游戏事件发送失败</source>
       </trans-unit>
@@ -1273,6 +1276,9 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="Command.Module.Disabled" xml:space="preserve">
         <source>模块 {0} 尚未开启，请先使用 /omni on &lt;模块名称&gt; 开启。</source>
+      </trans-unit>
+      <trans-unit id="Command.Module.NameParameter" xml:space="preserve">
+        <source>&lt;模块名称&gt;</source>
       </trans-unit>
       <trans-unit id="Command.Module.NotFound" xml:space="preserve">
         <source>未找到树树妙妙屋模块：{0}</source>
@@ -11242,6 +11248,21 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Module.Contract.UpgradeReason" xml:space="preserve">
         <source>模块「{0}」使用旧版或无效写法，已拒绝加载。请作者升级并迁移至 OmniModuleBase、新生命周期入口和必填 Localization，重新编译并更新清单。原因：{1}</source>
       </trans-unit>
+      <trans-unit id="Module.Operation.Busy" xml:space="preserve">
+        <source>模块操作队列已满，请等待当前操作完成后重试。</source>
+      </trans-unit>
+      <trans-unit id="Module.Operation.Cancelled" xml:space="preserve">
+        <source>模块操作已取消。</source>
+      </trans-unit>
+      <trans-unit id="Module.Operation.Failed" xml:space="preserve">
+        <source>模块操作失败，请查看插件日志。</source>
+      </trans-unit>
+      <trans-unit id="Module.Operation.Reentrant" xml:space="preserve">
+        <source>模块操作尚未结束，无法在当前操作中重复执行。</source>
+      </trans-unit>
+      <trans-unit id="Module.Operation.Unavailable" xml:space="preserve">
+        <source>模块已移除或替换，请重新选择模块。</source>
+      </trans-unit>
       <trans-unit id="Monitor.Add" xml:space="preserve">
         <source>添加</source>
       </trans-unit>
@@ -11985,6 +12006,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="OnlineModules.FileTypeUnsupported" xml:space="preserve">
         <source>在线模块文件只支持 .cs 和 .dll。</source>
       </trans-unit>
+      <trans-unit id="OnlineModules.ModuleFileExists" xml:space="preserve">
+        <source>模块目录中已有未登记的文件，已保留原文件。请先恢复仓库安装记录。</source>
+      </trans-unit>
       <trans-unit id="OnlineModules.HashMismatch" xml:space="preserve">
         <source>模块 SHA256 校验失败。</source>
       </trans-unit>
@@ -12067,7 +12091,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>在线仓库配置为空。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.StateReadFailed" xml:space="preserve">
-        <source>在线仓库配置读取失败，原文件已保留，请按新清单格式重新建立仓库记录：{0}</source>
+        <source>在线仓库配置读取失败，记录和文件已保留：{0}</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.StateChanged" xml:space="preserve">
+        <source>在线仓库配置已被其他实例或外部程序修改，已停止保存以保留最新记录。请重新加载 Omni。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.StateBusy" xml:space="preserve">
+        <source>在线仓库配置正在被其他实例保存，请稍后重试。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.TextTooLong" xml:space="preserve">
         <source>模块清单文本超过长度限制。</source>
