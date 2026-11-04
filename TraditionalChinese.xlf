@@ -299,8 +299,8 @@
         <target>更好的任務情報</target>
       </trans-unit>
       <trans-unit id="BetterTeleportManagementDescription" xml:space="preserve">
-        <source>在任意位置均可交互水晶传送，点击地图水晶图标直接传送，特殊场景水晶使用寻路，未共鸣水晶使用虚空共鸣。</source>
-        <target>在任意位置均可交互水晶傳送，點擊地圖水晶圖標直接傳送，特殊場景水晶使用尋路，未共鳴水晶使用虛空共鳴。</target>
+        <source>在任意位置均可交互水晶传送，点击地图图标跳过确认直接传送，特殊场景水晶使用寻路，未共鸣水晶使用虚空共鸣。</source>
+        <target>在任意位置均可交互水晶傳送，點擊地圖圖標跳過確認直接傳送，特殊場景水晶使用尋路，未共鳴水晶使用虛空共鳴。</target>
       </trans-unit>
       <trans-unit id="BetterTeleportManagementTitle" xml:space="preserve">
         <source>更好的传送管理</source>
@@ -1835,8 +1835,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>當前角色不可用</target>
       </trans-unit>
       <trans-unit id="Command.Main.Description" xml:space="preserve">
-        <source>切换 Omni Toolbox 主窗口</source>
-        <target>切換 Omni Toolbox 主窗口</target>
+        <source>打开或关闭主窗口</source>
+        <target>打開或關閉主窗口</target>
       </trans-unit>
       <trans-unit id="Command.Module.Ambiguous" xml:space="preserve">
         <source>模块名称“{0}”匹配到多个模块，请使用完整内部名称。</source>
@@ -1879,8 +1879,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>更好的傳送管理</target>
       </trans-unit>
       <trans-unit id="Command.aetheryte.Usage" xml:space="preserve">
-        <source>用法：/omni aetheryte</source>
-        <target>用法：/omni aetheryte</target>
+        <source>/omni aetheryte</source>
+        <target>/omni aetheryte</target>
       </trans-unit>
       <trans-unit id="Command.armoirecheck.Description" xml:space="preserve">
         <source>检查收藏柜收录记录</source>
@@ -1891,8 +1891,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>收藏柜記錄</target>
       </trans-unit>
       <trans-unit id="Command.armoirecheck.Usage" xml:space="preserve">
-        <source>用法：/omni armoirecheck</source>
-        <target>用法：/omni armoirecheck</target>
+        <source>/omni armoirecheck</source>
+        <target>/omni armoirecheck</target>
       </trans-unit>
       <trans-unit id="Command.battlehornpreset.Description" xml:space="preserve">
         <source>应用指定兽笛方案</source>
@@ -1903,8 +1903,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>獸笛設置</target>
       </trans-unit>
       <trans-unit id="Command.battlehornpreset.Usage" xml:space="preserve">
-        <source>用法：/omni battlehornpreset &lt;方案名&gt;</source>
-        <target>用法：/omni battlehornpreset &lt;方案名&gt;</target>
+        <source>/omni battlehornpreset &lt;方案名&gt;</source>
+        <target>/omni battlehornpreset &lt;方案名&gt;</target>
       </trans-unit>
       <trans-unit id="Command.bis.Description" xml:space="preserve">
         <source>打开全职业 BIS 配装</source>
@@ -1915,8 +1915,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>BIS配裝</target>
       </trans-unit>
       <trans-unit id="Command.bis.Usage" xml:space="preserve">
-        <source>用法：/omni bis</source>
-        <target>用法：/omni bis</target>
+        <source>/omni bis</source>
+        <target>/omni bis</target>
       </trans-unit>
       <trans-unit id="Command.bluemageset.Description" xml:space="preserve">
         <source>应用指定青魔技能预设</source>
@@ -1927,8 +1927,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>青魔技能預設</target>
       </trans-unit>
       <trans-unit id="Command.bluemageset.Usage" xml:space="preserve">
-        <source>用法：/omni bluemageset &lt;方案名&gt;</source>
-        <target>用法：/omni bluemageset &lt;方案名&gt;</target>
+        <source>/omni bluemageset &lt;方案名&gt;</source>
+        <target>/omni bluemageset &lt;方案名&gt;</target>
       </trans-unit>
       <trans-unit id="Command.bts.Description" xml:space="preserve">
         <source>按区域或名称选择水晶并传送</source>
@@ -1939,8 +1939,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>區域傳送</target>
       </trans-unit>
       <trans-unit id="Command.bts.Usage" xml:space="preserve">
-        <source>用法：/omni bts &lt;地图/区域ID/以太水晶&gt;</source>
-        <target>用法：/omni bts &lt;地圖/區域ID/以太水晶&gt;</target>
+        <source>/omni bts &lt;地图/区域ID/以太水晶&gt;</source>
+        <target>/omni bts &lt;地圖/區域ID/以太水晶&gt;</target>
       </trans-unit>
       <trans-unit id="Command.chatcn.Description" xml:space="preserve">
         <source>切换到国服频道或发送消息</source>
@@ -1951,8 +1951,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>國服頻道</target>
       </trans-unit>
       <trans-unit id="Command.chatcn.Usage" xml:space="preserve">
-        <source>用法：/omni chatcn [消息]</source>
-        <target>用法：/omni chatcn [消息]</target>
+        <source>/omni chatcn [消息]</source>
+        <target>/omni chatcn [消息]</target>
       </trans-unit>
       <trans-unit id="Command.chatlogreplay.Description" xml:space="preserve">
         <source>打开聊天日志回放</source>
@@ -1963,8 +1963,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>日志回放</target>
       </trans-unit>
       <trans-unit id="Command.chatlogreplay.Usage" xml:space="preserve">
-        <source>用法：/omni chatlogreplay</source>
-        <target>用法：/omni chatlogreplay</target>
+        <source>/omni chatlogreplay</source>
+        <target>/omni chatlogreplay</target>
       </trans-unit>
       <trans-unit id="Command.cleartryon.Description" xml:space="preserve">
         <source>清理试穿残留</source>
@@ -1975,8 +1975,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>清理試穿</target>
       </trans-unit>
       <trans-unit id="Command.cleartryon.Usage" xml:space="preserve">
-        <source>用法：/omni cleartryon</source>
-        <target>用法：/omni cleartryon</target>
+        <source>/omni cleartryon</source>
+        <target>/omni cleartryon</target>
       </trans-unit>
       <trans-unit id="Command.fcaction.Description" xml:space="preserve">
         <source>购买指定编号的部队特效</source>
@@ -1987,8 +1987,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>部隊特效</target>
       </trans-unit>
       <trans-unit id="Command.fcaction.Usage" xml:space="preserve">
-        <source>用法：/omni fcaction &lt;编号&gt;</source>
-        <target>用法：/omni fcaction &lt;編號&gt;</target>
+        <source>/omni fcaction &lt;编号&gt;</source>
+        <target>/omni fcaction &lt;編號&gt;</target>
       </trans-unit>
       <trans-unit id="Command.fcchest.Description" xml:space="preserve">
         <source>打开部队储物柜</source>
@@ -1999,8 +1999,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>虛空部隊箱</target>
       </trans-unit>
       <trans-unit id="Command.fcchest.Usage" xml:space="preserve">
-        <source>用法：/omni fcchest</source>
-        <target>用法：/omni fcchest</target>
+        <source>/omni fcchest</source>
+        <target>/omni fcchest</target>
       </trans-unit>
       <trans-unit id="Command.foodcheck.Description" xml:space="preserve">
         <source>立即检查食物状态</source>
@@ -2011,8 +2011,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>食物檢查</target>
       </trans-unit>
       <trans-unit id="Command.foodcheck.Usage" xml:space="preserve">
-        <source>用法：/omni foodcheck</source>
-        <target>用法：/omni foodcheck</target>
+        <source>/omni foodcheck</source>
+        <target>/omni foodcheck</target>
       </trans-unit>
       <trans-unit id="Command.gcexchange.Description" xml:space="preserve">
         <source>打开军票兑换界面</source>
@@ -2023,8 +2023,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>虛空軍票兌換</target>
       </trans-unit>
       <trans-unit id="Command.gcexchange.Usage" xml:space="preserve">
-        <source>用法：/omni gcexchange</source>
-        <target>用法：/omni gcexchange</target>
+        <source>/omni gcexchange</source>
+        <target>/omni gcexchange</target>
       </trans-unit>
       <trans-unit id="Command.gcseal.Description" xml:space="preserve">
         <source>打开军票上交窗口</source>
@@ -2035,8 +2035,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>自動交軍票</target>
       </trans-unit>
       <trans-unit id="Command.gcseal.Usage" xml:space="preserve">
-        <source>用法：/omni gcseal</source>
-        <target>用法：/omni gcseal</target>
+        <source>/omni gcseal</source>
+        <target>/omni gcseal</target>
       </trans-unit>
       <trans-unit id="Command.gcsupply.Description" xml:space="preserve">
         <source>打开军队筹备界面</source>
@@ -2047,8 +2047,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>虛空籌備界面</target>
       </trans-unit>
       <trans-unit id="Command.gcsupply.Usage" xml:space="preserve">
-        <source>用法：/omni gcsupply</source>
-        <target>用法：/omni gcsupply</target>
+        <source>/omni gcsupply</source>
+        <target>/omni gcsupply</target>
       </trans-unit>
       <trans-unit id="Command.gemshop.Description" xml:space="preserve">
         <source>打开当前地图的双色商店</source>
@@ -2059,8 +2059,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>虛空雙色商店</target>
       </trans-unit>
       <trans-unit id="Command.gemshop.Usage" xml:space="preserve">
-        <source>用法：/omni gemshop</source>
-        <target>用法：/omni gemshop</target>
+        <source>/omni gemshop</source>
+        <target>/omni gemshop</target>
       </trans-unit>
       <trans-unit id="Command.glamourcabinet.Description" xml:space="preserve">
         <source>打开收藏柜</source>
@@ -2071,8 +2071,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>虛空收藏柜</target>
       </trans-unit>
       <trans-unit id="Command.glamourcabinet.Usage" xml:space="preserve">
-        <source>用法：/omni glamourcabinet</source>
-        <target>用法：/omni glamourcabinet</target>
+        <source>/omni glamourcabinet</source>
+        <target>/omni glamourcabinet</target>
       </trans-unit>
       <trans-unit id="Command.glamourmanager.Description" xml:space="preserve">
         <source>打开幻化管理</source>
@@ -2083,8 +2083,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>幻化管理</target>
       </trans-unit>
       <trans-unit id="Command.glamourmanager.Usage" xml:space="preserve">
-        <source>用法：/omni glamourmanager</source>
-        <target>用法：/omni glamourmanager</target>
+        <source>/omni glamourmanager</source>
+        <target>/omni glamourmanager</target>
       </trans-unit>
       <trans-unit id="Command.help.Description" xml:space="preserve">
         <source>显示命令用法</source>
@@ -2095,8 +2095,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>幫助</target>
       </trans-unit>
       <trans-unit id="Command.help.Usage" xml:space="preserve">
-        <source>用法：/omni help</source>
-        <target>用法：/omni help</target>
+        <source>/omni help</source>
+        <target>/omni help</target>
       </trans-unit>
       <trans-unit id="Command.housingsearch.Description" xml:space="preserve">
         <source>打开售房查询</source>
@@ -2107,8 +2107,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>售房查詢</target>
       </trans-unit>
       <trans-unit id="Command.housingsearch.Usage" xml:space="preserve">
-        <source>用法：/omni housingsearch</source>
-        <target>用法：/omni housingsearch</target>
+        <source>/omni housingsearch</source>
+        <target>/omni housingsearch</target>
       </trans-unit>
       <trans-unit id="Command.iconbrowser.Description" xml:space="preserve">
         <source>打开图标浏览器</source>
@@ -2119,8 +2119,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>圖標瀏覽器</target>
       </trans-unit>
       <trans-unit id="Command.iconbrowser.Usage" xml:space="preserve">
-        <source>用法：/omni iconbrowser</source>
-        <target>用法：/omni iconbrowser</target>
+        <source>/omni iconbrowser</source>
+        <target>/omni iconbrowser</target>
       </trans-unit>
       <trans-unit id="Command.inn.Description" xml:space="preserve">
         <source>进入附近旅馆</source>
@@ -2131,8 +2131,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>旅館</target>
       </trans-unit>
       <trans-unit id="Command.inn.Usage" xml:space="preserve">
-        <source>用法：/omni inn</source>
-        <target>用法：/omni inn</target>
+        <source>/omni inn</source>
+        <target>/omni inn</target>
       </trans-unit>
       <trans-unit id="Command.invulnerable.Description" xml:space="preserve">
         <source>切换进入或退出无敌模式</source>
@@ -2143,8 +2143,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>無敵模式</target>
       </trans-unit>
       <trans-unit id="Command.invulnerable.Usage" xml:space="preserve">
-        <source>用法：/omni invulnerable</source>
-        <target>用法：/omni invulnerable</target>
+        <source>/omni invulnerable</source>
+        <target>/omni invulnerable</target>
       </trans-unit>
       <trans-unit id="Command.ishgardrestoration.Description" xml:space="preserve">
         <source>打开伊修加德重建设置</source>
@@ -2155,8 +2155,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>自動重建伊修加德</target>
       </trans-unit>
       <trans-unit id="Command.ishgardrestoration.Usage" xml:space="preserve">
-        <source>用法：/omni ishgardrestoration [open]</source>
-        <target>用法：/omni ishgardrestoration [open]</target>
+        <source>/omni ishgardrestoration [open]</source>
+        <target>/omni ishgardrestoration [open]</target>
       </trans-unit>
       <trans-unit id="Command.island.Description" xml:space="preserve">
         <source>打开无人岛管理；enter 自动前往无人岛</source>
@@ -2167,8 +2167,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>自動無人島</target>
       </trans-unit>
       <trans-unit id="Command.island.Usage" xml:space="preserve">
-        <source>用法：/omni island [enter]</source>
-        <target>用法：/omni island [enter]</target>
+        <source>/omni island [enter]</source>
+        <target>/omni island [enter]</target>
       </trans-unit>
       <trans-unit id="Command.itemlist.Description" xml:space="preserve">
         <source>打开自动存取的物品列表</source>
@@ -2179,8 +2179,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>物品列表</target>
       </trans-unit>
       <trans-unit id="Command.itemlist.Usage" xml:space="preserve">
-        <source>用法：/omni itemlist</source>
-        <target>用法：/omni itemlist</target>
+        <source>/omni itemlist</source>
+        <target>/omni itemlist</target>
       </trans-unit>
       <trans-unit id="Command.itemmanagement.Description" xml:space="preserve">
         <source>执行一次物品丢弃和售卖</source>
@@ -2191,8 +2191,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>物品管理</target>
       </trans-unit>
       <trans-unit id="Command.itemmanagement.Usage" xml:space="preserve">
-        <source>用法：/omni itemmanagement</source>
-        <target>用法：/omni itemmanagement</target>
+        <source>/omni itemmanagement</source>
+        <target>/omni itemmanagement</target>
       </trans-unit>
       <trans-unit id="Command.leaveduty.Description" xml:space="preserve">
         <source>离开当前副本</source>
@@ -2203,8 +2203,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>即刻退本</target>
       </trans-unit>
       <trans-unit id="Command.leaveduty.Usage" xml:space="preserve">
-        <source>用法：/omni leaveduty</source>
-        <target>用法：/omni leaveduty</target>
+        <source>/omni leaveduty</source>
+        <target>/omni leaveduty</target>
       </trans-unit>
       <trans-unit id="Command.lootrollhistory.Description" xml:space="preserve">
         <source>切换显示战利品记录窗口</source>
@@ -2215,8 +2215,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>戰利品記錄</target>
       </trans-unit>
       <trans-unit id="Command.lootrollhistory.Usage" xml:space="preserve">
-        <source>用法：/omni lootrollhistory</source>
-        <target>用法：/omni lootrollhistory</target>
+        <source>/omni lootrollhistory</source>
+        <target>/omni lootrollhistory</target>
       </trans-unit>
       <trans-unit id="Command.macroicon.Description" xml:space="preserve">
         <source>设置当前选中宏的图标</source>
@@ -2227,8 +2227,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>宏圖標</target>
       </trans-unit>
       <trans-unit id="Command.macroicon.Usage" xml:space="preserve">
-        <source>用法：/omni macroicon &lt;图标ID&gt;</source>
-        <target>用法：/omni macroicon &lt;圖標ID&gt;</target>
+        <source>/omni macroicon &lt;图标ID&gt;</source>
+        <target>/omni macroicon &lt;圖標ID&gt;</target>
       </trans-unit>
       <trans-unit id="Command.marketboard.Description" xml:space="preserve">
         <source>打开市场板购买界面</source>
@@ -2239,8 +2239,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>虛空市場板</target>
       </trans-unit>
       <trans-unit id="Command.marketboard.Usage" xml:space="preserve">
-        <source>用法：/omni marketboard</source>
-        <target>用法：/omni marketboard</target>
+        <source>/omni marketboard</source>
+        <target>/omni marketboard</target>
       </trans-unit>
       <trans-unit id="Command.marketbuy.Description" xml:space="preserve">
         <source>按数量和最高单价从市场板购买</source>
@@ -2251,8 +2251,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>購買</target>
       </trans-unit>
       <trans-unit id="Command.marketbuy.Usage" xml:space="preserve">
-        <source>用法：/omni marketbuy &lt;物品ID&gt; &lt;hq|nq&gt; × &lt;数量&gt; × &lt;价格限制&gt;</source>
-        <target>用法：/omni marketbuy &lt;物品ID&gt; &lt;hq|nq&gt; × &lt;數量&gt; × &lt;價格限制&gt;</target>
+        <source>/omni marketbuy &lt;物品ID&gt; &lt;hq|nq&gt; × &lt;数量&gt; × &lt;价格限制&gt;</source>
+        <target>/omni marketbuy &lt;物品ID&gt; &lt;hq|nq&gt; × &lt;數量&gt; × &lt;價格限制&gt;</target>
       </trans-unit>
       <trans-unit id="Command.materiatransmute.Description" xml:space="preserve">
         <source>传送到 NPC 所在地图后，虚空交互合成魔晶石</source>
@@ -2263,8 +2263,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>一鍵合成魔晶石</target>
       </trans-unit>
       <trans-unit id="Command.materiatransmute.Usage" xml:space="preserve">
-        <source>用法：/omni materiatransmute</source>
-        <target>用法：/omni materiatransmute</target>
+        <source>/omni materiatransmute</source>
+        <target>/omni materiatransmute</target>
       </trans-unit>
       <trans-unit id="Command.mitigationmonitor.Description" xml:space="preserve">
         <source>切换显示减伤监控窗口</source>
@@ -2275,8 +2275,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>減傷監控</target>
       </trans-unit>
       <trans-unit id="Command.mitigationmonitor.Usage" xml:space="preserve">
-        <source>用法：/omni mitigationmonitor</source>
-        <target>用法：/omni mitigationmonitor</target>
+        <source>/omni mitigationmonitor</source>
+        <target>/omni mitigationmonitor</target>
       </trans-unit>
       <trans-unit id="Command.mooglemail.Description" xml:space="preserve">
         <source>打开莫古邮件</source>
@@ -2287,8 +2287,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>虛空莫古郵件</target>
       </trans-unit>
       <trans-unit id="Command.mooglemail.Usage" xml:space="preserve">
-        <source>用法：/omni mooglemail</source>
-        <target>用法：/omni mooglemail</target>
+        <source>/omni mooglemail</source>
+        <target>/omni mooglemail</target>
       </trans-unit>
       <trans-unit id="Command.npcbuy.Description" xml:space="preserve">
         <source>在 NPC 商店批量购买</source>
@@ -2299,8 +2299,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>商店購買</target>
       </trans-unit>
       <trans-unit id="Command.npcbuy.Usage" xml:space="preserve">
-        <source>用法：/omni npcbuy &lt;物品ID&gt; &lt;hq|nq&gt; × &lt;数量&gt;</source>
-        <target>用法：/omni npcbuy &lt;物品ID&gt; &lt;hq|nq&gt; × &lt;數量&gt;</target>
+        <source>/omni npcbuy &lt;物品ID&gt; &lt;hq|nq&gt; × &lt;数量&gt;</source>
+        <target>/omni npcbuy &lt;物品ID&gt; &lt;hq|nq&gt; × &lt;數量&gt;</target>
       </trans-unit>
       <trans-unit id="Command.npcshop.Description" xml:space="preserve">
         <source>打开 NPC 商店浏览器</source>
@@ -2311,8 +2311,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>虛空商店</target>
       </trans-unit>
       <trans-unit id="Command.npcshop.Usage" xml:space="preserve">
-        <source>用法：/omni npcshop</source>
-        <target>用法：/omni npcshop</target>
+        <source>/omni npcshop</source>
+        <target>/omni npcshop</target>
       </trans-unit>
       <trans-unit id="Command.off.Description" xml:space="preserve">
         <source>关闭指定模块并保存配置</source>
@@ -2323,8 +2323,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>關閉</target>
       </trans-unit>
       <trans-unit id="Command.off.Usage" xml:space="preserve">
-        <source>用法：/omni off &lt;模块名称&gt;</source>
-        <target>用法：/omni off &lt;模塊名稱&gt;</target>
+        <source>/omni off &lt;模块名称&gt;</source>
+        <target>/omni off &lt;模塊名稱&gt;</target>
       </trans-unit>
       <trans-unit id="Command.on.Description" xml:space="preserve">
         <source>开启指定模块并保存配置</source>
@@ -2335,8 +2335,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>開啟</target>
       </trans-unit>
       <trans-unit id="Command.on.Usage" xml:space="preserve">
-        <source>用法：/omni on &lt;模块名称&gt;</source>
-        <target>用法：/omni on &lt;模塊名稱&gt;</target>
+        <source>/omni on &lt;模块名称&gt;</source>
+        <target>/omni on &lt;模塊名稱&gt;</target>
       </trans-unit>
       <trans-unit id="Command.relicreplicamap.Description" xml:space="preserve">
         <source>导出肝武复制品对应表</source>
@@ -2347,8 +2347,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>肝武</target>
       </trans-unit>
       <trans-unit id="Command.relicreplicamap.Usage" xml:space="preserve">
-        <source>用法：/omni relicreplicamap</source>
-        <target>用法：/omni relicreplicamap</target>
+        <source>/omni relicreplicamap</source>
+        <target>/omni relicreplicamap</target>
       </trans-unit>
       <trans-unit id="Command.relogin.Description" xml:space="preserve">
         <source>重新登录指定角色</source>
@@ -2359,8 +2359,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>重新登錄</target>
       </trans-unit>
       <trans-unit id="Command.relogin.Usage" xml:space="preserve">
-        <source>用法：/omni relogin &lt;角色名@世界名&gt;</source>
-        <target>用法：/omni relogin &lt;角色名@世界名&gt;</target>
+        <source>/omni relogin &lt;角色名@世界名&gt;</source>
+        <target>/omni relogin &lt;角色名@世界名&gt;</target>
       </trans-unit>
       <trans-unit id="Command.retainerbell.Description" xml:space="preserve">
         <source>交互雇员铃</source>
@@ -2371,8 +2371,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>一鍵交互雇員鈴</target>
       </trans-unit>
       <trans-unit id="Command.retainerbell.Usage" xml:space="preserve">
-        <source>用法：/omni retainerbell</source>
-        <target>用法：/omni retainerbell</target>
+        <source>/omni retainerbell</source>
+        <target>/omni retainerbell</target>
       </trans-unit>
       <trans-unit id="Command.retrieve.Description" xml:space="preserve">
         <source>取出指定物品</source>
@@ -2383,8 +2383,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>取貨</target>
       </trans-unit>
       <trans-unit id="Command.retrieve.Usage" xml:space="preserve">
-        <source>用法：/omni retrieve &lt;物品ID&gt;</source>
-        <target>用法：/omni retrieve &lt;物品ID&gt;</target>
+        <source>/omni retrieve &lt;物品ID&gt;</source>
+        <target>/omni retrieve &lt;物品ID&gt;</target>
       </trans-unit>
       <trans-unit id="Command.search.Description" xml:space="preserve">
         <source>搜索指定功能</source>
@@ -2395,8 +2395,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>搜索</target>
       </trans-unit>
       <trans-unit id="Command.search.Usage" xml:space="preserve">
-        <source>用法：/omni search &lt;模块名称&gt;</source>
-        <target>用法：/omni search &lt;模塊名稱&gt;</target>
+        <source>/omni search &lt;模块名称&gt;</source>
+        <target>/omni search &lt;模塊名稱&gt;</target>
       </trans-unit>
       <trans-unit id="Command.sendagentevent.Description" xml:space="preserve">
         <source>发送指定 Agent 事件</source>
@@ -2407,8 +2407,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>代理事件</target>
       </trans-unit>
       <trans-unit id="Command.sendagentevent.Usage" xml:space="preserve">
-        <source>用法：/omni sendagentevent &lt;AgentID&gt; &lt;事件类型&gt; [参数...]</source>
-        <target>用法：/omni sendagentevent &lt;AgentID&gt; &lt;事件類型&gt; [參數...]</target>
+        <source>/omni sendagentevent &lt;AgentID&gt; &lt;事件类型&gt; [参数...]</source>
+        <target>/omni sendagentevent &lt;AgentID&gt; &lt;事件類型&gt; [參數...]</target>
       </trans-unit>
       <trans-unit id="Command.sortitems.Description" xml:space="preserve">
         <source>整理物品</source>
@@ -2419,8 +2419,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>自動整理</target>
       </trans-unit>
       <trans-unit id="Command.sortitems.Usage" xml:space="preserve">
-        <source>用法：/omni sortitems</source>
-        <target>用法：/omni sortitems</target>
+        <source>/omni sortitems</source>
+        <target>/omni sortitems</target>
       </trans-unit>
       <trans-unit id="Command.specialscenario.Description" xml:space="preserve">
         <source>打开场景探索窗口或开始指定区域</source>
@@ -2431,8 +2431,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>自動特殊場景探索</target>
       </trans-unit>
       <trans-unit id="Command.specialscenario.Usage" xml:space="preserve">
-        <source>用法：/omni specialscenario [区域ID/名称]</source>
-        <target>用法：/omni specialscenario [區域ID/名稱]</target>
+        <source>/omni specialscenario [区域ID/名称]</source>
+        <target>/omni specialscenario [區域ID/名稱]</target>
       </trans-unit>
       <trans-unit id="Command.store.Description" xml:space="preserve">
         <source>将指定物品存入指定位置</source>
@@ -2443,8 +2443,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>存貨</target>
       </trans-unit>
       <trans-unit id="Command.store.Usage" xml:space="preserve">
-        <source>用法：/omni store &lt;物品ID&gt; &lt;存货地&gt;</source>
-        <target>用法：/omni store &lt;物品ID&gt; &lt;存貨地&gt;</target>
+        <source>/omni store &lt;物品ID&gt; &lt;存货地&gt;</source>
+        <target>/omni store &lt;物品ID&gt; &lt;存貨地&gt;</target>
       </trans-unit>
       <trans-unit id="Command.teleportpanel.Description" xml:space="preserve">
         <source>打开传送面板</source>
@@ -2455,8 +2455,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>傳送面板</target>
       </trans-unit>
       <trans-unit id="Command.teleportpanel.Usage" xml:space="preserve">
-        <source>用法：/omni teleportpanel</source>
-        <target>用法：/omni teleportpanel</target>
+        <source>/omni teleportpanel</source>
+        <target>/omni teleportpanel</target>
       </trans-unit>
       <trans-unit id="Command.toggle.Description" xml:space="preserve">
         <source>切换指定模块的启用状态</source>
@@ -2467,8 +2467,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>切換</target>
       </trans-unit>
       <trans-unit id="Command.toggle.Usage" xml:space="preserve">
-        <source>用法：/omni toggle &lt;模块名称&gt;</source>
-        <target>用法：/omni toggle &lt;模塊名稱&gt;</target>
+        <source>/omni toggle &lt;模块名称&gt;</source>
+        <target>/omni toggle &lt;模塊名稱&gt;</target>
       </trans-unit>
       <trans-unit id="Command.tp.Description" xml:space="preserve">
         <source>传送至指定地点</source>
@@ -2479,8 +2479,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>傳送</target>
       </trans-unit>
       <trans-unit id="Command.tp.Usage" xml:space="preserve">
-        <source>用法：/omni tp &lt;地点名称&gt;</source>
-        <target>用法：/omni tp &lt;地點名稱&gt;</target>
+        <source>/omni tp &lt;地点名称&gt;</source>
+        <target>/omni tp &lt;地點名稱&gt;</target>
       </trans-unit>
       <trans-unit id="Command.treasuremap.Description" xml:space="preserve">
         <source>开始指定宝图流程</source>
@@ -2491,8 +2491,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>挖寶</target>
       </trans-unit>
       <trans-unit id="Command.treasuremap.Usage" xml:space="preserve">
-        <source>用法：/omni treasuremap &lt;宝图ID&gt; &lt;价格限制&gt;</source>
-        <target>用法：/omni treasuremap &lt;寶圖ID&gt; &lt;價格限制&gt;</target>
+        <source>/omni treasuremap &lt;宝图ID&gt; &lt;价格限制&gt;</source>
+        <target>/omni treasuremap &lt;寶圖ID&gt; &lt;價格限制&gt;</target>
       </trans-unit>
       <trans-unit id="Command.tree.Description" xml:space="preserve">
         <source>打开树树妙妙屋</source>
@@ -2503,8 +2503,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>妙妙屋</target>
       </trans-unit>
       <trans-unit id="Command.tree.Usage" xml:space="preserve">
-        <source>用法：/omni tree</source>
-        <target>用法：/omni tree</target>
+        <source>/omni tree</source>
+        <target>/omni tree</target>
       </trans-unit>
       <trans-unit id="Command.worldtravel.Description" xml:space="preserve">
         <source>打开跨界传送窗口或前往指定世界</source>
@@ -2514,9 +2514,13 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>快捷跨界传送</source>
         <target>快捷跨界傳送</target>
       </trans-unit>
+      <trans-unit id="Command.worldtravel.OpenDescription" xml:space="preserve">
+        <source>打开跨界传送窗口</source>
+        <target>打開跨界傳送窗口</target>
+      </trans-unit>
       <trans-unit id="Command.worldtravel.Usage" xml:space="preserve">
-        <source>用法：/omni worldtravel [世界名]</source>
-        <target>用法：/omni worldtravel [世界名]</target>
+        <source>/omni worldtravel [世界名]</source>
+        <target>/omni worldtravel [世界名]</target>
       </trans-unit>
       <trans-unit id="Common.Action" xml:space="preserve">
         <source>操作</source>
@@ -7401,8 +7405,8 @@ DOT/HOT 效果平均每 {0:F1} 點提高 0.1%。</target>
         <target>直接傳送到對應的地圖的最近水晶</target>
       </trans-unit>
       <trans-unit id="Feature.BetterTeleportManagement.CommandDescription" xml:space="preserve">
-        <source>在任意位置均可交互水晶传送，点击地图水晶图标直接传送，特殊场景水晶使用寻路，未共鸣水晶使用虚空共鸣</source>
-        <target>在任意位置均可交互水晶傳送，點擊地圖水晶圖標直接傳送，特殊場景水晶使用尋路，未共鳴水晶使用虛空共鳴</target>
+        <source>在任意位置均可交互水晶传送，点击地图图标跳过确认直接传送，特殊场景水晶使用寻路，未共鸣水晶使用虚空共鸣。</source>
+        <target>在任意位置均可交互水晶傳送，點擊地圖圖標跳過確認直接傳送，特殊場景水晶使用尋路，未共鳴水晶使用虛空共鳴。</target>
       </trans-unit>
       <trans-unit id="Feature.BetterTeleportManagement.EnableNativeMapTravel" xml:space="preserve">
         <source>展开地图传送寻路</source>
@@ -14408,6 +14412,26 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>剩余时间</source>
         <target>剩余時間</target>
       </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements" xml:space="preserve">
+        <source>必需插件</source>
+        <target>必需插件</target>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.AEAssist" xml:space="preserve">
+        <source>自动战斗，与 PR 二选一，需加载当前职业可用的 ACR。</source>
+        <target>自動戰斗，與 PR 二選一，需加載當前職業可用的 ACR。</target>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.BossModReborn" xml:space="preserve">
+        <source>机制提示与自动避让，需启用 AI 功能。</source>
+        <target>機制提示與自動避讓，需啟用 AI 功能。</target>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.PromeRotation" xml:space="preserve">
+        <source>自动战斗，与 AE 二选一，需配置当前职业可用的 ACR。</source>
+        <target>自動戰斗，與 AE 二選一，需配置當前職業可用的 ACR。</target>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.Vnavmesh" xml:space="preserve">
+        <source>导航寻路，需等待导航网格加载完成。</source>
+        <target>導航尋路，需等待導航網格加載完成。</target>
+      </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.ResolvingAggro" xml:space="preserve">
         <source>正在反击追击角色的敌人，脱战后继续观战或活动流程。</source>
         <target>正在反擊追擊角色的敵人，脫戰后繼續觀戰或活動流程。</target>
@@ -15348,6 +15372,14 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>商店获取途径：</source>
         <target>商店獲取途徑：</target>
       </trans-unit>
+      <trans-unit id="ItemInfo.Source.Currency" xml:space="preserve">
+        <source>货币</source>
+        <target>貨幣</target>
+      </trans-unit>
+      <trans-unit id="ItemInfo.Source.CurrencyHelp" xml:space="preserve">
+        <source>兑换价格/当前数量</source>
+        <target>兌換價格/當前數量</target>
+      </trans-unit>
       <trans-unit id="ItemInfo.SourceSort.Default" xml:space="preserve">
         <source>默认</source>
         <target>默認</target>
@@ -16149,8 +16181,8 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>自動補貨</target>
       </trans-unit>
       <trans-unit id="Monitor.Add.ItemId" xml:space="preserve">
-        <source>ID</source>
-        <target>ID</target>
+        <source>物品 ID</source>
+        <target>物品 ID</target>
       </trans-unit>
       <trans-unit id="Monitor.Add.PriceLimit" xml:space="preserve">
         <source>价格限制</source>
@@ -16173,19 +16205,17 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>{0} x{1} 購買完成</target>
       </trans-unit>
       <trans-unit id="Monitor.AutoRestock.Help" xml:space="preserve">
-        <source>根据设置的来源自动购买或兑换物品。
-固定市场板：仅通过市场板补货；
+        <source>固定市场板：仅通过市场板补货；
 固定 NPC 商店：仅通过 NPC 商店补货；
-优先市场板／NPC 商店：优先使用指定来源，数量不足时尝试另一来源。
-常规补货：将持有数量补至目标数量。市场板限价为单价上限，0 表示不限价。
-货币兑换：余额达到开始阈值后，按同组优先级依次兑换；前项累计目标完成后，再处理下一项。
+优先市场板/NPC商店：优先使用指定来源，数量不足时尝试另一来源。
+常规补货：按优先级将持有数量补至目标数量，前项达到目标后再处理下一项。市场板限价为单价上限，0表示不限价。
+货币兑换：余额达到兑换阈值后，按同组优先级依次兑换；前项累计目标完成后，再处理下一项。
 使用前需启用对应功能并完成所需验证；涉及寻路时需启用自动寻路。</source>
-        <target>根據設置的來源自動購買或兌換物品。
-固定市場板：僅通過市場板補貨；
+        <target>固定市場板：僅通過市場板補貨；
 固定 NPC 商店：僅通過 NPC 商店補貨；
-優先市場板／NPC 商店：優先使用指定來源，數量不足時嘗試另一來源。
-常規補貨：將持有數量補至目標數量。市場板限價為單價上限，0 表示不限價。
-貨幣兌換：余額達到開始閾值后，按同組優先級依次兌換；前項累計目標完成后，再處理下一項。
+優先市場板/NPC商店：優先使用指定來源，數量不足時嘗試另一來源。
+常規補貨：按優先級將持有數量補至目標數量，前項達到目標后再處理下一項。市場板限價為單價上限，0表示不限價。
+貨幣兌換：余額達到兌換閾值后，按同組優先級依次兌換；前項累計目標完成后，再處理下一項。
 使用前需啟用對應功能并完成所需驗證；涉及尋路時需啟用自動尋路。</target>
       </trans-unit>
       <trans-unit id="Monitor.AutoRestock.HelpTitle" xml:space="preserve">
@@ -16817,16 +16847,16 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>重置</target>
       </trans-unit>
       <trans-unit id="Monitor.Ledger.Settings.RuleBanner" xml:space="preserve">
-        <source>横幅</source>
-        <target>橫幅</target>
+        <source>横幅提醒</source>
+        <target>橫幅提醒</target>
       </trans-unit>
       <trans-unit id="Monitor.Ledger.Settings.RuleChange" xml:space="preserve">
         <source>变动</source>
         <target>變動</target>
       </trans-unit>
       <trans-unit id="Monitor.Ledger.Settings.RuleChat" xml:space="preserve">
-        <source>聊天框</source>
-        <target>聊天框</target>
+        <source>聊天框提醒</source>
+        <target>聊天框提醒</target>
       </trans-unit>
       <trans-unit id="Monitor.Ledger.Settings.RuleDuplicateDirection" xml:space="preserve">
         <source>同一物品只能保留一条正向和一条负向监控</source>
@@ -16920,13 +16950,21 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>本角色累计已兑换：{0}</source>
         <target>本角色累計已兌換：{0}</target>
       </trans-unit>
+      <trans-unit id="Monitor.Restock.ContextMenu" xml:space="preserve">
+        <source>加入补货清单</source>
+        <target>加入補貨清單</target>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.ContextMenuHelp" xml:space="preserve">
+        <source>右键物品时是否显示“加入补货清单”选项。</source>
+        <target>右鍵物品時是否顯示“加入補貨清單”選項。</target>
+      </trans-unit>
       <trans-unit id="Monitor.Restock.Continue" xml:space="preserve">
         <source>继续</source>
         <target>繼續</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.CumulativeHelp" xml:space="preserve">
-        <source>仅累计本规则自动兑换成功的数量，使用物品不减少进度。达到目标后才处理下一项。</source>
-        <target>僅累計本規則自動兌換成功的數量，使用物品不減少進度。達到目標后才處理下一項。</target>
+        <source>使用物品不减少进度，达到目标数量后处理下一项物品。</source>
+        <target>使用物品不減少進度，達到目標數量后處理下一項物品。</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.CumulativeProgress" xml:space="preserve">
         <source>累计兑换</source>
@@ -16961,8 +16999,12 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>修改目標</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.Empty" xml:space="preserve">
-        <source>在预警页为物品勾选补货后，可在此设置获取方式。</source>
-        <target>在預警頁為物品勾選補貨后，可在此設置獲取方式。</target>
+        <source>右键物品选择“加入补货清单”，或在预警页勾选补货后，可在此设置获取方式。</source>
+        <target>右鍵物品選擇“加入補貨清單”，或在預警頁勾選補貨后，可在此設置獲取方式。</target>
+      </trans-unit>
+      <trans-unit id="Monitor.Restock.Enabled" xml:space="preserve">
+        <source>自动补货</source>
+        <target>自動補貨</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.ExchangeSource" xml:space="preserve">
         <source>兑换来源</source>
@@ -17073,12 +17115,18 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>市場價格預警</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.PriorityColumnHelp" xml:space="preserve">
-        <source>拖动物品左侧的把手调整同货币组内的兑换优先级，按从上到下的顺序执行。前项达到累计目标后才继续下一项；不同货币互不阻挡，常规补货不参与兑换排序。</source>
-        <target>拖動物品左側的把手調整同貨幣組內的兌換優先級，按從上到下的順序執行。前項達到累計目標后才繼續下一項；不同貨幣互不阻擋，常規補貨不參與兌換排序。</target>
+        <source>拖动物品调整同组内的处理优先级，按从上到下的顺序执行。
+先处理常规补货，再依次处理下方货币分组；未达到兑换阈值或余额不足的分组会跳过。
+常规补货前项库存达到目标后，再处理下一项；同类货币兑换前项累计达到目标后，再处理下一项。
+正在执行的购买或兑换完成后，再处理下一项。</source>
+        <target>拖動物品調整同組內的處理優先級，按從上到下的順序執行。
+先處理常規補貨，再依次處理下方貨幣分組；未達到兌換閾值或余額不足的分組會跳過。
+常規補貨前項庫存達到目標后，再處理下一項；同類貨幣兌換前項累計達到目標后，再處理下一項。
+正在執行的購買或兌換完成后，再處理下一項。</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.PriorityHelp" xml:space="preserve">
-        <source>优先级 {0}，拖动调整同货币组顺序。</source>
-        <target>優先級 {0}，拖動調整同貨幣組順序。</target>
+        <source>优先级 {0}，拖动调整同组顺序。</source>
+        <target>優先級 {0}，拖動調整同組順序。</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.Quantity" xml:space="preserve">
         <source>已换 {0}</source>
@@ -17153,24 +17201,26 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>等待前項完成</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.Status.WaitingThreshold" xml:space="preserve">
-        <source>等待达到触发阈值</source>
-        <target>等待達到觸發閾值</target>
+        <source>等待达到兑换阈值</source>
+        <target>等待達到兌換閾值</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.Target" xml:space="preserve">
         <source>累计目标</source>
         <target>累計目標</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.ThresholdHelp" xml:space="preserve">
-        <source>余额达到阈值后开始一轮兑换。本轮余额降到阈值以下时仍继续，直到目标完成或余额不足。</source>
-        <target>余額達到閾值后開始一輪兌換。本輪余額降到閾值以下時仍繼續，直到目標完成或余額不足。</target>
+        <source>货币数量达到阈值后开始一轮兑换，货币数量不足以兑换时停止。
+下一轮货币达到阈值后开始新的一轮循环，直至兑换完所有目标数量的物品。</source>
+        <target>貨幣數量達到閾值后開始一輪兌換，貨幣數量不足以兌換時停止。
+下一輪貨幣達到閾值后開始新的一輪循環，直至兌換完所有目標數量的物品。</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.TriggerCurrency" xml:space="preserve">
         <source>触发货币</source>
         <target>觸發貨幣</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.TriggerThreshold" xml:space="preserve">
-        <source>开始阈值</source>
-        <target>開始閾值</target>
+        <source>兑换阈值</source>
+        <target>兌換閾值</target>
       </trans-unit>
       <trans-unit id="Monitor.Restock.UnitPrice" xml:space="preserve">
         <source>限价</source>
@@ -17620,6 +17670,18 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>跳转Github</source>
         <target>跳轉Github</target>
       </trans-unit>
+      <trans-unit id="Requirements.OpenPlugin" xml:space="preserve">
+        <source>打开插件页面</source>
+        <target>打開插件頁面</target>
+      </trans-unit>
+      <trans-unit id="Requirements.Plugin.AEAssist" xml:space="preserve">
+        <source>AEAssist</source>
+        <target>AEAssist</target>
+      </trans-unit>
+      <trans-unit id="Requirements.Plugin.BossModReborn" xml:space="preserve">
+        <source>BossModReborn</source>
+        <target>BossModReborn</target>
+      </trans-unit>
       <trans-unit id="Requirements.Plugin.DCTravelerX" xml:space="preserve">
         <source>DCTravelerX</source>
         <target>DCTravelerX</target>
@@ -17631,6 +17693,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="Requirements.Plugin.PriceInsight" xml:space="preserve">
         <source>Price Insight</source>
         <target>Price Insight</target>
+      </trans-unit>
+      <trans-unit id="Requirements.Plugin.PromeRotation" xml:space="preserve">
+        <source>PromeRotation</source>
+        <target>PromeRotation</target>
       </trans-unit>
       <trans-unit id="Requirements.Plugin.SimpleTweaks" xml:space="preserve">
         <source>Simple Tweaks Plugin</source>
@@ -18152,6 +18218,7 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
 虚空部队箱：当前地图有部队箱时，寻路并交互打开；
 快捷跨界传送：快捷选择服务器、跨界传送；
 更好的传送管理：水晶交互、地图水晶点击传送等；
+自动上下坐骑：自动召唤坐骑、起飞，使用技能时自动下坐骑；
 自动跳过对话：自动点击普通对话窗口；
 自动跳过过场动画：自动跳过动画；
 更快的搜索结果：加速市场板、制作笔记和部队箱搜索。</source>
@@ -18164,6 +18231,7 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
 虛空部隊箱：當前地圖有部隊箱時，尋路并交互打開；
 快捷跨界傳送：快捷選擇服務器、跨界傳送；
 更好的傳送管理：水晶交互、地圖水晶點擊傳送等；
+自動上下坐騎：自動召喚坐騎、起飛，使用技能時自動下坐騎；
 自動跳過對話：自動點擊普通對話窗口；
 自動跳過過場動畫：自動跳過動畫；
 更快的搜索結果：加速市場板、制作筆記和部隊箱搜索。</target>
@@ -18213,8 +18281,8 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>驗證服務繞過系統代理</target>
       </trans-unit>
       <trans-unit id="Settings.Verification.BypassProxy.Help" xml:space="preserve">
-        <source>默认跟随系统代理。开启后，验证服务及其在线功能直接连接，不使用系统代理。重载插件后生效。</source>
-        <target>默認跟隨系統代理。開啟后，驗證服務及其在線功能直接連接，不使用系統代理。重載插件后生效。</target>
+        <source>默认开启，验证服务及其在线功能直接连接。关闭后跟随系统代理。重载插件后生效。</source>
+        <target>默認開啟，驗證服務及其在線功能直接連接。關閉后跟隨系統代理。重載插件后生效。</target>
       </trans-unit>
       <trans-unit id="ShieldOnHPDescription" xml:space="preserve">
         <source>在自身 HP 栏上显示护盾覆盖条，并额外显示护盾数值。</source>
@@ -18419,12 +18487,12 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>最近三個發布版本暫無新增功能。</target>
       </trans-unit>
       <trans-unit id="TreeHouse.Discovery.EmptyPopular" xml:space="preserve">
-        <source>本周暂无收藏数据。</source>
-        <target>本周暫無收藏數據。</target>
+        <source>暂无收藏数据。</source>
+        <target>暫無收藏數據。</target>
       </trans-unit>
       <trans-unit id="TreeHouse.Discovery.FavoritesHelp" xml:space="preserve">
-        <source>每周一更新收藏该模块的玩家数量。</source>
-        <target>每周一更新收藏該模塊的玩家數量。</target>
+        <source>每日更新累计收藏过该模块的角色数量。</source>
+        <target>每日更新累計收藏過該模塊的角色數量。</target>
       </trans-unit>
       <trans-unit id="TreeHouse.Discovery.IntroducedHelp" xml:space="preserve">
         <source>该模块首次加入的插件发布版本。</source>
@@ -18477,6 +18545,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="TreeHouse.Favorite.SelectGroup" xml:space="preserve">
         <source>选择收藏分组</source>
         <target>選擇收藏分組</target>
+      </trans-unit>
+      <trans-unit id="TreeHouse.ModuleCount" xml:space="preserve">
+        <source>模块：{0}/{1}</source>
+        <target>模塊：{0}/{1}</target>
       </trans-unit>
       <trans-unit id="TreeHouse.ModuleCount.Help" xml:space="preserve">
         <source>已启动模块数 / 已加载模块总数。</source>
@@ -18551,6 +18623,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="Verification.Credential.Account" xml:space="preserve">
         <source>账号识别凭证</source>
         <target>賬號識別憑證</target>
+      </trans-unit>
+      <trans-unit id="Verification.Credential.CopyCooldown" xml:space="preserve">
+        <source>{0}后可重新复制</source>
+        <target>{0}后可重新復制</target>
       </trans-unit>
       <trans-unit id="Verification.Credential.CopyHint" xml:space="preserve">
         <source>点击申请并复制一次性混淆凭证（30秒内有效）</source>
@@ -18855,6 +18931,34 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="WidescreenCutsceneTitle" xml:space="preserve">
         <source>宽屏过场</source>
         <target>寬屏過場</target>
+      </trans-unit>
+      <trans-unit id="HideNotificationPopupsTitle" xml:space="preserve">
+        <source>隐藏提示弹窗</source>
+        <target>隱藏提示彈窗</target>
+      </trans-unit>
+      <trans-unit id="HideNotificationPopupsDescription" xml:space="preserve">
+        <source>自动收录新横幅并隐藏所有行会令任务说明、提示横幅及其音效。</source>
+        <target>自動收錄新橫幅并隱藏所有行會令任務說明、提示橫幅及其音效。</target>
+      </trans-unit>
+      <trans-unit id="Feature.HideNotificationPopups.Guildhest" xml:space="preserve">
+        <source>行会令任务说明弹窗</source>
+        <target>行會令任務說明彈窗</target>
+      </trans-unit>
+      <trans-unit id="Feature.HideNotificationPopups.Hidden" xml:space="preserve">
+        <source>已隐藏</source>
+        <target>已隱藏</target>
+      </trans-unit>
+      <trans-unit id="Feature.HideNotificationPopups.Visible" xml:space="preserve">
+        <source>正常显示</source>
+        <target>正常顯示</target>
+      </trans-unit>
+      <trans-unit id="Feature.HideNotificationPopups.Banner" xml:space="preserve">
+        <source>横幅 #{0}</source>
+        <target>橫幅 #{0}</target>
+      </trans-unit>
+      <trans-unit id="Feature.HideNotificationPopups.PreviewUnavailable" xml:space="preserve">
+        <source>预览暂不可用</source>
+        <target>預覽暫不可用</target>
       </trans-unit>
     </body>
   </file>
