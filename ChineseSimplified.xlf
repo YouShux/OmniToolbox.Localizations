@@ -251,6 +251,9 @@
       <trans-unit id="Changelog.Image.Loading" xml:space="preserve">
         <source>正在加载图片……</source>
       </trans-unit>
+      <trans-unit id="Changelog.Latest" xml:space="preserve">
+        <source>最新</source>
+      </trans-unit>
       <trans-unit id="Changelog.Loading" xml:space="preserve">
         <source>正在加载更新日志……</source>
       </trans-unit>
@@ -3405,7 +3408,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>固定减价金额</source>
       </trans-unit>
       <trans-unit id="Feature.AutoRetainer.RepriceAmountHelp" xml:space="preserve">
-        <source>上架商品时，比原始服务器最低价低多少？</source>
+        <source>按本服同品质商品的最低在售单价减去此金额定价，排除自己的雇员和模特商品。查询失败或没有有效挂单时跳过改价。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoRetainer.RepriceCompleted" xml:space="preserve">
         <source>雇员改价全部完成</source>
@@ -6834,6 +6837,45 @@ Mount（坐骑）、Retainer（雇员）等。</source>
       <trans-unit id="Feature.MarketPurchase.Status.Cancelled" xml:space="preserve">
         <source>购买已取消</source>
       </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.BetweenAreas" xml:space="preserve">
+        <source>正在切换区域，请稍后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Crafting" xml:space="preserve">
+        <source>正在制作，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Cutscene" xml:space="preserve">
+        <source>正在观看过场动画，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Fishing" xml:space="preserve">
+        <source>正在钓鱼，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Gathering" xml:space="preserve">
+        <source>正在采集，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Housing" xml:space="preserve">
+        <source>正在操作房屋，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Interacting" xml:space="preserve">
+        <source>正在对话或交互，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.MeldingMateria" xml:space="preserve">
+        <source>正在镶嵌魔晶石，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Mounting" xml:space="preserve">
+        <source>正在乘上坐骑，请稍后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Performing" xml:space="preserve">
+        <source>正在演奏，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.RetainerInteraction" xml:space="preserve">
+        <source>正在操作雇员，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Trading" xml:space="preserve">
+        <source>正在交易，结束后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.MarketPurchase.Status.Unconscious" xml:space="preserve">
+        <source>角色无法行动，恢复后重试</source>
+      </trans-unit>
       <trans-unit id="Feature.MarketPurchase.Status.Completed" xml:space="preserve">
         <source>购买完成</source>
       </trans-unit>
@@ -6862,7 +6904,7 @@ Mount（坐骑）、Retainer（雇员）等。</source>
         <source>没有可用的市场报价</source>
       </trans-unit>
       <trans-unit id="Feature.MarketPurchase.Status.Occupied" xml:space="preserve">
-        <source>当前状态无法查询市场</source>
+        <source>角色忙碌，结束当前操作后重试</source>
       </trans-unit>
       <trans-unit id="Feature.MarketPurchase.Status.PlayerUnavailable" xml:space="preserve">
         <source>当前角色不可用</source>
@@ -13707,10 +13749,10 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>打开控制面板</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Start" xml:space="preserve">
-        <source>开始挑战</source>
+        <source>开始</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Stop" xml:space="preserve">
-        <source>停止挑战</source>
+        <source>停止</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Dungeon" xml:space="preserve">
         <source>深层迷宫</source>
@@ -13725,7 +13767,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>完成次数</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.CyclesHelp" xml:space="preserve">
-        <source>从第 1 层推进至目标楼层后计为完成一次；填 0 持续循环。失败后从第 1 层重试，仅清理本流程创建的存档。</source>
+        <source>从第 1 层推进至目标楼层后计为完成一次；填 0 持续循环。失败重开受连续失败上限约束，仅清理本流程拥有的存档。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Gold" xml:space="preserve">
         <source>收集金宝箱</source>
@@ -13740,7 +13782,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>自动使用恢复药剂</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Threshold" xml:space="preserve">
-        <source>恢复阈值（生命百分比）</source>
+        <source>恢复阈值</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Hybrid" xml:space="preserve">
         <source>短距移动优化</source>
@@ -13749,25 +13791,10 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>在普通楼层尝试短距移动；危险区交由 BossMod 处理。首领战使用战斗插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Reserves" xml:space="preserve">
-        <source>魔陶器保留数量（0–3）</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Status" xml:space="preserve">
-        <source>当前阶段：{0}</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Progress" xml:space="preserve">
-        <source>当前楼层：{0}/{1}　完成：{2} 次　失败：{3} 次</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Supplies" xml:space="preserve">
-        <source>职业：{0}　武器：{1}（耐久 {2}%）
-恢复药剂：{3} × {4}
-魔器武器／防具：{5}</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Prerequisites" xml:space="preserve">
-        <source>请在副本外单人开始，并为所选槽位保留空存档。需要 vnavmesh、PromeRotation 或 AEAssist，以及提供危险区与位移检查接口的 BossMod。请准备适用职业、装备与恢复药剂。</source>
+        <source>道具保留（0–3）</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error" xml:space="preserve">
-        <source>{0}
-错误码：{1}</source>
+        <source>错误码：{0}</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Stopped" xml:space="preserve">
         <source>已停止</source>
@@ -13800,16 +13827,16 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>核对存档</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.ReservesHelp" xml:space="preserve">
-        <source>死宫高层准备会保留关键道具。</source>
+        <source>设置自动使用时的保留数量；部分道具在危急状态或首领战中会忽略此限制。死者宫殿高层准备会额外保留关键道具。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.MagicStoneReserves" xml:space="preserve">
-        <source>魔石保留数量（0–3）</source>
+        <source>魔石</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.DemicloneReserves" xml:space="preserve">
-        <source>亚灵复制体保留数量（0–3）</source>
+        <source>亚灵复制体</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.IncenseReserves" xml:space="preserve">
-        <source>杜松香保留数量（0–3）</source>
+        <source>杜松香</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.ErrorContext" xml:space="preserve">
         <source>出错阶段：{0}　区域：{1}　楼层：{2}　坐标：{3}</source>
@@ -13826,6 +13853,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDeepDungeon.Error.combat_control_failed" xml:space="preserve">
         <source>无法接管或恢复 BossMod 的移动控制。</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.combat_position_failed" xml:space="preserve">
+        <source>未找到可攻击站位，已停止。请检查高度与目标遮挡。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.combat_unavailable" xml:space="preserve">
         <source>未检测到可用战斗循环或所需 BossMod 接口。</source>
       </trans-unit>
@@ -13840,6 +13870,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.dungeon_locked" xml:space="preserve">
         <source>目标深层迷宫尚未解锁。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.duty_failed" xml:space="preserve">
+        <source>本次深层迷宫挑战失败。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.DutyMismatch" xml:space="preserve">
         <source>实际进入的迷宫与所选目标不一致。</source>
@@ -13917,7 +13950,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>未确认存档归属，无法继续操作。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.solo_outside_required" xml:space="preserve">
-        <source>请在副本外以单人状态开始。</source>
+        <source>请在副本外或对应深层迷宫内以单人状态开始。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.stage_timeout" xml:space="preserve">
         <source>当前操作等待超时。</source>
@@ -13943,14 +13976,11 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDeepDungeon.Error.wrong_dungeon" xml:space="preserve">
         <source>当前迷宫与本次挑战目标不一致。</source>
       </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Underground" xml:space="preserve">
-        <source>普通楼层高度偏移</source>
+      <trans-unit id="Feature.AutoDeepDungeon.Preparing" xml:space="preserve">
+        <source>正在开启深宫无敌模式</source>
       </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.UndergroundHelp" xml:space="preserve">
-        <source>仅在普通楼层调整上报高度。高度偏移生效时跳过烛台和短距瞬移。首领楼层、第 99 层和整十层暂停生效，首领战交由外部战斗插件处理。部分伤害仍会命中，不能保证无伤。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Error.height_control_unavailable" xml:space="preserve">
-        <source>无法启用本次流程的普通楼层高度偏移。</source>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.deep_dungeon_mode_unavailable" xml:space="preserve">
+        <source>无法开启“深宫无敌模式”，请检查该功能的可用状态。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.potion_use_unconfirmed" xml:space="preserve">
         <source>未能确认恢复药剂使用成功。</source>
@@ -13973,9 +14003,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDeepDungeon.Error.final_transfer_unconfirmed" xml:space="preserve">
         <source>未能确认第 99 层最终传送，已停止并保留存档。</source>
       </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Error.candle_use_unconfirmed" xml:space="preserve">
-        <source>未能确认烛台交互，已停止并保留存档。</source>
-      </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.combat_job_required" xml:space="preserve">
         <source>当前职业须为战斗职业。</source>
       </trans-unit>
@@ -13991,6 +14018,30 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDeepDungeon.Error.SaveDeletionAlreadySent" xml:space="preserve">
         <source>删除请求已确认发送，停止无法撤回；请检查绑定槽位。</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.navigation_ipc_unavailable" xml:space="preserve">
+        <source>vnavmesh 缺少本流程所需的路线查询或路径控制接口。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.consecutive_failures" xml:space="preserve">
+        <source>连续失败已达到设置上限，流程已停止；请查看最近一次失败的位置和日志。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.combat_manual_required" xml:space="preserve">
+        <source>当前首领包含需要人工完成的战斗步骤，已停止并保留进度。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.combat_targeting_unsupported" xml:space="preserve">
+        <source>当前战斗接口无法同时保证机制选敌与输出隔离，已停止并保留进度。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.boss_module_missing" xml:space="preserve">
+        <source>当前首领未检测到可用的 BossMod 机制模块，流程已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.rotation_unavailable" xml:space="preserve">
+        <source>没有可用的职业战斗循环，请确认插件接口与当前职业循环。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.combat_output_unavailable" xml:space="preserve">
+        <source>BossMod 输出隔离接口不可用或当前预设不兼容。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Error.rotation_output_unconfirmed" xml:space="preserve">
+        <source>无法确认战斗循环已停止，已中止变身切换以避免同时输出。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Collapse" xml:space="preserve">
         <source>收起</source>
       </trans-unit>
@@ -14003,104 +14054,68 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDeepDungeon.Expand" xml:space="preserve">
         <source>展开</source>
       </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationAddersgall" xml:space="preserve">
-        <source>体力不足且有蛇胆时为自身恢复</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationAetherflow" xml:space="preserve">
-        <source>体力不足且有以太超流时为自身恢复</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationCarbuncle" xml:space="preserve">
-        <source>宝石兽同行且预计承受伤害时使用</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationCondition" xml:space="preserve">
-        <source>数量 / 条件</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationEnemyDamage" xml:space="preserve">
-        <source>敌人造成较高伤害前使用，注意作用距离</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationExchange" xml:space="preserve">
-        <source>用 {0} × {1} 兑换 {2} 瓶</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationJob" xml:space="preserve">
-        <source>参考职业</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationJobSource" xml:space="preserve">
-        <source>职业技能</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationKnockback" xml:space="preserve">
-        <source>可防御的击退或吸引前使用；特定机制不受免疫影响</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationLevel" xml:space="preserve">
-        <source>等级</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationLevelNote" xml:space="preserve">
-        <source>{0} 的迷宫内等级上限为 {1}；技能以迷宫内等级与实际解锁状态为准。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationLowHP" xml:space="preserve">
-        <source>自身体力不足时补充恢复</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationMP" xml:space="preserve">
-        <source>魔力不足且需要持续施法时使用</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationMPHeal" xml:space="preserve">
-        <source>体力不足且魔力充足时为自身恢复</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationMPShield" xml:space="preserve">
-        <source>魔力充足且预计承受伤害时为自身施加护盾</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationName" xml:space="preserve">
-        <source>技能 / 物品</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationNotice" xml:space="preserve">
-        <source>仅供准备和技能配置参考；选择职业不会更换当前职业，也不会启用技能自动使用。战斗执行取决于外部 ACR／BossMod 的支持和设置。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationPhysicalHeal" xml:space="preserve">
-        <source>持续进行物理攻击时用于吸血恢复</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationPotionCount" xml:space="preserve">
-        <source>持有 {0} 瓶；按目标楼层和循环次数准备</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationReduceDamage" xml:space="preserve">
-        <source>预计承受较高伤害前使用，分配减伤覆盖</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRoleSource" xml:space="preserve">
-        <source>职能技能</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleBoss" xml:space="preserve">
-        <source>首领与特殊机制依赖外部战斗模块；确认其支持所选职业与迷宫。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleFloors" xml:space="preserve">
-        <source>普通层按通行、补给与陷阱条件推进；首领清场后保存退出，再接续下一组。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleReserve" xml:space="preserve">
-        <source>保留数量约束常规消耗；危急或首领场景可能使用保留道具。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRules" xml:space="preserve">
-        <source>流程与准备要点</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleSave" xml:space="preserve">
-        <source>仅管理本轮创建的指定存档；失败后从第 1 层重新建立进度，已有个人存档不会自动删除。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationRuleSupply" xml:space="preserve">
-        <source>入场前备齐对应恢复药并确认聚魔装备；药品会消耗，循环不会自动补货。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Recommendations" xml:space="preserve">
-        <source>建议</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationShield" xml:space="preserve">
-        <source>预计承受伤害前为自身施加护盾</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationSource" xml:space="preserve">
-        <source>来源</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.RecommendationUnknownSource" xml:space="preserve">
-        <source>来源待核实</source>
-      </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.RunSummary" xml:space="preserve">
-        <source>{0}　楼层：{1}/{2}　完成：{3} 次　失败：{4} 次</source>
+        <source>{0}　楼层 {1}/{2}　完成 {3} 次　失败 {4} 次</source>
       </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.SuppliesTitle" xml:space="preserve">
-        <source>准备与补给</source>
+      <trans-unit id="Feature.AutoDeepDungeon.Configuration" xml:space="preserve">
+        <source>运行设置</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.MaximumConsecutiveFailures" xml:space="preserve">
+        <source>连续失败上限</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.MaximumConsecutiveFailuresHelp" xml:space="preserve">
+        <source>死亡或路线恢复耗尽计为一次失败；达到上限后停止。成功完成一次目标循环后清零，补给耗尽、依赖丢失或存档身份不明时立即停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.NavigationSummary" xml:space="preserve">
+        <source>目标：{0}　路线恢复 {1}/3　连续失败 {2}/{3}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.NoNavigationTarget" xml:space="preserve">
+        <source>等待目标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Requirements" xml:space="preserve">
+        <source>插件检查</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Requirements.LoadStatus" xml:space="preserve">
+        <source>插件加载状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Requirements.PromeRotation" xml:space="preserve">
+        <source>优先使用的战斗循环，与 AEAssist 二选一；需要可用接口和当前职业循环。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Requirements.AEAssist" xml:space="preserve">
+        <source>PromeRotation 不可用时的备选战斗循环；需要已加载对应职业循环。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Requirements.BossModName" xml:space="preserve">
+        <source>BossMod／BossModReborn</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Requirements.BossMod" xml:space="preserve">
+        <source>二选一，负责机制与战斗移动；需要危险区、移动控制及输出隔离接口。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.Requirements.Vnavmesh" xml:space="preserve">
+        <source>提供楼层导航、路线查询与路径跟随；必须启用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.ReadinessReady" xml:space="preserve">
+        <source>启动所需接口与当前职业循环可用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.ReadinessBlocked" xml:space="preserve">
+        <source>当前阻塞：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.CapabilityNotice" xml:space="preserve">
+        <source>表中状态仅表示插件是否加载；能否开始还取决于接口、职业循环和移动控制检查。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.CombatCoverageHelp" xml:space="preserve">
+        <source>死者宫殿 180 层仍有人工爆发要求；妖宫 99 层目前无法同时保证机制选敌与输出隔离，这些阶段会停止并保留进度。AEAssist 变身前停止状态无法确认时不继续切换。以上流程尚未经游戏通关实测。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.PomanderReserves" xml:space="preserve">
+        <source>魔陶器</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.FailureDetails" xml:space="preserve">
+        <source>故障详情</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.StoppedReason" xml:space="preserve">
+        <source>停止原因：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDeepDungeon.CapabilityStatus" xml:space="preserve">
+        <source>启动能力</source>
       </trans-unit>
       <trans-unit id="HideNotificationPopupsTitle" xml:space="preserve">
         <source>隐藏提示弹窗</source>
@@ -14122,6 +14137,870 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.HideNotificationPopups.PreviewUnavailable" xml:space="preserve">
         <source>预览暂不可用</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Title" xml:space="preserve">
+        <source>自动幻卡收集</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Description" xml:space="preserve">
+        <source>自动收集 NPC 对战掉落的幻卡，或持续对战完成天选成就，支持前置任务与寻路。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Open" xml:space="preserve">
+        <source>打开控制面板</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Start" xml:space="preserve">
+        <source>开始</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stop" xml:space="preserve">
+        <source>停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stopping" xml:space="preserve">
+        <source>当前对局结束后停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Pause" xml:space="preserve">
+        <source>暂停</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Resume" xml:space="preserve">
+        <source>继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Expand" xml:space="preserve">
+        <source>展开</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Collapse" xml:space="preserve">
+        <source>收起</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Status" xml:space="preserve">
+        <source>状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Collected" xml:space="preserve">
+        <source>本轮已登记</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Matches" xml:space="preserve">
+        <source>已完成对局</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Wins" xml:space="preserve">
+        <source>胜</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Draws" xml:space="preserve">
+        <source>平</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Losses" xml:space="preserve">
+        <source>负</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.UnconfirmedMatches" xml:space="preserve">
+        <source>结果未确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Npc" xml:space="preserve">
+        <source>当前 NPC</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Fee" xml:space="preserve">
+        <source>每局费用（金碟币）</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Quest" xml:space="preserve">
+        <source>当前任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle" xml:space="preserve">
+        <source>对战进度</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Help" xml:space="preserve">
+        <source>与同一 NPC 连续对战，拿齐目标卡后退出并登记，再前往下一个 NPC。自动任务负责完成解锁所需的任务和前置；条件不足的目标会保留原因。停止将在当前对局结束后生效。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.LimitTargets" xml:space="preserve">
+        <source>仅收集勾选的卡牌</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Search" xml:space="preserve">
+        <source>搜索卡名或编号</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Registered" xml:space="preserve">
+        <source>已登记</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Blocked" xml:space="preserve">
+        <source>未完成的目标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.OperationBlocked" xml:space="preserve">
+        <source>当前操作无法继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CommandOpen" xml:space="preserve">
+        <source>打开幻卡收集面板</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CommandStart" xml:space="preserve">
+        <source>开始收集幻卡</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CommandPause" xml:space="preserve">
+        <source>暂停收集幻卡</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CommandResume" xml:space="preserve">
+        <source>继续收集幻卡</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CommandStop" xml:space="preserve">
+        <source>停止收集幻卡</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Stopped" xml:space="preserve">
+        <source>已停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Planning" xml:space="preserve">
+        <source>选择下一目标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Quest" xml:space="preserve">
+        <source>完成前置任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.QuestHandoff" xml:space="preserve">
+        <source>等待任务结束并恢复控制</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Travelling" xml:space="preserve">
+        <source>传送中</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Navigating" xml:space="preserve">
+        <source>前往 NPC</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Crossing" xml:space="preserve">
+        <source>前往相邻区域</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Locating" xml:space="preserve">
+        <source>确认 NPC 或区域入口</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Battling" xml:space="preserve">
+        <source>幻卡对战中</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Settlement" xml:space="preserve">
+        <source>等待结算</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Registering" xml:space="preserve">
+        <source>登记目标卡片</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Paused" xml:space="preserve">
+        <source>已暂停</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Completed" xml:space="preserve">
+        <source>本轮结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.Idle" xml:space="preserve">
+        <source>准备对战</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.InteractDelay" xml:space="preserve">
+        <source>建立 NPC 交互</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitTalk" xml:space="preserve">
+        <source>等待 NPC 对话</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitRules" xml:space="preserve">
+        <source>等待读取规则</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.ChoosingDeck" xml:space="preserve">
+        <source>选择卡组</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.ConfirmOneDelay" xml:space="preserve">
+        <source>准备确认规则</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitConfirmOne" xml:space="preserve">
+        <source>等待第一次规则确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.ConfirmTwoDelay" xml:space="preserve">
+        <source>准备第二次规则确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitConfirmTwo" xml:space="preserve">
+        <source>等待第二次规则确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.DeckDelay" xml:space="preserve">
+        <source>准备提交卡组</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitGame" xml:space="preserve">
+        <source>等待开局</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.Playing" xml:space="preserve">
+        <source>推进回合</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.ComputingMove" xml:space="preserve">
+        <source>计算下一步</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitPlace" xml:space="preserve">
+        <source>等待落子结果</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitRoundFinish" xml:space="preserve">
+        <source>等待重赛判定</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.RoundFinishDelay" xml:space="preserve">
+        <source>结束当前回合</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.RestartOneDelay" xml:space="preserve">
+        <source>确认重赛规则</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitRestartOne" xml:space="preserve">
+        <source>等待重赛阶段</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.RestartTwoDelay" xml:space="preserve">
+        <source>准备重赛确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitRestartTwo" xml:space="preserve">
+        <source>等待重赛确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.RestartDeckDelay" xml:space="preserve">
+        <source>继承重赛卡组</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitRestartGame" xml:space="preserve">
+        <source>等待重赛开局</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitDuelFinish" xml:space="preserve">
+        <source>等待对局结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.EndActionDelay" xml:space="preserve">
+        <source>提交收尾动作</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitEndAction" xml:space="preserve">
+        <source>等待收尾确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.EventFinishDelay" xml:space="preserve">
+        <source>准备退出对战</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.BetweenMatches" xml:space="preserve">
+        <source>核对奖励与剩余目标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitRematch" xml:space="preserve">
+        <source>等待下一局确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitEventFinish" xml:space="preserve">
+        <source>等待事件结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.Finished" xml:space="preserve">
+        <source>对局已完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.Fault" xml:space="preserve">
+        <source>对局已中止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.protocol_unsupported" xml:space="preserve">
+        <source>当前游戏版本暂不支持自动对战</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.inventory_full" xml:space="preserve">
+        <source>背包空间不足，请清理后继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.inventory_unavailable" xml:space="preserve">
+        <source>尚未取得当前角色的背包信息</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.reward_unconfirmed" xml:space="preserve">
+        <source>尚未确认掉落卡牌进入背包，请检查奖励后继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.mgp_insufficient" xml:space="preserve">
+        <source>金碟币不足，无法继续挑战</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_unreachable" xml:space="preserve">
+        <source>无法到达或找到目标 NPC</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.battle_timeout" xml:space="preserve">
+        <source>等待对战响应超时，请检查游戏状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.battle_manual_exit" xml:space="preserve">
+        <source>对战尚未确认结束，请先在游戏中退出当前对局</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.registration_unconfirmed" xml:space="preserve">
+        <source>尚未确认卡片登记，请检查背包和图鉴</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.not_logged_in" xml:space="preserve">
+        <source>请先登录角色</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_unavailable" xml:space="preserve">
+        <source>请启用自动寻路并确认 vnavmesh 可用</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_busy" xml:space="preserve">
+        <source>其他功能正在控制寻路或传送</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_taken_over" xml:space="preserve">
+        <source>当前路径已被其他操作替换</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_incomplete" xml:space="preserve">
+        <source>任务尚未完成，本次请求已结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_no_progress" xml:space="preserve">
+        <source>前置任务长时间没有进展</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.deck_unavailable" xml:space="preserve">
+        <source>没有足够的已登记卡牌组成合法卡组</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.character_busy" xml:space="preserve">
+        <source>请结束当前操作后继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.RetryBlocked" xml:space="preserve">
+        <source>重新检查未完成目标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DebugLogging" xml:space="preserve">
+        <source>调试日志</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DebugLoggingHelp" xml:space="preserve">
+        <source>记录收集流程、对战收发、实际求解耗时、窗口创建和本机角色状态，便于排查问题。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.settlement_unconfirmed" xml:space="preserve">
+        <source>对战结束后角色仍未恢复空闲，请检查游戏状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Configuration" xml:space="preserve">
+        <source>设置</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.TargetCards" xml:space="preserve">
+        <source>目标幻卡</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Waiting" xml:space="preserve">
+        <source>正在等待</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Mode" xml:space="preserve">
+        <source>模式</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Mode.CollectCards" xml:space="preserve">
+        <source>幻卡收集</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Mode.RouletteAchievement" xml:space="preserve">
+        <source>天选</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.AutomaticNPC" xml:space="preserve">
+        <source>自动选择天选 NPC</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.RouletteProgress" xml:space="preserve">
+        <source>天选胜场</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.RouletteHelp" xml:space="preserve">
+        <source>持续与所选 NPC 对战，直到完成天选胜场成就。收齐幻卡后仍会继续；进度以服务器确认为准。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.Achievement" xml:space="preserve">
+        <source>读取天选成就进度</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Battle.WaitActiveRules" xml:space="preserve">
+        <source>等待天选规则确定</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_out_of_range" xml:space="preserve">
+        <source>目标 NPC 距离过远，请靠近后重试</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_roulette_unavailable" xml:space="preserve">
+        <source>当前 NPC 对局未包含天选规则</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.roulette_npc_unavailable" xml:space="preserve">
+        <source>没有可继续对战的天选 NPC，请检查未完成清单</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.achievement_unavailable" xml:space="preserve">
+        <source>暂时无法读取成就数据</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.achievement_busy" xml:space="preserve">
+        <source>其他成就进度正在读取，请稍后继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.achievement_unconfirmed" xml:space="preserve">
+        <source>尚未收到天选成就进度，请稍后继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.triad_unresolved_roulette" xml:space="preserve">
+        <source>尚未解析天选抽出的全部规则，请检查调试日志</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.catalog_loading" xml:space="preserve">
+        <source>正在准备幻卡与 NPC 数据</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_area_ready" xml:space="preserve">
+        <source>等待区域加载完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_character_idle" xml:space="preserve">
+        <source>等待角色空闲并停止移动</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_quest" xml:space="preserve">
+        <source>等待自动任务完成指定目标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_quest_handoff" xml:space="preserve">
+        <source>等待任务结束并交还控制</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_teleport" xml:space="preserve">
+        <source>等待传送到达确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_navmesh" xml:space="preserve">
+        <source>等待导航网格准备完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_area_transition" xml:space="preserve">
+        <source>等待进入下一个区域</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_npc_object" xml:space="preserve">
+        <source>等待目标 NPC 出现</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_registration" xml:space="preserve">
+        <source>等待幻卡图鉴登记确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_settlement" xml:space="preserve">
+        <source>等待对局结算并恢复空闲</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.waiting_achievement" xml:space="preserve">
+        <source>等待服务器返回天选成就进度</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Title" xml:space="preserve">
+        <source>自动任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Description" xml:space="preserve">
+        <source>根据任务进度执行任务及其前置，显示受阻条件与待适配步骤。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.CommandOpen" xml:space="preserve">
+        <source>打开自动任务面板</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.CommandStart" xml:space="preserve">
+        <source>开始指定任务及其前置</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.CommandAll" xml:space="preserve">
+        <source>执行任务目录的一轮任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.CommandPause" xml:space="preserve">
+        <source>暂停当前请求</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.CommandResume" xml:space="preserve">
+        <source>继续当前请求</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.CommandStop" xml:space="preserve">
+        <source>停止当前请求</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Status" xml:space="preserve">
+        <source>状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.StartSelected" xml:space="preserve">
+        <source>完成所选</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.StartAll" xml:space="preserve">
+        <source>执行全部</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Resume" xml:space="preserve">
+        <source>继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Pause" xml:space="preserve">
+        <source>暂停</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Stop" xml:space="preserve">
+        <source>停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Search" xml:space="preserve">
+        <source>搜索任务名称或 ID</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.AllTypes" xml:space="preserve">
+        <source>全部类型</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Name" xml:space="preserve">
+        <source>任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Details" xml:space="preserve">
+        <source>详情</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Unverified" xml:space="preserve">
+        <source>尚未完成游戏内验证</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Previous" xml:space="preserve">
+        <source>上一页</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Next" xml:space="preserve">
+        <source>下一页</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Completed" xml:space="preserve">
+        <source>目标已完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.RoundEnded" xml:space="preserve">
+        <source>本轮结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Blocker" xml:space="preserve">
+        <source>原因</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Type.Quest" xml:space="preserve">
+        <source>普通任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Type.SatisfactionSupply" xml:space="preserve">
+        <source>老主顾</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Type.AlliedSociety" xml:space="preserve">
+        <source>友好部族</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Type.UnlockLink" xml:space="preserve">
+        <source>系统解锁</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Availability.Satisfied" xml:space="preserve">
+        <source>已完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Availability.Ready" xml:space="preserve">
+        <source>可执行</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Availability.Waiting" xml:space="preserve">
+        <source>等待条件</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Availability.Blocked" xml:space="preserve">
+        <source>受阻</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Availability.Unsupported" xml:space="preserve">
+        <source>待适配</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Idle" xml:space="preserve">
+        <source>空闲</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Starting" xml:space="preserve">
+        <source>准备请求</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Planning" xml:space="preserve">
+        <source>规划任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Travelling" xml:space="preserve">
+        <source>前往目标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Interacting" xml:space="preserve">
+        <source>交互</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Fighting" xml:space="preserve">
+        <source>战斗</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Duty" xml:space="preserve">
+        <source>执行副本</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Crafting" xml:space="preserve">
+        <source>制作</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Gathering" xml:space="preserve">
+        <source>采集</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Fishing" xml:space="preserve">
+        <source>钓鱼</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Waiting" xml:space="preserve">
+        <source>等待条件</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Paused" xml:space="preserve">
+        <source>已暂停</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Stopping" xml:space="preserve">
+        <source>正在停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Phase.Finished" xml:space="preserve">
+        <source>本轮结束</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_busy" xml:space="preserve">
+        <source>自动任务正在执行其他请求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.not_logged_in" xml:space="preserve">
+        <source>请先登录角色。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.module_unavailable" xml:space="preserve">
+        <source>自动任务当前不可用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.dialogue_choice_unresolved" xml:space="preserve">
+        <source>当前对话选项尚未适配。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.mechanism_unsupported" xml:space="preserve">
+        <source>当前任务机制尚未适配。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.resource_loading" xml:space="preserve">
+        <source>正在读取任务数据。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.script_loading" xml:space="preserve">
+        <source>正在解析任务脚本。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.target_not_found" xml:space="preserve">
+        <source>未找到当前任务的目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_unavailable" xml:space="preserve">
+        <source>需要可用的导航能力。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.autoduty_unavailable" xml:space="preserve">
+        <source>需要安装并启用 AutoDuty。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.autoduty_incompatible" xml:space="preserve">
+        <source>AutoDuty 无法隔离本次请求的配置和附带动作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.duty_path_unsupported" xml:space="preserve">
+        <source>AutoDuty 尚未提供目标副本的路径。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.player_party_required" xml:space="preserve">
+        <source>该内容需要玩家参与，已跳过。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.artisan_unavailable" xml:space="preserve">
+        <source>需要安装并启用 Artisan。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.autohook_incompatible" xml:space="preserve">
+        <source>AutoHook 缺少保存并恢复原设置的接口。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.material_source_unsupported" xml:space="preserve">
+        <source>任务所需物资来源尚未适配。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_service_unavailable" xml:space="preserve">
+        <source>自动任务服务不可用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_busy" xml:space="preserve">
+        <source>自动任务正在执行其他请求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_request_rejected" xml:space="preserve">
+        <source>自动任务未受理解锁请求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_operation_lost" xml:space="preserve">
+        <source>未找到本次解锁任务的执行结果。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_blocked" xml:space="preserve">
+        <source>解锁任务受阻，继续寻找其他目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_start_failed" xml:space="preserve">
+        <source>解锁任务未能启动。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_job_level_or_gearset_required" xml:space="preserve">
+        <source>缺少满足任务职业与等级要求的已保存装备套装。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_secondary_job_required" xml:space="preserve">
+        <source>副职业等级尚未满足任务要求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_expansion_unavailable" xml:space="preserve">
+        <source>角色尚未拥有所需资料片。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_grand_company_required" xml:space="preserve">
+        <source>角色所属大国防联军不符合任务要求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_grand_company_rank_required" xml:space="preserve">
+        <source>大国防联军军衔尚未满足任务要求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_society_rank_required" xml:space="preserve">
+        <source>友好部族声望尚未满足任务要求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_mount_required" xml:space="preserve">
+        <source>尚未解锁任务要求的坐骑。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_mutually_exclusive" xml:space="preserve">
+        <source>已选择与此任务互斥的路线。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_duty_prerequisite_required" xml:space="preserve">
+        <source>前置副本尚未完成。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_repeat_completion_unconfirmed" xml:space="preserve">
+        <source>重复任务已交付，尚未取得本轮完成凭据。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.character_busy" xml:space="preserve">
+        <source>等待角色结束当前操作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.external_interaction_busy" xml:space="preserve">
+        <source>其他交互正在运行，等待其结束。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.plugin_busy" xml:space="preserve">
+        <source>所需插件正在执行其他工作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_busy" xml:space="preserve">
+        <source>其他导航正在运行。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.combat_busy" xml:space="preserve">
+        <source>已有战斗输出正在运行。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.level_insufficient" xml:space="preserve">
+        <source>角色或 NPC 等级尚未满足要求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.gearset_unavailable" xml:space="preserve">
+        <source>所需装备套装不可用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.class_job_switch_unconfirmed" xml:space="preserve">
+        <source>已请求切换职业，但未能确认切换完成。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_prerequisite_blocked" xml:space="preserve">
+        <source>前置任务本轮无法完成，依赖此任务的目标已跳过。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.duty_incomplete" xml:space="preserve">
+        <source>副本执行已停止，尚未确认通关。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.duty_locked" xml:space="preserve">
+        <source>目标副本尚未解锁。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.party_not_empty" xml:space="preserve">
+        <source>请先退出玩家队伍。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.request_invalid" xml:space="preserve">
+        <source>任务请求格式无效。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.request_incomplete" xml:space="preserve">
+        <source>本轮仍有尚未完成的目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.cancelled" xml:space="preserve">
+        <source>请求已取消。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.character_changed_or_disconnected" xml:space="preserve">
+        <source>角色已切换或断开连接，请求已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.npc_party_conditions_unmet" xml:space="preserve">
+        <source>NPC 队伍尚未满足副本条件。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.npc_level_insufficient" xml:space="preserve">
+        <source>所选 NPC 等级不足。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.player_busy" xml:space="preserve">
+        <source>角色正忙，等待当前操作结束。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.npc_entry_unavailable" xml:space="preserve">
+        <source>NPC 副本入口暂不可用，等待角色和界面恢复。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.gil_insufficient" xml:space="preserve">
+        <source>金币不足，无法购买所需物资。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.inventory_full" xml:space="preserve">
+        <source>背包空间不足，请整理后重新开始。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.supply_purchase_unconfirmed" xml:space="preserve">
+        <source>尚未确认购买物资进入背包，请检查后重新开始。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.supply_shop_item_locked_or_unavailable" xml:space="preserve">
+        <source>商店中的所需物品尚未解锁或暂不可购买。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.supply_shop_timeout" xml:space="preserve">
+        <source>等待商店操作超时。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.autohook_preset_restore_unsupported" xml:space="preserve">
+        <source>当前 AutoHook 接口无法完整恢复原预设，暂不支持自动钓鱼。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.npc_squadron_locked" xml:space="preserve">
+        <source>尚未解锁冒险者分队。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.npc_trust_locked" xml:space="preserve">
+        <source>尚未满足亲信副本的解锁条件。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.npc_squadron_members_busy" xml:space="preserve">
+        <source>所需分队成员正在训练或执行其他任务。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.company_seals_insufficient" xml:space="preserve">
+        <source>军票不足，无法派出冒险者分队。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_timeout" xml:space="preserve">
+        <source>前往任务目标超时，已停止本次移动。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_unconfirmed" xml:space="preserve">
+        <source>导航已停止，尚未确认到达目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_failed" xml:space="preserve">
+        <source>无法沿当前路径到达任务目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_ipc_failed" xml:space="preserve">
+        <source>导航插件调用失败，请检查插件状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_taken_over" xml:space="preserve">
+        <source>移动控制已由其他操作接管。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_not_owned" xml:space="preserve">
+        <source>本次请求已不再持有导航控制。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.travel_ownership_changed" xml:space="preserve">
+        <source>传送或移动控制已由其他操作接管。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.destination_unavailable" xml:space="preserve">
+        <source>无法读取目标区域或传送点。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.destination_unreachable" xml:space="preserve">
+        <source>当前无法前往任务目标所在位置。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.boundary_unreachable" xml:space="preserve">
+        <source>无法到达跨区入口。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.boundary_transition_timeout" xml:space="preserve">
+        <source>已到达跨区入口，尚未确认进入下一区域。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_interrupted" xml:space="preserve">
+        <source>本次传送被中断。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_timeout" xml:space="preserve">
+        <source>本次传送超时。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_arrival_unconfirmed" xml:space="preserve">
+        <source>尚未确认传送到达目标区域并恢复操作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_unconfirmed" xml:space="preserve">
+        <source>尚未确认本次传送结果。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_rejected" xml:space="preserve">
+        <source>传送未受理，请检查传送条件、水晶解锁及金币。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_failed" xml:space="preserve">
+        <source>本次传送失败。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_cancelled" xml:space="preserve">
+        <source>本次传送已取消。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_unavailable" xml:space="preserve">
+        <source>传送服务当前不可用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_stop_pending" xml:space="preserve">
+        <source>正在等待本次传送结束。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_stop_pending" xml:space="preserve">
+        <source>正在等待本次导航结束。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.character_not_ready" xml:space="preserve">
+        <source>等待区域加载和角色恢复操作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.character_not_ready_timeout" xml:space="preserve">
+        <source>角色长时间未恢复操作，请求已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.character_changed" xml:space="preserve">
+        <source>角色已切换或离线。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.interaction_timeout" xml:space="preserve">
+        <source>任务交互超时，尚未确认进度。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.module_disabled" xml:space="preserve">
+        <source>自动任务已停用，请求已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_accept_unavailable" xml:space="preserve">
+        <source>暂时无法接取当前任务。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_reward_unavailable" xml:space="preserve">
+        <source>暂时无法提交任务奖励。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_reward_unresolved" xml:space="preserve">
+        <source>当前任务奖励与界面数据尚未确认。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_reward_inventory_full" xml:space="preserve">
+        <source>无法容纳本次任务奖励，请整理背包或货币。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_reward_unique_owned" xml:space="preserve">
+        <source>本次奖励含已持有的独特物品。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_reward_capacity_unresolved" xml:space="preserve">
+        <source>尚未确认本次奖励所需容量。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_items_changed" xml:space="preserve">
+        <source>任务交纳要求已发生变化。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_slot_mismatch" xml:space="preserve">
+        <source>交纳槽中的物品与任务要求不符。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_quantity_unsupported" xml:space="preserve">
+        <source>当前交纳数量尚未适配。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_no_progress" xml:space="preserve">
+        <source>物品交纳未取得进展。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_context_busy" xml:space="preserve">
+        <source>其他物品选择窗口正在使用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_item_unavailable" xml:space="preserve">
+        <source>背包中没有符合交纳要求的物品。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_items_unresolved" xml:space="preserve">
+        <source>尚未确认当前任务的交纳要求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_item_requirement_unsupported" xml:space="preserve">
+        <source>当前物品交纳条件尚未适配。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.handover_unavailable" xml:space="preserve">
+        <source>当前无法执行物品交纳。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.external_gathering_busy" xml:space="preserve">
+        <source>其他采集操作正在运行。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.gathering_no_progress" xml:space="preserve">
+        <source>采集长时间未取得进展。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.gathering_item_unavailable" xml:space="preserve">
+        <source>当前采集点没有任务所需物品。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.gathering_job_required" xml:space="preserve">
+        <source>请切换为任务所需的采集职业。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.dialogue_advance_unavailable" xml:space="preserve">
+        <source>暂时无法推进当前任务对话。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.craft_start_unconfirmed" xml:space="preserve">
+        <source>尚未确认 Artisan 开始本次制作。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.craft_result_incomplete" xml:space="preserve">
+        <source>制作已停止，物品数量或品质尚未满足任务要求。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.craft_timeout" xml:space="preserve">
+        <source>制作超时，尚未取得所需物品。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.artisan_ipc_failed" xml:space="preserve">
+        <source>Artisan 调用失败，请检查插件状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.player_dead" xml:space="preserve">
+        <source>角色已倒下，请处理后重新开始。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.execution_exception" xml:space="preserve">
+        <source>任务执行发生异常，请检查日志。</source>
       </trans-unit>
     </body>
   </file>
