@@ -3372,7 +3372,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>雇员自动合并已完成</source>
       </trans-unit>
       <trans-unit id="Feature.AutoRetainer.EntrustDuplicatesHelp" xml:space="preserve">
-        <source>依次检查全部雇员，先进行同类道具合并递交，再将雇员已有的非堆叠同类物品逐件存入空位。雇员背包已满时继续检查下一名，沿用同类递交的勾选和排除设置。</source>
+        <source>自动合并堆叠/非堆叠物品，跳过“雇员递交记忆”中排除的物品。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoRetainer.EntrustDuplicatesStopped" xml:space="preserve">
         <source>自动合并已停止，请检查游戏提示。</source>
@@ -10764,7 +10764,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>物品信息</source>
       </trans-unit>
       <trans-unit id="ItemManagementDescription" xml:space="preserve">
-        <source>自动记忆丢弃的物品，再次手动丢弃时自动确认；可出售时优先出售给附近的金币商人，否则丢弃。</source>
+        <source>自动记忆丢弃的物品，再次手动丢弃时自动确认；批量处理时向附近金币商人出售可售卖物品，未能出售时保留，不可售卖物品则丢弃。</source>
       </trans-unit>
       <trans-unit id="ItemManagementTitle" xml:space="preserve">
         <source>物品管理</source>
@@ -11276,7 +11276,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>预览未解锁副本</source>
       </trans-unit>
       <trans-unit id="LockedPortraitPreviewDescription" xml:space="preserve">
-        <source>编辑肖像时显示未获得的动作、表情、背景、装饰框与装饰物的真实名称并允许本地预览。</source>
+        <source>编辑肖像或铭牌样式时显示未获得的动作、表情、背景及装饰的真实名称并允许本地预览。</source>
       </trans-unit>
       <trans-unit id="LockedPortraitPreviewTitle" xml:space="preserve">
         <source>肖像内容预览</source>
@@ -12732,6 +12732,81 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="SpecialScenarioExplorerTitle" xml:space="preserve">
         <source>自动特殊场景探索</source>
       </trans-unit>
+      <trans-unit id="AutoDutyTitle" xml:space="preserve">
+        <source>自动副本</source>
+      </trans-unit>
+      <trans-unit id="AutoDutyDescription" xml:space="preserve">
+        <source>按预设顺序调用 AutoDuty 完成多个副本，并按实际通关次数推进计划。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDuty.CommandOpen" xml:space="preserve"><source>打开自动副本窗口</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CommandStart" xml:space="preserve"><source>开始当前自动副本预设</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CommandStop" xml:space="preserve"><source>停止自动副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Open" xml:space="preserve"><source>打开</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Start" xml:space="preserve"><source>开始</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Stop" xml:space="preserve"><source>停止</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Expand" xml:space="preserve"><source>展开</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Collapse" xml:space="preserve"><source>收起</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Preset" xml:space="preserve"><source>预设</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.NewPreset" xml:space="preserve"><source>新建预设</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.SavePreset" xml:space="preserve"><source>保存预设</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.RenamePreset" xml:space="preserve"><source>重命名预设</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DeletePreset" xml:space="preserve"><source>删除预设</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Import" xml:space="preserve"><source>导入预设</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Export" xml:space="preserve"><source>导出预设</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.AddDuty" xml:space="preserve"><source>添加副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Search" xml:space="preserve"><source>搜索副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyType" xml:space="preserve"><source>类型</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyTypeRegular" xml:space="preserve"><source>常规副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyTypeTrial" xml:space="preserve"><source>讨伐/歼灭战</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyTypeRaid" xml:space="preserve"><source>大型任务（Raid）</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyTypeNovice" xml:space="preserve"><source>初学者学堂</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyTypeVariant" xml:space="preserve"><source>异闻/多变副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyTypeCrucible" xml:space="preserve"><source>Crucible</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.UnknownDutyType" xml:space="preserve"><source>未知类型（{0}）</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyLevel" xml:space="preserve"><source>等级</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyItemLevel" xml:space="preserve"><source>装等</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyId" xml:space="preserve"><source>ID</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyName" xml:space="preserve"><source>副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.TargetCount" xml:space="preserve"><source>目标次数</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.MaximumAttempts" xml:space="preserve"><source>失败重试上限</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Queue" xml:space="preserve"><source>副本队列</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.EmptyQueue" xml:space="preserve"><source>队列为空</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Dependencies" xml:space="preserve"><source>依赖插件</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Running" xml:space="preserve"><source>正在运行</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Starting" xml:space="preserve"><source>正在启动副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Retrying" xml:space="preserve"><source>副本失败，准备重试</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Attempt" xml:space="preserve"><source>失败尝试 {0}/{1}</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Skipped" xml:space="preserve"><source>已跳过当前副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Completed" xml:space="preserve"><source>计划已完成</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Failed" xml:space="preserve"><source>自动副本失败</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Stopped" xml:space="preserve"><source>已停止</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Progress" xml:space="preserve"><source>当前副本进度：{0}/{1}</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Current" xml:space="preserve"><source>当前副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.NoDuty" xml:space="preserve"><source>没有可运行的副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.InvalidEntry" xml:space="preserve"><source>预设中存在不可运行的副本。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Busy" xml:space="preserve"><source>AutoDuty 正在运行。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.EmptyPreset" xml:space="preserve"><source>当前预设没有副本。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.InDuty" xml:space="preserve"><source>当前正在副本内。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.AutoDutyUnavailable" xml:space="preserve"><source>AutoDuty 未启用。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.AutoDutyIPCUnavailable" xml:space="preserve"><source>AutoDuty IPC 不可用。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.VnavmeshUnavailable" xml:space="preserve"><source>vnavmesh 未启用。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.BossModUnavailable" xml:space="preserve"><source>BossMod 或 BossModReborn 不可用。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.RotationUnavailable" xml:space="preserve"><source>AEAssist 和 PromeRotation 至少需要启用一个。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.ProviderRequired" xml:space="preserve"><source>私有 Provider 不可用。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.ExportSucceeded" xml:space="preserve"><source>预设已导出：{0}</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.ImportSucceeded" xml:space="preserve"><source>预设已导入：{0}</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.ImportFailed" xml:space="preserve"><source>预设导入失败。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.PresetName" xml:space="preserve"><source>预设名称</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Confirm" xml:space="preserve"><source>确认</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Cancel" xml:space="preserve"><source>取消</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DuplicatePreset" xml:space="preserve"><source>预设名称重复，已自动重命名。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.AllDuties" xml:space="preserve"><source>全部副本</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.UnknownDuty" xml:space="preserve"><source>未知副本 ({0})</source></trans-unit>
+      <trans-unit id="Requirements.Plugin.AutoDuty" xml:space="preserve"><source>AutoDuty</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Requirements.AutoDuty" xml:space="preserve"><source>负责副本寻路和战斗流程。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Requirements.Vnavmesh" xml:space="preserve"><source>负责导航。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Requirements.BossMod" xml:space="preserve"><source>负责机制和战斗控制。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Requirements.RotationOneOf" xml:space="preserve"><source>AEAssist 或 PromeRotation 至少启用一个。</source></trans-unit>
       <trans-unit id="Status.Active" xml:space="preserve">
         <source>已激活</source>
       </trans-unit>
@@ -14177,6 +14252,27 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoTripleTriadCollection.Matches" xml:space="preserve">
         <source>已完成对局</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.EstimatedWinRate" xml:space="preserve">
+        <source>模拟胜率</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.EstimatedWinRateHelp" xml:space="preserve">
+        <source>按候选对手牌组与规则进行快速模拟，平局不计为胜利。随机规则确定后才可估算；结果仅供参考，不代表实际胜率。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.EstimateWaiting" xml:space="preserve">
+        <source>等待对战选牌</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.EstimateComputing" xml:space="preserve">
+        <source>正在计算</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.EstimateWaitingRules" xml:space="preserve">
+        <source>等待随机规则确定</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.EstimateUnavailable" xml:space="preserve">
+        <source>当前牌组或规则无法估算</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.SimulationGames" xml:space="preserve">
+        <source>局</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Wins" xml:space="preserve">
         <source>胜</source>
       </trans-unit>
@@ -14424,7 +14520,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>调试日志</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DebugLoggingHelp" xml:space="preserve">
-        <source>记录收集流程、对战收发、实际求解耗时、窗口创建和本机角色状态，便于排查问题。</source>
+        <source>将目标选择、任务接取条件、执行步骤、阻塞原因、对战与模拟结果写入 Dalamud 日志，便于排查问题。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.settlement_unconfirmed" xml:space="preserve">
         <source>对战结束后角色仍未恢复空闲，请检查游戏状态</source>
@@ -15001,6 +15097,111 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.execution_exception" xml:space="preserve">
         <source>任务执行发生异常，请检查日志。</source>
+      </trans-unit>
+      <trans-unit id="AutoHuntTitle" xml:space="preserve">
+        <source>自动狩猎</source>
+      </trans-unit>
+      <trans-unit id="AutoHuntDescription" xml:space="preserve">
+        <source>自动完成幻武讨伐目标或狩猎通缉令。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.CommandOpen" xml:space="preserve">
+        <source>打开自动狩猎窗口</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.CommandStart" xml:space="preserve">
+        <source>开始自动狩猎</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.CommandStop" xml:space="preserve">
+        <source>停止自动狩猎</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Open" xml:space="preserve">
+        <source>打开</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Start" xml:space="preserve">
+        <source>开始</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Stop" xml:space="preserve">
+        <source>停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Pause" xml:space="preserve">
+        <source>暂停</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Resume" xml:space="preserve">
+        <source>继续</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Mode" xml:space="preserve">
+        <source>模式</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.PhantomPlusFour" xml:space="preserve">
+        <source>幻武+4</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntBills" xml:space="preserve">
+        <source>狩猎通缉令</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Status" xml:space="preserve">
+        <source>状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Target" xml:space="preserve">
+        <source>目标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Progress" xml:space="preserve">
+        <source>{0}/{1}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.NoTargets" xml:space="preserve">
+        <source>当前没有可执行的讨伐目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.NoSpawnData" xml:space="preserve">
+        <source>当前目标没有可用的出生点数据。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Preparing" xml:space="preserve">
+        <source>正在准备自动狩猎。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Traveling" xml:space="preserve">
+        <source>正在前往目标区域。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Searching" xml:space="preserve">
+        <source>正在搜索目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Fighting" xml:space="preserve">
+        <source>正在讨伐目标。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Completed" xml:space="preserve">
+        <source>自动狩猎已完成。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Stopped" xml:space="preserve">
+        <source>自动狩猎已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Failed" xml:space="preserve">
+        <source>自动狩猎失败。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Paused" xml:space="preserve">
+        <source>自动狩猎已暂停。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.DependencyFailure" xml:space="preserve">
+        <source>战斗或寻路依赖不可用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.TargetUnavailable" xml:space="preserve">
+        <source>目标长时间未出现或进度没有变化。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.InDuty" xml:space="preserve">
+        <source>当前处于副本或其他受限状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Died" xml:space="preserve">
+        <source>角色已死亡，自动狩猎已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.TravelFailed" xml:space="preserve">
+        <source>传送或前往目标区域失败。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.BillAvailable" xml:space="preserve">
+        <source>可接</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.BillObtained" xml:space="preserve">
+        <source>已接</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.BillUnavailable" xml:space="preserve">
+        <source>不可用</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Busy" xml:space="preserve">
+        <source>自动狩猎正在运行。</source>
       </trans-unit>
     </body>
   </file>
