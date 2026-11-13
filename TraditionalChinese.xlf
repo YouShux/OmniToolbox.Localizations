@@ -107,8 +107,8 @@
         <target>自動隱藏模型/特效</target>
       </trans-unit>
       <trans-unit id="AutoHuntDescription" xml:space="preserve">
-        <source>自动完成幻武讨伐目标或狩猎通缉令。</source>
-        <target>自動完成幻武討伐目標或狩獵通緝令。</target>
+        <source>自动完成幻武讨伐、狩猎委托、讨伐笔记和自定义目标，巡查A级狩猎目标。</source>
+        <target>自動完成幻武討伐、狩獵委托、討伐筆記和自定義目標，巡查A級狩獵目標。</target>
       </trans-unit>
       <trans-unit id="AutoHuntTitle" xml:space="preserve">
         <source>自动狩猎</source>
@@ -1914,6 +1914,66 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>/omni armoirecheck</source>
         <target>/omni armoirecheck</target>
       </trans-unit>
+      <trans-unit id="Command.autodeepdungeon.Description" xml:space="preserve">
+        <source>打开自动深层迷宫窗口，或开始指定迷宫</source>
+        <target>打開自動深層迷宮窗口，或開始指定迷宮</target>
+      </trans-unit>
+      <trans-unit id="Command.autodeepdungeon.Name" xml:space="preserve">
+        <source>自动深层迷宫</source>
+        <target>自動深層迷宮</target>
+      </trans-unit>
+      <trans-unit id="Command.autodeepdungeon.Usage" xml:space="preserve">
+        <source>/omni autodeepdungeon [potd|hoh|eo|pt]</source>
+        <target>/omni autodeepdungeon [potd|hoh|eo|pt]</target>
+      </trans-unit>
+      <trans-unit id="Command.autoduty.Description" xml:space="preserve">
+        <source>打开自动副本窗口</source>
+        <target>打開自動副本窗口</target>
+      </trans-unit>
+      <trans-unit id="Command.autoduty.Name" xml:space="preserve">
+        <source>自动副本</source>
+        <target>自動副本</target>
+      </trans-unit>
+      <trans-unit id="Command.autoduty.Usage" xml:space="preserve">
+        <source>/omni autoduty</source>
+        <target>/omni autoduty</target>
+      </trans-unit>
+      <trans-unit id="Command.autohunt.Description" xml:space="preserve">
+        <source>打开自动狩猎窗口</source>
+        <target>打開自動狩獵窗口</target>
+      </trans-unit>
+      <trans-unit id="Command.autohunt.Name" xml:space="preserve">
+        <source>自动狩猎</source>
+        <target>自動狩獵</target>
+      </trans-unit>
+      <trans-unit id="Command.autohunt.Usage" xml:space="preserve">
+        <source>/omni autohunt</source>
+        <target>/omni autohunt</target>
+      </trans-unit>
+      <trans-unit id="Command.autoquest.Description" xml:space="preserve">
+        <source>打开自动任务窗口，或执行指定任务及其前置任务</source>
+        <target>打開自動任務窗口，或執行指定任務及其前置任務</target>
+      </trans-unit>
+      <trans-unit id="Command.autoquest.Name" xml:space="preserve">
+        <source>自动任务</source>
+        <target>自動任務</target>
+      </trans-unit>
+      <trans-unit id="Command.autoquest.Usage" xml:space="preserve">
+        <source>/omni autoquest [任务ID]</source>
+        <target>/omni autoquest [任務ID]</target>
+      </trans-unit>
+      <trans-unit id="Command.autotripletriadcollection.Description" xml:space="preserve">
+        <source>打开自动幻卡收集窗口</source>
+        <target>打開自動幻卡收集窗口</target>
+      </trans-unit>
+      <trans-unit id="Command.autotripletriadcollection.Name" xml:space="preserve">
+        <source>自动幻卡收集</source>
+        <target>自動幻卡收集</target>
+      </trans-unit>
+      <trans-unit id="Command.autotripletriadcollection.Usage" xml:space="preserve">
+        <source>/omni autotripletriadcollection</source>
+        <target>/omni autotripletriadcollection</target>
+      </trans-unit>
       <trans-unit id="Command.battlehornpreset.Description" xml:space="preserve">
         <source>应用指定兽笛方案</source>
         <target>應用指定獸笛方案</target>
@@ -2175,8 +2235,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>自動重建伊修加德</target>
       </trans-unit>
       <trans-unit id="Command.ishgardrestoration.Usage" xml:space="preserve">
-        <source>/omni ishgardrestoration [open]</source>
-        <target>/omni ishgardrestoration [open]</target>
+        <source>/omni ishgardrestoration</source>
+        <target>/omni ishgardrestoration</target>
       </trans-unit>
       <trans-unit id="Command.island.Description" xml:space="preserve">
         <source>打开无人岛管理；enter 自动前往无人岛</source>
@@ -3060,6 +3120,22 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>黑名單：除表格勾選地圖外，其他地圖均啟用自動接受復活。
 白名單：僅在表格勾選地圖中啟用自動接受復活。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoConfirmAreaTravel.Description" xml:space="preserve">
+        <source>自动确认已识别的免费区域传送，例如前往陆行鸟广场或进入福尔唐伯爵府。</source>
+        <target>自動確認已識別的免費區域傳送，例如前往陸行鳥廣場或進入福爾唐伯爵府。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoConfirmAreaTravel.Title" xml:space="preserve">
+        <source>自动确认区域通行</source>
+        <target>自動確認區域通行</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoFateSync.Title" xml:space="preserve">
+        <source>自动危命任务等级同步</source>
+        <target>自動危命任務等級同步</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoFateSync.Description" xml:space="preserve">
+        <source>在危命任务范围内选中该任务的战斗目标时，自动同步超过等级上限的角色。运行自动任务、自动幻卡等流程时暂停；需要打危命任务时，由对应流程发起同步。</source>
+        <target>在危命任務范圍內選中該任務的戰鬥目標時，自動同步超過等級上限的角色。運行自動任務、自動幻卡等流程時暫停；需要打危命任務時，由對應流程發起同步。</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoCommenceDuty.Description" xml:space="preserve">
         <source>参加任务确认窗口出现后，自动确认出发。</source>
         <target>參加任務確認窗口出現后，自動確認出發。</target>
@@ -3113,16 +3189,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>死者宮殿 180 層仍有人工爆發要求；妖宮 99 層目前無法同時保證機制選敵與輸出隔離，這些階段會停止并保留進度。AEAssist 變身前停止狀態無法確認時不繼續切換。以上流程尚未經游戲通關實測。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.CommandOpen" xml:space="preserve">
-        <source>打开自动深层迷宫面板</source>
-        <target>打開自動深層迷宮面板</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.CommandStart" xml:space="preserve">
-        <source>开始挑战死者宫殿</source>
-        <target>開始挑戰死者宮殿</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.CommandStop" xml:space="preserve">
-        <source>停止自动深层迷宫</source>
-        <target>停止自動深層迷宮</target>
+        <source>打开自动深层迷宫窗口</source>
+        <target>打開自動深層迷宮窗口</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Completed" xml:space="preserve">
         <source>已完成</source>
@@ -3492,10 +3560,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>等待目标</source>
         <target>等待目標</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Open" xml:space="preserve">
-        <source>打开控制面板</source>
-        <target>打開控制面板</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.PomanderReserves" xml:space="preserve">
         <source>魔陶器</source>
         <target>魔陶器</target>
@@ -3569,8 +3633,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>存檔槽位</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Start" xml:space="preserve">
-        <source>开始</source>
-        <target>開始</target>
+        <source>启动</source>
+        <target>啟動</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Stop" xml:space="preserve">
         <source>停止</source>
@@ -3608,6 +3672,32 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>{0}–{1} 层</source>
         <target>{0}–{1} 層</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueExitRequired" xml:space="preserve"><source>请先离开当前副本，再继续刷取幻卡。</source><target>請先離開當前副本，再繼續刷取幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueUnlockUnavailable" xml:space="preserve"><source>暂时无法读取角色的副本解锁状态。请确认角色已登录后重新开始。</source><target>暫時無法讀取角色的副本解鎖狀態。請確認角色已登入後重新開始。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueFinishedWithMissing" xml:space="preserve"><source>本轮已结束，仍有所选幻卡未登记。</source><target>本輪已結束，仍有所選幻卡未登記。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueTitle" xml:space="preserve"><source>刷取幻卡</source><target>刷取幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueHelp" xml:space="preserve"><source>重复刷取所选幻卡的副本，直到这些幻卡全部登记或副本被跳过。</source><target>重複刷取所選幻卡的副本，直到這些幻卡全部登記或副本被略過。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Mode" xml:space="preserve"><source>模式</source><target>模式</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.PresetMode" xml:space="preserve"><source>按次数刷副本</source><target>按次數刷副本</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.RemoveDuty" xml:space="preserve"><source>移除副本</source><target>移除副本</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardSearch" xml:space="preserve"><source>搜索幻卡或副本</source><target>搜尋幻卡或副本</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardSelectAll" xml:space="preserve"><source>勾选搜索结果</source><target>勾選搜尋結果</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardClearSelection" xml:space="preserve"><source>清空选择</source><target>清空選擇</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardProgress" xml:space="preserve"><source>已选 {0} 张 · 已登记 {1} 张</source><target>已選 {0} 張 · 已登記 {1} 張</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardColumn" xml:space="preserve"><source>幻卡</source><target>幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardCollected" xml:space="preserve"><source>已登记</source><target>已登記</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardLoading" xml:space="preserve"><source>正在读取副本幻卡…</source><target>正在讀取副本幻卡…</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardLoadFailed" xml:space="preserve"><source>无法读取副本幻卡，请重新启用自动副本后再试。</source><target>無法讀取副本幻卡，請重新啟用自動副本後再試。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardNoMatches" xml:space="preserve"><source>没有符合搜索条件的幻卡。</source><target>沒有符合搜尋條件的幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardNoAvailable" xml:space="preserve"><source>没有可刷取的未登记幻卡。请检查副本解锁状态和 AutoDuty 路线。</source><target>沒有可刷取的未登記幻卡。請檢查副本解鎖狀態和 AutoDuty 路線。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardNoSelection" xml:space="preserve"><source>请勾选至少一张未登记的幻卡。</source><target>請勾選至少一張未登記的幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardNoDuties" xml:space="preserve"><source>部分所选幻卡没有可用路线。请取消勾选不可刷取的幻卡。</source><target>部分所選幻卡沒有可用路線。請取消勾選不可刷取的幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardUnavailable" xml:space="preserve"><source>暂不可刷取</source><target>暫不可刷取</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardAccessRequired" xml:space="preserve"><source>刷取幻卡需要二级测试资格。</source><target>刷取幻卡需要二級測試資格。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueSettling" xml:space="preserve"><source>等待退本和掉落结算</source><target>等待退本和掉落結算</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueRegistering" xml:space="preserve"><source>正在登记幻卡</source><target>正在登記幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueInventoryUnavailable" xml:space="preserve"><source>暂时无法读取背包或登记幻卡。请确认角色可操作后重新开始。</source><target>暫時無法讀取背包或登記幻卡。請確認角色可操作后重新開始。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueRegistrationUnconfirmed" xml:space="preserve"><source>未能确认幻卡登记。请检查背包或收藏册，再重新开始。</source><target>未能確認幻卡登記。請檢查背包或收藏冊，再重新開始。</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.AddDuty" xml:space="preserve">
         <source>添加副本</source>
         <target>添加副本</target>
@@ -3648,14 +3738,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>打开自动副本窗口</source>
         <target>打開自動副本窗口</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoDuty.CommandStart" xml:space="preserve">
-        <source>开始当前自动副本预设</source>
-        <target>開始當前自動副本預設</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDuty.CommandStop" xml:space="preserve">
-        <source>停止自动副本</source>
-        <target>停止自動副本</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoDuty.Completed" xml:space="preserve">
         <source>计划已完成</source>
         <target>計劃已完成</target>
@@ -3675,10 +3757,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoDuty.Dependencies" xml:space="preserve">
         <source>依赖插件</source>
         <target>依賴插件</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDuty.DuplicatePreset" xml:space="preserve">
-        <source>预设名称重复，已自动重命名。</source>
-        <target>預設名稱重復，已自動重命名。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDuty.DutyId" xml:space="preserve">
         <source>ID</source>
@@ -3836,10 +3914,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>正在运行</source>
         <target>正在運行</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoDuty.SavePreset" xml:space="preserve">
-        <source>保存预设</source>
-        <target>保存預設</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoDuty.Search" xml:space="preserve">
         <source>搜索副本</source>
         <target>搜索副本</target>
@@ -3849,8 +3923,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>已跳過當前副本</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDuty.Start" xml:space="preserve">
-        <source>开始</source>
-        <target>開始</target>
+        <source>启动</source>
+        <target>啟動</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDuty.Starting" xml:space="preserve">
         <source>正在启动副本</source>
@@ -4102,17 +4176,13 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>自动狩猎正在运行。</source>
         <target>自動狩獵正在運行。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.NavigationBusy" xml:space="preserve">
+        <source>传送或寻路正在进行，请结束后再开始。</source>
+        <target>傳送或尋路正在進行，請結束后再開始。</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.CommandOpen" xml:space="preserve">
         <source>打开自动狩猎窗口</source>
         <target>打開自動狩獵窗口</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoHunt.CommandStart" xml:space="preserve">
-        <source>开始自动狩猎</source>
-        <target>開始自動狩獵</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoHunt.CommandStop" xml:space="preserve">
-        <source>停止自动狩猎</source>
-        <target>停止自動狩獵</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Completed" xml:space="preserve">
         <source>自动狩猎已完成。</source>
@@ -4121,6 +4191,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoHunt.DependencyFailure" xml:space="preserve">
         <source>战斗或寻路依赖不可用。</source>
         <target>戰斗或尋路依賴不可用。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.WaitingFateSync" xml:space="preserve">
+        <source>正在等待危命任务等级同步。</source>
+        <target>正在等待危命任務等級同步。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Died" xml:space="preserve">
         <source>角色已死亡，自动狩猎已停止。</source>
@@ -4134,9 +4208,13 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>正在讨伐目标。</source>
         <target>正在討伐目標。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ResolvingAggro" xml:space="preserve">
+        <source>正在清理仇恨，脱战后继续。</source>
+        <target>正在清理仇恨，脫戰后繼續。</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.HuntBills" xml:space="preserve">
-        <source>狩猎通缉令</source>
-        <target>狩獵通緝令</target>
+        <source>狩猎委托</source>
+        <target>狩獵委托</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.InDuty" xml:space="preserve">
         <source>当前处于副本或其他受限状态。</source>
@@ -4146,17 +4224,25 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>模式</source>
         <target>模式</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Collapse" xml:space="preserve">
+        <source>收起</source>
+        <target>收起</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Expand" xml:space="preserve">
+        <source>展开</source>
+        <target>展開</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.NoSpawnData" xml:space="preserve">
         <source>当前目标没有可用的出生点数据。</source>
         <target>當前目標沒有可用的出生點數據。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.BillMissingRoutes" xml:space="preserve">
+        <source>部分委托目标缺少出生点，未完成：{0}。</source>
+        <target>部分委托目標缺少出生點，未完成：{0}。</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.NoTargets" xml:space="preserve">
         <source>当前没有可执行的讨伐目标。</source>
         <target>當前沒有可執行的討伐目標。</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoHunt.Open" xml:space="preserve">
-        <source>打开</source>
-        <target>打開</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Pause" xml:space="preserve">
         <source>暂停</source>
@@ -4174,9 +4260,53 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>正在准备自动狩猎。</source>
         <target>正在準備自動狩獵。</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoHunt.Progress" xml:space="preserve">
-        <source>{0}/{1}</source>
-        <target>{0}/{1}</target>
+      <trans-unit id="Feature.AutoHunt.Area" xml:space="preserve">
+        <source>区域</source>
+        <target>區域</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.PendingTarget" xml:space="preserve">
+        <source>待处理</source>
+        <target>待處理</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.PatrolPending" xml:space="preserve">
+        <source>待巡查</source>
+        <target>待巡查</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.PatrolActive" xml:space="preserve">
+        <source>巡查中</source>
+        <target>巡查中</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Defeated" xml:space="preserve">
+        <source>已击倒</source>
+        <target>已擊倒</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.SearchResults" xml:space="preserve">
+        <source>搜索结果</source>
+        <target>搜索結果</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.CompletionSummary" xml:space="preserve">
+        <source>完成 {0}/{1}</source>
+        <target>完成 {0}/{1}</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RemainingSummary" xml:space="preserve">
+        <source>完成 {0}/{1} · 剩余 {2}</source>
+        <target>完成 {0}/{1} · 剩余 {2}</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.NoPendingTargets" xml:space="preserve">
+        <source>没有待处理的目标。</source>
+        <target>沒有待處理的目標。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.PatrolledShort" xml:space="preserve">
+        <source>已巡查</source>
+        <target>已巡查</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.IncompleteOnly" xml:space="preserve">
+        <source>仅看未完成</source>
+        <target>僅看未完成</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ProgressColumn" xml:space="preserve">
+        <source>进度</source>
+        <target>進度</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Resume" xml:space="preserve">
         <source>继续</source>
@@ -4187,8 +4317,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>正在搜索目標。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Start" xml:space="preserve">
-        <source>开始</source>
-        <target>開始</target>
+        <source>启动</source>
+        <target>啟動</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Status" xml:space="preserve">
         <source>状态</source>
@@ -4213,6 +4343,22 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoHunt.TravelFailed" xml:space="preserve">
         <source>传送或前往目标区域失败。</source>
         <target>傳送或前往目標區域失敗。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.DismountFailed" xml:space="preserve">
+        <source>长时间无法下坐骑，自动狩猎已停止。</source>
+        <target>長時間無法下坐騎，自動狩獵已停止。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.CombatStalled" xml:space="preserve">
+        <source>战斗长时间没有进展，请检查目标与战斗插件。</source>
+        <target>戰斗長時間沒有進展，請檢查目標與戰斗插件。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ProgressUnavailable" xml:space="preserve">
+        <source>无法读取角色或狩猎进度，请确认角色状态和所选模式。</source>
+        <target>無法讀取角色或狩獵進度，請確認角色狀態和所選模式。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.BillAcceptFailed" xml:space="preserve">
+        <source>未能接取所选狩猎委托，请检查委托状态。</source>
+        <target>未能接取所選狩獵委托，請檢查委托狀態。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Traveling" xml:space="preserve">
         <source>正在前往目标区域。</source>
@@ -5668,29 +5814,9 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>原因</source>
         <target>原因</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoQuest.CommandAll" xml:space="preserve">
-        <source>执行任务目录的一轮任务</source>
-        <target>執行任務目錄的一輪任務</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoQuest.CommandOpen" xml:space="preserve">
-        <source>打开自动任务面板</source>
-        <target>打開自動任務面板</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoQuest.CommandPause" xml:space="preserve">
-        <source>暂停当前请求</source>
-        <target>暫停當前請求</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoQuest.CommandResume" xml:space="preserve">
-        <source>继续当前请求</source>
-        <target>繼續當前請求</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoQuest.CommandStart" xml:space="preserve">
-        <source>开始指定任务及其前置</source>
-        <target>開始指定任務及其前置</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoQuest.CommandStop" xml:space="preserve">
-        <source>停止当前请求</source>
-        <target>停止當前請求</target>
+        <source>打开自动任务窗口；附加任务 ID 可执行指定任务及其前置任务</source>
+        <target>打開自動任務窗口；附加任務 ID 可執行指定任務及其前置任務</target>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Completed" xml:space="preserve">
         <source>目标已完成</source>
@@ -5916,6 +6042,12 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>无法沿当前路径到达任务目标。</source>
         <target>無法沿當前路徑到達任務目標。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.navigation_route_exhausted" xml:space="preserve"><source>同一区域内未找到通路，请手动靠近再继续。</source><target>同一區域內未找到通路，請手動靠近再繼續。</target></trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.combat_target_unconfirmed" xml:space="preserve"><source>尚未选中任务怪物，正在重试。</source><target>尚未選中任務怪物，正在重試。</target></trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_combat_search_exhausted" xml:space="preserve"><source>已巡查任务区域，未找到可到达的任务怪物。请靠近怪物后重试。</source><target>已巡查任務區域，未找到可到達的任務怪物。請靠近怪物后重試。</target></trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_prerequisite_incomplete" xml:space="preserve"><source>接取条件未满足，请先完成前置任务。</source><target>接取條件未滿足，請先完成前置任務。</target></trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_society_reputation_required" xml:space="preserve"><source>当前阶声望未满，请先完成部族日常。</source><target>當前階聲望未滿，請先完成部族日常。</target></trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_capture_item_unresolved" xml:space="preserve"><source>请先削弱目标，再使用任务道具捕获。当前步骤需要手动完成。</source><target>請先削弱目標，再使用任務道具捕獲。當前步驟需要手動完成。</target></trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.navigation_ipc_failed" xml:space="preserve">
         <source>导航插件调用失败，请检查插件状态。</source>
         <target>導航插件調用失敗，請檢查插件狀態。</target>
@@ -5995,6 +6127,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoQuest.Error.quest_accept_unavailable" xml:space="preserve">
         <source>暂时无法接取当前任务。</source>
         <target>暫時無法接取當前任務。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_accept_not_offered" xml:space="preserve">
+        <source>NPC 未开放接取，请检查任务前置条件。</source>
+        <target>NPC 未開放接取，請檢查任務前置條件。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.quest_busy" xml:space="preserve">
         <source>自动任务正在执行其他请求。</source>
@@ -6228,6 +6364,18 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>完成所选</source>
         <target>完成所選</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Start" xml:space="preserve">
+        <source>启动</source>
+        <target>啟動</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Collapse" xml:space="preserve">
+        <source>收起</source>
+        <target>收起</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Expand" xml:space="preserve">
+        <source>展开</source>
+        <target>展開</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoQuest.Status" xml:space="preserve">
         <source>状态</source>
         <target>狀態</target>
@@ -6374,9 +6522,33 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>雇员改价</source>
         <target>雇員改價</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoRetainer.WithdrawInventoryAll" xml:space="preserve">
+        <source>取出所有物品</source>
+        <target>取出所有物品</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRetainer.WithdrawInventoryAllHelp" xml:space="preserve">
+        <source>一键转移雇员仓库的物品到玩家背包内。</source>
+        <target>一鍵轉移雇員倉庫的物品到玩家背包內。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRetainer.WithdrawInventoryCompleted" xml:space="preserve">
+        <source>当前雇员物品已全部取出。</source>
+        <target>當前雇員物品已全部取出。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRetainer.WithdrawInventoryStopped" xml:space="preserve">
+        <source>剩余物品无法放入背包或水晶栏，已留在当前雇员处。</source>
+        <target>剩余物品無法放入背包或水晶欄，已留在當前雇員處。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRetainer.WithdrawInventoryUnconfirmed" xml:space="preserve">
+        <source>未能确认物品转移，已停止取出。</source>
+        <target>未能確認物品轉移，已停止取出。</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoRetainer.WithdrawMarketAll" xml:space="preserve">
         <source>全部收回</source>
         <target>全部收回</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRetainer.WithdrawMarketAllHelp" xml:space="preserve">
+        <source>雇员出售品列表界面显示全部收回按钮，用于一键下架商品。</source>
+        <target>雇員出售品列表界面顯示全部收回按鈕，用于一鍵下架商品。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoRetainer.WithdrawMarketStopped" xml:space="preserve">
         <source>收回已停止，请检查背包空间与游戏提示。未收回的物品仍保留在出售栏中。</source>
@@ -6966,10 +7138,87 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>请先进入金碟游乐场砍树所在地图（Territory 388）</source>
         <target>請先進入金碟游樂場砍樹所在地圖（Territory 388）</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.AutomaticNPC" xml:space="preserve">
-        <source>自动选择天选 NPC</source>
-        <target>自動選擇天選 NPC</target>
+      <trans-unit id="Feature.AutoTripleTriadCollection.NPCMissingCards" xml:space="preserve"><source>未登记的 NPC 幻卡</source><target>未登記的 NPC 幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.BlockedCountHelp" xml:space="preserve">
+        <source>这里按受阻 NPC 计数。每张未登记幻卡的来源和检查结果见下方列表。</source>
+        <target>這里按受阻 NPC 計數。每張未登記幻卡的來源和檢查結果見下方列表。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.NPCSourceUnchecked" xml:space="preserve">
+        <source>本轮暂无检查结果</source>
+        <target>本輪暫無檢查結果</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.Emote" xml:space="preserve">
+        <source>无法确认这一步要求的情感动作，请按任务日志手动推进。</source>
+        <target>無法確認這一步要求的情感動作，請按任務日志手動推進。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.Mechanism" xml:space="preserve">
+        <source>无法确定这一步的目标或所需操作，请按任务日志手动推进。</source>
+        <target>無法確定這一步的目標或所需操作，請按任務日志手動推進。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.AutoHookUnavailable" xml:space="preserve">
+        <source>钓鱼步骤无法调用 AutoHook；启用后仍需支持此任务的钓鱼设置。</source>
+        <target>釣魚步驟無法調用 AutoHook；啟用后仍需支持此任務的釣魚設置。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.NPCNoMissingCards" xml:space="preserve"><source>NPC 幻卡已收齐。</source><target>NPC 幻卡已收齊。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.NPCCards" xml:space="preserve"><source>NPC 幻卡</source><target>NPC 幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyCards" xml:space="preserve"><source>副本幻卡</source><target>副本幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Source" xml:space="preserve"><source>获取来源</source><target>獲取來源</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.AllExpansions" xml:space="preserve"><source>全部资料片</source><target>全部資料片</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.UnknownExpansion" xml:space="preserve"><source>资料片未知</source><target>資料片未知</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CardColumn" xml:space="preserve"><source>幻卡</source><target>幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Completion" xml:space="preserve"><source>完成</source><target>完成</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.UncollectedOnly" xml:space="preserve"><source>仅看未收录</source><target>僅看未收錄</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.NoUncollectedInView" xml:space="preserve"><source>当前范围没有未收录的幻卡。</source><target>當前範圍沒有未收錄的幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.collection_unavailable" xml:space="preserve"><source>暂时无法读取幻卡收藏册。</source><target>暫時無法讀取幻卡收藏冊。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.no_selected_cards" xml:space="preserve"><source>请至少勾选一张未登记的 NPC 幻卡。</source><target>請至少勾選一張未登記的 NPC 幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CreateDutyPreset" xml:space="preserve"><source>生成副本预设</source><target>生成副本預設</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutySourceGroup" xml:space="preserve"><source>{0}（{1} 个副本）</source><target>{0}（{1} 個副本）</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyCollectionUnavailable" xml:space="preserve"><source>暂时无法读取幻卡收藏册。</source><target>暫時無法讀取幻卡收藏冊。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyNoMissingCards" xml:space="preserve"><source>当前角色没有未登记的副本幻卡。</source><target>當前角色沒有未登記的副本幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.NPCProtocolUnavailable" xml:space="preserve"><source>当前客户端暂不支持自动 NPC 对战。</source><target>當前客戶端暫不支持自動 NPC 對戰。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unlocked" xml:space="preserve"><source>副本已解锁</source><target>副本已解鎖</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Locked" xml:space="preserve"><source>副本未解锁</source><target>副本未解鎖</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unknown" xml:space="preserve"><source>暂时无法读取解锁状态</source><target>暫時無法讀取解鎖狀態</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Manual" xml:space="preserve"><source>特殊来源 · 手动获取</source><target>特殊來源 · 手動獲取</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.duty_module_unavailable" xml:space="preserve"><source>请先在妙妙屋启用自动副本。</source><target>請先在妙妙屋啟用自動副本。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.duty_busy" xml:space="preserve"><source>自动副本正在运行。</source><target>自動副本正在運行。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.duty_empty" xml:space="preserve"><source>没有选中来自已解锁副本的未登记幻卡。</source><target>沒有選中來自已解鎖副本的未登記幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.EnteringEureka" xml:space="preserve"><source>前往禁地优雷卡</source><target>前往禁地優雷卡</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.EnteringNPCWarp" xml:space="preserve"><source>正在进入目标区域</source><target>正在進入目標區域</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_battlehall_entry" xml:space="preserve"><source>请通过任务搜索器进入幻卡对局室，再重新检查未完成目标。</source><target>請通過任務搜索器進入幻卡對局室，再重新檢查未完成目標。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.EnteringBattlehall" xml:space="preserve"><source>正在进入幻卡对局室</source><target>正在進入幻卡對局室</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Stage.LeavingBattlehall" xml:space="preserve"><source>正在离开幻卡对局室</source><target>正在離開幻卡對局室</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_battlehall_queue_busy" xml:space="preserve"><source>当前无法开始对局室排队。请先结束其他任务或排队。</source><target>當前無法開始對局室排隊。請先結束其他任務或排隊。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_battlehall_timeout" xml:space="preserve"><source>等待进入幻卡对局室超时。</source><target>等待進入幻卡對局室超時。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_battlehall_party" xml:space="preserve"><source>组队时请手动申请进入幻卡对局室。</source><target>組隊時請手動申請進入幻卡對局室。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_battlehall_leave_manual" xml:space="preserve"><source>请离开幻卡对局室，再继续收集。</source><target>請離開幻卡對局室，再繼續收集。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.teleport_interrupted" xml:space="preserve"><source>传送被中断，尚未到达目标区域。</source><target>傳送被中斷，尚未到達目標區域。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.Satisfaction" xml:space="preserve"><source>暂不支持自动判断老主顾交付的解锁条件。</source><target>暫不支持自動判斷老主顧交付的解鎖條件。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.SocietyReputation" xml:space="preserve"><source>「{0}」阶声望未满，请先完成部族日常。</source><target>「{0}」階聲望未滿，請先完成部族日常。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.SocietyReputationProgress" xml:space="preserve"><source>{0}「{1}」声望 {2}/{3}，请先完成部族日常。</source><target>{0}「{1}」聲望 {2}/{3}，請先完成部族日常。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.Action" xml:space="preserve"><source>暂不支持自动执行当前任务目标的操作。</source><target>暫不支持自動執行當前任務目標的操作。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.Progress" xml:space="preserve"><source>暂不支持自动判断当前任务目标的进度。</source><target>暫不支持自動判斷當前任務目標的進度。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.Script" xml:space="preserve"><source>当前任务包含暂不支持的步骤。</source><target>當前任務包含暫不支持的步驟。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.NotOffered" xml:space="preserve"><source>NPC 未开放接取，请检查前置条件。</source><target>NPC 未開放接取，請檢查前置條件。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.DutyPrerequisite" xml:space="preserve"><source>尚未完成前置副本。</source><target>尚未完成前置副本。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.QuestBlocker.TargetAmbiguous" xml:space="preserve"><source>无法确定当前任务的交互对象，请手动推进这一步后继续。</source><target>無法確定當前任務的交互對象，請手動推進這一步后繼續。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_area_entrance_unavailable" xml:space="preserve"><source>未能通过入口进入「{0}」，请检查入口或手动进入。</source><target>未能通過入口進入「{0}」，請檢查入口或手動進入。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_location_missing" xml:space="preserve"><source>客户端没有可用的 NPC 位置。</source><target>客戶端沒有可用的 NPC 位置。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_path_failed" xml:space="preserve"><source>未能走到「{0}」的 NPC 附近，请检查 vnavmesh 或手动靠近。</source><target>未能走到「{0}」的 NPC 附近，請檢查 vnavmesh 或手動靠近。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_not_loaded" xml:space="preserve"><source>已到达「{0}」的目标位置，但没有找到可交互的 NPC。</source><target>已到達「{0}」的目標位置，但沒有找到可交互的 NPC。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_timeout" xml:space="preserve"><source>前往目标超时。</source><target>前往目標超時。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.teleport_unconfirmed" xml:space="preserve"><source>未确认抵达传送目的地。</source><target>未確認抵達傳送目的地。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.boundary_path_failed" xml:space="preserve"><source>未能走到区域交界处。</source><target>未能走到區域交界處。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_cancelled" xml:space="preserve"><source>已取消本次移动。</source><target>已取消本次移動。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_prerequisites_unmet" xml:space="preserve"><source>还有目标的前置任务未满足，请查看未完成的目标。</source><target>還有目標的前置任務未滿足，請查看未完成的目標。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.eureka_entry_unavailable" xml:space="preserve"><source>无法使用罗德尼的优雷卡入口。</source><target>無法使用羅德尼的優雷卡入口。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.eureka_entry_timeout" xml:space="preserve"><source>等待进入优雷卡超时。</source><target>等待進入優雷卡超時。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.eureka_menu_mismatch" xml:space="preserve"><source>没有找到目标区域的入场选项，请检查区域是否已解锁。</source><target>沒有找到目標區域的入場選項，請檢查區域是否已解鎖。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.eureka_wrong_territory" xml:space="preserve"><source>未到达目标优雷卡区域。</source><target>未到達目標優雷卡區域。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.eureka_leave_current_duty" xml:space="preserve"><source>请先离开当前副本，再前往目标优雷卡区域。</source><target>請先離開當前副本，再前往目標優雷卡區域。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.eureka_quest_unavailable" xml:space="preserve"><source>罗德尼未提供当前任务，请检查优雷卡的前置进度。</source><target>羅德尼未提供當前任務，請檢查優雷卡的前置進度。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.area_locked" xml:space="preserve"><source>区域未解锁：{0}</source><target>區域未解鎖：{0}</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.area_route_unavailable" xml:space="preserve"><source>暂无可用路线：{0}</source><target>暫無可用路線：{0}</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Battle" xml:space="preserve">
         <source>对战进度</source>
         <target>對戰進度</target>
@@ -7103,8 +7352,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>等待 NPC 對話</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Blocked" xml:space="preserve">
-        <source>未完成的目标</source>
-        <target>未完成的目標</target>
+        <source>受阻的 NPC</source>
+        <target>受阻的 NPC</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Collapse" xml:space="preserve">
         <source>收起</source>
@@ -7115,40 +7364,24 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>本輪已登記</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.CommandOpen" xml:space="preserve">
-        <source>打开幻卡收集面板</source>
-        <target>打開幻卡收集面板</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.CommandPause" xml:space="preserve">
-        <source>暂停收集幻卡</source>
-        <target>暫停收集幻卡</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.CommandResume" xml:space="preserve">
-        <source>继续收集幻卡</source>
-        <target>繼續收集幻卡</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.CommandStart" xml:space="preserve">
-        <source>开始收集幻卡</source>
-        <target>開始收集幻卡</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.CommandStop" xml:space="preserve">
-        <source>停止收集幻卡</source>
-        <target>停止收集幻卡</target>
+        <source>打开自动幻卡收集窗口</source>
+        <target>打開自動幻卡收集窗口</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Configuration" xml:space="preserve">
         <source>设置</source>
         <target>設置</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DebugLogging" xml:space="preserve">
-        <source>调试日志</source>
-        <target>調試日志</target>
+        <source>Debug 日志</source>
+        <target>Debug 日志</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DebugLoggingHelp" xml:space="preserve">
         <source>将目标选择、任务接取条件、执行步骤、阻塞原因、对战与模拟结果写入 Dalamud 日志，便于排查问题。</source>
         <target>將目標選擇、任務接取條件、執行步驟、阻塞原因、對戰與模擬結果寫入 Dalamud 日志，便于排查問題。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Description" xml:space="preserve">
-        <source>自动收集 NPC 对战掉落的幻卡，或持续对战完成天选成就，支持前置任务与寻路。</source>
-        <target>自動收集 NPC 對戰掉落的幻卡，或持續對戰完成天選成就，支持前置任務與尋路。</target>
+        <source>自动挑战 NPC 收集幻卡，或为未登记的副本幻卡生成自动副本预设。</source>
+        <target>自動挑戰 NPC 收集幻卡，或為未登記的副本幻卡生成自動副本預設。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Draws" xml:space="preserve">
         <source>平</source>
@@ -7222,17 +7455,57 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>当前 NPC 对局未包含天选规则</source>
         <target>當前 NPC 對局未包含天選規則</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_unreachable" xml:space="preserve">
-        <source>无法到达或找到目标 NPC</source>
-        <target>無法到達或找到目標 NPC</target>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.battle_hooks_unavailable" xml:space="preserve">
+        <source>自动对战未能初始化，请重新启用模块并检查 Dalamud 日志。</source>
+        <target>自動對戰未能初始化，請重新啟用模塊并檢查 Dalamud 日志。</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Error.protocol_unsupported" xml:space="preserve">
-        <source>当前游戏版本暂不支持自动对战</source>
-        <target>當前游戲版本暫不支持自動對戰</target>
+      <trans-unit id="Feature.AutoTripleTriadCollection.ClientVersion" xml:space="preserve">
+        <source>客户端版本</source>
+        <target>客戶端版本</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.SupportedVersions" xml:space="preserve">
+        <source>协议基线版本</source>
+        <target>協議基線版本</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.VersionUnavailable" xml:space="preserve">
+        <source>无法读取</source>
+        <target>無法讀取</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.ProtocolObservationReady" xml:space="preserve">
+        <source>只读观察已开始，请在 5 分钟内手动完成一局幻卡。</source>
+        <target>只讀觀察已開始，請在 5 分鐘內手動完成一局幻卡。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.ProtocolOfflineVerified" xml:space="preserve">
+        <source>协议离线核对通过</source>
+        <target>協議離線核對通過</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.ProtocolObservationStart" xml:space="preserve">
+        <source>开始只读观察</source>
+        <target>開始只讀觀察</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.ProtocolObservationNeeded" xml:space="preserve">
+        <source>请开启调试日志，开始观察后手动完成一局幻卡。</source>
+        <target>請開啟調試日志，開始觀察后手動完成一局幻卡。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.ProtocolObservationComplete" xml:space="preserve">
+        <source>已记录一局，请提供调试日志以便核对。</source>
+        <target>已記錄一局，請提供調試日志以便核對。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.client_version_unavailable" xml:space="preserve">
+        <source>无法读取客户端版本，自动对战已禁用。请检查客户端和 Dalamud 是否正常加载。</source>
+        <target>無法讀取客戶端版本，自動對戰已禁用。請檢查客戶端和 Dalamud 是否正常加載。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.protocol_checking" xml:space="preserve">
+        <source>正在离线核对协议</source>
+        <target>正在離線核對協議</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.protocol_unverified" xml:space="preserve">
+        <source>离线核对未能确认兼容，自动对战已禁用。</source>
+        <target>離線核對未能確認兼容，自動對戰已禁用。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_blocked" xml:space="preserve">
-        <source>解锁任务受阻，继续寻找其他目标。</source>
-        <target>解鎖任務受阻，繼續尋找其他目標。</target>
+        <source>当前任务步骤无法自动完成，请查看任务日志。</source>
+        <target>當前任務步驟無法自動完成，請查看任務日志。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.quest_busy" xml:space="preserve">
         <source>自动任务正在执行其他请求。</source>
@@ -7326,6 +7599,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>等待传送到达确认</source>
         <target>等待傳送到達確認</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.ActualWinRate" xml:space="preserve">
+        <source>本轮实战胜率</source>
+        <target>本輪實戰勝率</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.EstimateComputing" xml:space="preserve">
         <source>正在计算</source>
         <target>正在計算</target>
@@ -7338,17 +7615,13 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>等待对战选牌</source>
         <target>等待對戰選牌</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.EstimateWaitingRules" xml:space="preserve">
-        <source>等待随机规则确定</source>
-        <target>等待隨機規則確定</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.EstimatedWinRate" xml:space="preserve">
         <source>模拟胜率</source>
         <target>模擬勝率</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.EstimatedWinRateHelp" xml:space="preserve">
-        <source>按候选对手牌组与规则进行快速模拟，平局不计为胜利。随机规则确定后才可估算；结果仅供参考，不代表实际胜率。</source>
-        <target>按候選對手牌組與規則進行快速模擬，平局不計為勝利。隨機規則確定后才可估算；結果僅供參考，不代表實際勝率。</target>
+        <source>出战前抽样模拟对手手牌和已支持的天选规则。平局不计为胜利，结果仅供参考。</source>
+        <target>出戰前抽樣模擬對手手牌和已支持的天選規則。平局不計為勝利，結果僅供參考。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Expand" xml:space="preserve">
         <source>展开</source>
@@ -7357,14 +7630,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoTripleTriadCollection.Fee" xml:space="preserve">
         <source>每局费用（金碟币）</source>
         <target>每局費用（金碟幣）</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Help" xml:space="preserve">
-        <source>与同一 NPC 连续对战，拿齐目标卡后退出并登记，再前往下一个 NPC。自动任务负责完成解锁所需的任务和前置；条件不足的目标会保留原因。停止将在当前对局结束后生效。</source>
-        <target>與同一 NPC 連續對戰，拿齊目標卡后退出并登記，再前往下一個 NPC。自動任務負責完成解鎖所需的任務和前置；條件不足的目標會保留原因。停止將在當前對局結束后生效。</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.LimitTargets" xml:space="preserve">
-        <source>仅收集勾选的卡牌</source>
-        <target>僅收集勾選的卡牌</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Losses" xml:space="preserve">
         <source>负</source>
@@ -7378,10 +7643,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>模式</source>
         <target>模式</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Mode.CollectCards" xml:space="preserve">
-        <source>幻卡收集</source>
-        <target>幻卡收集</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Mode.RouletteAchievement" xml:space="preserve">
         <source>天选</source>
         <target>天選</target>
@@ -7389,10 +7650,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoTripleTriadCollection.Npc" xml:space="preserve">
         <source>当前 NPC</source>
         <target>當前 NPC</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Open" xml:space="preserve">
-        <source>打开控制面板</source>
-        <target>打開控制面板</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.OperationBlocked" xml:space="preserve">
         <source>当前操作无法继续</source>
@@ -7406,10 +7663,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>当前任务</source>
         <target>當前任務</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Registered" xml:space="preserve">
-        <source>已登记</source>
-        <target>已登記</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Resume" xml:space="preserve">
         <source>继续</source>
         <target>繼續</target>
@@ -7419,16 +7672,12 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>重新檢查未完成目標</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.RouletteHelp" xml:space="preserve">
-        <source>持续与所选 NPC 对战，直到完成天选胜场成就。收齐幻卡后仍会继续；进度以服务器确认为准。</source>
-        <target>持續與所選 NPC 對戰，直到完成天選勝場成就。收齊幻卡后仍會繼續；進度以服務器確認為準。</target>
+        <source>与最近 NPC 持续对战，直到完成天选胜场成就。</source>
+        <target>與最近 NPC 持續對戰，直到完成天選勝場成就。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.RouletteProgress" xml:space="preserve">
         <source>天选胜场</source>
         <target>天選勝場</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Search" xml:space="preserve">
-        <source>搜索卡名或编号</source>
-        <target>搜索卡名或編號</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.SimulationGames" xml:space="preserve">
         <source>局</source>
@@ -7491,8 +7740,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>傳送中</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Start" xml:space="preserve">
-        <source>开始</source>
-        <target>開始</target>
+        <source>启动</source>
+        <target>啟動</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Status" xml:space="preserve">
         <source>状态</source>
@@ -7505,10 +7754,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoTripleTriadCollection.Stopping" xml:space="preserve">
         <source>当前对局结束后停止</source>
         <target>當前對局結束后停止</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.TargetCards" xml:space="preserve">
-        <source>目标幻卡</source>
-        <target>目標幻卡</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Title" xml:space="preserve">
         <source>自动幻卡收集</source>
@@ -8709,10 +8954,6 @@ DOT/HOT 效果平均每 {0:F1} 點提高 0.1%。</target>
       <trans-unit id="Feature.BetterGlamourManagement.ItemPicker.Title" xml:space="preserve">
         <source>选择外观</source>
         <target>選擇外觀</target>
-      </trans-unit>
-      <trans-unit id="Feature.BetterGlamourManagement.LegacyGearsetHint" xml:space="preserve">
-        <source>旧绑定为套装 {0}，未记录所属角色，已暂停自动应用。请选择套装以确认当前角色的绑定，可同时绑定多个套装。</source>
-        <target>舊綁定為套裝 {0}，未記錄所屬角色，已暫停自動應用。請選擇套裝以確認當前角色的綁定，可同時綁定多個套裝。</target>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.MainHand" xml:space="preserve">
         <source>主手</source>
@@ -11170,6 +11411,10 @@ Mount（坐騎）、Retainer（雇員）等。</target>
         <source>自动执行一次丢弃售卖操作</source>
         <target>自動執行一次丟棄售賣操作</target>
       </trans-unit>
+      <trans-unit id="Feature.ItemManagement.ShopUnavailable" xml:space="preserve">
+        <source>未能打开附近的金币商店。未出售的物品已保留，请走近商人后重试。</source>
+        <target>未能開啟附近的金幣商店。未出售的物品已保留，請走近商人後重試。</target>
+      </trans-unit>
       <trans-unit id="Feature.ItemManagement.Export" xml:space="preserve">
         <source>导出配置</source>
         <target>導出配置</target>
@@ -11555,8 +11800,8 @@ Mount（坐騎）、Retainer（雇員）等。</target>
         <target>解鎖</target>
       </trans-unit>
       <trans-unit id="Feature.LootRollHistory.Unsupported" xml:space="preserve">
-        <source>当前客户端版本暂不支持战利品记录</source>
-        <target>當前客戶端版本暫不支持戰利品記錄</target>
+        <source>战利品记录未启用</source>
+        <target>戰利品記錄未啟用</target>
       </trans-unit>
       <trans-unit id="Feature.LootRollHistory.Value" xml:space="preserve">
         <source>运气</source>
@@ -15248,13 +15493,21 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>CE 参战申请未在时限内生效</source>
         <target>CE 參戰申請未在時限內生效</target>
       </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.BossModRequired" xml:space="preserve">
+        <source>请启用支持自动战斗的 BossMod 或 BossModReborn。</source>
+        <target>請啟用支持自動戰斗的 BossMod 或 BossModReborn。</target>
+      </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Collapse" xml:space="preserve">
         <source>收起</source>
         <target>收起</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.CombatRequested" xml:space="preserve">
-        <source>已进入活动，正在调用已安装的战斗插件。</source>
-        <target>已進入活動，正在調用已安裝的戰斗插件。</target>
+        <source>已请求启动自动战斗。</source>
+        <target>已請求啟動自動戰斗。</target>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.CombatStartFailed" xml:space="preserve">
+        <source>无法启动自动战斗。请检查循环插件、当前职业的 ACR 和 BossMod。</source>
+        <target>無法啟動自動戰斗。請檢查循環插件、當前職業的 ACR 和 BossMod。</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.CommandOpenWindow" xml:space="preserve">
         <source>打开自动特殊场景探索窗口</source>
@@ -15963,8 +16216,8 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>未選擇有效的特殊場景區域。</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.LastError" xml:space="preserve">
-        <source>最近错误</source>
-        <target>最近錯誤</target>
+        <source>当前提示</source>
+        <target>當前提示</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.MinimumPopulation" xml:space="preserve">
         <source>最低人数</source>
@@ -15985,6 +16238,14 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="Feature.SpecialScenarioExplorer.MountAfterTeleport.Help" xml:space="preserve">
         <source>传送、进图或升级对话后自动上坐骑</source>
         <target>傳送、進圖或升級對話后自動上坐騎</target>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.MountRequired" xml:space="preserve">
+        <source>请先在树树妙妙屋启用“自动上下坐骑”。</source>
+        <target>請先在樹樹妙妙屋啟用“自動上下坐騎”。</target>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.NavmeshRequired" xml:space="preserve">
+        <source>请先启用 vnavmesh 插件。</source>
+        <target>請先啟用 vnavmesh 插件。</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.OpenWindow" xml:space="preserve">
         <source>自动特殊场景探索</source>
@@ -16059,8 +16320,8 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>自動戰斗，與 PR 二選一，需加載當前職業可用的 ACR。</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.BossModReborn" xml:space="preserve">
-        <source>机制提示与自动避让，需启用 AI 功能。</source>
-        <target>機制提示與自動避讓，需啟用 AI 功能。</target>
+        <source>机制提示与自动避让，也可使用兼容的 BossMod。</source>
+        <target>機制提示與自動避讓，也可使用兼容的 BossMod。</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.PromeRotation" xml:space="preserve">
         <source>自动战斗，与 AE 二选一，需配置当前职业可用的 ACR。</source>
@@ -16077,6 +16338,10 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       <trans-unit id="Feature.SpecialScenarioExplorer.RotateWhenPopulationLow" xml:space="preserve">
         <source>人数过低时轮换</source>
         <target>人數過低時輪換</target>
+      </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.RotationRequired" xml:space="preserve">
+        <source>请启用 AEAssist 或 PromeRotation，并为当前职业配置可用的 ACR。</source>
+        <target>請啟用 AEAssist 或 PromeRotation，并為當前職業配置可用的 ACR。</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Running" xml:space="preserve">
         <source>运行中</source>
@@ -16122,19 +16387,21 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>待机</source>
         <target>待機</target>
       </trans-unit>
+      <trans-unit id="Feature.SpecialScenarioExplorer.StatusWaiting" xml:space="preserve">
+        <source>等待中</source>
+        <target>等待中</target>
+      </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.Stop" xml:space="preserve">
-        <source>关闭</source>
-        <target>關閉</target>
+        <source>停止</source>
+        <target>停止</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.TargetZone" xml:space="preserve">
         <source>区域</source>
         <target>區域</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.TestingNotice" xml:space="preserve">
-        <source>目前只支持 AE/PR 的自动循环，并且本人只测试过白魔，其余非奶妈职业一概不知！
-该功能处于测试阶段，目前可能存在很多问题，反馈时请带上 debug 日志。</source>
-        <target>目前只支持 AE/PR 的自動循環，并且本人只測試過白魔，其余非奶媽職業一概不知！
-該功能處于測試階段，目前可能存在很多問題，反饋時請帶上 debug 日志。</target>
+        <source>此功能仍在测试中。反馈问题前，请先开启调试日志并复现，再附上相关日志。</source>
+        <target>此功能仍在測試中。反饋問題前，請先開啟調試日志并復現，再附上相關日志。</target>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.ThirdLayer" xml:space="preserve">
         <source>三层</source>
@@ -18972,14 +19239,6 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>延迟提醒（秒）</source>
         <target>延遲提醒（秒）</target>
       </trans-unit>
-      <trans-unit id="Monitor.WarningsEnabled" xml:space="preserve">
-        <source>物品预警</source>
-        <target>物品預警</target>
-      </trans-unit>
-      <trans-unit id="Monitor.WarningsEnabled.Help" xml:space="preserve">
-        <source>默认关闭，开启后监控对应物品的数量情况！</source>
-        <target>默認關閉，開啟后監控對應物品的數量情況！</target>
-      </trans-unit>
       <trans-unit id="MoreMinimapInformationDescription" xml:space="preserve">
         <source>在小地图和展开地图上显示各类信息。</source>
         <target>在小地圖和展開地圖上顯示各類信息。</target>
@@ -19871,6 +20130,7 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
 自动上下坐骑：自动召唤坐骑、起飞，使用技能时自动下坐骑；
 自动跳过对话：自动点击普通对话窗口；
 自动跳过过场动画：自动跳过动画；
+自动确认区域通行：自动确认已识别的免费区域传送；
 更快的搜索结果：加速市场板、制作笔记和部队箱搜索。</source>
         <target>物品價格查詢：顯示市場價格、請求報價；
 物品查詢：顯示持有數量、存放位置等信息；
@@ -19884,6 +20144,7 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
 自動上下坐騎：自動召喚坐騎、起飛，使用技能時自動下坐騎；
 自動跳過對話：自動點擊普通對話窗口；
 自動跳過過場動畫：自動跳過動畫；
+自動確認區域通行：自動確認已識別的免費區域傳送；
 更快的搜索結果：加速市場板、制作筆記和部隊箱搜索。</target>
       </trans-unit>
       <trans-unit id="Settings.Ui.ResetSize" xml:space="preserve">
@@ -20582,6 +20843,172 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <source>宽屏过场</source>
         <target>寬屏過場</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntingLog" xml:space="preserve">
+        <source>讨伐笔记</source>
+        <target>討伐筆記</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntGrind" xml:space="preserve">
+        <source>狩猎A怪</source>
+        <target>狩獵A怪</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.CustomList" xml:space="preserve">
+        <source>自定义列表</source>
+        <target>自定義列表</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Expansion" xml:space="preserve">
+        <source>资料片</source>
+        <target>資料片</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.AllExpansions" xml:space="preserve">
+        <source>全部资料片</source>
+        <target>全部資料片</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Daily" xml:space="preserve">
+        <source>每日</source>
+        <target>每日</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Weekly" xml:space="preserve">
+        <source>每周</source>
+        <target>每周</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.SelectAll" xml:space="preserve">
+        <source>全选</source>
+        <target>全選</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ClearSelection" xml:space="preserve">
+        <source>清空选择</source>
+        <target>清空選擇</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.BillLocked" xml:space="preserve">
+        <source>未解锁</source>
+        <target>未解鎖</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.BillFinished" xml:space="preserve">
+        <source>已完成</source>
+        <target>已完成</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogRank" xml:space="preserve">
+        <source>讨伐等级</source>
+        <target>討伐等級</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogUnavailable" xml:space="preserve">
+        <source>当前没有可用的讨伐笔记。</source>
+        <target>當前沒有可用的討伐筆記。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RunLogDuties" xml:space="preserve">
+        <source>单人刷取副本目标</source>
+        <target>單人刷取副本目標</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogDutyUnavailable" xml:space="preserve">
+        <source>无法单人进入或执行副本，请检查解锁、等级及 AutoDuty 路线。</source>
+        <target>無法單人進入或執行副本，請檢查解鎖、等級及 AutoDuty 路線。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogDutyEntering" xml:space="preserve">
+        <source>正在进入副本。</source>
+        <target>正在進入副本。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogDutyRunning" xml:space="preserve">
+        <source>正在刷取副本目标。</source>
+        <target>正在刷取副本目標。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogDutyLeaving" xml:space="preserve">
+        <source>笔记目标已完成，正在退本。</source>
+        <target>筆記目標已完成，正在退本。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogDutyIncomplete" xml:space="preserve">
+        <source>副本流程已中断，请检查笔记进度。</source>
+        <target>副本流程已中斷，請檢查筆記進度。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogDuty" xml:space="preserve">
+        <source>剩余目标需要在副本内完成。</source>
+        <target>剩余目標需要在副本內完成。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogDutyAndMissingRoute" xml:space="preserve">
+        <source>剩余目标包含副本目标和缺少野外路线的目标。</source>
+        <target>剩余目標包含副本目標和缺少野外路線的目標。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogMissingRoute" xml:space="preserve">
+        <source>剩余目标缺少野外路线。</source>
+        <target>剩余目標缺少野外路線。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogMissingRouteLabel" xml:space="preserve">
+        <source>缺少野外路线</source>
+        <target>缺少野外路線</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.CustomSRankUnavailable" xml:space="preserve">
+        <source>S级不可用</source>
+        <target>S級不可用</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.VisitWorlds" xml:space="preserve">
+        <source>跨区执法</source>
+        <target>跨區執法</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.VisitWorldsHelp" xml:space="preserve">
+        <source>自动前往当前大区的其他服务器狩猎A怪</source>
+        <target>自動前往當前大區的其他服務器狩獵A怪</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.WorldTravel" xml:space="preserve">
+        <source>正在前往服务器：{0}</source>
+        <target>正在前往服務器：{0}</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.SearchMob" xml:space="preserve">
+        <source>搜索怪物或区域</source>
+        <target>搜索怪物或區域</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Count" xml:space="preserve">
+        <source>击杀数量</source>
+        <target>擊殺數量</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Remove" xml:space="preserve">
+        <source>移除</source>
+        <target>移除</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Reorder" xml:space="preserve">
+        <source>拖动调整顺序</source>
+        <target>拖動調整順序</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogJobMismatch" xml:space="preserve">
+        <source>请切换至所选职业后再启动自动讨伐。</source>
+        <target>請切換至所選職業后再啟動自動討伐。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RunAllLogBooks" xml:space="preserve">
+        <source>自动完成全部职业</source>
+        <target>自動完成全部職業</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogSwitchingJob" xml:space="preserve">
+        <source>正在切换至{0}。</source>
+        <target>正在切換至{0}。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogGearsetMissing" xml:space="preserve">
+        <source>没有可用的职业套装。</source>
+        <target>沒有可用的職業套裝。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogGearsetFailed" xml:space="preserve">
+        <source>未能切换职业。</source>
+        <target>未能切換職業。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogBatchIncomplete" xml:space="preserve">
+        <source>以下笔记未完成：{0}</source>
+        <target>以下筆記未完成：{0}</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.CustomSearchPrompt" xml:space="preserve">
+        <source>输入怪物或区域名称，最多显示50项匹配结果，排除S怪！</source>
+        <target>輸入怪物或區域名稱，最多顯示50項符合結果，排除S怪！</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.NoSearchResults" xml:space="preserve">
+        <source>未找到匹配的怪物或区域。</source>
+        <target>未找到匹配的怪物或區域。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.Patrolled" xml:space="preserve">
+        <source>已巡查，未发现目标。</source>
+        <target>已巡查，未發現目標。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.WaitingFate" xml:space="preserve">
+        <source>正在等待委托目标的FATE，最多等待5分钟。</source>
+        <target>正在等待委托目標的FATE，最多等待5分鐘。</target>
+      </trans-unit>
+
+
     </body>
   </file>
 </xliff>
