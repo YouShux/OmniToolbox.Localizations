@@ -12981,10 +12981,10 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>不可交易</source>
       </trans-unit>
       <trans-unit id="Status.VerificationOperationCancelled" xml:space="preserve">
-        <source>验证操作已取消</source>
+        <source>验证已取消</source>
       </trans-unit>
       <trans-unit id="Status.VerificationOperationFailed" xml:space="preserve">
-        <source>验证操作失败</source>
+        <source>验证失败，请查看插件日志</source>
       </trans-unit>
       <trans-unit id="Tab.Collection" xml:space="preserve">
         <source>物品收录</source>
@@ -13154,28 +13154,28 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>支持作者</source>
       </trans-unit>
       <trans-unit id="Verification.ActivationTicketGenerated" xml:space="preserve">
-        <source>一次性混淆凭证已生成并复制（30秒内有效）</source>
+        <source>一次性混淆凭证已复制，30 秒内有效</source>
       </trans-unit>
       <trans-unit id="Verification.ActivationTicketUnavailable" xml:space="preserve">
-        <source>当前没有可用于申请混淆凭证的验证凭证</source>
+        <source>没有可用于申请混淆凭证的凭证</source>
       </trans-unit>
       <trans-unit id="Verification.ActivationType.Temporary" xml:space="preserve">
         <source>临时凭证</source>
       </trans-unit>
       <trans-unit id="Verification.Authorized" xml:space="preserve">
-        <source>凭证已授权</source>
+        <source>已授权</source>
       </trans-unit>
       <trans-unit id="Verification.AuthorizedByOmni" xml:space="preserve">
-        <source>Omni服务器验证已授权</source>
+        <source>已通过 Omni 授权</source>
       </trans-unit>
       <trans-unit id="Verification.Blacklisted" xml:space="preserve">
-        <source>当前账号或设备已被禁止使用凭证</source>
+        <source>账号或设备已被封禁</source>
       </trans-unit>
       <trans-unit id="Verification.Cleared" xml:space="preserve">
-        <source>验证代码已清除</source>
+        <source>测试码已清除</source>
       </trans-unit>
       <trans-unit id="Verification.CodeFormatInvalid" xml:space="preserve">
-        <source>验证代码格式无效</source>
+        <source>测试码格式错误</source>
       </trans-unit>
       <trans-unit id="Verification.Credential.Account" xml:space="preserve">
         <source>账号识别凭证</source>
@@ -13192,8 +13192,11 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Verification.Credential.MissingValue" xml:space="preserve">
         <source>(未获取到凭证)</source>
       </trans-unit>
+      <trans-unit id="Verification.CredentialInvalid" xml:space="preserve">
+        <source>凭证无效</source>
+      </trans-unit>
       <trans-unit id="Verification.CredentialRevoked" xml:space="preserve">
-        <source>当前验证凭证已被撤销</source>
+        <source>凭证已撤销</source>
       </trans-unit>
       <trans-unit id="Verification.Description" xml:space="preserve">
         <source>本插件完全免费，从未委托任何人在任何渠道售卖！如果你是付费购买的本插件，请立即退款并差评举报。遇到任意问题可以点击 Discord 按钮，到对应频道进行反馈！</source>
@@ -13204,11 +13207,17 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Verification.DiscordChannel" xml:space="preserve">
         <source>Discord 验证频道</source>
       </trans-unit>
+      <trans-unit id="Verification.DnsFailure" xml:space="preserve">
+        <source>验证服务器域名解析失败</source>
+      </trans-unit>
       <trans-unit id="Verification.Expired" xml:space="preserve">
-        <source>授权快照已过期</source>
+        <source>授权已过期</source>
       </trans-unit>
       <trans-unit id="Verification.HowToActivate" xml:space="preserve">
         <source>如何激活</source>
+      </trans-unit>
+      <trans-unit id="Verification.InvalidResponse" xml:space="preserve">
+        <source>验证服务器返回的数据无效</source>
       </trans-unit>
       <trans-unit id="Verification.Link.Afdian" xml:space="preserve">
         <source>爱发电</source>
@@ -13223,10 +13232,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>GitHub</source>
       </trans-unit>
       <trans-unit id="Verification.NekoBlacklisted" xml:space="preserve">
-        <source>当前账号或设备已被上游许可服务禁止使用凭证</source>
+        <source>账号或设备已被上游封禁</source>
+      </trans-unit>
+      <trans-unit id="Verification.NetworkFailure" xml:space="preserve">
+        <source>验证服务器网络连接失败</source>
       </trans-unit>
       <trans-unit id="Verification.NotAuthorized" xml:space="preserve">
-        <source>当前账号或设备未获得凭证授权</source>
+        <source>未授权</source>
       </trans-unit>
       <trans-unit id="Verification.NotChecked" xml:space="preserve">
         <source>尚未检查凭证授权</source>
@@ -13270,28 +13282,34 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>在线验证消息</source>
       </trans-unit>
       <trans-unit id="Verification.OfficeBlacklisted" xml:space="preserve">
-        <source>当前账号或设备已被 Omni Office 禁止使用凭证</source>
+        <source>账号或设备已被 Omni 封禁</source>
       </trans-unit>
       <trans-unit id="Verification.OfficeUnavailable" xml:space="preserve">
-        <source>无法连接Omni服务器，部分功能失效！</source>
+        <source>Omni 验证服务暂不可用</source>
       </trans-unit>
       <trans-unit id="Verification.OperationInProgress" xml:space="preserve">
-        <source>正在处理验证操作</source>
+        <source>正在处理…</source>
       </trans-unit>
       <trans-unit id="Verification.PendingConfirmation" xml:space="preserve">
         <source>待确认</source>
       </trans-unit>
       <trans-unit id="Verification.PluginVersionUnsupported" xml:space="preserve">
-        <source>版本过旧，请更新至最新版本</source>
+        <source>插件版本不受支持，请更新</source>
       </trans-unit>
       <trans-unit id="Verification.PoweredBy" xml:space="preserve">
         <source>Powered by Neko &amp; Omni</source>
       </trans-unit>
       <trans-unit id="Verification.PrivateConfigurationMissing" xml:space="preserve">
-        <source>私有验证环境配置不完整</source>
+        <source>验证配置不完整</source>
       </trans-unit>
       <trans-unit id="Verification.ProtocolMismatch" xml:space="preserve">
-        <source>验证服务协议不兼容</source>
+        <source>验证协议不兼容，请更新插件</source>
+      </trans-unit>
+      <trans-unit id="Verification.ProxyFailure" xml:space="preserve">
+        <source>验证请求代理连接失败</source>
+      </trans-unit>
+      <trans-unit id="Verification.RateLimited" xml:space="preserve">
+        <source>验证请求过于频繁，请稍后重试</source>
       </trans-unit>
       <trans-unit id="Verification.Refresh" xml:space="preserve">
         <source>刷新验证状态</source>
@@ -13299,17 +13317,38 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Verification.RefreshCooldown" xml:space="preserve">
         <source>请在 {0} 秒后刷新</source>
       </trans-unit>
+      <trans-unit id="Verification.RefreshFailed" xml:space="preserve">
+        <source>刷新验证失败，请查看插件日志</source>
+      </trans-unit>
       <trans-unit id="Verification.Refreshing" xml:space="preserve">
-        <source>正在刷新验证状态</source>
+        <source>正在刷新验证…</source>
       </trans-unit>
       <trans-unit id="Verification.ReportingAccepted" xml:space="preserve">
         <source>数据已提交</source>
       </trans-unit>
       <trans-unit id="Verification.RequestExpired" xml:space="preserve">
-        <source>请求时间校验失败，已尝试同步 Omni 服务器时间，请检查系统时间后重试</source>
+        <source>请求时间校验失败，请检查系统时间</source>
+      </trans-unit>
+      <trans-unit id="Verification.RequestForbidden" xml:space="preserve">
+        <source>服务器拒绝访问验证接口</source>
+      </trans-unit>
+      <trans-unit id="Verification.RequestRejected" xml:space="preserve">
+        <source>服务器拒绝了验证请求</source>
+      </trans-unit>
+      <trans-unit id="Verification.RequestTimeout" xml:space="preserve">
+        <source>验证请求超时，请重试</source>
+      </trans-unit>
+      <trans-unit id="Verification.RequestUnauthorized" xml:space="preserve">
+        <source>服务器未通过请求身份验证</source>
+      </trans-unit>
+      <trans-unit id="Verification.ServerError" xml:space="preserve">
+        <source>Omni 验证服务发生错误</source>
       </trans-unit>
       <trans-unit id="Verification.ServerUnavailable" xml:space="preserve">
-        <source>服务暂时不可用！</source>
+        <source>上游授权服务暂不可用</source>
+      </trans-unit>
+      <trans-unit id="Verification.SessionInvalid" xml:space="preserve">
+        <source>验证会话不可用，请刷新</source>
       </trans-unit>
       <trans-unit id="Verification.Step.CopyCredential" xml:space="preserve">
         <source>复制机器/账号凭证</source>
@@ -13345,10 +13384,10 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>未认证</source>
       </trans-unit>
       <trans-unit id="Verification.TestCodeAccepted" xml:space="preserve">
-        <source>测试码验证通过</source>
+        <source>测试码已通过</source>
       </trans-unit>
       <trans-unit id="Verification.TestCodeRejected" xml:space="preserve">
-        <source>测试码验证失败</source>
+        <source>测试码未通过</source>
       </trans-unit>
       <trans-unit id="Verification.TestQualificationDevRequired" xml:space="preserve">
         <source>该功能需要正式激活且测试码为 Dev 等级</source>
@@ -13361,6 +13400,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Verification.TestQualificationRequired" xml:space="preserve">
         <source>该功能需要正式激活且测试码为 Go 或更高等级</source>
+      </trans-unit>
+      <trans-unit id="Verification.TlsFailure" xml:space="preserve">
+        <source>验证服务器安全连接失败</source>
       </trans-unit>
       <trans-unit id="VoidBicolorShopDescription" xml:space="preserve">
         <source>虚空交互打开所有最高级的双色宝石商店。</source>
