@@ -2618,6 +2618,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>取消</source>
         <target>取消</target>
       </trans-unit>
+      <trans-unit id="Common.DebugLogging" xml:space="preserve">
+        <source>调试日志</source>
+        <target>除錯日誌</target>
+      </trans-unit>
       <trans-unit id="Common.Close" xml:space="preserve">
         <source>关闭</source>
         <target>關閉</target>
@@ -3332,10 +3336,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>当前战斗接口无法同时保证机制选敌与输出隔离，已停止并保留进度。</source>
         <target>當前戰斗接口無法同時保證機制選敵與輸出隔離，已停止并保留進度。</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Error.combat_unavailable" xml:space="preserve">
-        <source>请检查战斗循环与 BossMod Reborn，并停用原版 BossMod。</source>
-        <target>請檢查戰鬥循環與 BossMod Reborn，並停用原版 BossMod。</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.consecutive_failures" xml:space="preserve">
         <source>连续失败已达到设置上限，流程已停止；请查看最近一次失败的位置和日志。</source>
         <target>連續失敗已達到設置上限，流程已停止；請查看最近一次失敗的位置和日志。</target>
@@ -3439,10 +3439,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoDeepDungeon.Error.rotation_output_unconfirmed" xml:space="preserve">
         <source>无法确认战斗循环已停止，已中止变身切换以避免同时输出。</source>
         <target>無法確認戰斗循環已停止，已中止變身切換以避免同時輸出。</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Error.rotation_unavailable" xml:space="preserve">
-        <source>没有可用的职业战斗循环，请确认插件接口与当前职业循环。</source>
-        <target>沒有可用的職業戰斗循環，請確認插件接口與當前職業循環。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.save_busy" xml:space="preserve">
         <source>其他任务正在处理深层迷宫存档。</source>
@@ -3576,10 +3572,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>正在开启深宫无敌模式</source>
         <target>正在開啟深宮無敵模式</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.ReadinessBlocked" xml:space="preserve">
-        <source>当前阻塞：{0}</source>
-        <target>當前阻塞：{0}</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.ReadinessReady" xml:space="preserve">
         <source>启动所需接口与当前职业循环可用。</source>
         <target>啟動所需接口與當前職業循環可用。</target>
@@ -3619,10 +3611,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoDeepDungeon.Stopped" xml:space="preserve">
         <source>已停止</source>
         <target>已停止</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.StoppedReason" xml:space="preserve">
-        <source>停止原因：{0}</source>
-        <target>停止原因：{0}</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Target" xml:space="preserve">
         <source>目标楼层</source>
@@ -3689,14 +3677,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoDuty.AutoDutyIPCUnavailable" xml:space="preserve">
         <source>AutoDuty IPC 不可用。</source>
         <target>AutoDuty IPC 不可用。</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDuty.AutoDutyUnavailable" xml:space="preserve">
-        <source>AutoDuty 未启用。</source>
-        <target>AutoDuty 未啟用。</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDuty.BossModUnavailable" xml:space="preserve">
-        <source>请启用 BossMod Reborn，并停用原版 BossMod。</source>
-        <target>請啟用 BossMod Reborn，並停用原版 BossMod。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDuty.Busy" xml:space="preserve">
         <source>AutoDuty 正在运行。</source>
@@ -3862,10 +3842,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>副本失败，准备重试</source>
         <target>副本失敗，準備重試</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoDuty.RotationUnavailable" xml:space="preserve">
-        <source>AEAssist 和 PromeRotation 至少需要启用一个。</source>
-        <target>AEAssist 和 PromeRotation 至少需要啟用一個。</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoDuty.Running" xml:space="preserve">
         <source>正在运行</source>
         <target>正在運行</target>
@@ -3905,10 +3881,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoDuty.UnknownDutyType" xml:space="preserve">
         <source>未知类型（{0}）</source>
         <target>未知類型（{0}）</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDuty.VnavmeshUnavailable" xml:space="preserve">
-        <source>vnavmesh 未启用。</source>
-        <target>vnavmesh 未啟用。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoGCSeal.Add" xml:space="preserve">
         <source>添加</source>
@@ -3993,8 +3965,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>游戲類型</target>
       </trans-unit>
       <trans-unit id="Feature.AutoGoldSaucer.Help" xml:space="preserve">
-        <source>挖矿最高9600，砍树最高1050，理论上挖矿两个小时刷满，刷满自动停止。</source>
-        <target>挖礦最高9600，砍樹最高1050，理論上挖礦兩個小時刷滿，刷滿自動停止。</target>
+        <source>在陆行鸟广场外点击开始，会先传送到广场，抵达后按设定次数运行。挖矿最高 9600，砍树最高 1050，金碟币达到上限时自动停止。</source>
+        <target>在陸行鳥廣場外點擊開始，會先傳送到廣場，抵達後按設定次數執行。挖礦最高 9600，砍樹最高 1050，金碟幣達到上限時自動停止。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoGoldSaucer.Mining" xml:space="preserve">
         <source>矿脉探索（挖矿）</source>
@@ -4015,6 +3987,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoGoldSaucer.Status.MgpCapped" xml:space="preserve">
         <source>MGP 已达到上限，自动运行已停止</source>
         <target>MGP 已達到上限，自動運行已停止</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoGoldSaucer.TravelFailed" xml:space="preserve">
+        <source>未能抵达陆行鸟广场，请确认传送可用且已解锁该小水晶。</source>
+        <target>未能抵達陸行鳥廣場，請確認傳送可用且已解鎖該小水晶。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoGoldSaucer.Stop" xml:space="preserve">
         <source>停止</source>
@@ -4144,10 +4120,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>自动狩猎已完成。</source>
         <target>自動狩獵已完成。</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoHunt.DependencyFailure" xml:space="preserve">
-        <source>请检查战斗循环、BossMod Reborn 和 vnavmesh，并停用原版 BossMod。</source>
-        <target>請檢查戰鬥循環、BossMod Reborn 和 vnavmesh，並停用原版 BossMod。</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoHunt.WaitingFateSync" xml:space="preserve">
         <source>正在等待危命任务等级同步。</source>
         <target>正在等待危命任務等級同步。</target>
@@ -4187,10 +4159,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoHunt.Expand" xml:space="preserve">
         <source>展开</source>
         <target>展開</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoHunt.NoSpawnData" xml:space="preserve">
-        <source>当前目标没有可用的出生点数据。</source>
-        <target>當前目標沒有可用的出生點數據。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.BillMissingRoutes" xml:space="preserve">
         <source>部分委托目标缺少出生点，未完成：{0}。</source>
@@ -7399,21 +7367,9 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>当前路径已被其他操作替换</source>
         <target>當前路徑已被其他操作替換</target>
       </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_unavailable" xml:space="preserve">
-        <source>请启用自动寻路并确认 vnavmesh 可用</source>
-        <target>請啟用自動尋路并確認 vnavmesh 可用</target>
-      </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_ipc_unavailable" xml:space="preserve">
         <source>vnavmesh 的寻路接口不可用，请检查插件版本。</source>
         <target>vnavmesh 的尋路介面無法使用，請檢查插件版本。</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Error.rotation_unavailable" xml:space="preserve">
-        <source>请启用 AEAssist 或 PromeRotation，并为当前职业加载可用的 ACR。</source>
-        <target>請啟用 AEAssist 或 PromeRotation，並為目前職業載入可用的 ACR。</target>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Error.combat_unavailable" xml:space="preserve">
-        <source>请启用 BossMod Reborn，并停用原版 BossMod。</source>
-        <target>請啟用 BossMod Reborn，並停用原版 BossMod。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.not_logged_in" xml:space="preserve">
         <source>请先登录角色</source>
@@ -19580,8 +19536,12 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>沖突插件</target>
       </trans-unit>
       <trans-unit id="Requirements.Dependencies.Title" xml:space="preserve">
-        <source>依赖插件</source>
-        <target>相依插件</target>
+        <source>插件依赖</source>
+        <target>插件依賴</target>
+      </trans-unit>
+      <trans-unit id="Requirements.Dependencies.Warning" xml:space="preserve">
+        <source>请检查插件依赖是否均已启动？</source>
+        <target>請檢查插件依賴是否均已啟動？</target>
       </trans-unit>
       <trans-unit id="Requirements.OpenGitHub" xml:space="preserve">
         <source>跳转Github</source>
@@ -21040,8 +21000,16 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>跨區執法</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.VisitWorldsHelp" xml:space="preserve">
-        <source>自动前往当前大区的其他服务器狩猎A怪</source>
-        <target>自動前往當前大區的其他服務器狩獵A怪</target>
+        <source>巡查完当前服务器后，再前往同一大区的下一台服务器。</source>
+        <target>巡查完當前服務器后，再前往同一大區的下一臺服務器。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RefreshPatrol" xml:space="preserve">
+        <source>重新巡查</source>
+        <target>重新巡查</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RefreshPatrolHelp" xml:space="preserve">
+        <source>点击后重新巡查所有A怪的状态，排除已击杀的A怪和4567版本的A怪。</source>
+        <target>點擊後重新巡查所有A怪的狀態，排除已擊殺的A怪和4567版本的A怪。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.WorldTravel" xml:space="preserve">
         <source>正在前往服务器：{0}</source>
@@ -21088,8 +21056,8 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
         <target>以下筆記未完成：{0}</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.CustomSearchPrompt" xml:space="preserve">
-        <source>输入怪物或区域名称，最多显示50项匹配结果，排除S怪！</source>
-        <target>輸入怪物或區域名稱，最多顯示50項符合結果，排除S怪！</target>
+        <source>输入怪物或区域名称，最多显示50项匹配结果，排除S怪和4567版本的A怪。</source>
+        <target>輸入怪物或區域名稱，最多顯示50項符合結果，排除S怪和4567版本的A怪。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.NoSearchResults" xml:space="preserve">
         <source>未找到匹配的怪物或区域。</source>
