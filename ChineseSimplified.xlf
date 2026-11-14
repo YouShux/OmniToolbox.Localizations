@@ -324,7 +324,7 @@
         <source>魔兽导航失败或等待超时，请确认目标水晶已解锁、当前可传送，且目标地图具有可用的寻路网格。</source>
       </trans-unit>
       <trans-unit id="Collection.Bestiary.NavigationRequiresVnavmesh" xml:space="preserve">
-        <source>魔兽导航需要开启自动寻路，并安装和启用原版 vnavmesh。</source>
+        <source>魔兽导航需要开启自动寻路，并启用 vnavmesh（推荐使用 CN 版）。</source>
       </trans-unit>
       <trans-unit id="Collection.Bestiary.NavigationUnavailable" xml:space="preserve">
         <source>当前无法导航，请结束已有传送或寻路任务后重试。</source>
@@ -1871,6 +1871,9 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       <trans-unit id="Common.Save" xml:space="preserve">
         <source>保存</source>
       </trans-unit>
+      <trans-unit id="Common.StatusLine" xml:space="preserve">
+        <source>状态：{0}</source>
+      </trans-unit>
       <trans-unit id="Common.Status.AutoPathDisabled" xml:space="preserve">
         <source>寻路未开启</source>
       </trans-unit>
@@ -2209,16 +2212,16 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
 白名单：仅在表格勾选地图中启用自动接受复活。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoConfirmAreaTravel.Description" xml:space="preserve">
-        <source>自动确认已识别的免费区域传送，例如前往陆行鸟广场或进入福尔唐伯爵府。</source>
+        <source>自动确认区域传送，例如 “要前往陆行鸟广场吗？”。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoConfirmAreaTravel.Title" xml:space="preserve">
-        <source>自动确认区域通行</source>
+        <source>自动确认区域传送</source>
       </trans-unit>
       <trans-unit id="Feature.AutoFateSync.Title" xml:space="preserve">
         <source>自动危命任务等级同步</source>
       </trans-unit>
       <trans-unit id="Feature.AutoFateSync.Description" xml:space="preserve">
-        <source>在危命任务范围内选中该任务的战斗目标时，自动同步超过等级上限的角色。运行自动任务、自动幻卡等流程时暂停；需要打危命任务时，由对应流程发起同步。</source>
+        <source>在危命范围内选中任务怪时，自动同步等级。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoCommenceDuty.Description" xml:space="preserve">
         <source>参加任务确认窗口出现后，自动确认出发。</source>
@@ -2775,9 +2778,6 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoIshgardRestoration.UI.Start" xml:space="preserve">
         <source>启动</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoIshgardRestoration.UI.Status" xml:space="preserve">
-        <source>运行状态：{0}</source>
       </trans-unit>
       <trans-unit id="Feature.AutoIshgardRestoration.UI.Stop" xml:space="preserve">
         <source>停止</source>
@@ -4751,6 +4751,12 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.HairColors.Current" xml:space="preserve">
         <source>当前色</source>
+      </trans-unit>
+      <trans-unit id="Feature.BetterGlamourManagement.HairColors.EditorClickHint" xml:space="preserve">
+        <source>左键打开调色板，右键恢复角色原色，Ctrl + 右键撤回此颜色的上一次改动。</source>
+      </trans-unit>
+      <trans-unit id="Feature.BetterGlamourManagement.HairColors.PaletteClickHint" xml:space="preserve">
+        <source>左键选择颜色，右键恢复角色原色，Ctrl + 右键撤回此颜色的上一次改动。</source>
       </trans-unit>
       <trans-unit id="Feature.BetterGlamourManagement.HairColors.Original" xml:space="preserve">
         <source>原有色</source>
@@ -7661,6 +7667,24 @@ Mount（坐骑）、Retainer（雇员）等。</source>
       <trans-unit id="Feature.MultiToolbar.CopyCollection" xml:space="preserve">
         <source>复制</source>
       </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.CtrlLeftCommand" xml:space="preserve">
+        <source>Ctrl + 左键指令</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.CtrlLeftCommandHelp" xml:space="preserve">
+        <source>Ctrl + 左键：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.CtrlLeftCommandName" xml:space="preserve">
+        <source>Ctrl + 左键名称</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.CtrlRightCommand" xml:space="preserve">
+        <source>Ctrl + 右键指令</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.CtrlRightCommandHelp" xml:space="preserve">
+        <source>Ctrl + 右键：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.CtrlRightCommandName" xml:space="preserve">
+        <source>Ctrl + 右键名称</source>
+      </trans-unit>
       <trans-unit id="Feature.MultiToolbar.CurrencyBadges" xml:space="preserve">
         <source>徽章及战利品</source>
       </trans-unit>
@@ -9521,10 +9545,10 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>已请求启动自动战斗。</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.CombatStartFailed" xml:space="preserve">
-        <source>无法启动自动战斗。请检查循环插件、当前职业的 ACR 和 BossMod。</source>
+        <source>无法启动自动战斗。请检查循环插件、当前职业的 ACR 和 BossMod Reborn。</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.BossModRequired" xml:space="preserve">
-        <source>请启用支持自动战斗的 BossMod 或 BossModReborn。</source>
+        <source>请启用 BossMod Reborn，并停用原版 BossMod。</source>
       </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.CommandOpenWindow" xml:space="preserve">
         <source>打开自动特殊场景探索窗口</source>
@@ -10114,21 +10138,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.SpecialScenarioExplorer.Remaining" xml:space="preserve">
         <source>剩余时间</source>
       </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements" xml:space="preserve">
-        <source>必需插件</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.AEAssist" xml:space="preserve">
-        <source>自动战斗，与 PR 二选一，需加载当前职业可用的 ACR。</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.BossModReborn" xml:space="preserve">
-        <source>机制提示与自动避让，也可使用兼容的 BossMod。</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.PromeRotation" xml:space="preserve">
-        <source>自动战斗，与 AE 二选一，需配置当前职业可用的 ACR。</source>
-      </trans-unit>
-      <trans-unit id="Feature.SpecialScenarioExplorer.Requirements.Vnavmesh" xml:space="preserve">
-        <source>导航寻路，需等待导航网格加载完成。</source>
-      </trans-unit>
       <trans-unit id="Feature.SpecialScenarioExplorer.ResolvingAggro" xml:space="preserve">
         <source>正在反击追击角色的敌人，脱战后继续观战或活动流程。</source>
       </trans-unit>
@@ -10235,7 +10244,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>自动挖宝</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Automation.Tooltip" xml:space="preserve">
-        <source>标有「全自动」的藏宝图可单人完成买图、解图、赶路、挖掘及宝物库；其他藏宝图仅自动备图。全自动按本轮张数运行，缺图时按价格限制补购，需要启用自动寻路并安装 vnavmesh 和 BossMod。</source>
+        <source>标有「全自动」的藏宝图可单人完成买图、解图、赶路、挖掘及宝物库；其他藏宝图仅自动备图。全自动按本轮张数运行，缺图时按价格限制补购，需要启用自动寻路并安装 vnavmesh（推荐 CN 版）和 BossMod Reborn。</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.BlockOthers" xml:space="preserve">
         <source>不选中他人宝箱怪</source>
@@ -10289,7 +10298,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>挖宝流程已停止</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.CombatUnavailable" xml:space="preserve">
-        <source>无法启动自动战斗，请检查 BossMod 配置</source>
+        <source>无法启动自动战斗，请检查 BossMod Reborn 配置</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Completed" xml:space="preserve">
         <source>三张藏宝图已准备完成</source>
@@ -10304,7 +10313,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>正在使用解读技能</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.DependenciesMissing" xml:space="preserve">
-        <source>请启用自动寻路，并确认 vnavmesh 和 BossMod 已加载</source>
+        <source>请启用自动寻路、vnavmesh 和 BossMod Reborn，并停用原版 BossMod。</source>
       </trans-unit>
       <trans-unit id="Feature.TreasureMap.Status.Digging" xml:space="preserve">
         <source>正在挖掘宝箱</source>
@@ -12346,6 +12355,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Requirements.Conflicts.Title" xml:space="preserve">
         <source>冲突插件</source>
       </trans-unit>
+      <trans-unit id="Requirements.Dependencies.Title" xml:space="preserve">
+        <source>依赖插件</source>
+      </trans-unit>
       <trans-unit id="Requirements.OpenGitHub" xml:space="preserve">
         <source>跳转Github</source>
       </trans-unit>
@@ -12355,8 +12367,8 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Requirements.Plugin.AEAssist" xml:space="preserve">
         <source>AEAssist</source>
       </trans-unit>
-      <trans-unit id="Requirements.Plugin.BossModReborn" xml:space="preserve">
-        <source>BossModReborn</source>
+      <trans-unit id="Requirements.Plugin.BossMod" xml:space="preserve">
+        <source>BossMod Reborn</source>
       </trans-unit>
       <trans-unit id="Requirements.Plugin.DCTravelerX" xml:space="preserve">
         <source>DCTravelerX</source>
@@ -12374,13 +12386,22 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>Simple Tweaks Plugin</source>
       </trans-unit>
       <trans-unit id="Requirements.Plugin.Vnavmesh" xml:space="preserve">
-        <source>vnavmesh</source>
+        <source>vnavmesh CN</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Reason.AutoDuty" xml:space="preserve">
+        <source>执行副本路线和刷本流程。</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Reason.BossMod" xml:space="preserve">
+        <source>提供战斗机制提示和自动避让，需启用 BossMod Reborn。</source>
       </trans-unit>
       <trans-unit id="Requirements.Reason.DCTravelerX" xml:space="preserve">
         <source>所有跨大区功能的前置插件。</source>
       </trans-unit>
       <trans-unit id="Requirements.Reason.DuplicateTooltip" xml:space="preserve">
         <source>悬浮窗绘制内容重复，请择一使用。</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Reason.Rotation" xml:space="preserve">
+        <source>自动循环插件；AE 与 PR 至少启用一个，并加载当前职业可用的ACR。</source>
       </trans-unit>
       <trans-unit id="Requirements.Reason.SimpleTweaks" xml:space="preserve">
         <source>悬浮窗绘制内容冲突，具体冲突项见悬浮提示。</source>
@@ -12389,10 +12410,22 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>Tooltip 分类中的 Extra Information for Tooltips、Item Hotkeys、Materia Stats、Precise Durability、Precise Spiritbond、Preview Unlockable Items、Show Collectable Rewards、Show Glamour in Item Name、Show ID、Show Painting Preview、Track Outfits 等功能会产生重复内容。</source>
       </trans-unit>
       <trans-unit id="Requirements.Reason.Vnavmesh" xml:space="preserve">
-        <source>所有寻路功能的前置插件。</source>
+        <source>提供自动寻路和移动。推荐使用 vnavmesh CN，需等待当前地图的导航网格加载完成。</source>
       </trans-unit>
       <trans-unit id="Requirements.Required.Title" xml:space="preserve">
         <source>必需插件</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Status.Blocked" xml:space="preserve">
+        <source>依赖未满足</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Status.OriginalEnabled" xml:space="preserve">
+        <source>原版已启用</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Warning.OriginalBossMod" xml:space="preserve">
+        <source>请停用原版 BossMod，并启用 BossMod Reborn。</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Warning.OriginalVnavmesh" xml:space="preserve">
+        <source>当前启用的是原版 vnavmesh。Omni 未针对原版优化，建议使用 vnavmesh CN。</source>
       </trans-unit>
       <trans-unit id="Requirements.Status.Enabled" xml:space="preserve">
         <source>已启用</source>
@@ -12420,7 +12453,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Settings.CharacterCache.AutoPathHelp" xml:space="preserve">
         <source>陆行鸟鞍囊登录后自动请求。收藏柜在当前地图直接请求物品数据，无需打开界面。投影台通过原界面获取数据，当前场景不可用时尝试进入旅馆；界面打开后约 10 秒仍未加载数据则结束操作，保留原物品缓存。
-传唤铃会在 100 米范围内使用一键打开雇员铃，超出范围时尝试进入旅馆。部队箱打开后直接请求各页，无需逐页切换；自动前往部队箱需要原版 vnavmesh（自动寻路）。
+传唤铃会在 100 米范围内使用一键打开雇员铃，超出范围时尝试进入旅馆。部队箱打开后直接请求各页，无需逐页切换；自动前往部队箱需要 vnavmesh（推荐使用 CN 版）。
 每次获取仅记录当前登录角色；角色统计范围会影响物品悬浮窗和物品查询中显示的个人物品来源。</source>
       </trans-unit>
       <trans-unit id="Settings.CharacterCache.Captured" xml:space="preserve">
@@ -12618,7 +12651,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>悬浮窗：</source>
       </trans-unit>
       <trans-unit id="Settings.Ui.AutoPath.Help" xml:space="preserve">
-        <source>需要开启vnavmesh（自动寻路）！所有寻路功能的前置条件，否则部分功能失效！</source>
+        <source>自动寻路需要启用 vnavmesh，推荐使用 vnavmesh CN。</source>
       </trans-unit>
       <trans-unit id="Settings.Ui.MultiMonitor" xml:space="preserve">
         <source>多屏模式</source>
@@ -12881,7 +12914,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDuty.MaximumAttempts" xml:space="preserve"><source>失败重试上限</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.Queue" xml:space="preserve"><source>副本队列</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.EmptyQueue" xml:space="preserve"><source>队列为空</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.Dependencies" xml:space="preserve"><source>依赖插件</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.Running" xml:space="preserve"><source>正在运行</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.Starting" xml:space="preserve"><source>正在启动副本</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.Retrying" xml:space="preserve"><source>副本失败，准备重试</source></trans-unit>
@@ -12900,7 +12932,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDuty.AutoDutyUnavailable" xml:space="preserve"><source>AutoDuty 未启用。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.AutoDutyIPCUnavailable" xml:space="preserve"><source>AutoDuty IPC 不可用。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.VnavmeshUnavailable" xml:space="preserve"><source>vnavmesh 未启用。</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.BossModUnavailable" xml:space="preserve"><source>BossMod 或 BossModReborn 不可用。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.BossModUnavailable" xml:space="preserve"><source>请启用 BossMod Reborn，并停用原版 BossMod。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.RotationUnavailable" xml:space="preserve"><source>AEAssist 和 PromeRotation 至少需要启用一个。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.ProviderRequired" xml:space="preserve"><source>私有 Provider 不可用。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.ExportSucceeded" xml:space="preserve"><source>预设已导出：{0}</source></trans-unit>
@@ -12912,10 +12944,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDuty.AllDuties" xml:space="preserve"><source>全部副本</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.UnknownDuty" xml:space="preserve"><source>未知副本 ({0})</source></trans-unit>
       <trans-unit id="Requirements.Plugin.AutoDuty" xml:space="preserve"><source>AutoDuty</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.Requirements.AutoDuty" xml:space="preserve"><source>负责副本寻路和战斗流程。</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.Requirements.Vnavmesh" xml:space="preserve"><source>负责导航。</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.Requirements.BossMod" xml:space="preserve"><source>负责机制和战斗控制。</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.Requirements.RotationOneOf" xml:space="preserve"><source>AEAssist 或 PromeRotation 至少启用一个。</source></trans-unit>
       <trans-unit id="Status.Active" xml:space="preserve">
         <source>已激活</source>
       </trans-unit>
@@ -13602,7 +13630,28 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>更好的队员招募</source>
       </trans-unit>
       <trans-unit id="Feature.PartyFinderInDuty.Description" xml:space="preserve">
-        <source>解除副本内无法查看队员招募的限制，并在原生界面预览国服所有大区的公开招募。</source>
+        <source>在副本内查看队员招募，预览国服各大区的公开招募，并隐藏指定副本的招募。</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.HiddenOnly" xml:space="preserve">
+        <source>仅看已隐藏</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.DutySearch" xml:space="preserve">
+        <source>搜索副本名称或类型</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.DutyName" xml:space="preserve">
+        <source>副本名称</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.DutyType" xml:space="preserve">
+        <source>类型</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.HideMatchingDuties" xml:space="preserve">
+        <source>隐藏当前搜索结果中的所有副本招募</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.UnhideMatchingDuties" xml:space="preserve">
+        <source>恢复当前搜索结果中的所有副本招募</source>
+      </trans-unit>
+      <trans-unit id="Feature.PartyFinderInDuty.NoMatchingDuties" xml:space="preserve">
+        <source>没有符合条件的副本。</source>
       </trans-unit>
       <trans-unit id="Feature.PartyFinderInDuty.Source" xml:space="preserve">
         <source>人数 {0}/{1} · 平均品级 {2} · {3} 秒前更新</source>
@@ -13963,7 +14012,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>短距移动优化</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.HybridHelp" xml:space="preserve">
-        <source>在普通楼层尝试短距移动；危险区交由 BossMod 处理。首领战使用战斗插件。</source>
+        <source>在普通楼层尝试短距移动；危险区交由 BossMod Reborn 处理。首领战使用战斗插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Reserves" xml:space="preserve">
         <source>道具保留（0–3）</source>
@@ -14026,13 +14075,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>已有深层迷宫流程正在运行。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.combat_control_failed" xml:space="preserve">
-        <source>无法接管或恢复 BossMod 的移动控制。</source>
+        <source>无法接管或恢复 BossMod Reborn 的移动控制。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.combat_position_failed" xml:space="preserve">
         <source>未找到可攻击站位，已停止。请检查高度与目标遮挡。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.combat_unavailable" xml:space="preserve">
-        <source>未检测到可用战斗循环或所需 BossMod 接口。</source>
+        <source>请检查战斗循环与 BossMod Reborn，并停用原版 BossMod。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.CreatedSaveUnverified" xml:space="preserve">
         <source>未能确认新存档属于本次流程，已停止操作。</source>
@@ -14080,7 +14129,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>未能读取当前楼层布局。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.mechanic_state_unavailable" xml:space="preserve">
-        <source>无法读取 BossMod 危险区状态。</source>
+        <source>无法读取 BossMod Reborn 危险区状态。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.module_unavailable" xml:space="preserve">
         <source>功能尚未启用、权限不可用或正在停止。</source>
@@ -14206,13 +14255,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>当前战斗接口无法同时保证机制选敌与输出隔离，已停止并保留进度。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.boss_module_missing" xml:space="preserve">
-        <source>当前首领未检测到可用的 BossMod 机制模块，流程已停止。</source>
+        <source>当前首领未检测到可用的 BossMod Reborn 机制模块，流程已停止。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.rotation_unavailable" xml:space="preserve">
         <source>没有可用的职业战斗循环，请确认插件接口与当前职业循环。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.combat_output_unavailable" xml:space="preserve">
-        <source>BossMod 输出隔离接口不可用或当前预设不兼容。</source>
+        <source>BossMod Reborn 输出隔离接口不可用或当前预设不兼容。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.Error.rotation_output_unconfirmed" xml:space="preserve">
         <source>无法确认战斗循环已停止，已中止变身切换以避免同时输出。</source>
@@ -14246,27 +14295,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.NoNavigationTarget" xml:space="preserve">
         <source>等待目标</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Requirements" xml:space="preserve">
-        <source>插件检查</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Requirements.LoadStatus" xml:space="preserve">
-        <source>插件加载状态</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Requirements.PromeRotation" xml:space="preserve">
-        <source>优先使用的战斗循环，与 AEAssist 二选一；需要可用接口和当前职业循环。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Requirements.AEAssist" xml:space="preserve">
-        <source>PromeRotation 不可用时的备选战斗循环；需要已加载对应职业循环。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Requirements.BossModName" xml:space="preserve">
-        <source>BossMod／BossModReborn</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Requirements.BossMod" xml:space="preserve">
-        <source>二选一，负责机制与战斗移动；需要危险区、移动控制及输出隔离接口。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoDeepDungeon.Requirements.Vnavmesh" xml:space="preserve">
-        <source>提供楼层导航、路线查询与路径跟随；必须启用。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoDeepDungeon.ReadinessReady" xml:space="preserve">
         <source>启动所需接口与当前职业循环可用。</source>
@@ -14405,9 +14433,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Collapse" xml:space="preserve">
         <source>收起</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.Status" xml:space="preserve">
-        <source>状态</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Collected" xml:space="preserve">
         <source>本轮已登记</source>
@@ -14663,6 +14688,15 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_unavailable" xml:space="preserve">
         <source>请启用自动寻路并确认 vnavmesh 可用</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_ipc_unavailable" xml:space="preserve">
+        <source>vnavmesh 的寻路接口不可用，请检查插件版本。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.rotation_unavailable" xml:space="preserve">
+        <source>请启用 AEAssist 或 PromeRotation，并为当前职业加载可用的 ACR。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.combat_unavailable" xml:space="preserve">
+        <source>请启用 BossMod Reborn，并停用原版 BossMod。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.navigation_busy" xml:space="preserve">
         <source>其他功能正在控制寻路或传送</source>
@@ -15020,6 +15054,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.combat_busy" xml:space="preserve">
         <source>已有战斗输出正在运行。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.combat_unavailable" xml:space="preserve">
+        <source>请启用 BossMod Reborn，并停用原版 BossMod。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.level_insufficient" xml:space="preserve">
         <source>角色或 NPC 等级尚未满足要求。</source>
@@ -15379,7 +15416,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>自动狩猎已暂停。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.DependencyFailure" xml:space="preserve">
-        <source>战斗或寻路依赖不可用。</source>
+        <source>请检查战斗循环、BossMod Reborn 和 vnavmesh，并停用原版 BossMod。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.WaitingFateSync" xml:space="preserve">
         <source>正在等待危命任务等级同步。</source>
@@ -15392,6 +15429,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Died" xml:space="preserve">
         <source>角色已死亡，自动狩猎已停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.BillTargetsUnreachable" xml:space="preserve">
+        <source>部分委托目标无法到达，未完成：{0}。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.TravelFailed" xml:space="preserve">
         <source>传送或前往目标区域失败。</source>
