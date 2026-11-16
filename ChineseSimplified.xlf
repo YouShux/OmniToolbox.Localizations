@@ -15536,6 +15536,15 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoHunt.Completed" xml:space="preserve">
         <source>自动狩猎已完成。</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ReturningHome" xml:space="preserve">
+        <source>狩猎已完成，正在传送到主城。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ReturnHomeUnavailable" xml:space="preserve">
+        <source>狩猎已完成，但没有已解锁的主城以太之光可供返程。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ReturnHomeFailed" xml:space="preserve">
+        <source>狩猎已完成，但传送回主城失败。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.Stopped" xml:space="preserve">
         <source>自动狩猎已停止。</source>
       </trans-unit>

@@ -4104,6 +4104,18 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>自动狩猎已完成。</source>
         <target>自動狩獵已完成。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ReturningHome" xml:space="preserve">
+        <source>狩猎已完成，正在传送到主城。</source>
+        <target>狩獵已完成，正在傳送到主城。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ReturnHomeUnavailable" xml:space="preserve">
+        <source>狩猎已完成，但没有已解锁的主城以太之光可供返程。</source>
+        <target>狩獵已完成，但沒有已解鎖的主城以太之光可供返程。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ReturnHomeFailed" xml:space="preserve">
+        <source>狩猎已完成，但传送回主城失败。</source>
+        <target>狩獵已完成，但傳送回主城失敗。</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.WaitingFateSync" xml:space="preserve">
         <source>正在等待危命任务等级同步。</source>
         <target>正在等待危命任務等級同步。</target>
