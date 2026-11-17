@@ -78,6 +78,78 @@
         <source>按预设顺序调用 AutoDuty 完成多个副本，并按实际通关次数推进计划。</source>
         <target>按預設順序調用 AutoDuty 完成多個副本，并按實際通關次數推進計劃。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoOpenTreasures.Title" xml:space="preserve">
+        <source>自动开启宝箱</source>
+        <target>自動開啟寶箱</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoOpenTreasures.Description" xml:space="preserve">
+        <source>进入副本后，自动尝试开启新出现的宝箱。</source>
+        <target>進入副本後，自動嘗試開啟新出現的寶箱。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoOpenTreasures.OnlySolo" xml:space="preserve">
+        <source>仅单人状态时生效</source>
+        <target>僅單人狀態時生效</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Title" xml:space="preserve">
+        <source>自动调整移动速度</source>
+        <target>自動調整移動速度</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Description" xml:space="preserve">
+        <source>按照“战斗中>周围有玩家>常态”的优先级设置，自动调整不同区域的移动速度。</source>
+        <target>按照“戰斗中>周圍有玩家>常態”的優先級設置，自動調整不同區域的移動速度。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.MaxAcceleration" xml:space="preserve">
+        <source>最大加速度</source>
+        <target>最大加速度</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.MaxAcceleration.Help" xml:space="preserve">
+        <source>移动时直接使用当前倍率对应的步速，减少起步加速过程。</source>
+        <target>移動時直接使用當前倍率對應的步速，減少起步加速過程。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Row.Profile" xml:space="preserve">
+        <source>移速配置：</source>
+        <target>移速配置：</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Row.Region" xml:space="preserve">
+        <source>区域移速：</source>
+        <target>區域移速：</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Row.Other" xml:space="preserve">
+        <source>其他功能：</source>
+        <target>其他功能：</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Condition.Combat" xml:space="preserve">
+        <source>战斗中</source>
+        <target>戰斗中</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Condition.NearbyPlayer" xml:space="preserve">
+        <source>周围有玩家时</source>
+        <target>周圍有玩家時</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Condition.Normal" xml:space="preserve">
+        <source>常态</source>
+        <target>常態</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.DisableInPVP" xml:space="preserve">
+        <source>在 PVP 区域内禁用</source>
+        <target>在 PVP 區域內禁用</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Profile.NameFormat" xml:space="preserve">
+        <source>配置{0}</source>
+        <target>配置{0}</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Profile.RenameTitle" xml:space="preserve">
+        <source>编辑配置名称</source>
+        <target>編輯配置名稱</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Profile.Name" xml:space="preserve">
+        <source>配置名称</source>
+        <target>配置名稱</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Zone.Profile" xml:space="preserve">
+        <source>移速配置</source>
+        <target>移速配置</target>
+      </trans-unit>
       <trans-unit id="AutoDutyTitle" xml:space="preserve">
         <source>自动副本</source>
         <target>自動副本</target>
@@ -2702,18 +2774,6 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>地区</source>
         <target>地區</target>
       </trans-unit>
-      <trans-unit id="Common.TerritorySelector.Current" xml:space="preserve">
-        <source>当前地图：{0} ({1})</source>
-        <target>當前地圖：{0} ({1})</target>
-      </trans-unit>
-      <trans-unit id="Common.TerritorySelector.Fallback" xml:space="preserve">
-        <source>地图 {0}</source>
-        <target>地圖 {0}</target>
-      </trans-unit>
-      <trans-unit id="Common.TerritorySelector.LoggedOut" xml:space="preserve">
-        <source>未登录</source>
-        <target>未登錄</target>
-      </trans-unit>
       <trans-unit id="Common.TerritorySelector.NoMatches" xml:space="preserve">
         <source>没有匹配的地图。</source>
         <target>沒有匹配的地圖。</target>
@@ -3627,10 +3687,27 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoDuty.CardQueueExitRequired" xml:space="preserve"><source>请先离开当前副本，再继续刷取幻卡。</source><target>請先離開當前副本，再繼續刷取幻卡。</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardQueueUnlockUnavailable" xml:space="preserve"><source>暂时无法读取角色的副本解锁状态。请确认角色已登录后重新开始。</source><target>暫時無法讀取角色的副本解鎖狀態。請確認角色已登入後重新開始。</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardQueueFinishedWithMissing" xml:space="preserve"><source>本轮已结束，仍有所选幻卡未登记。</source><target>本輪已結束，仍有所選幻卡未登記。</target></trans-unit>
-      <trans-unit id="Feature.AutoDuty.CardQueueTitle" xml:space="preserve"><source>刷取幻卡</source><target>刷取幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.TreasureModuleRequired" xml:space="preserve"><source>请先在妙妙屋启用自动开启宝箱，再启动自动副本。</source><target>請先在妙妙屋啟用自動開啟寶箱，再啟動自動副本。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.GCSealModuleRequired" xml:space="preserve"><source>请先在妙妙屋启用自动交军票，再启动自动副本。</source><target>請先在妙妙屋啟用自動交軍票，再啟動自動副本。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.TurningInSeals" xml:space="preserve"><source>背包空格不足 15 格，正在前往军营交纳军票。</source><target>背包空格不足 15 格，正在前往軍營繳納軍票。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.InventorySpaceRestored" xml:space="preserve"><source>背包空格已恢复，继续副本队列。</source><target>背包空格已恢復，繼續副本隊列。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.GCSealTurnInFailed" xml:space="preserve"><source>自动交军票未能完成，副本队列已停止。</source><target>自動交軍票未能完成，副本隊列已停止。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.InventorySpaceNotRestored" xml:space="preserve"><source>交纳军票后背包空格仍少于 15 格，副本队列已停止。</source><target>繳納軍票後背包空格仍少於 15 格，副本隊列已停止。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.GCSealQualificationRequired" xml:space="preserve"><source>当前军团或军衔不满足自动交军票要求，副本队列已停止。</source><target>目前軍團或軍階不符合自動交軍票要求，副本隊列已停止。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.GCSealTravelFailed" xml:space="preserve"><source>未能传送到军营，副本队列已停止。</source><target>未能傳送到軍營，副本隊列已停止。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.GCSealBusy" xml:space="preserve"><source>自动交军票当前正忙，副本队列已停止。</source><target>自動交軍票目前正忙，副本隊列已停止。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.GCSealUnavailable" xml:space="preserve"><source>当前角色无法使用自动交军票，副本队列已停止。</source><target>目前角色無法使用自動交軍票，副本隊列已停止。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardQueueTitle" xml:space="preserve"><source>副本幻卡</source><target>副本幻卡</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardSupportUnavailable" xml:space="preserve"><source>暂时无法读取 AutoDuty 的副本支持状态，请确认 AutoDuty 已完成加载。</source><target>暫時無法讀取 AutoDuty 的副本支援狀態，請確認 AutoDuty 已完成載入。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardExitRequested" xml:space="preserve"><source>目标幻卡已获得，正在即刻退本。</source><target>目標幻卡已獲得，正在即刻退本。</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardQueueHelp" xml:space="preserve"><source>重复刷取所选幻卡的副本，直到这些幻卡全部登记或副本被跳过。</source><target>重複刷取所選幻卡的副本，直到這些幻卡全部登記或副本被略過。</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.Mode" xml:space="preserve"><source>模式</source><target>模式</target></trans-unit>
-      <trans-unit id="Feature.AutoDuty.PresetMode" xml:space="preserve"><source>按次数刷副本</source><target>按次數刷副本</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.PresetMode" xml:space="preserve"><source>副本队列</source><target>副本隊列</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutySelection" xml:space="preserve"><source>副本选择</source><target>副本選擇</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.AddedToQueue" xml:space="preserve"><source>已在队列中</source><target>已在隊列中</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.NoDutyMatches" xml:space="preserve"><source>当前分类没有符合搜索条件的副本。</source><target>目前分類沒有符合搜尋條件的副本。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Reorder" xml:space="preserve"><source>拖动调整顺序</source><target>拖曳調整順序</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.QueueProgress" xml:space="preserve"><source>完成 {0}/{1}</source><target>完成 {0}/{1}</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.RemoveDuty" xml:space="preserve"><source>移除副本</source><target>移除副本</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardSearch" xml:space="preserve"><source>搜索幻卡或副本</source><target>搜尋幻卡或副本</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardSelectAll" xml:space="preserve"><source>勾选搜索结果</source><target>勾選搜尋結果</target></trans-unit>
@@ -3645,7 +3722,7 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoDuty.CardNoSelection" xml:space="preserve"><source>请勾选至少一张未登记的幻卡。</source><target>請勾選至少一張未登記的幻卡。</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardNoDuties" xml:space="preserve"><source>部分所选幻卡没有可用路线。请取消勾选不可刷取的幻卡。</source><target>部分所選幻卡沒有可用路線。請取消勾選不可刷取的幻卡。</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardUnavailable" xml:space="preserve"><source>暂不可刷取</source><target>暫不可刷取</target></trans-unit>
-      <trans-unit id="Feature.AutoDuty.CardAccessRequired" xml:space="preserve"><source>刷取幻卡需要二级测试资格。</source><target>刷取幻卡需要二級測試資格。</target></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardAccessRequired" xml:space="preserve"><source>刷取幻卡需要在线验证。</source><target>刷取幻卡需要線上驗證。</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardQueueSettling" xml:space="preserve"><source>等待退本和掉落结算</source><target>等待退本和掉落結算</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardQueueRegistering" xml:space="preserve"><source>正在登记幻卡</source><target>正在登記幻卡</target></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardQueueInventoryUnavailable" xml:space="preserve"><source>暂时无法读取背包或登记幻卡。请确认角色可操作后重新开始。</source><target>暫時無法讀取背包或登記幻卡。請確認角色可操作后重新開始。</target></trans-unit>
@@ -3689,6 +3766,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoDuty.Current" xml:space="preserve">
         <source>当前副本</source>
         <target>當前副本</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDuty.CompletingDuty" xml:space="preserve">
+        <source>正在完成副本：{0}</source>
+        <target>正在完成副本：{0}</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDuty.DeletePreset" xml:space="preserve">
         <source>删除预设</source>
@@ -3743,8 +3824,8 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <target>當前預設沒有副本。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDuty.EmptyQueue" xml:space="preserve">
-        <source>队列为空</source>
-        <target>隊列為空</target>
+        <source>队列为空，请先添加副本。</source>
+        <target>隊列為空，請先新增副本。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoDuty.Expand" xml:space="preserve">
         <source>展开</source>
@@ -7096,6 +7177,12 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoTripleTriadCollection.CardColumn" xml:space="preserve"><source>幻卡</source><target>幻卡</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Completion" xml:space="preserve"><source>完成</source><target>完成</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.UncollectedOnly" xml:space="preserve"><source>仅看未收录</source><target>僅看未收錄</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Unrestricted" xml:space="preserve"><source>解除限制</source><target>解除限制</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.UnrestrictedHelp" xml:space="preserve"><source>解限打本</source><target>解限打本</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyExitHelp" xml:space="preserve"><source>副本幻卡刷取到后，执行即刻退本逻辑开始刷下一个。</source><target>副本幻卡刷取到後，執行即刻退本邏輯開始刷下一個。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CardSearch" xml:space="preserve"><source>搜索幻卡或副本</source><target>搜尋幻卡或副本</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.CardNoMatches" xml:space="preserve"><source>没有符合搜索条件的幻卡。</source><target>沒有符合搜尋條件的幻卡。</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unavailable" xml:space="preserve"><source>当前角色或模式不满足 AutoDuty 的运行条件，或没有可用路线。</source><target>目前角色或模式不符合 AutoDuty 的執行條件，或沒有可用路線。</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.NoUncollectedInView" xml:space="preserve"><source>当前范围没有未收录的幻卡。</source><target>當前範圍沒有未收錄的幻卡。</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.collection_unavailable" xml:space="preserve"><source>暂时无法读取幻卡收藏册。</source><target>暫時無法讀取幻卡收藏冊。</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.no_selected_cards" xml:space="preserve"><source>请至少勾选一张未登记的 NPC 幻卡。</source><target>請至少勾選一張未登記的 NPC 幻卡。</target></trans-unit>
@@ -7106,7 +7193,7 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
       <trans-unit id="Feature.AutoTripleTriadCollection.NPCProtocolUnavailable" xml:space="preserve"><source>当前客户端暂不支持自动 NPC 对战。</source><target>當前客戶端暫不支持自動 NPC 對戰。</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unlocked" xml:space="preserve"><source>副本已解锁</source><target>副本已解鎖</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Locked" xml:space="preserve"><source>副本未解锁</source><target>副本未解鎖</target></trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unknown" xml:space="preserve"><source>暂时无法读取解锁状态</source><target>暫時無法讀取解鎖狀態</target></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unknown" xml:space="preserve"><source>暂时无法读取副本解锁或 AutoDuty 支持状态</source><target>暫時無法讀取副本解鎖或 AutoDuty 支援狀態</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Manual" xml:space="preserve"><source>特殊来源 · 手动获取</source><target>特殊來源 · 手動獲取</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.duty_module_unavailable" xml:space="preserve"><source>请先在妙妙屋启用自动副本。</source><target>請先在妙妙屋啟用自動副本。</target></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.duty_busy" xml:space="preserve"><source>自动副本正在运行。</source><target>自動副本正在運行。</target></trans-unit>
@@ -21249,6 +21336,150 @@ Ctrl+左鍵：啟停一次插件、Ctrl+右鍵：啟動/關閉插件。</target>
       </trans-unit>
 
 
+      <trans-unit id="Feature.AutoBoboFarm.Title" xml:space="preserve">
+        <source>自动波波刷赞</source>
+        <target>自動波波刷讚</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.Description" xml:space="preserve">
+        <source>单人匹配波波讨伐战，自动寻路并调用输出插件完成战斗，通关后退出并继续匹配。</source>
+        <target>單人配對波波討伐戰，自動尋路並調用輸出插件完成戰鬥，通關後退出並繼續配對。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.RunCount" xml:space="preserve">
+        <source>运行次数</source>
+        <target>運行次數</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.RunCountHelp" xml:space="preserve">
+        <source>-1 表示持续运行；其他值必须大于 0。</source>
+        <target>-1 表示持續運行；其他值必須大於 0。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.LeaveDelay" xml:space="preserve">
+        <source>退本延迟</source>
+        <target>退本延遲</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.Start" xml:space="preserve">
+        <source>开始</source>
+        <target>開始</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.Stop" xml:space="preserve">
+        <source>停止</source>
+        <target>停止</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.EarnedCommendations" xml:space="preserve">
+        <source>已收获 {count} 个赞！</source>
+        <target>已收穫 {count} 個讚！</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.MissingRequired" xml:space="preserve">
+        <source>请先启用排本自动切换职业和自动确认参加任务。</source>
+        <target>請先啟用排本自動切換職業和自動確認參加任務。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.Unavailable" xml:space="preserve">
+        <source>当前角色或副本状态不支持启动。</source>
+        <target>當前角色或副本狀態不支持啟動。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.SoloRequired" xml:space="preserve">
+        <source>请先退出队伍，再开始单人匹配。</source>
+        <target>請先退出隊伍，再開始單人配對。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.NavigationFailed" xml:space="preserve">
+        <source>未能到达战斗位置，已停止。</source>
+        <target>未能到達戰鬥位置，已停止。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.WrongDuty" xml:space="preserve">
+        <source>检测到其他任务或异常离本，已停止。</source>
+        <target>檢測到其他任務或異常離本，已停止。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.Busy" xml:space="preserve">
+        <source>其他自动化正在运行。</source>
+        <target>其他自動化正在運行。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.RotationUnavailable" xml:space="preserve">
+        <source>输出插件不可用、冲突或正在运行。</source>
+        <target>輸出插件不可用、衝突或正在運行。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.RotationFailed" xml:space="preserve">
+        <source>输出插件未确认启动或停止，已停止流程。</source>
+        <target>輸出插件未確認啟動或停止，已停止流程。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.Timeout" xml:space="preserve">
+        <source>等待副本流程超时，已停止。</source>
+        <target>等待副本流程逾時，已停止。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.SettingsInvalid" xml:space="preserve">
+        <source>运行次数或退本延迟无效。</source>
+        <target>運行次數或退本延遲無效。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.DutyUnavailable" xml:space="preserve">
+        <source>目标副本未解锁或当前职业等级不足。</source>
+        <target>目標副本未解鎖或當前職業等級不足。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoBoboFarm.Failure" xml:space="preserve">
+        <source>流程发生错误，已停止。</source>
+        <target>流程發生錯誤，已停止。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.Title" xml:space="preserve">
+        <source>自动最优队员推荐</source>
+        <target>自動最優隊員推薦</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.Description" xml:space="preserve">
+        <source>副本完成后，按职业和职能优先级自动推荐符合条件的队友。</source>
+        <target>副本完成後，按職業和職能優先級自動推薦符合條件的隊友。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.ChatReminder" xml:space="preserve">
+        <source>聊天框提醒</source>
+        <target>聊天框提醒</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.BannerReminder" xml:space="preserve">
+        <source>横幅提醒</source>
+        <target>橫幅提醒</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.IgnoreBlacklist" xml:space="preserve">
+        <source>排除黑名单玩家</source>
+        <target>排除黑名單玩家</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.ExcludeDeaths" xml:space="preserve">
+        <source>排除死亡队友</source>
+        <target>排除死亡隊友</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.DeathThreshold" xml:space="preserve">
+        <source>死亡次数阈值</source>
+        <target>死亡次數閾值</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.DeathThresholdHint" xml:space="preserve">
+        <source>死亡次数达到此值后不再推荐</source>
+        <target>死亡次數達到此值後不再推薦</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.ResetOnWipe" xml:space="preserve">
+        <source>团灭后重置死亡次数</source>
+        <target>團滅後重置死亡次數</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.Duty.WorkMode" xml:space="preserve">
+        <source>副本范围</source>
+        <target>副本範圍</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.Duty.Blacklist" xml:space="preserve">
+        <source>黑名单</source>
+        <target>黑名單</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.Duty.Whitelist" xml:space="preserve">
+        <source>白名单</source>
+        <target>白名單</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.Duty.WorkMode.Help" xml:space="preserve">
+        <source>黑名单：所选副本不进行推荐。白名单：仅在所选副本进行推荐。</source>
+        <target>黑名單：所選副本不進行推薦。白名單：僅在所選副本進行推薦。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.Preview" xml:space="preserve">
+        <source>预览</source>
+        <target>預覽</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.PreviewUnavailable" xml:space="preserve">
+        <source>无法读取当前角色名，无法预览推荐横幅。</source>
+        <target>無法讀取目前角色名稱，無法預覽推薦橫幅。</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.Submitted" xml:space="preserve">
+        <source>已提交对 {player} 的最优队员推荐。</source>
+        <target>已提交對 {player} 的最優隊員推薦。</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
