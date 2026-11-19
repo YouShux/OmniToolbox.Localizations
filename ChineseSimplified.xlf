@@ -1577,6 +1577,45 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       <trans-unit id="Command.leaveduty.Description" xml:space="preserve">
         <source>离开当前副本</source>
       </trans-unit>
+      <trans-unit id="Command.speed.Name" xml:space="preserve">
+        <source>自动调整移动速度</source>
+      </trans-unit>
+      <trans-unit id="Command.speed.Description" xml:space="preserve">
+        <source>临时调整移速，输入移速 ≤0 或切换区域时清除。</source>
+      </trans-unit>
+      <trans-unit id="Command.speed.Usage" xml:space="preserve">
+        <source>/omni speed &lt;移速倍率&gt;</source>
+      </trans-unit>
+      <trans-unit id="Command.speed.Applied" xml:space="preserve">
+        <source>已设置临时移速倍率，切换区域时清除。</source>
+      </trans-unit>
+      <trans-unit id="Command.speed.UsageHint" xml:space="preserve">
+        <source>用法：{0}，例如：/omni speed 1.5；输入 0 清除临时移速。</source>
+      </trans-unit>
+      <trans-unit id="Command.speed.Cleared" xml:space="preserve">
+        <source>已清除临时移速倍率。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.CommandTemporarySpeed" xml:space="preserve">
+        <source>临时调整移速，输入移速 ≤0 或切换区域时清除。</source>
+      </trans-unit>
+      <trans-unit id="Command.deepdungeon.Name" xml:space="preserve">
+        <source>深宫无敌模式</source>
+      </trans-unit>
+      <trans-unit id="Command.deepdungeon.Description" xml:space="preserve">
+        <source>临时调整高度偏移，输入高度偏移 ≥0 或切换区域时清除。</source>
+      </trans-unit>
+      <trans-unit id="Command.deepdungeon.Usage" xml:space="preserve">
+        <source>/omni deepdungeon &lt;高度偏移&gt;</source>
+      </trans-unit>
+      <trans-unit id="Command.deepdungeon.Applied" xml:space="preserve">
+        <source>已设置临时高度偏移，切换区域时清除。</source>
+      </trans-unit>
+      <trans-unit id="Command.deepdungeon.Cleared" xml:space="preserve">
+        <source>已清除临时高度偏移。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DeepDungeonMode.CommandTemporaryHeight" xml:space="preserve">
+        <source>临时调整高度偏移，输入高度偏移 ≥0 或切换区域时清除。</source>
+      </trans-unit>
       <trans-unit id="Command.leaveduty.Name" xml:space="preserve">
         <source>即刻退本</source>
       </trans-unit>
@@ -5071,6 +5110,13 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
       <trans-unit id="Feature.ChatFrameOptimization.AutoSaveLogs.Help" xml:space="preserve">
         <source>每个日志文件上限 2048 KB，最多保留 20 个文件；超过数量上限时自动删除最早的日志。</source>
       </trans-unit>
+      <trans-unit id="Feature.ChatFrameOptimization.ResetChatFocusOnLogin" xml:space="preserve">
+        <source>避免登录误入聊天</source>
+      </trans-unit>
+      <trans-unit id="Feature.ChatFrameOptimization.ResetChatFocusOnLogin.Help" xml:space="preserve">
+        <source>登录游戏后，聊天框会意外进入输入状态，取消聊天框聚焦后，输入任意字母仍会导致打字。
+如果你遇到这种情况再选择是否启动该功能，此功能会自动解决输入问题。</source>
+      </trans-unit>
       <trans-unit id="Feature.ChatFrameOptimization.BetterChat.AddTab" xml:space="preserve">
         <source>新增页签</source>
       </trans-unit>
@@ -8426,6 +8472,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.UnlinkGlamour" xml:space="preserve">
         <source>解除与投影模板的关联</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.NotInstalledSuffix" xml:space="preserve">
+        <source>（未下载安装）</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.UnloadedSuffix" xml:space="preserve">
         <source>（未启动）</source>
@@ -12308,13 +12357,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>请先卸载该仓库的已安装模块，用户配置会保留。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.Update" xml:space="preserve">
-        <source>下载更新</source>
+        <source>立即更新并重载</source>
       </trans-unit>
       <trans-unit id="OnlineModules.UpdateFailed" xml:space="preserve">
         <source>在线模块更新失败，保留原版本：{0}</source>
       </trans-unit>
       <trans-unit id="OnlineModules.UpdateHelp" xml:space="preserve">
-        <source>启动及每六小时检查版本，自动下载已安装模块的新版本，下次启动 Omni 时应用。</source>
+        <source>启动及每六小时检查版本，自动安装新模块（默认禁用）并更新已安装模块；自动更新在下次启动 Omni 时应用，手动更新会立即重载。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.UrlHint" xml:space="preserve">
         <source>GitHub 仓库地址或 TreeHouseModules.json 地址</source>
@@ -12392,16 +12441,16 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>无法确认 BossMod Reborn 的 AI 是否开启，请检查插件状态。</source>
       </trans-unit>
       <trans-unit id="Requirements.Failure.auto_duty_unavailable" xml:space="preserve">
-        <source>请先启用 AutoDuty 插件。</source>
+        <source>请先安装并启用 YouShu 维护的 AutoDuty CN。</source>
       </trans-unit>
       <trans-unit id="Requirements.Failure.auto_duty_busy" xml:space="preserve">
-        <source>AutoDuty 正在运行，请先结束当前任务。</source>
+        <source>AutoDuty CN 正在运行，请先结束当前任务。</source>
       </trans-unit>
       <trans-unit id="Requirements.Failure.auto_duty_path_unavailable" xml:space="preserve">
-        <source>AutoDuty 没有此副本的可用路线。</source>
+        <source>AutoDuty CN 没有此副本的可用路线。</source>
       </trans-unit>
       <trans-unit id="Requirements.Failure.auto_duty_overrides_rejected" xml:space="preserve">
-        <source>AutoDuty 未接受本次运行的临时设置。</source>
+        <source>AutoDuty CN 未接受本次运行的临时设置。</source>
       </trans-unit>
       <trans-unit id="Requirements.Failure.rotation_provider_changed" xml:space="preserve">
         <source>运行期间切换了战斗循环插件，请重新开始。</source>
@@ -12410,7 +12459,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>战斗循环正在输出，请先在循环插件中停止自动战斗。</source>
       </trans-unit>
       <trans-unit id="Requirements.Failure.wrathcombo_conflict" xml:space="preserve">
-        <source>请先停用 WrathCombo，避免 AutoDuty 同时控制其他循环插件。</source>
+        <source>请先停用 WrathCombo，避免 AutoDuty CN 同时控制其他循环插件。</source>
       </trans-unit>
       <trans-unit id="Requirements.Failure.bossmod_output_disabled" xml:space="preserve">
         <source>BossMod Reborn 已强制禁用预设输出，请解除禁用。</source>
@@ -12448,12 +12497,6 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Requirements.Rotation.Conflict" xml:space="preserve">
         <source>检测到多个战斗循环插件已启用，请只保留一个。</source>
       </trans-unit>
-      <trans-unit id="Requirements.Rsr.Compatibility" xml:space="preserve">
-        <source>RSR 需要提供模式切换、临时优先目标和运行状态接口。</source>
-      </trans-unit>
-      <trans-unit id="Requirements.AutoDuty.RsrCompatibility" xml:space="preserve">
-        <source>由 AutoDuty 管理 RSR 循环时，需要支持临时设置覆盖的 RSR 版本。</source>
-      </trans-unit>
       <trans-unit id="Requirements.Plugin.PromeRotation" xml:space="preserve">
         <source>PromeRotation</source>
       </trans-unit>
@@ -12464,7 +12507,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>vnavmesh CN</source>
       </trans-unit>
       <trans-unit id="Requirements.Reason.AutoDuty" xml:space="preserve">
-        <source>执行副本路线和刷本流程。</source>
+        <source>执行副本路线和刷本流程，必须使用 YouShu 维护的 AutoDuty CN。</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Plugin.Artisan" xml:space="preserve">
+        <source>Artisan</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Reason.Artisan" xml:space="preserve">
+        <source>制作任务物品时使用</source>
       </trans-unit>
       <trans-unit id="Requirements.Reason.BossMod" xml:space="preserve">
         <source>提供战斗机制提示和自动避让，需启用 BossMod Reborn。</source>
@@ -12839,6 +12888,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Settings.Ui.NumberDisplayMode" xml:space="preserve">
         <source>数字显示模式</source>
       </trans-unit>
+      <trans-unit id="Settings.Ui.ShowOTPrefix" xml:space="preserve">
+        <source>显示“OT”前缀</source>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.ShowOTPrefix.Help" xml:space="preserve">
+        <source>在插件发送的聊天消息和添加的右键菜单项前显示“OT”，便于识别来源。更改后立即生效。</source>
+      </trans-unit>
       <trans-unit id="Settings.Ui.NumberDisplayMode.Chinese" xml:space="preserve">
         <source>中文模式</source>
       </trans-unit>
@@ -12931,11 +12986,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>自动副本</source>
       </trans-unit>
       <trans-unit id="AutoDutyDescription" xml:space="preserve">
-        <source>按预设顺序调用 AutoDuty 完成多个副本，并按实际通关次数推进计划。</source>
+        <source>按预设顺序和次数，通过 AutoDuty CN 自动完成副本。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoOpenTreasures.Title" xml:space="preserve"><source>自动开启宝箱</source></trans-unit>
-      <trans-unit id="Feature.AutoOpenTreasures.Description" xml:space="preserve"><source>进入副本后，自动尝试开启新出现的宝箱。</source></trans-unit>
-      <trans-unit id="Feature.AutoOpenTreasures.OnlySolo" xml:space="preserve"><source>仅单人状态时生效</source></trans-unit>
+      <trans-unit id="Feature.AutoOpenTreasures.Description" xml:space="preserve"><source>根据周围玩家情况，自动使用传送或近距离交互开启副本宝箱。</source></trans-unit>
+      <trans-unit id="Feature.AutoOpenTreasures.AlwaysTeleport" xml:space="preserve"><source>始终传送开箱</source></trans-unit>
+      <trans-unit id="Feature.AutoOpenTreasures.AlwaysTeleport.Help" xml:space="preserve"><source>开启：忽略玩家检测，始终传送开箱；
+关闭：优先在 3 米内正常交互，无其他玩家时可远程传送开箱。</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Title" xml:space="preserve"><source>自动调整移动速度</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Description" xml:space="preserve"><source>按照“战斗中>周围有玩家>常态”的优先级设置，自动调整不同区域的移动速度。</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.MaxAcceleration" xml:space="preserve"><source>最大加速度</source></trans-unit>
@@ -12965,7 +13022,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDuty.GCSealBusy" xml:space="preserve"><source>自动交军票当前正忙，副本队列已停止。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.GCSealUnavailable" xml:space="preserve"><source>当前角色无法使用自动交军票，副本队列已停止。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardQueueTitle" xml:space="preserve"><source>副本幻卡</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.CardSupportUnavailable" xml:space="preserve"><source>暂时无法读取 AutoDuty 的副本支持状态，请确认 AutoDuty 已完成加载。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardSupportUnavailable" xml:space="preserve"><source>暂时无法读取 AutoDuty CN 的副本支持状态，请确认 AutoDuty CN 已完成加载。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardExitRequested" xml:space="preserve"><source>目标幻卡已获得，正在即刻退本。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardQueueHelp" xml:space="preserve"><source>重复刷取所选幻卡的副本，直到这些幻卡全部登记或副本被跳过。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.Mode" xml:space="preserve"><source>模式</source></trans-unit>
@@ -12985,7 +13042,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDuty.CardLoading" xml:space="preserve"><source>正在读取副本幻卡…</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardLoadFailed" xml:space="preserve"><source>无法读取副本幻卡，请重新启用自动副本后再试。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardNoMatches" xml:space="preserve"><source>没有符合搜索条件的幻卡。</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.CardNoAvailable" xml:space="preserve"><source>没有可刷取的未登记幻卡。请检查副本解锁状态和 AutoDuty 路线。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.CardNoAvailable" xml:space="preserve"><source>没有可刷取的未登记幻卡。请检查副本解锁状态和 AutoDuty CN 路线。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardNoSelection" xml:space="preserve"><source>请勾选至少一张未登记的幻卡。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardNoDuties" xml:space="preserve"><source>部分所选幻卡没有可用路线。请取消勾选不可刷取的幻卡。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.CardUnavailable" xml:space="preserve"><source>暂不可刷取</source></trans-unit>
@@ -13021,6 +13078,10 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDuty.DutyId" xml:space="preserve"><source>ID</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.DutyName" xml:space="preserve"><source>副本</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.TargetCount" xml:space="preserve"><source>目标次数</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Unrestricted" xml:space="preserve"><source>解除限制</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.UnrestrictedHelp" xml:space="preserve"><source>以解除限制的方式进入副本。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.TemporarySpeed" xml:space="preserve"><source>临时调整移速</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.TemporarySpeedHelp" xml:space="preserve"><source>进入副本后临时调整移动速度；切换区域时自动恢复。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.MaximumAttempts" xml:space="preserve"><source>失败重试上限</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.Queue" xml:space="preserve"><source>副本队列</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.EmptyQueue" xml:space="preserve"><source>队列为空，请先添加副本。</source></trans-unit>
@@ -13037,7 +13098,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDuty.CompletingDuty" xml:space="preserve"><source>正在完成副本：{0}</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.NoDuty" xml:space="preserve"><source>没有可运行的副本</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.InvalidEntry" xml:space="preserve"><source>预设中存在不可运行的副本。</source></trans-unit>
-      <trans-unit id="Feature.AutoDuty.Busy" xml:space="preserve"><source>AutoDuty 正在运行。</source></trans-unit>
+      <trans-unit id="Feature.AutoDuty.Busy" xml:space="preserve"><source>AutoDuty CN 正在运行。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.EmptyPreset" xml:space="preserve"><source>当前预设没有副本。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.InDuty" xml:space="preserve"><source>当前正在副本内。</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.ProviderRequired" xml:space="preserve"><source>私有 Provider 不可用。</source></trans-unit>
@@ -13049,7 +13110,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoDuty.Cancel" xml:space="preserve"><source>取消</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.AllDuties" xml:space="preserve"><source>全部副本</source></trans-unit>
       <trans-unit id="Feature.AutoDuty.UnknownDuty" xml:space="preserve"><source>未知副本 ({0})</source></trans-unit>
-      <trans-unit id="Requirements.Plugin.AutoDuty" xml:space="preserve"><source>AutoDuty</source></trans-unit>
+      <trans-unit id="Requirements.Plugin.AutoDuty" xml:space="preserve"><source>AutoDuty CN</source></trans-unit>
       <trans-unit id="Status.Active" xml:space="preserve">
         <source>已激活</source>
       </trans-unit>
@@ -13242,6 +13303,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Status.TestCode" xml:space="preserve">
         <source>测试码</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.Status.InDevelopment" xml:space="preserve">
+        <source>开发中</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Status.VerificationRequired" xml:space="preserve">
         <source>需验证</source>
@@ -13713,6 +13777,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.IgnoreMountRestriction.Description" xml:space="preserve">
         <source>解除区域附加的“无法骑乘坐骑”限制。</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreInteractionRestrictions.Title" xml:space="preserve">
+        <source>无视交互限制</source>
+      </trans-unit>
+      <trans-unit id="Feature.IgnoreInteractionRestrictions.Description" xml:space="preserve">
+        <source>取消交互时的距离、视野、遮挡、高低差、跳跃、飞行和相机限制。</source>
       </trans-unit>
       <trans-unit id="Feature.TellInDuty.Title" xml:space="preserve">
         <source>副本内悄悄话</source>
@@ -14485,10 +14555,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoTripleTriadCollection.UncollectedOnly" xml:space="preserve"><source>仅看未收录</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Unrestricted" xml:space="preserve"><source>解除限制</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.UnrestrictedHelp" xml:space="preserve"><source>解限打本</source></trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.DutyExitHelp" xml:space="preserve"><source>副本幻卡刷取到后，执行即刻退本逻辑开始刷下一个。</source></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyExitHelp" xml:space="preserve"><source>副本幻卡刷取到后，执行即刻退本逻辑开始刷下一个。
+临时调整移速最好是单人解限时启动，进本后会自动修改。</source></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.TemporarySpeed" xml:space="preserve"><source>临时调整移速</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.CardSearch" xml:space="preserve"><source>搜索幻卡或副本</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.CardNoMatches" xml:space="preserve"><source>没有符合搜索条件的幻卡。</source></trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unavailable" xml:space="preserve"><source>当前角色或模式不满足 AutoDuty 的运行条件，或没有可用路线。</source></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unavailable" xml:space="preserve"><source>当前角色或模式不满足 AutoDuty CN 的运行条件，或没有可用路线。</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.NoUncollectedInView" xml:space="preserve"><source>当前范围没有未收录的幻卡。</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.collection_unavailable" xml:space="preserve"><source>暂时无法读取幻卡收藏册。</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.no_selected_cards" xml:space="preserve"><source>请至少勾选一张未登记的 NPC 幻卡。</source></trans-unit>
@@ -14499,7 +14571,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoTripleTriadCollection.NPCProtocolUnavailable" xml:space="preserve"><source>当前客户端暂不支持自动 NPC 对战。</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unlocked" xml:space="preserve"><source>副本已解锁</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Locked" xml:space="preserve"><source>副本未解锁</source></trans-unit>
-      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unknown" xml:space="preserve"><source>暂时无法读取副本解锁或 AutoDuty 支持状态</source></trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Unknown" xml:space="preserve"><source>暂时无法读取副本解锁或 AutoDuty CN 支持状态</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.DutyAvailability.Manual" xml:space="preserve"><source>特殊来源 · 手动获取</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.duty_module_unavailable" xml:space="preserve"><source>请先在妙妙屋启用自动副本。</source></trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.duty_busy" xml:space="preserve"><source>自动副本正在运行。</source></trans-unit>
@@ -14544,7 +14616,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>自动幻卡收集</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Description" xml:space="preserve">
-        <source>自动挑战 NPC 收集幻卡，或为未登记的副本幻卡生成自动副本预设。</source>
+        <source>自动挑战 NPC 收集幻卡、完成天选胜场成就，并支持生成副本幻卡收集预设。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Start" xml:space="preserve">
         <source>启动</source>
@@ -14972,11 +15044,47 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoQuest.Title" xml:space="preserve">
         <source>自动任务</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoQuest.AcceptedQuests" xml:space="preserve">
+        <source>已接任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.SelectedTasks" xml:space="preserve">
+        <source>待执行任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.SkipCurrent" xml:space="preserve">
+        <source>跳过当前任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.quest_skipped" xml:space="preserve">
+        <source>已跳过此任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.NoAcceptedQuests" xml:space="preserve">
+        <source>当前没有已接任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Prerequisites" xml:space="preserve">
+        <source>前置任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.PrerequisitesAll" xml:space="preserve">
+        <source>需全部完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.PrerequisitesAny" xml:space="preserve">
+        <source>完成任一项</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.NoPrerequisites" xml:space="preserve">
+        <source>无前置任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.PrerequisitesMore" xml:space="preserve">
+        <source>更多前置任务…</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoQuest.Description" xml:space="preserve">
-        <source>根据任务进度执行任务及其前置，显示受阻条件与待适配步骤。</source>
+        <source>自动推进所选任务及其前置任务。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.CommandOpen" xml:space="preserve">
-        <source>打开自动任务窗口；附加任务 ID 可执行指定任务及其前置任务</source>
+        <source>打开自动任务窗口</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.CommandRun" xml:space="preserve">
+        <source>执行指定任务及其前置任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.Error.teleport_management_required" xml:space="preserve">
+        <source>请先开启“更好的传送管理”</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Status" xml:space="preserve">
         <source>状态</source>
@@ -15013,6 +15121,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Name" xml:space="preserve">
         <source>任务</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoQuest.TaskID" xml:space="preserve">
+        <source>任务ID</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Details" xml:space="preserve">
         <source>详情</source>
@@ -15132,13 +15243,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>需要可用的导航能力。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.autoduty_unavailable" xml:space="preserve">
-        <source>需要安装并启用 AutoDuty。</source>
+        <source>需要安装并启用 AutoDuty CN。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.autoduty_incompatible" xml:space="preserve">
-        <source>AutoDuty 无法隔离本次请求的配置和附带动作。</source>
+        <source>AutoDuty CN 无法隔离本次请求的配置和附带动作。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.duty_path_unsupported" xml:space="preserve">
-        <source>AutoDuty 尚未提供目标副本的路径。</source>
+        <source>AutoDuty CN 尚未提供目标副本的路径。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.player_party_required" xml:space="preserve">
         <source>该内容需要玩家参与，已跳过。</source>
@@ -15497,6 +15608,30 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoHunt.PhantomPlusFour" xml:space="preserve">
         <source>幻武+4</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RelicPlusFive" xml:space="preserve">
+        <source>古武+5</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RelicUnsupportedJob" xml:space="preserve">
+        <source>吉田没做！</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RelicQuestUnavailable" xml:space="preserve">
+        <source>请先将当前职业的古武任务推进至兽人猎手阶段。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RelicWeaponRequired" xml:space="preserve">
+        <source>请装备当前职业的上古武器的半成品。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RelicJobChanged" xml:space="preserve">
+        <source>当前职业已改变，请重新开始狩猎。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RelicEquippingWeapon" xml:space="preserve">
+        <source>正在装备半成品武器。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RelicWeaponMissing" xml:space="preserve">
+        <source>背包或兵装库中没有对应的半成品武器。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.RelicBatchIncomplete" xml:space="preserve">
+        <source>部分职业未完成：{0}</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.HuntBills" xml:space="preserve">
         <source>狩猎委托</source>
       </trans-unit>
@@ -15508,6 +15643,24 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.Area" xml:space="preserve">
         <source>区域</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntMapTitle" xml:space="preserve">
+        <source>{0} · 点位图</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntMapHint" xml:space="preserve">
+        <source>按下交互按键固定地图，点击标记前往点位。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntMapClickToTravel" xml:space="preserve">
+        <source>点击飞往该点位</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntMapBusy" xml:space="preserve">
+        <source>传送、寻路或自动狩猎运行中，暂时无法跳转。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntMapA" xml:space="preserve">
+        <source>A怪：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntMapB" xml:space="preserve">
+        <source>B怪：{0}</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.PendingTarget" xml:space="preserve">
         <source>待处理</source>
@@ -15675,7 +15828,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>单人刷取副本目标</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.LogDutyUnavailable" xml:space="preserve">
-        <source>无法单人进入或执行副本，请检查解锁、等级及 AutoDuty 路线。</source>
+        <source>无法单人进入或执行副本，请检查解锁、等级及 AutoDuty CN 路线。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.LogDutyEntering" xml:space="preserve">
         <source>正在进入副本。</source>
@@ -15782,7 +15935,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>自动波波刷赞</source>
       </trans-unit>
       <trans-unit id="Feature.AutoBoboFarm.Description" xml:space="preserve">
-        <source>单人匹配波波讨伐战，自动寻路并调用输出插件完成战斗，通关后退出并继续匹配。</source>
+        <source>自动匹配并寻路参与讨伐彷徨死灵，坦克主动开怪，其他职业等待首领受击后输出，通关后继续匹配。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoBoboFarm.RunCount" xml:space="preserve">
         <source>运行次数</source>
@@ -15853,6 +16006,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoPlayerCommend.IgnoreBlacklist" xml:space="preserve">
         <source>排除黑名单玩家</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.IgnoreBlacklistHelp" xml:space="preserve">
+        <source>处于游戏本地黑名单和Daily Routines的“更好的黑名单”的玩家均不会进行推荐。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoPlayerCommend.ExcludeDeaths" xml:space="preserve">
         <source>排除死亡队友</source>
       </trans-unit>
@@ -15875,16 +16031,20 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>白名单</source>
       </trans-unit>
       <trans-unit id="Feature.AutoPlayerCommend.Duty.WorkMode.Help" xml:space="preserve">
-        <source>黑名单：所选副本不进行推荐。白名单：仅在所选副本进行推荐。</source>
+        <source>黑名单：所选副本不进行推荐；
+白名单：仅在所选副本进行推荐。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.MessagePrefix" xml:space="preserve">
+        <source>已推荐 </source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoPlayerCommend.MessageSuffix" xml:space="preserve">
+        <source> 为本次副本的最优队员。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoPlayerCommend.Preview" xml:space="preserve">
-        <source>预览</source>
+        <source>提醒预览</source>
       </trans-unit>
       <trans-unit id="Feature.AutoPlayerCommend.PreviewUnavailable" xml:space="preserve">
-        <source>无法读取当前角色名，无法预览推荐横幅。</source>
-      </trans-unit>
-      <trans-unit id="Feature.AutoPlayerCommend.Submitted" xml:space="preserve">
-        <source>已提交对 {player} 的最优队员推荐。</source>
+        <source>无法读取当前角色名，无法预览推荐提醒。</source>
       </trans-unit>
     </body>
   </file>
