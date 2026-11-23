@@ -1910,6 +1910,9 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       <trans-unit id="Common.Required" xml:space="preserve">
         <source>需要</source>
       </trans-unit>
+      <trans-unit id="Common.Reset" xml:space="preserve">
+        <source>重置</source>
+      </trans-unit>
       <trans-unit id="Common.Save" xml:space="preserve">
         <source>保存</source>
       </trans-unit>
@@ -1975,6 +1978,12 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
       </trans-unit>
       <trans-unit id="DalamudDirectoryCleanupTitle" xml:space="preserve">
         <source>清理卫月目录</source>
+      </trans-unit>
+      <trans-unit id="DalamudRepositoryCleanupDescription" xml:space="preserve">
+        <source>删除可被同版或更新版本完全替代的第三方仓库，并自动备份。</source>
+      </trans-unit>
+      <trans-unit id="DalamudRepositoryCleanupTitle" xml:space="preserve">
+        <source>库链清理</source>
       </trans-unit>
       <trans-unit id="DesynthesisEnhancementDescription" xml:space="preserve">
         <source>优化分解技能文本显示，支持跳过 HQ、自动确认及批量分解</source>
@@ -4467,10 +4476,10 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>调整装备位置</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.AlternateGcd.FireIII" xml:space="preserve">
-        <source>火炎 III</source>
+        <source>爆炎</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.AlternateGcd.Frostbite" xml:space="preserve">
-        <source>青蓝冰封</source>
+        <source>冰结之蓝青</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.AlternateGcd.RubyRite" xml:space="preserve">
         <source>红宝石之仪</source>
@@ -4479,7 +4488,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>军神</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.GcdModifier.AstralPrism" xml:space="preserve">
-        <source>天星</source>
+        <source>绘画装置</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.GcdModifier.GreasedLightning" xml:space="preserve">
         <source>迅雷</source>
@@ -4494,7 +4503,7 @@ Ctrl + 左键：切换全选；Ctrl + 右键：切换全选其他。</source>
         <source>神速</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.GcdModifier.Shifu" xml:space="preserve">
-        <source>士风</source>
+        <source>风花</source>
       </trans-unit>
       <trans-unit id="Feature.BetterCharacterPanel.GcdModifier.Swiftscaled" xml:space="preserve">
         <source>疾速</source>
@@ -5568,10 +5577,10 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
         <source>类别</source>
       </trans-unit>
       <trans-unit id="Feature.DalamudDirectoryCleanup.Delete" xml:space="preserve">
-        <source>开始清理</source>
+        <source>回收所选</source>
       </trans-unit>
       <trans-unit id="Feature.DalamudDirectoryCleanup.Deleting" xml:space="preserve">
-        <source>正在删除…</source>
+        <source>正在清理…</source>
       </trans-unit>
       <trans-unit id="Feature.DalamudDirectoryCleanup.DirectoryMissing" xml:space="preserve">
         <source>无法定位卫月目录，请确认插件通过卫月正常安装。</source>
@@ -5595,7 +5604,7 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
         <source>预览清理</source>
       </trans-unit>
       <trans-unit id="Feature.DalamudDirectoryCleanup.Result" xml:space="preserve">
-        <source>已删除 {0} 项（{1}），跳过 {2} 项，失败 {3} 项。</source>
+        <source>已清理 {0} 项（{1}），跳过 {2} 项，失败 {3} 项。</source>
       </trans-unit>
       <trans-unit id="Feature.DalamudDirectoryCleanup.ScanErrors" xml:space="preserve">
         <source>有 {0} 处路径未能完成扫描，以下最多显示 5 条原因。</source>
@@ -5608,6 +5617,66 @@ DOT/HOT 效果平均每 {0:F1} 点提高 0.1%。</source>
       </trans-unit>
       <trans-unit id="Feature.DalamudDirectoryCleanup.Summary" xml:space="preserve">
         <source>发现 {0} 项，已选 {1} 项，共 {2}。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Apply" xml:space="preserve">
+        <source>删除所选</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Applied" xml:space="preserve">
+        <source>已删除 {0} 条库链。备份：{1}</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Failed" xml:space="preserve">
+        <source>操作失败：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.NoCandidates" xml:space="preserve">
+        <source>未发现可删除的库链。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.IncludeUnused" xml:space="preserve">
+        <source>同时扫描未曾安装过任意插件的库链</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.IncludeUnusedHint" xml:space="preserve">
+        <source>仅按当前已安装插件判断，不含安装历史；未安装项默认不选。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.NothingToRestore" xml:space="preserve">
+        <source>没有可用备份。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.OpenBackups" xml:space="preserve">
+        <source>备份文件夹</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Plugins" xml:space="preserve">
+        <source>插件</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Repository" xml:space="preserve">
+        <source>仓库</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Restore" xml:space="preserve">
+        <source>恢复备份</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Restored" xml:space="preserve">
+        <source>已恢复最近备份。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Result" xml:space="preserve">
+        <source>状态</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Safe" xml:space="preserve">
+        <source>可删除</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Scan" xml:space="preserve">
+        <source>扫描</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.SelectAtLeastOne" xml:space="preserve">
+        <source>请选择要删除的仓库。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Summary" xml:space="preserve">
+        <source>已加载 {0} · 重复 {1} · 已选 {2}</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.SelectionChanged" xml:space="preserve">
+        <source>库链或已安装插件已变化，请重新确认选择。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.SummaryWithUnused" xml:space="preserve">
+        <source>已加载 {0} · 重复 {1} · 未安装 {2} · 已选 {3}</source>
+      </trans-unit>
+      <trans-unit id="Feature.DalamudRepositoryCleanup.Unused" xml:space="preserve">
+        <source>未安装</source>
       </trans-unit>
       <trans-unit id="Feature.DesynthesisEnhancement.Add" xml:space="preserve">
         <source>添加</source>
@@ -8074,6 +8143,12 @@ Mount（坐骑）、Retainer（雇员）等。</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.MarkerHuntBill" xml:space="preserve">
         <source>狩猎委托目标标记</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.MarkerHuntName" xml:space="preserve">
+        <source>{0}（{1}）</source>
+      </trans-unit>
+      <trans-unit id="Feature.MultiToolbar.MarkerHuntSSMinionRank" xml:space="preserve">
+        <source>SS 小怪</source>
       </trans-unit>
       <trans-unit id="Feature.MultiToolbar.MarkerGathering" xml:space="preserve">
         <source>采集点标记</source>
@@ -12314,6 +12389,86 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="OnlineModules.RepositoryRequired" xml:space="preserve">
         <source>在线模块清单必须填写完整的 RepositoryURL，格式为 https://github.com/owner/repository。</source>
       </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.PrimaryRateLimited" xml:space="preserve">
+        <source>GitHub API 额度已用尽，{0} 后可重试。已安装模块仍可使用。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.SecondaryRateLimited" xml:space="preserve">
+        <source>GitHub API 请求过于频繁，{0} 后可重试。已安装模块仍可使用。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.DownloadRateLimited" xml:space="preserve">
+        <source>资源下载暂时受限，{0} 后可重试。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.InvalidCredentials" xml:space="preserve">
+        <source>GitHub Token 无效或已过期，请更新凭据。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.Forbidden" xml:space="preserve">
+        <source>GitHub 拒绝访问，请检查 Token 权限或仓库访问设置。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CredentialsMissing" xml:space="preserve">
+        <source>尚未配置 Token。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CredentialsVerified" xml:space="preserve">
+        <source>GitHub Token 已验证。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.Anonymous" xml:space="preserve">
+        <source>默认</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.PersonalToken" xml:space="preserve">
+        <source>个人 Token</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.Status" xml:space="preserve">
+        <source>GitHub API：{0}
+剩余额度：{1}/{2}</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.StatusUnknown" xml:space="preserve">
+        <source>尚未获取额度信息</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CachedManifest" xml:space="preserve">
+        <source>显示本地缓存的清单（更新于 {0}）。已安装模块仍可使用。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CacheWriteFailed" xml:space="preserve">
+        <source>网络缓存未能保存，本次结果仍可使用。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CachedPublicCheckExpired" xml:space="preserve">
+        <source>仓库公共访问检查已过期，恢复连接后再安装或更新。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.Authentication" xml:space="preserve">
+        <source>GitHub 访问方式</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.Authentication.Help" xml:space="preserve">
+        <source>默认匿名访问，无需 Token：GitHub API 每小时最多 60 次。个人 Token 通常为每小时 5000 次；在线模块常规 raw 刷新不占用该额度。访问公共仓库无需私有仓库或写入权限。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.Token" xml:space="preserve">
+        <source>个人 Token</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.Token.Help" xml:space="preserve">
+        <source>个人 Token 用于 GitHub API 请求，通常为每小时 5000 次。
+Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据存储不可用时，仅在本次会话使用。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.SaveToken" xml:space="preserve">
+        <source>保存 Token</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.DeleteToken" xml:space="preserve">
+        <source>删除 Token</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CreateToken" xml:space="preserve">
+        <source>申请 GitHub Token</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.SessionOnly" xml:space="preserve">
+        <source>Windows 凭据存储不可用，Token 仅保留在本次会话。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CredentialSaveFailed" xml:space="preserve">
+        <source>无法保存 GitHub 访问设置，请检查配置目录是否可写。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CredentialDeleteFailed" xml:space="preserve">
+        <source>无法删除已保存的 GitHub Token，请检查 Windows 凭据管理器。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.InvalidToken" xml:space="preserve">
+        <source>Token 格式无效，请粘贴 GitHub 生成的个人访问令牌。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.GitHub.CredentialsUnavailable" xml:space="preserve">
+        <source>无法读取 GitHub 访问设置或 Windows 凭据，请重新配置。</source>
+      </trans-unit>
       <trans-unit id="OnlineModules.RepositoryRateLimited" xml:space="preserve">
         <source>GitHub 请求已限流，已暂停仓库检查。请在 {0} 秒后重试。</source>
       </trans-unit>
@@ -12410,6 +12565,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Requirements.Acknowledgements.Title" xml:space="preserve">
         <source>特别鸣谢</source>
       </trans-unit>
+      <trans-unit id="Requirements.Column.Configuration" xml:space="preserve">
+        <source>配置</source>
+      </trans-unit>
       <trans-unit id="Requirements.Column.Icon" xml:space="preserve">
         <source>图标</source>
       </trans-unit>
@@ -12421,6 +12579,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Requirements.Column.Reason" xml:space="preserve">
         <source>说明</source>
+      </trans-unit>
+      <trans-unit id="Requirements.Column.Required" xml:space="preserve">
+        <source>必需</source>
       </trans-unit>
       <trans-unit id="Requirements.Column.Status" xml:space="preserve">
         <source>状态</source>
@@ -12834,6 +12995,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Settings.Ui.Language" xml:space="preserve">
         <source>显示语言</source>
       </trans-unit>
+      <trans-unit id="Settings.Ui.Language.Help" xml:space="preserve">
+        <source>语言适配很多属于机翻，文本有问题Discord反馈，校准不对的地方还请见谅！</source>
+      </trans-unit>
       <trans-unit id="Settings.Ui.Language.English" xml:space="preserve">
         <source>英语</source>
       </trans-unit>
@@ -12845,6 +13009,9 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Settings.Ui.Language.Japanese" xml:space="preserve">
         <source>日语</source>
+      </trans-unit>
+      <trans-unit id="Settings.Ui.Language.Korean" xml:space="preserve">
+        <source>韩语</source>
       </trans-unit>
       <trans-unit id="Settings.Ui.Language.Simplified" xml:space="preserve">
         <source>简体中文</source>
@@ -13004,6 +13171,8 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoSpeedMultiplier.Condition.NearbyPlayer" xml:space="preserve"><source>周围有玩家时</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Condition.Normal" xml:space="preserve"><source>常态</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.DisableInPVP" xml:space="preserve"><source>在 PVP 区域内禁用</source></trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.DeepDungeonSpeed" xml:space="preserve"><source>深宫专用移速</source></trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.DeepDungeonSpeed.Help" xml:space="preserve"><source>深层迷宫的首领楼层和第99层使用1x移速。</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Profile.NameFormat" xml:space="preserve"><source>配置{0}</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Profile.RenameTitle" xml:space="preserve"><source>编辑配置名称</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Profile.Name" xml:space="preserve"><source>配置名称</source></trans-unit>
@@ -13242,7 +13411,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>命令：</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Discovery.EmptyNew" xml:space="preserve">
-        <source>最近三个发布版本暂无新增功能。</source>
+        <source>最近五个发布版本暂无新增功能。</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Discovery.EmptyPopular" xml:space="preserve">
         <source>暂无收藏数据。</source>
@@ -13782,7 +13951,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>无视交互限制</source>
       </trans-unit>
       <trans-unit id="Feature.IgnoreInteractionRestrictions.Description" xml:space="preserve">
-        <source>取消交互时的距离、视野、遮挡、高低差、跳跃、飞行和相机限制。</source>
+        <source>取消大部分交互时的距离、视野、遮挡、高低差、跳跃、飞行和相机限制。</source>
       </trans-unit>
       <trans-unit id="Feature.TellInDuty.Title" xml:space="preserve">
         <source>副本内悄悄话</source>
@@ -14168,6 +14337,13 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoMount.AutoDismount.Help" xml:space="preserve">
         <source>在地面骑乘时，尝试使用技能会自动下坐骑并重新使用该技能。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.DismountOnInteraction" xml:space="preserve">
+        <source>交互时自动下坐骑</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMount.DismountOnInteraction.Help" xml:space="preserve">
+        <source>因骑乘限制无法使用物品或与NPC、物体交互时，自动下坐骑后再尝试一次。
+飞行时先降落；多人共乘时不生效。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoMount.WorkMode" xml:space="preserve">
         <source>生效区域：</source>
@@ -14616,7 +14792,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>自动幻卡收集</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Description" xml:space="preserve">
-        <source>自动挑战 NPC 收集幻卡、完成天选胜场成就，并支持生成副本幻卡收集预设。</source>
+        <source>自动挑战 NPC 收集幻卡、完成天选及街头决斗者成就，并支持生成副本幻卡收集预设。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Start" xml:space="preserve">
         <source>启动</source>
@@ -14972,6 +15148,14 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoTripleTriadCollection.Mode.RouletteAchievement" xml:space="preserve">
         <source>天选</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Mode.StreetDuelist" xml:space="preserve">
+        <source>街头决斗者</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.StreetDuelistHelp" xml:space="preserve">
+        <source>逐一挑战尚未获首胜的幻卡 NPC，胜利后自动跳过，直至完成全部 {0} 位。
+完成“街头决斗者9”成就需击败其中 123 位不同 NPC。
+莱维娜及 8 位赛事对手无原生首胜记录，不纳入本模式。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.RouletteProgress" xml:space="preserve">
         <source>天选胜场</source>
       </trans-unit>
@@ -14992,6 +15176,15 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.roulette_npc_unavailable" xml:space="preserve">
         <source>没有可继续对战的天选 NPC，请检查未完成清单</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_win_state_unavailable" xml:space="preserve">
+        <source>NPC 首胜记录暂不可用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.npc_win_unconfirmed" xml:space="preserve">
+        <source>尚未确认 NPC 首胜记录，请稍后继续。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoTripleTriadCollection.Error.street_duelist_npc_unavailable" xml:space="preserve">
+        <source>仍有 NPC 未获首胜，当前无可挑战的对手。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.achievement_unavailable" xml:space="preserve">
         <source>暂时无法读取成就数据</source>
@@ -15498,7 +15691,7 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>NPC 未开放接取，请检查任务前置条件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.quest_reward_unavailable" xml:space="preserve">
-        <source>暂时无法提交任务奖励。</source>
+        <source>暂时无法领取任务奖励。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoQuest.Error.quest_reward_unresolved" xml:space="preserve">
         <source>当前任务奖励与界面数据尚未确认。</source>
@@ -15791,6 +15984,145 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoHunt.HuntBRank" xml:space="preserve">
         <source>狩猎B怪</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntScan" xml:space="preserve">
+        <source>扫描狩猎怪</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanChooseExpansion" xml:space="preserve">
+        <source>请先选择要扫描的资料片。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanScopeHelp" xml:space="preserve">
+        <source>按所选资料片与类型扫描全部分线，仅记录、不战斗；跨区时逐服扫描。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanRankS" xml:space="preserve">
+        <source>S 怪</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanRankA" xml:space="preserve">
+        <source>A 怪</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanRankB" xml:space="preserve">
+        <source>B 怪</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanRankHelp" xml:space="preserve">
+        <source>仅扫描勾选类型；S 包含 SS 及其前置怪。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanChooseRank" xml:space="preserve">
+        <source>请至少选择一种狩猎怪类型。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanExpansionHelp" xml:space="preserve">
+        <source>勾选扫描资料片；点击资料片名称查看记录。每个服务器、地图与分线中的同一种狩猎怪分别计数；全部资料片只汇总已勾选版本。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanRecordsEmpty" xml:space="preserve">
+        <source>当前范围暂无扫描记录。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanClearRecords" xml:space="preserve">
+        <source>清空当前配置的扫描记录</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanUndoDelete" xml:space="preserve">
+        <source>撤回上一次删除或清空</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanAlive" xml:space="preserve">
+        <source>存活</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanDead" xml:space="preserve">
+        <source>死亡</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanLastSeen" xml:space="preserve">
+        <source>扫描时{0}（{1}）</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanInstance" xml:space="preserve">
+        <source> · 分线 {0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanLocate" xml:space="preserve">
+        <source>定位</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanNavigate" xml:space="preserve">
+        <source>导航</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanTeleportNavigate" xml:space="preserve">
+        <source>传送并导航</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanDifferentWorldInstance" xml:space="preserve">
+        <source>请先切换至记录所在的世界与分线。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanActions" xml:space="preserve">
+        <source>操作</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanExportFailed" xml:space="preserve">
+        <source>导出失败，狩猎怪信息未写入剪切板。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanImportFailed" xml:space="preserve">
+        <source>导入失败，未导入任何信息；请检查剪切板内容与配置保存权限。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanExportSuccess" xml:space="preserve">
+        <source>狩猎怪信息已复制到剪切板。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanImportSuccess" xml:space="preserve">
+        <source>狩猎怪信息已导入。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanIncomplete" xml:space="preserve">
+        <source>部分地图或巡查点未完成，请查看扫描记录。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanInterrupted" xml:space="preserve">
+        <source>扫描因进入战斗或意外切换世界、分线而停止。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanRecordLimit" xml:space="preserve">
+        <source>扫描记录已达 32768 条上限，扫描已停止；已有记录已保留。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanMonsterName" xml:space="preserve">
+        <source>怪物名称</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.SSMinion" xml:space="preserve">
+        <source>SS 前置怪</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.HuntMapMinion" xml:space="preserve">
+        <source>SS 前置怪：{0}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanWorld" xml:space="preserve">
+        <source>区服</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanCoordinates" xml:space="preserve">
+        <source>坐标</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanInstanceMismatch" xml:space="preserve">
+        <source>已到达记录坐标，当前分线与记录不同，请切换至 {0} 线。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanProgressHelp" xml:space="preserve">
+        <source>扫描到的狩猎怪/所选类型总数，按区服、地图、分线去重；全目录共 {0} 种怪。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanMapProgress" xml:space="preserve">
+        <source>地图进度 {0}/{1}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanRunningStatus" xml:space="preserve">
+        <source>{0} · {1} · 扫描区域 {2}/{3} · 路线进度 {4}/{5} 点 · {6}</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanMapProgressHelp" xml:space="preserve">
+        <source>地图进度：“已巡完地图”与“地图总数”，各区服、分线分别计数；
+未知分线暂按已知下限统计，探明后更新总数。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanProgressUnassigned" xml:space="preserve">
+        <source>已计入 {0} 条未标注分线的历史目击，每种怪物保守计一次；已有具体分线记录时不重复计数。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanProgressOutOfScope" xml:space="preserve">
+        <source>另有 {0} 条历史记录超出当前扫描范围，已保留但不计进度。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanProgressUnknown" xml:space="preserve">
+        <source>未知分线暂按已知下限统计，探明后更新总数。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.ScanHPHelp" xml:space="preserve">
+        <source>血量为最近目击值，状态、坐标非实时，-- 表示未知。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.InstanceTravelFailed" xml:space="preserve">
+        <source>切换分线失败，请确认以太之光与目标分线可用。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.InstanceUnavailable" xml:space="preserve">
+        <source>目标分线不可用，无法继续当前巡查。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.InstanceBusy" xml:space="preserve">
+        <source>分线切换被其他传送中断，请重新开始。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.InstanceTraveling" xml:space="preserve">
+        <source>切换分线</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.CustomList" xml:space="preserve">
         <source>自定义列表</source>
       </trans-unit>
@@ -15845,11 +16177,20 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Feature.AutoHunt.LogDuty" xml:space="preserve">
         <source>剩余目标需要在副本内完成。</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogDutyNamed" xml:space="preserve">
+        <source>以下目标需要在副本内完成：{0}。请勾选「单人刷取副本目标」。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.LogDutyAndMissingRoute" xml:space="preserve">
         <source>剩余目标包含副本目标和缺少野外路线的目标。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.LogMissingRoute" xml:space="preserve">
         <source>剩余目标缺少野外路线。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogMissingRouteNamed" xml:space="preserve">
+        <source>以下目标缺少可用路线：{0}。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogTargetsUnavailableNamed" xml:space="preserve">
+        <source>已巡查以下目标但未发现或击杀进度未变化：{0}。请确认目标未被击杀，并稍后重试。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoHunt.LogMissingRouteLabel" xml:space="preserve">
         <source>缺少野外路线</source>
@@ -16045,6 +16386,138 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="Feature.AutoPlayerCommend.PreviewUnavailable" xml:space="preserve">
         <source>无法读取当前角色名，无法预览推荐提醒。</source>
+      </trans-unit>
+      <trans-unit id="Window.Settings" xml:space="preserve">
+        <source>窗口设置</source>
+      </trans-unit>
+      <trans-unit id="Window.Pinned" xml:space="preserve">
+        <source>固定窗口</source>
+      </trans-unit>
+      <trans-unit id="Window.Pinned.Help" xml:space="preserve">
+        <source>固定所有 Omni 折叠窗口的位置和大小。</source>
+      </trans-unit>
+      <trans-unit id="Window.ClickThrough" xml:space="preserve">
+        <source>鼠标穿透</source>
+      </trans-unit>
+      <trans-unit id="Window.ClickThrough.Help" xml:space="preserve">
+        <source>鼠标可操作窗口后方的内容，主窗口的设置按钮仍可点击。</source>
+      </trans-unit>
+      <trans-unit id="Window.Opacity" xml:space="preserve">
+        <source>不透明度</source>
+      </trans-unit>
+      <trans-unit id="Window.BackgroundBlur" xml:space="preserve">
+        <source>背景模糊</source>
+      </trans-unit>
+      <trans-unit id="Transfer.ExportFailed" xml:space="preserve">
+        <source>导出失败，请检查数据或目标位置后重试。</source>
+      </trans-unit>
+      <trans-unit id="Transfer.ImportFailed" xml:space="preserve">
+        <source>导入失败，请检查数据或来源后重试。</source>
+      </trans-unit>
+      <trans-unit id="Transfer.ExportFileSucceeded" xml:space="preserve">
+        <source>信息已导出至 {0}。</source>
+      </trans-unit>
+      <trans-unit id="Transfer.ImportFileSucceeded" xml:space="preserve">
+        <source>信息已从 {0} 导入。</source>
+      </trans-unit>
+      <trans-unit id="Transfer.OpenLinkFailed" xml:space="preserve">
+        <source>信息已复制到剪切板，但未能打开链接，请手动打开。</source>
+      </trans-unit>
+      <trans-unit id="Collection.Relic.Export.Succeeded" xml:space="preserve">
+        <source>肝武复制品对应表已导出至 {0}。</source>
+      </trans-unit>
+      <trans-unit id="Collection.Relic.Export.Failed" xml:space="preserve">
+        <source>导出肝武复制品对应表失败，请检查目标目录后重试。</source>
+      </trans-unit>
+      <trans-unit id="AutoRepairTitle" xml:space="preserve">
+        <source>自动修理</source>
+      </trans-unit>
+      <trans-unit id="AutoRepairDescription" xml:space="preserve">
+        <source>按耐久阈值修理已装备物品，支持自行修理或附近修理商。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRepair.Threshold" xml:space="preserve">
+        <source>修理阈值（%）</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRepair.Mode" xml:space="preserve">
+        <source>修理方式</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRepair.Self" xml:space="preserve">
+        <source>自行修理</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRepair.NearbyNPC" xml:space="preserve">
+        <source>附近修理商</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRepair.Auto" xml:space="preserve">
+        <source>自行修理优先</source>
+      </trans-unit>
+      <trans-unit id="AutoMateriaExtractionTitle" xml:space="preserve">
+        <source>自动精制魔晶石</source>
+      </trans-unit>
+      <trans-unit id="AutoMateriaExtractionDescription" xml:space="preserve">
+        <source>批量精制指定范围内精炼度已满的装备。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMateriaExtraction.Scope" xml:space="preserve">
+        <source>精制范围</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMateriaExtraction.Equipped" xml:space="preserve">
+        <source>已装备</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMateriaExtraction.Armory" xml:space="preserve">
+        <source>兵装库</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMateriaExtraction.Inventory" xml:space="preserve">
+        <source>背包</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoMateriaExtraction.All" xml:space="preserve">
+        <source>已装备、兵装库与背包</source>
+      </trans-unit>
+      <trans-unit id="AutoRecommendedGearTitle" xml:space="preserve">
+        <source>自动推荐换装</source>
+      </trans-unit>
+      <trans-unit id="AutoRecommendedGearDescription" xml:space="preserve">
+        <source>为当前职业装备游戏推荐的装备，不修改已保存套装。</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.Start" xml:space="preserve">
+        <source>执行一次</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.Stop" xml:space="preserve">
+        <source>停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.Idle" xml:space="preserve">
+        <source>待执行</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.Unavailable" xml:space="preserve">
+        <source>当前无法执行，请检查角色状态及模块可用性。</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.State.Running" xml:space="preserve">
+        <source>运行中</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.State.Succeeded" xml:space="preserve">
+        <source>已完成</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.State.Failed" xml:space="preserve">
+        <source>失败</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.State.Cancelled" xml:space="preserve">
+        <source>已停止</source>
+      </trans-unit>
+      <trans-unit id="Feature.Equipment.State.Unconfirmed" xml:space="preserve">
+        <source>结果未确认</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyExitRequested" xml:space="preserve">
+        <source>副本已完成，正在即刻退本。</source>
+      </trans-unit>
+      <trans-unit id="Feature.AutoDuty.DutyExitRequired" xml:space="preserve">
+        <source>自动退本未完成，队列已停止，请检查当前副本状态。</source>
+      </trans-unit>
+      <trans-unit id="Feature.HiddenWindows.Title" xml:space="preserve">
+        <source>隐藏窗口</source>
+      </trans-unit>
+      <trans-unit id="Feature.HiddenWindows.Description" xml:space="preserve">
+        <source>隐藏选定的插件UI，包括插件图标，窗口等内容；配置同步多功能工具栏的“隐藏窗口”组件。</source>
+      </trans-unit>
+      <trans-unit id="Feature.HiddenWindows.Open" xml:space="preserve">
+        <source>隐藏窗口</source>
       </trans-unit>
     </body>
   </file>
