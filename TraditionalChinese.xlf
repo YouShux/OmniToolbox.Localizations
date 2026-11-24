@@ -7722,6 +7722,10 @@ Ctrl + 左鍵：切換全選；Ctrl + 右鍵：切換全選其他。</target>
         <source>在 PVP 区域内禁用</source>
         <target>在 PVP 區域內禁用</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Inactive" xml:space="preserve">
+        <source>不生效</source>
+        <target>不生效</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.MaxAcceleration" xml:space="preserve">
         <source>最大加速度</source>
         <target>最大加速度</target>
@@ -11681,6 +11685,10 @@ Mount（坐騎）、Retainer（雇員）等。</target>
 右键：返回原始服务器。</source>
         <target>左鍵：打開快捷跨界傳送；
 右鍵：返回原始服務器。</target>
+      </trans-unit>
+      <trans-unit id="Feature.FastWorldTravel.TravelFailed" xml:space="preserve">
+        <source>跨大区传送失败：{0}</source>
+        <target>跨大區傳送失敗：{0}</target>
       </trans-unit>
       <trans-unit id="Feature.FloatingInfoOverlay.Action" xml:space="preserve">
         <source>操作</source>
@@ -22679,8 +22687,8 @@ Token 保存至 Windows 憑據管理器，不寫入插件配置；系統憑據�
         <target>鼠標穿透</target>
       </trans-unit>
       <trans-unit id="Window.ClickThrough.Help" xml:space="preserve">
-        <source>鼠标可操作窗口后方的内容，主窗口的设置按钮仍可点击。</source>
-        <target>鼠標可操作窗口后方的內容，主窗口的設置按鈕仍可點擊。</target>
+        <source>鼠标可操作窗口后方的内容；插件设置页仍可操作，可从插件管理器重新打开。</source>
+        <target>鼠標可操作窗口后方的內容；插件設置頁仍可操作，可從插件管理器重新打開。</target>
       </trans-unit>
       <trans-unit id="Window.Opacity" xml:space="preserve">
         <source>不透明度</source>

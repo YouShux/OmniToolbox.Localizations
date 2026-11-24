@@ -7926,6 +7926,10 @@ Mount(탈것), Retainer(집사) 등을 포함합니다.</target>
         <source>DCTravelerX 未启动！</source>
         <target>DCTravelerX가 실행되지 않았습니다.</target>
       </trans-unit>
+      <trans-unit id="Feature.FastWorldTravel.TravelFailed" xml:space="preserve">
+        <source>跨大区传送失败：{0}</source>
+        <target>데이터 센터 이동 실패: {0}</target>
+      </trans-unit>
       <trans-unit id="Feature.FastWorldTravel.DtrTooltip" xml:space="preserve">
         <source>左键：打开快捷跨界传送；
 右键：返回原始服务器。</source>
@@ -17723,6 +17727,10 @@ NPC 원격 상점: 길찾기 및 NPC 상점 구매;
         <source>常态</source>
         <target>일반 상태</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.Inactive" xml:space="preserve">
+        <source>不生效</source>
+        <target>비활성</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.DisableInPVP" xml:space="preserve">
         <source>在 PVP 区域内禁用</source>
         <target>PVP 지역에서 비활성화</target>
@@ -22516,8 +22524,8 @@ NPC 원격 상점: 길찾기 및 NPC 상점 구매;
         <target>마우스 통과</target>
       </trans-unit>
       <trans-unit id="Window.ClickThrough.Help" xml:space="preserve">
-        <source>鼠标可操作窗口后方的内容，主窗口的设置按钮仍可点击。</source>
-        <target>창 뒤의 내용을 마우스로 조작할 수 있으며 기본 창의 설정 버튼은 계속 클릭할 수 있습니다.</target>
+        <source>鼠标可操作窗口后方的内容；插件设置页仍可操作，可从插件管理器重新打开。</source>
+        <target>창 뒤의 내용을 마우스로 조작할 수 있습니다. 플러그인 설정 화면은 계속 조작할 수 있으며 플러그인 관리자에서 다시 열 수 있습니다.</target>
       </trans-unit>
       <trans-unit id="Window.Opacity" xml:space="preserve">
         <source>不透明度</source>
