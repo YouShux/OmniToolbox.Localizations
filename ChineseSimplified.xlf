@@ -12251,6 +12251,12 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       <trans-unit id="Monitor.Warning.Snooze" xml:space="preserve">
         <source>[延迟提醒]</source>
       </trans-unit>
+      <trans-unit id="Monitor.Warning.Snoozed" xml:space="preserve">
+        <source>[已延期]</source>
+      </trans-unit>
+      <trans-unit id="Monitor.Warning.SnoozedMessage" xml:space="preserve">
+        <source>已延期，将在 {0} 后恢复提醒。</source>
+      </trans-unit>
       <trans-unit id="Monitor.Warning.SnoozeRemaining" xml:space="preserve">
         <source>延迟提醒剩余时间：{0:N0} 秒</source>
       </trans-unit>
@@ -12298,6 +12304,57 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.AutoUpdate" xml:space="preserve">
         <source>自动更新</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Cancel.Help" xml:space="preserve">
+        <source>取消当前操作及后续自动任务</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy" xml:space="preserve">
+        <source>在线模块代理</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Diagnostics" xml:space="preserve">
+        <source>在线模块诊断</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Diagnostics.Help" xml:space="preserve">
+        <source>将在线模块请求和操作的诊断信息写入卫月日志，不记录凭据。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Help" xml:space="preserve">
+        <source>仅用于在线模块。留空使用系统代理；可填写 HTTP 或 HTTPS 代理地址，不含用户名或密码。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Placeholder" xml:space="preserve">
+        <source>留空使用系统代理</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Save" xml:space="preserve">
+        <source>保存代理</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Reset" xml:space="preserve">
+        <source>使用系统代理</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Invalid" xml:space="preserve">
+        <source>请填写有效的 HTTP 或 HTTPS 代理地址，不含用户名、密码、查询参数或片段。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Busy" xml:space="preserve">
+        <source>网络请求尚未结束，请稍后再修改代理。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.ReadFailed" xml:space="preserve">
+        <source>代理配置读取失败，请检查配置文件权限及内容。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.Cancelled" xml:space="preserve">
+        <source>在线模块操作已取消。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.TimedOut" xml:space="preserve">
+        <source>在线模块操作超时，请检查网络后重试。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.Failed" xml:space="preserve">
+        <source>在线模块操作失败，详情请查看卫月日志。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.NetworkFailed" xml:space="preserve">
+        <source>在线模块请求失败，请检查网络、代理及 GitHub 访问状态。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.PermissionDenied" xml:space="preserve">
+        <source>无法读写在线模块文件，请检查目录权限及文件占用。</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.ConfigurationFailed" xml:space="preserve">
+        <source>配置或文件读写失败，请检查卫月日志。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.AuthorRequired" xml:space="preserve">
         <source>在线模块清单必须填写非空的作者名 Author。</source>
@@ -12378,7 +12435,16 @@ Ctrl+左键：启停一次插件、Ctrl+右键：启动/关闭插件。</source>
         <source>刷新仓库</source>
       </trans-unit>
       <trans-unit id="OnlineModules.RemoveRepository" xml:space="preserve">
-        <source>移除仓库（须先卸载该仓库模块）</source>
+        <source>删除库链及其已安装模块</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RemoveRepository.Title" xml:space="preserve">
+        <source>删除在线库链</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RemoveRepository.Confirm" xml:space="preserve">
+        <source>将卸载以下模块并删除库链，保留模块配置。是否继续？</source>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RemoveRepository.Empty" xml:space="preserve">
+        <source>此库链没有已安装模块，确认删除库链？</source>
       </trans-unit>
       <trans-unit id="OnlineModules.RepositoryExists" xml:space="preserve">
         <source>该仓库清单已添加。</source>
@@ -12521,7 +12587,7 @@ Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据�
         <source>在线模块更新失败，保留原版本：{0}</source>
       </trans-unit>
       <trans-unit id="OnlineModules.UpdateHelp" xml:space="preserve">
-        <source>启动及每六小时检查版本，自动安装新模块（默认禁用）并更新已安装模块；自动更新在下次启动 Omni 时应用，手动更新会立即重载。</source>
+        <source>刷新时自动安装新增模块，安装后保持禁用。自动更新仅针对已安装模块，启动及每六小时检查一次；自动下载的更新在下次启动 Omni 时应用，手动更新只重载对应模块。</source>
       </trans-unit>
       <trans-unit id="OnlineModules.UrlHint" xml:space="preserve">
         <source>GitHub 仓库地址或 TreeHouseModules.json 地址</source>
@@ -13176,7 +13242,8 @@ Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据�
       <trans-unit id="Feature.AutoSpeedMultiplier.Inactive" xml:space="preserve"><source>不生效</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.DisableInPVP" xml:space="preserve"><source>在 PVP 区域内禁用</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.DeepDungeonSpeed" xml:space="preserve"><source>深宫专用移速</source></trans-unit>
-      <trans-unit id="Feature.AutoSpeedMultiplier.DeepDungeonSpeed.Help" xml:space="preserve"><source>深层迷宫的首领楼层和第99层使用1x移速。</source></trans-unit>
+      <trans-unit id="Feature.AutoSpeedMultiplier.DeepDungeonSpeed.Help" xml:space="preserve"><source>深层迷宫的首领楼层和第99层使用1x移速；
+死者宫殿的第200层使用配置的移速。</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Profile.NameFormat" xml:space="preserve"><source>配置{0}</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Profile.RenameTitle" xml:space="preserve"><source>编辑配置名称</source></trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Profile.Name" xml:space="preserve"><source>配置名称</source></trans-unit>
@@ -13303,7 +13370,7 @@ Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据�
         <source>可获得</source>
       </trans-unit>
       <trans-unit id="Status.PrivateProviderUnavailable" xml:space="preserve">
-        <source>私有 Provider 未接入</source>
+        <source>云模块未下发</source>
       </trans-unit>
       <trans-unit id="Status.Purchasable" xml:space="preserve">
         <source>可购买</source>
@@ -13476,6 +13543,9 @@ Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据�
       </trans-unit>
       <trans-unit id="TreeHouse.Status.TestCode" xml:space="preserve">
         <source>测试码</source>
+      </trans-unit>
+      <trans-unit id="TreeHouse.TestCodeRequirement" xml:space="preserve">
+        <source>测试码要求：{0}及以上。</source>
       </trans-unit>
       <trans-unit id="TreeHouse.Status.InDevelopment" xml:space="preserve">
         <source>开发中</source>
@@ -16196,6 +16266,9 @@ Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据�
       <trans-unit id="Feature.AutoHunt.LogTargetsUnavailableNamed" xml:space="preserve">
         <source>已巡查以下目标但未发现或击杀进度未变化：{0}。请确认目标未被击杀，并稍后重试。</source>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogTargetsUnreachableNamed" xml:space="preserve">
+        <source>以下目标已发现但无法到达：{0}。</source>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.LogMissingRouteLabel" xml:space="preserve">
         <source>缺少野外路线</source>
       </trans-unit>
@@ -16522,6 +16595,81 @@ Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据�
       </trans-unit>
       <trans-unit id="Feature.HiddenWindows.Open" xml:space="preserve">
         <source>隐藏窗口</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Check" xml:space="preserve">
+        <source>检查插件更新</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Checking" xml:space="preserve">
+        <source>正在检查更新…</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Downloading" xml:space="preserve">
+        <source>正在下载更新…</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Ready" xml:space="preserve">
+        <source>版本 {0} 已就绪，空闲时将自动重载，也可点击立即重载。</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Applying" xml:space="preserve">
+        <source>正在更新并重载…</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Current" xml:space="preserve">
+        <source>已是最新版本，点击重新检查。</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.NotReady" xml:space="preserve">
+        <source>暂时无法更新，请重试。</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Failed" xml:space="preserve">
+        <source>更新失败，请重试。</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Downloaded" xml:space="preserve">
+        <source>已下载 {0} MiB</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Verifying" xml:space="preserve">
+        <source>正在校验更新…</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Checking" xml:space="preserve">
+        <source>检查中</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Downloading" xml:space="preserve">
+        <source>下载中</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Verifying" xml:space="preserve">
+        <source>校验中</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Ready" xml:space="preserve">
+        <source>立即重载</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Applying" xml:space="preserve">
+        <source>更新中</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Retry" xml:space="preserve">
+        <source>重试更新</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Available" xml:space="preserve">
+        <source>发现新版本 v{0}，点击下载更新内容。</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.RepositoryMissing" xml:space="preserve">
+        <source>未找到官方更新包，请检查插件仓库。</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.LocalAssemblyInvalid" xml:space="preserve">
+        <source>本地插件文件无效，无法重载。</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.ReloadFailed" xml:space="preserve">
+        <source>插件重载失败，请检查开发插件状态。</source>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Download" xml:space="preserve">
+        <source>下载更新</source>
+      </trans-unit>
+      <trans-unit id="CloudModule.Preparing" xml:space="preserve">
+        <source>正在准备模块…</source>
+      </trans-unit>
+      <trans-unit id="CloudModule.Failed" xml:space="preserve">
+        <source>模块准备失败，稍后自动重试。</source>
+      </trans-unit>
+      <trans-unit id="Feature.DesynthesisNoAnimation.Title" xml:space="preserve">
+        <source>分解无后摇</source>
+      </trans-unit>
+      <trans-unit id="Feature.DesynthesisNoAnimation.Description" xml:space="preserve">
+        <source>加快道具分解的收尾动画，减少动画等待。</source>
       </trans-unit>
     </body>
   </file>

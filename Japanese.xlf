@@ -16445,6 +16445,14 @@ NPC ショップのみ：NPC ショップからのみ補充します。
         <source>[延迟提醒]</source>
         <target>[後で通知]</target>
       </trans-unit>
+      <trans-unit id="Monitor.Warning.Snoozed" xml:space="preserve">
+        <source>[已延期]</source>
+        <target>[延期済み]</target>
+      </trans-unit>
+      <trans-unit id="Monitor.Warning.SnoozedMessage" xml:space="preserve">
+        <source>已延期，将在 {0} 后恢复提醒。</source>
+        <target>通知を延期しました。{0} 後に通知を再開します。</target>
+      </trans-unit>
       <trans-unit id="Monitor.Warning.SnoozeRemaining" xml:space="preserve">
         <source>延迟提醒剩余时间：{0:N0} 秒</source>
         <target>再通知まで：{0:N0} 秒</target>
@@ -16508,6 +16516,74 @@ NPC ショップのみ：NPC ショップからのみ補充します。
       <trans-unit id="OnlineModules.AutoUpdate" xml:space="preserve">
         <source>自动更新</source>
         <target>自動更新</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Cancel.Help" xml:space="preserve">
+        <source>取消当前操作及后续自动任务</source>
+        <target>現在の操作と待機中の自動処理をキャンセル</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy" xml:space="preserve">
+        <source>在线模块代理</source>
+        <target>オンラインモジュールのプロキシ</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Diagnostics" xml:space="preserve">
+        <source>在线模块诊断</source>
+        <target>オンラインモジュールの診断</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Diagnostics.Help" xml:space="preserve">
+        <source>将在线模块请求和操作的诊断信息写入卫月日志，不记录凭据。</source>
+        <target>オンラインモジュールの通信と操作に関する診断情報を Dalamud のログに記録します。認証情報は記録しません。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Help" xml:space="preserve">
+        <source>仅用于在线模块。留空使用系统代理；可填写 HTTP 或 HTTPS 代理地址，不含用户名或密码。</source>
+        <target>オンラインモジュールにのみ適用します。空欄の場合はシステムのプロキシを使用します。ユーザー名とパスワードを含まない HTTP または HTTPS プロキシのアドレスを指定できます。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Placeholder" xml:space="preserve">
+        <source>留空使用系统代理</source>
+        <target>空欄でシステムのプロキシを使用</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Save" xml:space="preserve">
+        <source>保存代理</source>
+        <target>プロキシを保存</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Reset" xml:space="preserve">
+        <source>使用系统代理</source>
+        <target>システムのプロキシを使用</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Invalid" xml:space="preserve">
+        <source>请填写有效的 HTTP 或 HTTPS 代理地址，不含用户名、密码、查询参数或片段。</source>
+        <target>ユーザー名、パスワード、クエリ、フラグメントを含まない有効な HTTP または HTTPS プロキシのアドレスを入力してください。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.Busy" xml:space="preserve">
+        <source>网络请求尚未结束，请稍后再修改代理。</source>
+        <target>通信が完了してからプロキシを変更してください。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Proxy.ReadFailed" xml:space="preserve">
+        <source>代理配置读取失败，请检查配置文件权限及内容。</source>
+        <target>プロキシ設定を読み込めませんでした。設定ファイルのアクセス権限と内容を確認してください。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.Cancelled" xml:space="preserve">
+        <source>在线模块操作已取消。</source>
+        <target>オンラインモジュールの操作をキャンセルしました。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.TimedOut" xml:space="preserve">
+        <source>在线模块操作超时，请检查网络后重试。</source>
+        <target>オンラインモジュールの操作がタイムアウトしました。ネットワークを確認して再試行してください。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.Failed" xml:space="preserve">
+        <source>在线模块操作失败，详情请查看卫月日志。</source>
+        <target>オンラインモジュールの操作に失敗しました。詳細は Dalamud のログを確認してください。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.NetworkFailed" xml:space="preserve">
+        <source>在线模块请求失败，请检查网络、代理及 GitHub 访问状态。</source>
+        <target>オンラインモジュールの通信に失敗しました。ネットワーク、プロキシ、GitHub への接続を確認してください。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.PermissionDenied" xml:space="preserve">
+        <source>无法读写在线模块文件，请检查目录权限及文件占用。</source>
+        <target>オンラインモジュールのファイルにアクセスできません。フォルダーのアクセス権限とファイルが使用中でないかを確認してください。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.Operation.ConfigurationFailed" xml:space="preserve">
+        <source>配置或文件读写失败，请检查卫月日志。</source>
+        <target>設定またはファイルを読み書きできません。Dalamud のログを確認してください。</target>
       </trans-unit>
       <trans-unit id="OnlineModules.AuthorRequired" xml:space="preserve">
         <source>在线模块清单必须填写非空的作者名 Author。</source>
@@ -16614,8 +16690,20 @@ NPC ショップのみ：NPC ショップからのみ補充します。
         <target>リポジトリを更新</target>
       </trans-unit>
       <trans-unit id="OnlineModules.RemoveRepository" xml:space="preserve">
-        <source>移除仓库（须先卸载该仓库模块）</source>
-        <target>リポジトリを削除（先に配下のモジュールをアンインストール）</target>
+        <source>删除库链及其已安装模块</source>
+        <target>リポジトリとインストール済みモジュールを削除</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RemoveRepository.Title" xml:space="preserve">
+        <source>删除在线库链</source>
+        <target>オンラインリポジトリを削除</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RemoveRepository.Confirm" xml:space="preserve">
+        <source>将卸载以下模块并删除库链，保留模块配置。是否继续？</source>
+        <target>以下のモジュールをアンインストールし、リポジトリを削除しますか？モジュールの設定は保持されます。</target>
+      </trans-unit>
+      <trans-unit id="OnlineModules.RemoveRepository.Empty" xml:space="preserve">
+        <source>此库链没有已安装模块，确认删除库链？</source>
+        <target>このリポジトリにはインストール済みモジュールがありません。削除しますか？</target>
       </trans-unit>
       <trans-unit id="OnlineModules.RepositoryExists" xml:space="preserve">
         <source>该仓库清单已添加。</source>
@@ -16806,8 +16894,8 @@ Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据�
         <target>オンラインモジュールの更新に失敗しました。元のバージョンを保持します：{0}</target>
       </trans-unit>
       <trans-unit id="OnlineModules.UpdateHelp" xml:space="preserve">
-        <source>启动及每六小时检查版本，自动安装新模块（默认禁用）并更新已安装模块；自动更新在下次启动 Omni 时应用，手动更新会立即重载。</source>
-        <target>起動時と 6 時間ごとに確認し、新しいモジュールを無効状態で追加して、インストール済みモジュールを更新します。自動更新は次回起動時、手動更新は直ちに再読み込みして適用します。</target>
+        <source>刷新时自动安装新增模块，安装后保持禁用。自动更新仅针对已安装模块，启动及每六小时检查一次；自动下载的更新在下次启动 Omni 时应用，手动更新只重载对应模块。</source>
+        <target>更新時に新しいモジュールを自動でインストールし、無効のままにします。自動更新は起動時と 6 時間ごとにインストール済みモジュールを確認します。ダウンロードした更新は次回の Omni 起動時に適用し、手動更新では対象のモジュールのみ再読み込みします。</target>
       </trans-unit>
       <trans-unit id="OnlineModules.UrlHint" xml:space="preserve">
         <source>GitHub 仓库地址或 TreeHouseModules.json 地址</source>
@@ -17740,8 +17828,10 @@ NPC ショップの遠隔操作：経路案内と NPC ショップでの購入�
         <target>ディープダンジョン専用移動速度</target>
       </trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.DeepDungeonSpeed.Help" xml:space="preserve">
-        <source>深层迷宫的首领楼层和第99层使用1x移速。</source>
-        <target>ディープダンジョンのボス階と99階では、移動速度を1倍にします。</target>
+        <source>深层迷宫的首领楼层和第99层使用1x移速；
+死者宫殿的第200层使用配置的移速。</source>
+        <target>ディープダンジョンのボス階と99階では、移動速度を1倍にします。
+死者の宮殿の200階では、設定した移動速度を使用します。</target>
       </trans-unit>
       <trans-unit id="Feature.AutoSpeedMultiplier.Profile.NameFormat" xml:space="preserve">
         <source>配置{0}</source>
@@ -18196,8 +18286,8 @@ NPC ショップの遠隔操作：経路案内と NPC ショップでの購入�
         <target>入手可能</target>
       </trans-unit>
       <trans-unit id="Status.PrivateProviderUnavailable" xml:space="preserve">
-        <source>私有 Provider 未接入</source>
-        <target>非公開 Provider が未接続です</target>
+        <source>云模块未下发</source>
+        <target>クラウドモジュール未配信</target>
       </trans-unit>
       <trans-unit id="Status.Purchasable" xml:space="preserve">
         <source>可购买</source>
@@ -18428,6 +18518,10 @@ NPC ショップの遠隔操作：経路案内と NPC ショップでの購入�
       <trans-unit id="TreeHouse.Status.TestCode" xml:space="preserve">
         <source>测试码</source>
         <target>テストコード</target>
+      </trans-unit>
+      <trans-unit id="TreeHouse.TestCodeRequirement" xml:space="preserve">
+        <source>测试码要求：{0}及以上。</source>
+        <target>必要なテストコード：{0}以上。</target>
       </trans-unit>
       <trans-unit id="TreeHouse.Status.InDevelopment" xml:space="preserve">
         <source>开发中</source>
@@ -22249,6 +22343,10 @@ NPC ショップの遠隔操作：経路案内と NPC ショップでの購入�
         <source>已巡查以下目标但未发现或击杀进度未变化：{0}。请确认目标未被击杀，并稍后重试。</source>
         <target>以下の対象を巡回しましたが、未発見か討伐進捗が変わりません：{0}。すでに倒されていないか確認し、後で再試行してください。</target>
       </trans-unit>
+      <trans-unit id="Feature.AutoHunt.LogTargetsUnreachableNamed" xml:space="preserve">
+        <source>以下目标已发现但无法到达：{0}。</source>
+        <target>発見した次の対象に到達できません：{0}。</target>
+      </trans-unit>
       <trans-unit id="Feature.AutoHunt.LogMissingRouteLabel" xml:space="preserve">
         <source>缺少野外路线</source>
         <target>フィールド経路なし</target>
@@ -22706,6 +22804,106 @@ NPC ショップの遠隔操作：経路案内と NPC ショップでの購入�
       <trans-unit id="Feature.AutoTripleTriadCollection.Error.street_duelist_npc_unavailable" xml:space="preserve">
         <source>仍有 NPC 未获首胜，当前无可挑战的对手。</source>
         <target>未勝利の NPC が残っていますが、現在対戦できる相手がいません。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Check" xml:space="preserve">
+        <source>检查插件更新</source>
+        <target>プラグインの更新を確認</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Checking" xml:space="preserve">
+        <source>正在检查更新…</source>
+        <target>更新を確認中…</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Downloading" xml:space="preserve">
+        <source>正在下载更新…</source>
+        <target>更新をダウンロード中…</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Ready" xml:space="preserve">
+        <source>版本 {0} 已就绪，空闲时将自动重载，也可点击立即重载。</source>
+        <target>バージョン {0} の準備ができました。操作していないときに自動で再読み込みします。クリックすると今すぐ再読み込みします。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Applying" xml:space="preserve">
+        <source>正在更新并重载…</source>
+        <target>更新して再読み込み中…</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Current" xml:space="preserve">
+        <source>已是最新版本，点击重新检查。</source>
+        <target>最新バージョンです。クリックすると再確認します。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.NotReady" xml:space="preserve">
+        <source>暂时无法更新，请重试。</source>
+        <target>現在更新できません。再試行してください。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Failed" xml:space="preserve">
+        <source>更新失败，请重试。</source>
+        <target>更新に失敗しました。再試行してください。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Downloaded" xml:space="preserve">
+        <source>已下载 {0} MiB</source>
+        <target>{0} MiB ダウンロード済み</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Verifying" xml:space="preserve">
+        <source>正在校验更新…</source>
+        <target>更新を検証中…</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Checking" xml:space="preserve">
+        <source>检查中</source>
+        <target>確認中</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Downloading" xml:space="preserve">
+        <source>下载中</source>
+        <target>ダウンロード中</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Verifying" xml:space="preserve">
+        <source>校验中</source>
+        <target>検証中</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Ready" xml:space="preserve">
+        <source>立即重载</source>
+        <target>今すぐ再読込</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Applying" xml:space="preserve">
+        <source>更新中</source>
+        <target>更新中</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Retry" xml:space="preserve">
+        <source>重试更新</source>
+        <target>更新を再試行</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Available" xml:space="preserve">
+        <source>发现新版本 v{0}，点击下载更新内容。</source>
+        <target>新しいバージョン v{0} が見つかりました。クリックして更新内容をダウンロードします。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.RepositoryMissing" xml:space="preserve">
+        <source>未找到官方更新包，请检查插件仓库。</source>
+        <target>公式の更新パッケージが見つかりません。プラグインリポジトリを確認してください。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.LocalAssemblyInvalid" xml:space="preserve">
+        <source>本地插件文件无效，无法重载。</source>
+        <target>ローカルのプラグインファイルが無効なため、再読み込みできません。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.ReloadFailed" xml:space="preserve">
+        <source>插件重载失败，请检查开发插件状态。</source>
+        <target>再読み込みに失敗しました。開発プラグインの状態を確認してください。</target>
+      </trans-unit>
+      <trans-unit id="PluginUpdate.Button.Download" xml:space="preserve">
+        <source>下载更新</source>
+        <target>更新をダウンロード</target>
+      </trans-unit>
+      <trans-unit id="CloudModule.Preparing" xml:space="preserve">
+        <source>正在准备模块…</source>
+        <target>モジュールを準備中…</target>
+      </trans-unit>
+      <trans-unit id="CloudModule.Failed" xml:space="preserve">
+        <source>模块准备失败，稍后自动重试。</source>
+        <target>モジュールの準備に失敗しました。しばらくしてから自動的に再試行します。</target>
+      </trans-unit>
+      <trans-unit id="Feature.DesynthesisNoAnimation.Title" xml:space="preserve">
+        <source>分解无后摇</source>
+        <target>分解アニメーション短縮</target>
+      </trans-unit>
+      <trans-unit id="Feature.DesynthesisNoAnimation.Description" xml:space="preserve">
+        <source>加快道具分解的收尾动画，减少动画等待。</source>
+        <target>アイテム分解の終了アニメーションを速め、待ち時間を短縮します。</target>
       </trans-unit>
     </body>
   </file>
