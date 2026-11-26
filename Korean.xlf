@@ -187,8 +187,8 @@
         <target>도끼 찍기 자동 진행</target>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsDescription" xml:space="preserve">
-        <source>战斗外、角色未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
-        <target>전투 중이 아니며 캐릭터가 다른 행동을 하지 않고 이동을 멈추면, 선택한 분류에 속하는 미등록 아이템을 소지품에서 자동으로 사용합니다.</target>
+        <source>仅对角色列表中已勾选的角色，在战斗外、未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
+        <target>목록에서 체크한 캐릭터만 전투 중이 아니며 다른 행동을 하지 않고 이동을 멈추면, 선택한 분류에 속하는 미등록 아이템을 소지품에서 자동으로 사용합니다.</target>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsTitle" xml:space="preserve">
         <source>自动使用未收录物品</source>
@@ -22896,14 +22896,6 @@ NPC 원격 상점: 길찾기 및 NPC 상점 구매;
       <trans-unit id="CloudModule.Failed" xml:space="preserve">
         <source>模块准备失败，稍后自动重试。</source>
         <target>모듈을 준비하지 못했습니다. 잠시 후 자동으로 다시 시도합니다.</target>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Title" xml:space="preserve">
-        <source>分解无后摇</source>
-        <target>아이템 분해 후딜 제거</target>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Description" xml:space="preserve">
-        <source>加快道具分解的收尾动画，减少动画等待。</source>
-        <target>아이템 분해의 마무리 동작을 빠르게 재생하여 대기 시간을 줄입니다.</target>
       </trans-unit>
     </body>
   </file>

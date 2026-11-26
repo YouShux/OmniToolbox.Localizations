@@ -141,7 +141,7 @@
         <source>自动孤树无援</source>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsDescription" xml:space="preserve">
-        <source>战斗外、角色未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
+        <source>仅对角色列表中已勾选的角色，在战斗外、未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsTitle" xml:space="preserve">
         <source>自动使用未收录物品</source>
@@ -16664,12 +16664,6 @@ Token 保存至 Windows 凭据管理器，不写入插件配置；系统凭据�
       </trans-unit>
       <trans-unit id="CloudModule.Failed" xml:space="preserve">
         <source>模块准备失败，稍后自动重试。</source>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Title" xml:space="preserve">
-        <source>分解无后摇</source>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Description" xml:space="preserve">
-        <source>加快道具分解的收尾动画，减少动画等待。</source>
       </trans-unit>
     </body>
   </file>

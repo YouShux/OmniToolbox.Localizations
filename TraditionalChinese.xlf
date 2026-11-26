@@ -243,8 +243,8 @@
         <target>自動孤樹無援</target>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsDescription" xml:space="preserve">
-        <source>战斗外、角色未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
-        <target>戰斗外、角色未占用且停止移動時，自動使用背包中已勾選類別的未收錄物品。</target>
+        <source>仅对角色列表中已勾选的角色，在战斗外、未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
+        <target>僅對角色列表中已勾選的角色，在戰斗外、未占用且停止移動時，自動使用背包中已勾選類別的未收錄物品。</target>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsTitle" xml:space="preserve">
         <source>自动使用未收录物品</source>
@@ -11407,14 +11407,6 @@ DOT/HOT 效果平均每 {0:F1} 點提高 0.1%。</target>
       <trans-unit id="Feature.DesynthesisEnhancement.TooltipValueWithoutJob" xml:space="preserve">
         <source>{0}/{1}</source>
         <target>{0}/{1}</target>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Description" xml:space="preserve">
-        <source>加快道具分解的收尾动画，减少动画等待。</source>
-        <target>加快道具分解的收尾動畫，減少動畫等待。</target>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Title" xml:space="preserve">
-        <source>分解无后摇</source>
-        <target>分解無后搖</target>
       </trans-unit>
       <trans-unit id="Feature.DirectionalActionRelease.Action" xml:space="preserve">
         <source>技能</source>

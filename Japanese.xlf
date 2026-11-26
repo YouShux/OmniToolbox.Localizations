@@ -187,8 +187,8 @@
         <target>アウト・オン・ア・リムの自動化</target>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsDescription" xml:space="preserve">
-        <source>战斗外、角色未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
-        <target>非戦闘中で、操作中ではなく移動もしていない場合に、所持品から選択済みの種類の未修得アイテムを自動で使用します。</target>
+        <source>仅对角色列表中已勾选的角色，在战斗外、未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
+        <target>一覧でチェックしたキャラクターのみ、非戦闘中で、操作中ではなく移動もしていない場合に、所持品から選択済みの種類の未修得アイテムを自動で使用します。</target>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsTitle" xml:space="preserve">
         <source>自动使用未收录物品</source>
@@ -22896,14 +22896,6 @@ NPC ショップの遠隔操作：経路案内と NPC ショップでの購入�
       <trans-unit id="CloudModule.Failed" xml:space="preserve">
         <source>模块准备失败，稍后自动重试。</source>
         <target>モジュールの準備に失敗しました。しばらくしてから自動的に再試行します。</target>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Title" xml:space="preserve">
-        <source>分解无后摇</source>
-        <target>分解アニメーション短縮</target>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Description" xml:space="preserve">
-        <source>加快道具分解的收尾动画，减少动画等待。</source>
-        <target>アイテム分解の終了アニメーションを速め、待ち時間を短縮します。</target>
       </trans-unit>
     </body>
   </file>

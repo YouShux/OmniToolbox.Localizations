@@ -187,8 +187,8 @@
         <target>Auto Out on a Limb</target>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsDescription" xml:space="preserve">
-        <source>战斗外、角色未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
-        <target>Automatically use unregistered items in selected inventory categories while out of combat, idle, and stationary.</target>
+        <source>仅对角色列表中已勾选的角色，在战斗外、未占用且停止移动时，自动使用背包中已勾选类别的未收录物品。</source>
+        <target>For checked characters in the list, automatically use unregistered items in selected inventory categories while out of combat, idle, and stationary.</target>
       </trans-unit>
       <trans-unit id="AutoUseUncollectedItemsTitle" xml:space="preserve">
         <source>自动使用未收录物品</source>
@@ -22896,14 +22896,6 @@ The game does not track first wins for Lewena or the 8 tournament opponents, so 
       <trans-unit id="CloudModule.Failed" xml:space="preserve">
         <source>模块准备失败，稍后自动重试。</source>
         <target>Module preparation failed. An automatic retry will follow shortly.</target>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Title" xml:space="preserve">
-        <source>分解无后摇</source>
-        <target>Desynthesis Animation Skip</target>
-      </trans-unit>
-      <trans-unit id="Feature.DesynthesisNoAnimation.Description" xml:space="preserve">
-        <source>加快道具分解的收尾动画，减少动画等待。</source>
-        <target>Speed up the finishing animation for item desynthesis to reduce animation wait time.</target>
       </trans-unit>
     </body>
   </file>
