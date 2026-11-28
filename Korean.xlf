@@ -2370,6 +2370,42 @@ Ctrl + 왼쪽 클릭: 전체 선택 전환; Ctrl + 오른쪽 클릭: 나머지 �
         <source>/omni sendagentevent &lt;AgentID&gt; &lt;事件类型&gt; [参数...]</source>
         <target>/omni sendagentevent &lt;AgentID&gt; &lt;이벤트 유형&gt; [인수...]</target>
       </trans-unit>
+      <trans-unit id="Command.extractmateria.Description" xml:space="preserve">
+        <source>按当前设置一键精制精炼度已满的装备</source>
+        <target>현재 설정으로 결속도가 가득 찬 장비 마테리아 정제</target>
+      </trans-unit>
+      <trans-unit id="Command.extractmateria.Name" xml:space="preserve">
+        <source>自动精制魔晶石</source>
+        <target>자동 마테리아 정제</target>
+      </trans-unit>
+      <trans-unit id="Command.extractmateria.Usage" xml:space="preserve">
+        <source>/omni extractmateria</source>
+        <target>/omni extractmateria</target>
+      </trans-unit>
+      <trans-unit id="Command.recommendedgear.Description" xml:space="preserve">
+        <source>一键穿戴游戏默认的最强装备</source>
+        <target>게임 기본 최강 장비 일괄 착용</target>
+      </trans-unit>
+      <trans-unit id="Command.recommendedgear.Name" xml:space="preserve">
+        <source>自动推荐换装</source>
+        <target>자동 추천 장비 착용</target>
+      </trans-unit>
+      <trans-unit id="Command.recommendedgear.Usage" xml:space="preserve">
+        <source>/omni recommendedgear</source>
+        <target>/omni recommendedgear</target>
+      </trans-unit>
+      <trans-unit id="Command.repair.Description" xml:space="preserve">
+        <source>按当前设置一键修理装备</source>
+        <target>현재 설정으로 장착 장비 일괄 수리</target>
+      </trans-unit>
+      <trans-unit id="Command.repair.Name" xml:space="preserve">
+        <source>自动修理</source>
+        <target>자동 수리</target>
+      </trans-unit>
+      <trans-unit id="Command.repair.Usage" xml:space="preserve">
+        <source>/omni repair</source>
+        <target>/omni repair</target>
+      </trans-unit>
       <trans-unit id="Command.sortitems.Description" xml:space="preserve">
         <source>整理物品</source>
         <target>아이템 정렬</target>
@@ -22666,24 +22702,32 @@ NPC 원격 상점: 길찾기 및 NPC 상점 구매;
         <target>자동 수리</target>
       </trans-unit>
       <trans-unit id="AutoRepairDescription" xml:space="preserve">
-        <source>按耐久阈值修理已装备物品，支持自行修理或附近修理商。</source>
-        <target>내구도 기준에 따라 착용 장비를 수리합니다. 직접 수리 또는 근처 수리공을 지원합니다.</target>
+        <source>按耐久阈值修理已装备物品，支持自行修理或前往最近修理 NPC。</source>
+        <target>내구도 기준에 따라 착용 장비를 직접 수리하거나 가장 가까운 수리공 NPC에게 수리합니다.</target>
       </trans-unit>
       <trans-unit id="Feature.AutoRepair.Threshold" xml:space="preserve">
-        <source>修理阈值（%）</source>
-        <target>수리 기준(%)</target>
+        <source>修理阈值</source>
+        <target>수리 기준</target>
       </trans-unit>
       <trans-unit id="Feature.AutoRepair.Mode" xml:space="preserve">
-        <source>修理方式</source>
-        <target>수리 방식</target>
+        <source>模式：</source>
+        <target>모드:</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRepair.Mode.Help" xml:space="preserve">
+        <source>自行修理：自己修，备齐暗物质；
+NPC修理：前往距离自己最近的NPC修理，按照传送费判断；
+自行修理优先：优先判断自身是否具备修理条件，如暗物质不足，修理等级不符合等情况时，寻找最近NPC修理装备。</source>
+        <target>직접 수리: 다크 매터를 준비해 직접 수리합니다.
+NPC 수리: 텔레포 비용을 기준으로 가장 가까운 수리공 NPC에게 이동해 수리합니다.
+직접 수리 우선: 먼저 직접 수리 조건을 확인하고, 다크 매터가 부족하거나 수리 레벨이 맞지 않으면 가장 가까운 수리공 NPC에게 이동합니다.</target>
       </trans-unit>
       <trans-unit id="Feature.AutoRepair.Self" xml:space="preserve">
         <source>自行修理</source>
         <target>직접 수리</target>
       </trans-unit>
       <trans-unit id="Feature.AutoRepair.NearbyNPC" xml:space="preserve">
-        <source>附近修理商</source>
-        <target>근처 수리공</target>
+        <source>NPC修理</source>
+        <target>NPC 수리</target>
       </trans-unit>
       <trans-unit id="Feature.AutoRepair.Auto" xml:space="preserve">
         <source>自行修理优先</source>
@@ -22724,6 +22768,14 @@ NPC 원격 상점: 길찾기 및 NPC 상점 구매;
       <trans-unit id="AutoRecommendedGearDescription" xml:space="preserve">
         <source>为当前职业装备游戏推荐的装备，不修改已保存套装。</source>
         <target>현재 클래스/잡에 게임에서 추천하는 장비를 착용합니다. 저장한 장비세트는 바꾸지 않습니다.</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRecommendedGear.EquipFromInventory" xml:space="preserve">
+        <source>自动穿戴背包装备</source>
+        <target>소지품 장비 자동 착용</target>
+      </trans-unit>
+      <trans-unit id="Feature.AutoRecommendedGear.EquipFromInventory.Help" xml:space="preserve">
+        <source>使用指令换装时，一键穿戴背包内最强的物品。</source>
+        <target>명령어로 장비를 교체할 때 소지품의 최강 장비도 함께 착용합니다.</target>
       </trans-unit>
       <trans-unit id="Feature.Equipment.Start" xml:space="preserve">
         <source>执行一次</source>
